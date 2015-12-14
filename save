@@ -1,0 +1,23 @@
+<div class="card-item card white blue-grey-text">
+                <a href="" class="badge">
+                    <img src="ruby.svg" class="class responsive-img" alt="Ruby" title="Ruby">
+                </a>
+                <div class="card-content">
+                    <h2>Ruby off Rails</h2>
+                    <p>Master your Ruby skills and increase your Rails street cred by learning to build dynamic, sustainable applications for the web.</p>
+                </div>
+                <div class="course-card-button">
+                    <a href="" class="">View course</a>
+                </div>
+                <a class="card-action">
+                    <div class="bucket">
+                        <div class="bucket-media">
+                            <img src="" class="" alt="bucket" title="buket">
+                        </div>
+                        <div class="bucket-content">
+                            <p class="bucket-label">Get started with</p>
+                            <p class="bucket-content">Try Ruby</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
