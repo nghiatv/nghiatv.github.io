@@ -53,6 +53,7 @@ nav ul li:hover a {
 #main_row_4{
     padding-top: 40px;
     background-color: #FFFFFF;
+    /*float: left;*/
 }
 
 
@@ -107,7 +108,7 @@ nav ul li:hover a {
 .dashboard {
     padding-top: 1rem !important;
     padding-bottom: 1rem !important;
-    border-top: 1px solid #d4d5d6;
+    /*border-top: 1px solid #d4d5d6;*/
 }
 
 .dashboard_item {
@@ -129,6 +130,9 @@ nav ul li:hover a {
     margin-top: 0 !important;
 
 }
+.dashboard_item h3 strong:after{
+    content: '+';
+} 
 .dashboard_item p{
     text-align: center;
     clear: both;
@@ -175,6 +179,78 @@ nav ul li:hover a {
     box-shadow: none;
     background-color: white !important;
 }
+.hr-gradient{
+    border: none;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,#fff,#dcdcdc 50%,#fff);
+    background-image: linear-gradient(to right,#fff,#dcdcdc 50%,#fff);
+    background-repeat: no-repeat;
+}
+
+
+
+#main_row_5{
+    background-color: white;
+}
+#main_row_5 .card{
+    box-shadow: none !important;
+}
+
+#blog-title h2{
+    font-size: 3.7em;
+    line-height: 1.6;
+    color: #307699;
+    font-weight: bold;
+}
+.blog-name-item{
+    font-weight: bold !important;
+    line-height: 1.6 !important;
+
+}
+.blog-name-description{
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 110px;
+}
+
+#blog-content{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+
+#main_row_6{
+    background-color: white;
+}
+#main_row_6 .card{
+    box-shadow: none !important;
+}
+
+#job-title h2{
+    font-size: 3.7em;
+    line-height: 1.6;
+    color: #307699;
+    font-weight: bold;
+}
+.job-name-item{
+    font-weight: bold !important;
+    line-height: 1.6 !important;
+
+}
+.job-name-description{
+    box-sizing: border-box;
+    overflow: hidden;
+    max-height: 110px;
+}
+
+#job-content{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+
 
 .card-title {
     padding-bottom: 20px !important;
@@ -257,9 +333,14 @@ nav ul li:hover a {
 
 /*path_item*/
 
-.path-item{
-    /*margin-top: 40px;*/
+.path-item:hover{
+    background-color: #00796b !important;
+    color: #fff !important;
+    transition: all .5s;
 
+}
+.path-button a{
+    margin: 15px auto;
 }
 .card-content{
     /*height: 200px;*/
@@ -267,9 +348,9 @@ nav ul li:hover a {
 
 }
 .card-content p{
-    height: 4.6em;
+    /*height: 4.6em;*/
     overflow: hidden;
-   text-overflow: ellipsis;
+    text-overflow: ellipsis;
 }
 .badge{
 }
@@ -320,9 +401,23 @@ nav ul li:hover a {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-
+#price-list{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
 .price-header h2{
     font-weight: 800;
+}
+.feature-item{
+    line-height: 1.6;
+    font-size: 1.2em;
+    font-weight: 300    ;
+}
+.feature-item:before{
+    content: "\f00c  ";
+    font-family: FontAwesome ;
+
 }
 
 .feature-list{
@@ -340,4 +435,10 @@ nav ul li:hover a {
 }
 .course{
     max-height: 661px;
+}
+.course-price{
+    text-align: center;
+    line-height: 36px;
+    height: 36px !important;
+
 }
