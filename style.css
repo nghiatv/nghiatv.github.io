@@ -91,7 +91,13 @@ nav ul li:hover a {
 }
 
 
-.parallax-content{
+.parallax-container{
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.4));
+    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
+    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
+    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));  */
+
+
 
 }
 .parallax img{
@@ -101,8 +107,11 @@ nav ul li:hover a {
 }
 .parallax-content{
     width: 80%;
-    margin-left: 10%;
-    margin-top: 35%;
+    margin-left: 15%;
+    margin-top: 25%;
+}
+.parallax-title{
+    margin-bottom: 20px;
 }
 .parallax-title h2, .parallax-title h3, .parallax-title h4{
     display: inline-block;
@@ -111,7 +120,7 @@ nav ul li:hover a {
     text-align: center;
     padding-left: 5px;
     line-height: 1.2em;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    /*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
 
 }
 @media(min-width: 993px){
@@ -128,7 +137,11 @@ nav ul li:hover a {
         padding-left: 5px;
     }
 }
-
+@media (min-width: 1200px) {
+    .parallax-content{
+        margin-top: 10%;
+    }
+}
 
 .mbl{
     padding-left: 10px;
