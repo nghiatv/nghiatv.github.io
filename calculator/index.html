@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="wrapper">
+    <div id="cal-container">
+        <div id="cal-title" class="text-center">
+            <h2>Calculator</h2>
+        </div>
+        <div id="cal-content" class="row">
+            <div  class="col-xs-12">
+                <input id="input" type="text" placeholder="0">
+                <div id="math"></div>
+            </div>
+            <div id="button-field" class="col-xs-12">
+                <button id="btn-1" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">1</button>
+                <button id="btn-2" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">2</button>
+                <button id="btn-3" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">3</button>
+                <button id="btn-plus" onclick="addMath(this)" class="btn btn-lg btn-default col-xs-3">+</button>
+                <button id="btn-4" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">4</button>
+                <button id="btn-5" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">5</button>
+                <button id="btn-6" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">6</button>
+                <button id="btn-minus" onclick="addMath(this)"  class="btn btn-lg btn-default col-xs-3">-</button>
+                <button id="btn-7" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">7</button>
+                <button id="btn-8" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">8</button>
+                <button id="btn-9" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">9</button>
+                <button id="btn-multi" onclick="addMath(this)" class="btn btn-lg btn-default col-xs-3">*</button>
+                <button id="btn-0" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">0</button>
+                <button id="btn-dot" onclick="add(this)" class="btn btn-lg btn-default col-xs-3">.</button>
+                <button id="btn-resutl" onclick="resutl()" class="btn btn-lg btn-default col-xs-3">=</button>
+                <button id="btn-divide" onclick="addMath(this)" class="btn btn-lg btn-default col-xs-3">/</button>
+
+            </div>
+            <div id="clear">
+                <button id="clear-btn" type="button"></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+//    alert(Number(.));
+    var lnumber = "";
+    var rnumber = "";
+    var math = "";
+    var result;
+    function add(button){
+        var input = document.getElementById("input").value;
+
+        input = input + button.innerHTML;
+        document.getElementById("input").value = input;
+    }
+    function addMath(span){
+        if(document.getElementById("input") == "."){
+            lnumber = 0;
+        }   else{
+            lnumber = Number(document.getElementById("input").value) ;
+        }
+
+        var a = span.innerHTML;
+        document.getElementById("math").innerHTML = a;
+        document.getElementById("input").value  = "";
+        math =  a;
+    }
+    function resutl(){
+        if(rnumber = ".")
+        rnumber = Number(document.getElementById("input").value);
+//        alert(typeof lnumber + "  " + lnumber + " va " + typeof  rnumber + " " +rnumber);
+        switch(math) {
+            case "+":
+                result = lnumber + rnumber;
+                break;
+            case "-":
+                result = lnumber - rnumber;
+                break;
+            case "*":
+                result = lnumber * rnumber;
+                break;
+            case "/":
+                result = lnumber / rnumber;
+                break;
+            default :
+                result = result;
+                break;
+        }
+        document.getElementById("math").innerHTML = "=";
+        document.getElementById("input").value = result;
+        lnumber = result;
+        math  = "";
+        rnumber = "";
+    }
+
+</script>
+</body>
+</html>
