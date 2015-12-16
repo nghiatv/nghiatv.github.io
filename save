@@ -1,23 +1,42 @@
-<div class="card-item card white blue-grey-text">
-                <a href="" class="badge">
-                    <img src="ruby.svg" class="class responsive-img" alt="Ruby" title="Ruby">
-                </a>
-                <div class="card-content">
-                    <h2>Ruby off Rails</h2>
-                    <p>Master your Ruby skills and increase your Rails street cred by learning to build dynamic, sustainable applications for the web.</p>
-                </div>
-                <div class="course-card-button">
-                    <a href="" class="">View course</a>
-                </div>
-                <a class="card-action">
-                    <div class="bucket">
-                        <div class="bucket-media">
-                            <img src="" class="" alt="bucket" title="buket">
+<div id="main_row_4" class="parallax-container parallax-bot valign-wrapper">
+            <div class="parallax"><img src="parallax2.jpg" alt="Steve Job"></div>
+            <div class="section no-pad-bot parallax-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="review-item col s12 m6">
+
+                            <div class="col s4">
+                                <img src="face1.jpg" class="circle responsive-img">
+                            </div>
+                            <div class="col s8">
+                                <p class="review-text">Nội dung đơn giản , dễ hiểu , sát với thực tế. Giảng viên
+                                    chuyên nghiệp , hướng dẫn nhiệt tình và rất vui tính ^^ Chưa đi xin việc vì còn
+                                    đang là sinh viên Techmaster nên có thêm người trợ giảng để giúp đỡ từng học
+                                    sinh tiếp thu tốt hơn khi học trên lớp. Mức độ hài lòng 5/5</p>
+                                <small class="review-author">
+                                    <span class="review-name">Nguyễn Minh Thực</span>
+                                    <span class="review-mail">minhthuc2xxx@gmail.com</span>
+                                </small>
+                            </div>
+
                         </div>
-                        <div class="bucket-content">
-                            <p class="bucket-label">Get started with</p>
-                            <p class="bucket-content">Try Ruby</p>
+                        <div class="review-item col s12 m6">
+                            <div class="col s4">
+                                <img src="face1.jpg" class="circle responsive-img">
+                            </div>
+                            <div class="col s8">
+                                <p class="review-text">Nội dung đơn giản , dễ hiểu , sát với thực tế. Giảng viên
+                                    chuyên nghiệp , hướng dẫn nhiệt tình và rất vui tính ^^ Chưa đi xin việc vì còn
+                                    đang là sinh viên Techmaster nên có thêm người trợ giảng để giúp đỡ từng học
+                                    sinh tiếp thu tốt hơn khi học trên lớp. Mức độ hài lòng 5/5</p>
+                                <small class="review-author">
+                                    <span class="review-name">Nguyễn Minh Thực</span>
+                                    <span class="review-mail">minhthuc2xxx@gmail.com</span>
+                                </small>
+                            </div>
+
                         </div>
                     </div>
-                </a>
+                </div>
             </div>
+        </div>

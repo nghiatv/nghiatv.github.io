@@ -18,7 +18,6 @@ body {
     background-color: #fff;
     font-family: Roboto, sans-serif;
 }
-h4
 .page-header {
     margin: 0;
     padding: 0;
@@ -58,13 +57,18 @@ nav ul li:hover a {
     /*padding: 0!important;*/
     background-color: #FFFFFF;
 }
-#main_row_4{
+#main_row_2{
     padding-top: 40px;
     background-color: #f3f3f3;
    padding-bottom: 40px;
     /*float: left;*/
 }
-
+#list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2{
+    font-size: 3.7em;
+    line-height: 1.6;
+    color: #307699;
+    font-weight: 500;
+}
 
 #back2course {
     margin-top: 40px;
@@ -72,12 +76,10 @@ nav ul li:hover a {
     line-height: 1.5em;
     margin-bottom: 30px;
 }
-
 #back2course span {
     margin-left: 10px;
     margin-right: 10px;
 }
-
 #center-title {
     /*width: 66.667%;*/
     height: 100%;
@@ -85,8 +87,6 @@ nav ul li:hover a {
     margin-left: auto;
     margin-right: auto;
 }
-
-
 @media (min-width: 769px) {
     #center-title {
         width: 50%;
@@ -97,26 +97,19 @@ nav ul li:hover a {
         width: 50%;
     }
 }
-
-
 .parallax-container{
     background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.4));
-    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
-    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
-    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));  */
-
-
-
+    background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+    background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
 }
 .parallax img{
     -webkit-filter: grayscale(0.1) sepia(1);
-    /*-webkit-filter: contrast(3.6);*/
-    /*-webkit-filter: blur(2px);*/
 }
-.parallax-content{
+.parallax-top > .parallax-content{
     width: 80%;
     margin-left: 15%;
-    margin-top: 25%;
+    margin-top: 15%;
     margin-bottom: 10%;
 }
 .parallax-title{
@@ -124,19 +117,17 @@ nav ul li:hover a {
 }
 .parallax-title h2, .parallax-title h3, .parallax-title h4{
     display: inline-block;
-    /*background-color: #8670FF;*/
     margin: 5px auto;
     text-align: center;
     padding-left: 5px;
     line-height: 1.2em;
-    /*text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;*/
-
 }
 @media(min-width: 993px){
     .parallax-content{
         margin-top: 10%;
         width: 50%;
-        margin-left: 20%;
+        margin-left: 16%;
+        margin-bottom: 7%;
     }
     .parallax-title h2, .parallax-title h3, .parallax-title h4{
         display: inline-block;
@@ -148,8 +139,9 @@ nav ul li:hover a {
 }
 @media (min-width: 1200px) {
     .parallax-content{
-        height: 400px;
-        margin-top: 7%;
+        /*height: 400px;*/
+        margin-top: 15%;
+        margin-left: 16%;
     }
 }
 
@@ -177,25 +169,28 @@ nav ul li:hover a {
 
 .parallax-container {
     min-height: 380px;
-    line-height: 0;
+    /*line-height: 0;*/
     height: auto;
     color: rgba(255,255,255,.9);
-}
-.parallax-container .section {
-    width: 100%;
 }
 
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
         position: absolute;
-        top: 40%;
+        top: 30%;
     }
     #index-banner .section {
         top: 10%;
     }
 }
+.section > .container{
+    width: 90%;
+}
 
 @media only screen and (max-width : 768px) {
+
+
+
     #index-banner .section {
         top: 0;
     }
@@ -212,10 +207,6 @@ nav ul li:hover a {
 .icon-block .material-icons {
     font-size: inherit;
 }
-
-
-
-
 .row {
     margin-bottom: 0 !important;
 }
@@ -223,21 +214,17 @@ nav ul li:hover a {
     margin-top: 0!important;
 
 }
-
 #triangle {
     margin-top: -1px;
     margin-bottom: 30px;
 }
-
 #course_des {
     box-shadow: none;
 }
-
 #course_des img {
     margin-bottom: 10px;
     width: 50%;
 }
-
 #author_course {
     box-shadow: none;
     background-color: white !important;
@@ -249,16 +236,12 @@ nav ul li:hover a {
     background-image: linear-gradient(to right,#fff,#dcdcdc 50%,#fff);
     background-repeat: no-repeat;
 }
-
-
-
-#main_row_5{
+#main_row_3{
     background-color: #FFFFFF;
 }
-#main_row_5 .card{
+#main_row_3 .card{
     box-shadow: none !important;
 }
-
 #book-title h2{
     font-size: 3.7em;
     line-height: 1.6;
@@ -275,12 +258,23 @@ nav ul li:hover a {
     overflow: hidden;
     max-height: 110px;
 }
-
-#book-content{
+#book-content,#list-course-content,#review-content,#list-link-content{
     margin: 0 auto;
     width: 90%;
-    max-width: 1280px;
+    max-width: 400px;
     margin-bottom: 40px;
+}
+@media (min-width: 769px) {
+    #book-content,#list-course-content,#review-content,#list-link-content{
+        max-width: 800px;
+    }
+}
+
+
+@media (min-width: 993px) {
+    #book-content,#list-course-content,#review-content,#list-link-content{
+        max-width: 1280px;
+    }
 }
 #course_container{
     margin: 0 auto;
@@ -288,40 +282,33 @@ nav ul li:hover a {
     max-width: 1280px;
 }
 
-#main_row_6{
+@media (min-width: 769px) {
+    #main_row_4 .section{
+        top: 20%;
+        margin-bottom: 2%;
+    }
+}
+
+
+
+#main_row_5{
     background-color: #FFFFFF;
 }
 
-#main_row_6 .card{
+#main_row_5 .card{
     box-shadow: none !important;
 }
 
-#job-title h2{
-    font-size: 3.7em;
-    line-height: 1.6;
+#blg-content ul li, #job-content ul li{
+    margin-bottom: 15px;
+}
+#blg-content ul li a,#job-content ul li a{
+    font-weight: 600;
     color: #307699;
-    font-weight: 500;
+    font-size: 16px;
 }
-.job-name-item{
-    font-weight: bold !important;
-    line-height: 1.6 !important;
-
-}
-.job-name-description{
-    box-sizing: border-box;
-    overflow: hidden;
-    max-height: 110px;
-}
-
-#job-content{
-    margin: 0 auto;
-    width: 90%;
-    max-width: 1280px;
-    margin-bottom: 40px;
-}
-
-#main_row_7{
-    background-color: #f3f3f3;
+#blg-content ul li a:hover, #job-content ul li a:hover{
+    color: #3782c4;
 }
 
 
@@ -336,7 +323,6 @@ nav ul li:hover a {
     max-width: 500px;
     max-height: 700px;
 }
-
 .mdl_form {
     background-color: #fafafa;
     /*margin: 0 auto 3rem;*/
@@ -353,15 +339,10 @@ nav ul li:hover a {
 .social-log button:first-child{
     margin-right: 10%;
 }
-/*.social-log button:last-child{*/
-    /*margin-left: %;*/
-/*}*/
 .mdl-button button {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
-
 .g-recaptcha div{
     width: auto!important;
 }
@@ -370,19 +351,16 @@ nav ul li:hover a {
     margin-bottom: 20px;
 }
 
-
-
-
 /*Footer Css*/
-
+footer{
+    padding-top: 20px;
+}
 #footer__logo{
     margin: 20px;
 }
-
 .footer_m4 p{
     margin: 20px;
 }
-
 #footer__company__links{
     padding: 20px;
 }
@@ -390,21 +368,7 @@ nav ul li:hover a {
     margin-right: 20px;
 }
 
-
-
 /*CSS trang chu*/
-
-.slider{
-    padding: 0!important;
-    margin-top: 0.5rem;
-    /*margin-top: 20px;*/
-}
-
-.indicators{
-    /*display: none;*/
-}
-
-/*path_item*/
 
 .path-item:hover{
     background-color: #00796b !important;
@@ -435,15 +399,12 @@ nav ul li:hover a {
     width: auto;
     border: 5px solid white;
 }
-
 .pbadge img{
    margin: 20px auto;
     height: 100px;
     width: auto;
     border: 5px solid white;
 }
-
-
 .path-title{
     font-size: 2em;
     font-weight: 600;
@@ -456,10 +417,6 @@ nav ul li:hover a {
 .bucket-media img {
     margin: 20px;
     height: 60px;
-}
-.mr1_row2{
-    /*border-top: solid thin silver;*/
-    /*margin-top: 30px;*/
 }
 .collection{
     margin:0 20px;
@@ -492,11 +449,9 @@ nav ul li:hover a {
     font-family: FontAwesome ;
 
 }
-
 .feature-list{
     min-height: 288px;
 }
-
 .feature-list li:before{
     content: "\f00c";
     /*font-family: FontAwesome;*/
@@ -516,17 +471,38 @@ nav ul li:hover a {
 
 }
 
-#review-title h2{
-    font-size: 3.7em;
-    line-height: 1.6;
-    color: #307699;
-    font-weight: 500;
+
+.review-item{
+    overflow: visible;
+    width: auto;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    box-shadow: none;
+    box-sizing: border-box;
+    margin-bottom: 10%;
+    font-size: 1.2em;
+    line-height: 1.3;
 }
-#review-content{
-    margin: 0 auto;
+.review-item:before{
+    content: '“';
+    font-size: 124px;
+    line-height: 124px;
+    color: #feea3a;
+    position: absolute;
+    left: 36%;
+    top: -35px;
+}
+.review-name:after{
+    content: " ,";
+}
+#main_row_4 .parallax-container{
+    width: 100%;
+    margin-bottom: 10%;
+}
+.parallax-content_2{
+    margin-top: 10%;
     width: 90%;
-    max-width: 1280px;
-    margin-bottom: 40px;
+    margin-left: 5%;
+    margin-bottom: 7%;
 }
-
-
