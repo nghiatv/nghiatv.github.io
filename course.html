@@ -32,17 +32,17 @@
     <!--Captcha-->
     <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
-<body class="grey lighten-4">
+<body>
 
 
 <!--Header-->
 
-<header class="page-header">
-    <div class="navbar-fixed">
-        <nav>
+<header class="page-header white">
+    <div class="navbar-fixed ">
+        <nav class="white">
             <div class="nav-wrapper">
                 <div class="col s12">
-                    <div class="container">
+                    <div>
                         <div class="row">
                             <div class="col s12">
                                 <a href="index.html" class="brand-logo "><img
@@ -67,7 +67,7 @@
                         <li><a class="tab" href="">Việc làm</a></li>
                         <li><a class="tab" href="">Phỏng vấn</a></li>
                         <li><a class="tab" href="">Ebooks</a></li>
-                        <li><a class="tab hide-on-med-only" href="">Chúng tôi</a></li>
+                        <li><a class="tab" href="">Chúng tôi</a></li>
                     </ul>
                     <ul class="side-nav" id="mobile-nav">
                         <li><a href="">Khóa học</a></li>
@@ -89,452 +89,182 @@
 
 </header>
 
+<div class="parallax-container parallax-top">
+    <div class="parallax"><img src="html5-bg.png"></div>
+    <div class="course-parallax-content white-text">
+        <article class="container">
+            <div id="back2course">
+                <a href="index.html"><span>Trang chủ</span></a>
+                <i class="fa fa-angle-right"></i>
+                <a href=""><span> Khóa học</span></a>
+                <i class="fa fa-angle-right"></i>
+                <a href=""><span> Web cơ bản HTML 5, CSS 3 và Javascript</span></a>
 
+            </div>
+        </article>
+
+        <div class="row" id="course-info">
+            <div class="col s12 m6 push-m3" id="center-title">
+                <h3 class="center">Web cơ bản HTML5, CSS3 và Javascript</h3>
+
+                <p  class="center hide-on-small-and-down">HTML, CSS và Javascript là bộ 3 ngôn ngữ cần thiết cho mọi web developer.
+                    Khóa học này sẽ cung cấp cho bạn những kiến thức cơ bản,
+                    cần thiết nhất để bắt đầu trên con đường trở thành một lập trình viên web chuyên nghiệp.</p>
+
+                <div class="center"><a class="waves-effect waves-light btn btn-large red ">đăng kí ngay</a></div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="" class="white hide-on-small-and-down">
+    <div class="para-container">
+        <div class="row">
+            <div class="col s12 m3">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><strong class="count">40</strong></h2>
+                    <h5 class="center">Khóa học</h5>
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><strong class="count">350</strong></h2>
+                    <h5 class="center">Video</h5>
+
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="icon-block">
+                    <h2 class="center brown-text"><strong class="count">120</strong></h2>
+                    <h5 class="center">Tips</h5>
+                </div>
+            </div>
+
+            <div class="col s12 m3">
+                <div class="icon-block ib-last">
+                    <h2 class="center brown-text"><strong class="count">120</strong></h2>
+                    <h5 class="center">Tips</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="center hide-on-small-and-down" id="triangle">
+    <img class="center"
+         src="https://cdn-production.codecademy.com/assets/homepage/leadin-675fe5a6a7c609da50edb5a6feec0656.svg">
+</div>
 <main>
-
-    <div class="row" id="main_row_1">
-        <div class="col s12">
-            <article class="container">
-                <div id="back2course">
-                    <a href="index.html"><span>Trang chủ</span></a>
-                    <i class="fa fa-angle-right"></i>
-                    <a href=""><span> Khóa học</span></a>
-                    <i class="fa fa-angle-right"></i>
-                    <a href=""><span> Web cơ bản HTML 5, CSS 3 và Javascript</span></a>
-
-                </div>
-            </article>
-        </div>
-        <div class="col s12 " >
-            <div class="row" id="course-info">
-                <div class="col s12 m6 push-m3" id="center-title">
-                    <h3 class="center">Web cơ bản HTML5, CSS3 và Javascript</h3>
-
-                    <p  class="center hide-on-small-and-down">HTML, CSS và Javascript là bộ 3 ngôn ngữ cần thiết cho mọi web developer.
-                        Khóa học này sẽ cung cấp cho bạn những kiến thức cơ bản,
-                        cần thiết nhất để bắt đầu trên con đường trở thành một lập trình viên web chuyên nghiệp.</p>
-
-                    <div class="center"><a onclick="show_price_list()" class="waves-effect waves-light btn btn-large red ">đăng kí ngay</a></div>
-                </div>
-            </div>
-        </div>
-        <div class="col s12 ">
-            <div class="dashboard hide-on-small-and-down" id="dashboard">
-                <div class="container">
-                    <div class="row">
-                        <div class="col s3 dashboard_item">
-                            <h3 class="center"><strong class="count">40</strong></h3>
-
-                            <p class="center">Bai hoc truc tuyen</p>
-                        </div>
-                        <div class="col s3 dashboard_item">
-                            <h3 class="center"><strong class="count">20</strong></h3>
-
-                            <p class="center">Thoi luong video</p></div>
-                        <div class="col s3 dashboard_item">
-                            <h3 class="center"><strong class="count">80</strong></h3>
-
-                            <p class="center">Vi du cu the</p>
-                        </div>
-                        <div class="col s3 dashboard_item">
-                            <h3 class="center"><strong class="count">50</strong></h3>
-
-                            <p class="center">tips</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="col s12">
-            <div id="price-list" class="container hide">
-                <div class="row">
-                    <div class="price-header col s12">
-                        <h2 class="left">Bảng giá</h2>
-                    </div>
-                    <div class="price-content col s12">
-                        <div class="col s12 m4 ">
-                            <div class="card white lighten-1 ">
-
-                                <div class="card-content black-text">
-                                    <span class="card-title activator course-title">Tiết kiệm<i class="material-icons right">more_vert</i></span>
-                                    <div class="course-feature">
-
-                                        <ul>
-                                            <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
-                                            <li class="feature-item"> Xem video</li>
-                                            <li class="feature-item">Trắc nghiệm</li>
-                                            <li class="feature-item">Thảo luận</li>
-                                            <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
-
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                                <div class="card-action cyan center-align ">
-                                    <a href="# " class="white-text course-price">1,500,000/ tháng</a>
-                                    <a href="#" class="btn white teal-text">Đăng kí</a>
-                                </div>
-                                <div class="card-reveal cyan white-text">
-                                    <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
-                                    <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và tham gia dự án.
-                                        <br>
-
-                                        Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
-                                        Học phí học thử là 500,000 VND cho 7 ngày.<br>
-                                        Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
-                                        <br></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 ">
-                            <div class="card white lighten-1 ">
-
-                                <div class="card-content black-text">
-                                    <span class="card-title activator course-title">Thực tập<i class="material-icons right">more_vert</i></span>
-                                    <div class="course-feature">
-
-                                        <ul>
-                                            <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
-                                            <li class="feature-item"> Xem video</li>
-                                            <li class="feature-item">Trắc nghiệm</li>
-                                            <li class="feature-item">Thảo luận</li>
-                                            <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
-                                            <li class="feature-item">Được giảng viên chấm bài</li>
-                                            <li class="feature-item">Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer</li>
-
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                                <div class="card-action blue center-align ">
-                                    <a href="# " class="white-text course-price">2,000,000/ tháng</a>
-                                    <a href="#" class="btn white teal-text">Đăng kí</a>
-                                </div>
-                                <div class="card-reveal blue white-text">
-                                    <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
-                                    <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và tham gia dự án.
-                                        <br>
-
-                                        Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
-                                        Học phí học thử là 500,000 VND cho 7 ngày.<br>
-                                        Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
-                                        Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát chặt chẽ nhất chất lượng đào tạo.<br></p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col s12 m4 ">
-                            <div class="card white lighten-1 ">
-
-                                <div class="card-content black-text">
-                                    <span class="card-title activator course-title">Thực tập<i class="material-icons right">more_vert</i></span>
-                                    <div class="course-feature">
-
-                                        <ul>
-                                            <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
-                                            <li class="feature-item"> Xem video</li>
-                                            <li class="feature-item">Trắc nghiệm</li>
-                                            <li class="feature-item">Thảo luận</li>
-                                            <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
-                                            <li class="feature-item">Được giảng viên chấm bài</li>
-                                            <li class="feature-item">Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer</li>
-                                            <li class="feature-item">Thực tập trực tiếp tại Techmasternd</li>
-                                        </ul>
-
-
-                                    </div>
-                                </div>
-                                <div class="card-action red center-align ">
-                                    <a href="# " class="white-text course-price">2,000,000/ tháng</a>
-                                    <a href="#" class="btn white teal-text">Đăng kí</a>
-                                </div>
-                                <div class="card-reveal red white-text">
-                                    <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
-                                    <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và tham gia dự án.
-                                        <br>
-
-                                        Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
-                                        Học phí học thử là 500,000 VND cho 7 ngày.<br>
-                                        Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
-                                        Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát chặt chẽ nhất chất lượng đào tạo.<br></p>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="main_row_3" class="row">
-        <div class="container">
-            <div class="col s12 center" id="triangle">
-                <img class="center"
-                     src="https://cdn-production.codecademy.com/assets/homepage/leadin-675fe5a6a7c609da50edb5a6feec0656.svg">
-            </div>
-        </div>
-    </div>
-    <div id="main_row_4" class="row container">
+    <div id="main_row_2" class="row container">
         <div id="mr4_left" class="col s12 m8">
             <div class="mbl row">
                 <div class="video-container">
                     <iframe width="854" height="480" src="https://www.youtube.com/embed/k3Y_iY0bEco" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-            <div class="mbl row">
-                <div class="card cyan lighten-1 white-text">
-                    <div class="card-content">
-                        <div class="card-title"><h5>1. Tổng quan về HTML</h5></div>
+            <ul class="collapsible mobile-list-margin" data-collapsible="accordion">
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-lock text-primarycolor"></i>Tổng quan về HTML<a href="#!" class="secondary-content" style="font-weight:500;"></a></div>
+                    <div class="collapsible-body white" style="display: none;">
+                        <table>
+                            <!--<thead>-->
+                            <!--<tr>-->
+                                <!--<th data-field="id">Name</th>-->
+                                <!--<th data-field="name">Item Name</th>-->
+                                <!--<th data-field="price">Item Price</th>-->
+                            <!--</tr>-->
+                            <!--</thead>-->
+
+                            <tbody>
+                            <tr>
+                                <td colspan="2"> <a href="#"><i class="fa fa-video-camera"></i></a> HTML là gì?</td>
+                            </tr>
+<tr>
+                                <td colspan="2"> <a href="#"><i class="fa fa-video-camera"></i></a> HTML là gì?</td>
+                            </tr>
+<tr>
+                                <td colspan="2"> <a href="#"><i class="fa fa-video-camera"></i></a> HTML là gì?</td>
+                            </tr>
+<tr>
+                                <td colspan="2"> <a href="#"><i class="fa fa-video-camera"></i></a> HTML là gì?</td>
+                            </tr>
+<tr>
+                                <td colspan="2"> <a href="#"><i class="fa fa-video-camera"></i></a> HTML là gì?</td>
+                            </tr>
+<tr>
+                                <td colspan="2"> <a href="#"><i class="fa fa-video-camera"></i></a> HTML là gì?</td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+
+
                     </div>
-
-                </div>
-
-                <ul class="mbl_content collapsible  " data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header"><a href="#modal2" class="modal-trigger"><i class="material-icons">videocam</i></a> HTML là gì?</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Ứng dụng HTML đầu tiên</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Heading, Paragraph &
-                            Special characters
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Các thẻ format text</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="mbl row">
-                <div class="card cyan lighten-1 white-text">
-                    <div class="card-content">
-                        <div class="card-title"><h5>2. Tổng quan về CSS</h5></div>
-                    </div>
-
-                </div>
-
-                <ul class="mbl_content collapsible  " data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>CSS và cách sử dụng
-                            trên trang HTML
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>CSS syntax</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>CSS Selectors</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Styling text</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Hướng dẫn sử dụng Chrome
-                            Developer Tools
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>BT: Thực hành selectors
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="mbl row center-align ">
-                <button type="button" class="waves-effect waves-light btn-large white green-text show_more " onclick="show_more()"><i class="material-icons left">cloud</i>Xem toàn bộ nội dung khóa học</button>
-            </div>
-            <div class="mbl row hide">
-                <div class="card cyan lighten-1 white-text">
-                    <div class="card-content">
-                        <div class="card-title"><h5>3. Image & Link</h5></div>
-                    </div>
-
-                </div>
-
-                <ul class="mbl_content collapsible  " data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn ảnh vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Các loại đường dẫn</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Styling image</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn link vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Class</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Element</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>BT: Thực hành Link + Image
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
-
-
-            <div class="mbl row hide ">
-                <div class="card cyan lighten-1 white-text">
-                    <div class="card-content">
-                        <div class="card-title"><h5>3. Image & Link</h5></div>
-                    </div>
-
-                </div>
-
-                <ul class="mbl_content collapsible  " data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn ảnh vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Các loại đường dẫn</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Styling image</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn link vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Class</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Element</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>BT: Thực hành Link + Image
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="mbl row hide">
-                <div class="card cyan lighten-1 white-text">
-                    <div class="card-content">
-                        <div class="card-title"><h5>3. Image & Link</h5></div>
-                    </div>
-
-                </div>
-
-                <ul class="mbl_content collapsible  " data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn ảnh vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Các loại đường dẫn</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Styling image</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn link vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Class</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Element</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>BT: Thực hành Link + Image
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
-            <div class="mbl row hide">
-                <div class="card cyan lighten-1 white-text">
-                    <div class="card-content">
-                        <div class="card-title"><h5>3. Image & Link</h5></div>
-                    </div>
-
-                </div>
-
-                <ul class="mbl_content collapsible  " data-collapsible="expandable">
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Chèn ảnh vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Các loại đường dẫn</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Styling image</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-
-                    <li>
-                        <div class="collapsible-header"><a href="#modal2" class="modal-trigger"><i class="material-icons">videocam</i></a> Chèn link vào trang web
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Class</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>Pseudo Element</div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                    <li>
-                        <div class="collapsible-header"><i class="material-icons">videocam</i>BT: Thực hành Link + Image
-                        </div>
-                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
-                    </li>
-                </ul>
-            </div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-home text-primarycolor"></i>Tổng quan về CSS<a href="#!" class="secondary-content" style="font-weight:500;"></a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>You can specify your own home page.</p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-shape-plus text-primarycolor"></i> Image & Link<a href="#!" class="secondary-content" style="font-weight:500;"></a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>Show/hide home, back, forward or even add 1 custom button.</p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-brush text-primarycolor"></i>Cross browser compatibility<a href="#!" class="secondary-content" style="font-weight:500;"></a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>Display your own icon in the top left hand corner of the app. We also offer a full <a href="http://sites.fastspring.com/androidkiosk/product/kioskbrowsercustomisation?tags=kioskbrowser">customisation service</a>.</p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-history text-primarycolor"></i>CSS positioning<a href="#!" class="secondary-content" style="font-weight:500;"></a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>Configure automatic clearing of cache, cookies and history.</p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="mdi-file-pdf text-primarycolor"></i>CSS3 effect qua ví dụ<a href="#!" class="secondary-content" style="font-weight:500;"></a></div>
+                    <div class="collapsible-body white" style=""><p>View online PDFs with the Google Docs viewer (local PDFs not supported).</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/882653-pdf-support/" target="_blank">More info...</a></p></div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="mdi-barcode text-primarycolor"></i>List<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white" style=""><p>Scan a vast array of barcodes with the built in scanner, popular barcode scanning keyboard is also supported.</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/878500-barcode-scanning/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-nfc-variant text-primarycolor"></i>Javascript cơ bản<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>Scan NFC tags to load URLs using the built in scanner.</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/922670-nfc/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-server-minus text-primarycolor"></i>HJavascript HTML DOM<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>Hide the top toolbar(all Android versions) and system bar (Android 4.4 and up only).</p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-sleep text-primarycolor"></i>Jquery<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white" style="display: none; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;"><p>Improve battery life and device longevity bu scheduling device sleep and wake up.</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/921165-scheduled-sleepwake/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header"><i class="mdi-language-javascript text-primarycolor"></i>Table & Form<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white" style="display: none;"><p>Use the powerful JavaScript interface to interact with your web application.</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/847040-javascript-functions/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header mobile-bottom-list-item"><i class="mdi-printer text-primarycolor"></i>HTML5 layout<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white mobile-bottom-list-item" style="display: none;"><p>Print pages using Google Cloud Print (Android 4.4 and up).</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/876321-printing-with-google-cloud-print/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header mobile-bottom-list-item"><i class="mdi-printer text-primarycolor"></i>Fonts<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white mobile-bottom-list-item" style="display: none;"><p>Print pages using Google Cloud Print (Android 4.4 and up).</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/876321-printing-with-google-cloud-print/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header mobile-bottom-list-item"><i class="mdi-printer text-primarycolor"></i>Responsive web design<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white mobile-bottom-list-item" style="display: none;"><p>Print pages using Google Cloud Print (Android 4.4 and up).</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/876321-printing-with-google-cloud-print/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header mobile-bottom-list-item"><i class="mdi-printer text-primarycolor"></i>Video & Audio<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white mobile-bottom-list-item" style="display: none;"><p>Print pages using Google Cloud Print (Android 4.4 and up).</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/876321-printing-with-google-cloud-print/" target="_blank">More info...</a></p></div>
+                </li>
+                <li class="">
+                    <div class="collapsible-header mobile-bottom-list-item"><i class="mdi-printer text-primarycolor"></i>Tổng kết<a href="#!" class="secondary-content" style="font-weight:500;">PRO</a></div>
+                    <div class="collapsible-body white mobile-bottom-list-item" style="display: none;"><p>Print pages using Google Cloud Print (Android 4.4 and up).</p><p class="docs-link"><a href="https://kioskbrowser.userecho.com/topic/876321-printing-with-google-cloud-print/" target="_blank">More info...</a></p></div>
+                </li>
+            </ul>
 
 
         </div>
@@ -737,11 +467,6 @@
             <div class="col s12  ">
                 <div class="mdl_form">
 
-                    <!--<div class="social-log">-->
-                        <!--<button type="submit" class="waves-effect waves-light btn blue">Facebook</button>-->
-                        <!--&lt;!&ndash;<span> or </span>&ndash;&gt;-->
-                        <!--<button type="button" class="waves-effect waves-light btn red">Google</button>-->
-                    <!--</div>-->
 
                     <form action="" autocomplete="off" method="POST">
                         <div class="input-field">
@@ -816,11 +541,12 @@
         </div>
     </div>
     <div class="modal-footer">
-        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
 
 <script>
+
 
     function show_form_login(){
         $(".mdl_form_register").hide(600);
@@ -860,6 +586,12 @@
         $(".course-feature").height(h);
 
     }
+
+    $(document).ready(function () {
+        $('.parallax').parallax();
+    });
+
+
 
 //    modal
     $(document).ready(function () {
