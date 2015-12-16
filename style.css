@@ -10,8 +10,9 @@ html {
 body {
     min-height: 1200px;
     box-sizing: border-box;
-    background-color: #f3f3f3;
-    font-family: Roboto, sans-serif;
+    /*background-color: #f3f3f3;*/
+    background-color:#e9eaea;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
 }
 .page-header {
     margin: 0;
@@ -199,10 +200,10 @@ nav ul li:hover a {
     background-image: linear-gradient(to right,#fff,#dcdcdc 50%,#fff);
     background-repeat: no-repeat;
 }
-#main_row_3{
-    background-color: #FFFFFF;
+#main_row_4{
+    /*background-color: #FFFFFF;*/
 }
-#main_row_3 .card{
+#main_row_4 .card{
     box-shadow: none !important;
 }
 #book-title h2{
@@ -221,6 +222,7 @@ nav ul li:hover a {
     overflow: hidden;
     max-height: 110px;
 }
+
 #book-content,#list-course-content,#review-content,#list-link-content{
     margin: 0 auto;
     width: 90%;
@@ -246,7 +248,7 @@ nav ul li:hover a {
 }
 
 @media (min-width: 769px) {
-    #main_row_4 .section{
+    #main_row_3 .section{
         top: 20%;
         margin-bottom: 2%;
     }
@@ -342,16 +344,7 @@ footer{
 .path-button a{
     margin: 15px auto;
 }
-.card-content{
-    /*height: 200px;*/
-    overflow: hidden;
 
-}
-.card-content p{
-    /*height: 4.6em;*/
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
 .badge{
 }
 .badge img{
@@ -467,7 +460,7 @@ footer{
 .review-name:after{
     content: " ,";
 }
-#main_row_4 .parallax-container{
+#main_row_3 .parallax-container{
     width: 100%;
     margin-bottom: 10%;
 }
