@@ -36,6 +36,8 @@ nav ul a {
     /*font-style: 1.5rem;*/
     padding: 0 15px;
     color: #000000 !important;
+    /*box-sizing: border-box;*/
+    /*padding-bottom: 5px !important;*/
 }
 
 nav ul li:hover, nav ul li:focus {
@@ -43,8 +45,10 @@ nav ul li:hover, nav ul li:focus {
 }
 
 nav ul li:hover a {
-    color: #000 !important;
-    border-bottom: 3px solid #fcff40;
+    color: #000000 !important;
+    /*background-color: rgba(0,0,0,0.1);*/
+    font-weight: 600;
+    /*border-bottom: 5px solid #0288D1;*/
     transition: all .3s;
 }
 
