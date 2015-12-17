@@ -59,7 +59,7 @@ nav ul li:hover a {
 }
 #main_row_2{
     padding-top: 40px;
-    background-color: #f3f3f3;
+    /*background-color: #f3f3f3;*/
    padding-bottom: 40px;
     /*float: left;*/
 }
@@ -95,14 +95,56 @@ nav ul li:hover a {
 }
 
 form.col.s12.white.parallax-form{
+
     padding: 10px;
     border-bottom-left-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+#parallax-title-top{
+    height: 4em;
+}
+#typed{
+    width: 100%;
+    height: 4em;
+    margin: 1.25rem auto .75rem;
+    vertical-align: middle;
+    color: lime;
+    font-family: "Courier";
+    /*font-size: 45px;*/
+    font-size: 1.8125rem;
+
+    /*line-height: 2.8125;*/
+}
+
+.typed-cursor{
+    opacity: 1;
+    color: lime;
+    font-size: 1.8125rem;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+
 @media (min-width: 769px) {
     .col.s12.m6.parallax-text {
 
-        margin-top: 10%;
+        margin-top: 2%;
     }
 
 }
@@ -113,15 +155,15 @@ form.col.s12.white.parallax-form{
 
         margin-top: 4%;
     }
-     .parallax-title h3, .parallax-title h6{
+     .parallax-title h3, {
         display: inline-block;
         /*background-color: #8670FF;*/
         line-height: 1.2em;
-        margin: 5px auto;
+        margin: 20px auto 0px auto;
         padding-left: 5px;
     }
     .col.s12.m6.parallax-text {
-        margin-top: 8%;
+        margin-top: 2%;
     }
 }
 @media (min-width: 1200px){
@@ -134,22 +176,38 @@ form.col.s12.white.parallax-form{
 
 
 .parallax-title{
-    margin-bottom: 20px;
+    margin-top: 20px;
 }
-.parallax-title h2, .parallax-title h3, .parallax-title h6{
+.parallax-title h3{
     display: inline-block;
-    margin: 5px auto;
+    margin: 60px auto 30px auto;
+    font-size: 1.5em;
+    font-weight: 400;
     /*text-align: center;*/
     padding-left: 5px;
-    line-height: 1.2em;
+    line-height: 1.5em;
 }
-
-@media(min-width: 993px){
+#parallax-sigh-up h5, #parallax-sigh-up .row form{
+    max-width: 400px;
+    margin: 0 auto;
+    float: none;
 
 }
 
 .mbl{
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+td{
+    padding-left: 30px;
+}
+.link-cam{
+    margin-right: 20px;
+}
+
+.course-info{
+    margin-top: 0;
 }
 #center-title h3 {
     font-weight: 300;
@@ -207,9 +265,7 @@ form.col.s12.white.parallax-form{
 .ib-last{
     border-bottom: none;
 }
-.icon-block {
 
-}
 .row {
     margin-bottom: 0 !important;
 }
@@ -258,23 +314,37 @@ form.col.s12.white.parallax-form{
     overflow: hidden;
     max-height: 110px;
 }
-
-#book-content,#list-course-content,#review-content,#list-link-content{
+#video-promotion-content{
+    margin: 40px auto !important;
+}
+#video-promotion-text{
+    margin:10% 0;
+    padding: 2%;
+}
+#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
     margin: 0 auto;
-    width: 90%;
+
     max-width: 400px;
     margin-bottom: 40px;
 }
 @media (min-width: 769px) {
-    #book-content,#list-course-content,#review-content,#list-link-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
         max-width: 800px;
+        width: 90%;
+    }
+    #video-promotion-text{
+        margin: 3% 0;
     }
 }
 
 
 @media (min-width: 993px) {
-    #book-content,#list-course-content,#review-content,#list-link-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
         max-width: 1280px;
+        width: 90%;
+    }
+    #video-promotion-text{
+        margin: 5% 0;
     }
 }
 #course_container{
