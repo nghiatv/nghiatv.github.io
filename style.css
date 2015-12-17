@@ -41,13 +41,13 @@ nav ul a {
 }
 
 nav ul li:hover, nav ul li:focus {
-    background-color: #fff;
+    background-color: #00796b;
 }
 
 nav ul li:hover a {
-    color: #000000 !important;
+    /*color: #000000 !important;*/
     /*background-color: rgba(0,0,0,0.1);*/
-    font-weight: 600;
+    color: #ffffff !important;
     /*border-bottom: 5px solid #0288D1;*/
     transition: all .3s;
 }
@@ -80,42 +80,72 @@ nav ul li:hover a {
     -webkit-filter: grayscale(0.1) sepia(1);
 }
 .parallax-top > .parallax-content{
-    width: 80%;
-    margin-left: 15%;
-    margin-top: 15%;
-    margin-bottom: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
-.parallax-title{
-    margin-bottom: 20px;
+
+.parallax-form-title{
+    margin-bottom: 0;
+    line-height: 2.8;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
 }
-.parallax-title h2, .parallax-title h3, .parallax-title h4{
-    display: inline-block;
-    margin: 5px auto;
-    text-align: center;
-    padding-left: 5px;
-    line-height: 1.2em;
+
+form.col.s12.white.parallax-form{
+    padding: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
-@media(min-width: 993px){
-    .parallax-content{
+@media (min-width: 769px) {
+    .col.s12.m6.parallax-text {
+
         margin-top: 10%;
-        width: 50%;
-        margin-left: 16%;
-        margin-bottom: 7%;
     }
-    .parallax-title h2, .parallax-title h3, .parallax-title h4{
+
+}
+
+@media (min-width: 993px){
+    .parallax-top > .parallax-content{
+        width: 84%;
+
+        margin-top: 4%;
+    }
+     .parallax-title h3, .parallax-title h6{
         display: inline-block;
         /*background-color: #8670FF;*/
         line-height: 1.2em;
         margin: 5px auto;
         padding-left: 5px;
     }
-}
-@media (min-width: 1200px) {
-    .parallax-content{
-        /*height: 400px;*/
-        margin-top: 15%;
-        margin-left: 16%;
+    .col.s12.m6.parallax-text {
+        margin-top: 8%;
     }
+}
+@media (min-width: 1200px){
+    .parallax-top > .parallax-content{
+        width: 78%;
+
+        max-width: 1280px;
+    }
+}
+
+
+.parallax-title{
+    margin-bottom: 20px;
+}
+.parallax-title h2, .parallax-title h3, .parallax-title h6{
+    display: inline-block;
+    margin: 5px auto;
+    /*text-align: center;*/
+    padding-left: 5px;
+    line-height: 1.2em;
+}
+
+@media(min-width: 993px){
+
 }
 
 .mbl{
@@ -146,6 +176,8 @@ nav ul li:hover a {
     height: auto;
     color: rgba(255,255,255,.9);
 }
+
+
 
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
@@ -346,7 +378,7 @@ footer{
 
 }
 .path-button a{
-    margin: 15px auto;
+    margin: 15px auto 25px auto;
 }
 
 .badge{
