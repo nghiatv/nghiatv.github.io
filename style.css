@@ -63,7 +63,7 @@ nav ul li:hover a {
     padding-bottom: 40px;
     /*float: left;*/
 }
-#list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2,#how-learn h2{
+#list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2,#how-learn-title h2{
     font-size: 32px;
     line-height: 38px;
     color: #307699;
@@ -71,7 +71,7 @@ nav ul li:hover a {
 }
 #how-learn{
     padding-bottom: 40px;
-    padding-top: 40px;
+    /*padding-top: 40px;*/
 }
 #list-course-title h2{
     padding-bottom: 40px;
@@ -339,16 +339,16 @@ td{
     color: #307699;
 
 }
-#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
+#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #how-learn-content{
     margin: 0 auto;
     max-width: 400px;
-    margin-bottom: 40px;
+    margin-bottom: 40px !important;
 }
 #list-course-content .m4, #video-promotion-content{
     padding: 0 .75em;
 }
 @media (min-width: 769px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content{
         max-width: 800px;
         width: 85%;
     }
@@ -367,7 +367,7 @@ td{
 
 
 @media (min-width: 993px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content{
         max-width: 1170px;
         width: 90%;
     }
