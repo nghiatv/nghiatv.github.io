@@ -41,13 +41,13 @@ nav ul a {
 }
 
 nav ul li:hover, nav ul li:focus {
-    background-color: #fff;
+    background-color: #00796b;
 }
 
 nav ul li:hover a {
-    color: #000000 !important;
+    /*color: #000000 !important;*/
     /*background-color: rgba(0,0,0,0.1);*/
-    font-weight: 600;
+    color: #ffffff !important;
     /*border-bottom: 5px solid #0288D1;*/
     transition: all .3s;
 }
@@ -75,48 +75,137 @@ nav ul li:hover a {
     background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
     background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
     background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+    /*animation: change_bg 32s infinite;*/
 }
 .parallax img{
     -webkit-filter: grayscale(0.1) sepia(1);
 }
 .parallax-top > .parallax-content{
-    width: 80%;
-    margin-left: 15%;
-    margin-top: 15%;
-    margin-bottom: 10%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+
 }
-.parallax-title{
-    margin-bottom: 20px;
+
+@keyframes change_bg {
+    0%{background-color: }
+    25%{background-image: url("parallax2.jpg")}
+    50%{background-image: url("slide1.png")}
+    75%{ background-image: url("slider1.jpg") }
+    100%{ background-image: url("parallax.jpg") }
+
 }
-.parallax-title h2, .parallax-title h3, .parallax-title h4{
-    display: inline-block;
-    margin: 5px auto;
-    text-align: center;
-    padding-left: 5px;
-    line-height: 1.2em;
+.parallax-form-title{
+    margin-bottom: 0;
+    line-height: 2.8;
+    background-color: transparent;
+    text-transform: uppercase;
+
 }
-@media(min-width: 993px){
-    .parallax-content{
+
+form.col.s12.white.parallax-form{
+    padding: 10px;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+@media (min-width: 769px) {
+    .col.s12.m6.parallax-text {
+
         margin-top: 10%;
-        width: 50%;
-        margin-left: 16%;
-        margin-bottom: 7%;
     }
-    .parallax-title h2, .parallax-title h3, .parallax-title h4{
+
+}
+
+@media (min-width: 993px){
+    .parallax-top > .parallax-content{
+        width: 84%;
+
+        margin-top: 4%;
+    }
+     .parallax-title h3, .parallax-title h6{
         display: inline-block;
         /*background-color: #8670FF;*/
         line-height: 1.2em;
         margin: 5px auto;
         padding-left: 5px;
     }
-}
-@media (min-width: 1200px) {
-    .parallax-content{
-        /*height: 400px;*/
-        margin-top: 15%;
-        margin-left: 16%;
+    .col.s12.m6.parallax-text {
+        margin-top: 8%;
     }
 }
+@media (min-width: 1200px){
+    .parallax-top > .parallax-content{
+        width: 78%;
+
+        max-width: 1280px;
+    }
+}
+
+
+.parallax-title{
+    margin-bottom: 20px;
+}
+.parallax-title h2, .parallax-title h3, .parallax-title h6{
+    display: inline-block;
+    margin: 5px auto;
+    /*text-align: center;*/
+    padding-left: 5px;
+    line-height: 1.2em;
+}
+
+
+
+
+.parallax-title p{
+    color: lime;
+    font-family: "Courier";
+    font-size: 1.0em;
+    /*margin: 10px 0 0 10px;*/
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    animation: type 3s steps(60, end);
+}
+
+
+.parallax-title p:nth-child(2){
+    animation: type2 6s steps(60, end);
+}
+.parallax-title p:nth-child(3){
+    animation: type3 9s steps(60, end);
+}
+
+
+.parallax-title span{
+    animation: blink 1s infinite;
+}
+
+@keyframes type{
+    from { width: 0;display: none }
+}
+
+@keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100;display: none }
+}
+@keyframes type3{
+    0%{width: 0;}
+    33.33%{width: 0;}
+    66.67%{width: 0}
+    100%{ width: 100; }
+}
+
+@keyframes blink{
+    to{opacity: .0;}
+}
+
+
+
+
+
 
 .mbl{
     padding-left: 10px;
@@ -146,6 +235,8 @@ nav ul li:hover a {
     height: auto;
     color: rgba(255,255,255,.9);
 }
+
+
 
 @media only screen and (max-width : 992px) {
     .parallax-container .section {
@@ -227,21 +318,24 @@ nav ul li:hover a {
     max-height: 110px;
 }
 
-#book-content,#list-course-content,#review-content,#list-link-content{
+#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
     margin: 0 auto;
     width: 90%;
     max-width: 400px;
     margin-bottom: 40px;
 }
+#video-promotion-content{
+     padding: 0 0.75rem;
+ }
 @media (min-width: 769px) {
-    #book-content,#list-course-content,#review-content,#list-link-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
         max-width: 800px;
     }
 }
 
 
 @media (min-width: 993px) {
-    #book-content,#list-course-content,#review-content,#list-link-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
         max-width: 1280px;
     }
 }
@@ -346,7 +440,7 @@ footer{
 
 }
 .path-button a{
-    margin: 15px auto;
+    margin: 15px auto 25px auto;
 }
 
 .badge{
