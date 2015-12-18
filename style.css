@@ -63,11 +63,15 @@ nav ul li:hover a {
     padding-bottom: 40px;
     /*float: left;*/
 }
-#list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2{
+#list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2,#how-learn h2{
     font-size: 32px;
     line-height: 38px;
     color: #307699;
     font-weight: 500;
+}
+#how-learn{
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 #list-course-title h2{
     padding-bottom: 40px;
