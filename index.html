@@ -11,8 +11,8 @@
 
     <!--link font awesome-->
 
-    <!--<link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css" >-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
     <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,100,100italic,300,300italic,500,500italic,700,900,900italic&subset=vietnamese'-->
     <!--rel='stylesheet' type='text/css'>-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,300italic&subset=vietnamese'
@@ -22,12 +22,13 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="animate.css" type="text/css">
 
 
     <!--Captcha-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 
 
 </head>
@@ -62,9 +63,9 @@
 
                     <div class="right hide-on-med-and-down">
                         <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
-                           id="signup-navbar" onclick="show_form_login1()">login</a>
+                           id="signup-navbar" onclick="show_form_login1()">đăng nhập</a>
                         <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                           onclick="show_form_register1()">sign up</a>
+                           onclick="show_form_register1()">đăng kí</a>
                     </div>
                     <ul class="right hide-on-med-and-down">
                         <li><a class="tab" href="">Khóa học</a></li>
@@ -84,9 +85,9 @@
                         <li><a href="">Ebooks</a></li>
                         <li><a href="">chúng tôi</a></li>
                         <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
-                           id="signup-mobile-navbar" onclick="show_form_register1()">sign up</a>
+                           id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
                         <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                           onclick="show_form_login1()">login</a>
+                           onclick="show_form_login1()">đăng nhập</a>
                     </ul>
                 </div>
             </div>
@@ -100,25 +101,39 @@
         <!--<img src="slider1.jpg"> -->
     </div>
     <div class="parallax-content white-text">
-
-        <div class="row">
+        <div class="row center-align">
             <div class="col s12 m6 parallax-text">
                 <div class="parallax-title">
 
+                    <div id="typed-strings">
+                        <p> echo "Hello World";</p>
 
-                    <p>Trở thành lập trình viên chưa bao giờ</p>
+                        <p> System.out.print( "Hello World");</p>
 
-                    <p>trở nên đơn giản như vậy</p>
+                        <p> Console.log("Hello World" );</p>
 
-                    <p>Tham gia với Techmaster ngay hôm nay<span>|</span></p>
+                        <p> print "Hello World";</p>
 
+                        <p> NSLog (@"Hello World!");</p>
+                    </div>
+                    <div id="parallax-title-top">
+                        <span id="typed"></span>
+                    </div>
+                    <br>
+
+                    <h3>
+                        Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
+                    </h3>
+                    <!--<div id="typed"></div>-->
                 </div>
+
+
                 <!--<div class="parallax-button">-->
                 <!--<button class="btn waves-effect waves-teal  ">Đăng kí ngay</button>-->
                 <!--</div>-->
             </div>
             <div class="col s12 m6" id="parallax-sigh-up">
-                <h5 class="center-align teal lighten-2 parallax-form-title">Bắt đầu ngay với</h5>
+                <h5 class="center-align teal lighten-2 parallax-form-title">Đăng kí</h5>
 
                 <div class="row ">
                     <form class="col s12 white parallax-form black-text ">
@@ -155,30 +170,24 @@
         </div>
     </div>
 </div>
-
-
 <div class="section white">
     <div id="video-promotion-content">
         <div class="section">
 
             <!--   Icon Section   -->
             <div class="row">
-                <div class="col s12 m8">
+                <div class="col s12 m5" id="video-promotion-text">
+                    <h3 class="center">Tại sao nên bắt đầu với techmaster?</h3>
 
-                        <h3 class=" brown-text">Tại sao lại nên bắt đầu với Techmaster?</h3>
-                        <p class="">Hãy nghe các học viên trả lời tại sao họ đên với Techmaster</p>
-
-
-
+                    <p class="center">Hãy nghe câu trả lời từ những học viên đã và đang tham gia Techmaster nhé !</p>
                 </div>
 
-                <div class="col s12 m4" id="video-promote">
-
-                    <div class="video-container" >
-                        <iframe width="854" height="480" src="https://www.youtube.com/embed/k3Y_iY0bEco" frameborder="0"
-                                allowfullscreen></iframe>
+                <div class="col s12 m7" id="video-promotion-youtube">
+                    <div class="row">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/czltl9isRdM" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
-
                 </div>
 
 
@@ -188,6 +197,46 @@
     </div>
 
 </div>
+<!--<div class="section white">-->
+<!--<div class="container">-->
+<!--<div class="section">-->
+
+<!--&lt;!&ndash;   Icon Section   &ndash;&gt;-->
+<!--<div class="row">-->
+<!--<div class="col s12 m4">-->
+<!--<div class="icon-block">-->
+<!--<h2 class="center brown-text"><strong class="count">40</strong></h2>-->
+<!--<h5 class="center">Khóa học</h5>-->
+
+<!--<p class="light">Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col s12 m4">-->
+<!--<div class="icon-block">-->
+<!--<h2 class="center brown-text"><strong class="count">350</strong></h2>-->
+<!--<h5 class="center">Video</h5>-->
+
+<!--<p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho bạn-->
+<!--trong quá trình lập trình</p>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--<div class="col s12 m4">-->
+<!--<div class="icon-block ib-last">-->
+<!--<h2 class="center brown-text"><strong class="count">120</strong></h2>-->
+<!--<h5 class="center">Tips</h5>-->
+
+<!--<p class="light">We have provided detailed documentation as well as specific code examples-->
+<!--to help new users get started.</p>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
 
 <!--Main-->
 
@@ -437,6 +486,8 @@
                 </div>
             </div>
         </div>
+
+
         <div id="main_row_3" class="parallax-container">
             <div class="parallax"><img src="parallax2.jpg"></div>
             <div class="parallax-content_2 white-text ">
@@ -565,46 +616,6 @@
         <!--</div>-->
         <!--</div>-->
         <!--</div>-->
-    </div>
-    <div class="section white">
-        <div class="container">
-            <div class="section">
-
-                <!--   Icon Section   -->
-                <div class="row">
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><strong class="count">40</strong></h2>
-                            <h5 class="center">Khóa học</h5>
-
-                            <p class="light">Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="icon-block">
-                            <h2 class="center brown-text"><strong class="count">350</strong></h2>
-                            <h5 class="center">Video</h5>
-
-                            <p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho bạn
-                                trong quá trình lập trình</p>
-                        </div>
-                    </div>
-
-                    <div class="col s12 m4">
-                        <div class="icon-block ib-last">
-                            <h2 class="center brown-text"><strong class="count">120</strong></h2>
-                            <h5 class="center">Tips</h5>
-
-                            <p class="light">We have provided detailed documentation as well as specific code examples
-                                to help new users get started.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
     </div>
 </main>
 
@@ -793,7 +804,20 @@
 
 </div>
 
+<script>
+    $(function () {
+        $("#typed").typed({
+//            strings: ["First sentence.", "Second sentence."],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            startDelay: 1000,
+            loop: true,
+            contentType: 'text',
+            loopCount: 2,
 
+        });
+    });
+</script>
 <script>
     function show_form_login() {
         $(".mdl_form_register").hide(600);
