@@ -59,15 +59,18 @@ nav ul li:hover a {
 }
 #main_row_2{
     padding-top: 40px;
-    /*background-color: #f3f3f3;*/
-   padding-bottom: 40px;
+    background-color: #e9eaea;
+    padding-bottom: 40px;
     /*float: left;*/
 }
 #list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2{
-    font-size: 3.7em;
-    line-height: 1.6;
+    font-size: 32px;
+    line-height: 38px;
     color: #307699;
     font-weight: 500;
+}
+#list-course-title h2{
+    padding-bottom: 40px;
 }
 
 .parallax-container{
@@ -83,8 +86,8 @@ nav ul li:hover a {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 8%;
-    margin-bottom: 8%;
+    margin-top: 10%;
+    margin-bottom: 10%;
 }
 
 .parallax-form-title{
@@ -146,14 +149,20 @@ form.col.s12.white.parallax-form{
 
         margin-top: 2%;
     }
+    .parallax-top > .parallax-content{
+        width: 88%;
+
+        margin-top: 11%;
+        margin-bottom:11%;
+    }
 
 }
 
 @media (min-width: 993px){
     .parallax-top > .parallax-content{
         width: 84%;
-
-        margin-top: 4%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
      .parallax-title h3, {
         display: inline-block;
@@ -171,6 +180,11 @@ form.col.s12.white.parallax-form{
         width: 78%;
 
         max-width: 1280px;
+    }
+     #parallax-sigh-up .row form{
+        max-width: 450px;
+
+
     }
 }
 
@@ -299,10 +313,8 @@ td{
     box-shadow: none !important;
 }
 #book-title h2{
-    font-size: 3.7em;
-    line-height: 1.6;
-    color: #307699;
-    font-weight: 500;
+    padding-bottom: 40px;
+    padding-top: 40px;;
 }
 .book-name-item{
     font-weight: bold !important;
@@ -318,33 +330,53 @@ td{
     margin: 40px auto !important;
 }
 #video-promotion-text{
-    margin:10% 0;
+    margin:2% auto;
     padding: 2%;
+    color: #307699;
+
 }
 #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
     margin: 0 auto;
-
     max-width: 400px;
     margin-bottom: 40px;
+}
+#list-course-content .m4, #video-promotion-content{
+    padding: 0 .75em;
 }
 @media (min-width: 769px) {
     #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
         max-width: 800px;
-        width: 90%;
+        width: 85%;
     }
     #video-promotion-text{
-        margin: 3% 0;
+        margin: 0 auto;
+    }
+    #video-promotion-content{
+
+        margin: 0px auto !important;
+    }
+    #video-promotion-text h3{
+        margin: 5.99% 0;
+        font-size: 2.21em;
     }
 }
 
 
 @media (min-width: 993px) {
     #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content{
-        max-width: 1280px;
+        max-width: 1170px;
         width: 90%;
     }
     #video-promotion-text{
-        margin: 5% 0;
+        margin: 2% 0;
+        padding: 0 1.25em;
+
+    }
+    #video-promotion-youtube{
+        max-width: 450px;
+    }
+    #list-course-content .m4{
+        padding: 0 1.25em       ;
     }
 }
 #course_container{
@@ -359,7 +391,9 @@ td{
         margin-bottom: 2%;
     }
 }
-
+.book-item img{
+    max-height: 255px;
+}
 
 
 #main_row_5{
@@ -441,9 +475,12 @@ footer{
 
 /*CSS trang chu*/
 
+.path-item{
+    border-radius: 8px;
+}
 .path-item:hover{
-    background-color: #00796b !important;
-    color: #fff !important;
+    /*background-color: #00796b !important;*/
+    /*color: #fff !important;*/
     transition: all .5s;
 
 }
@@ -573,8 +610,10 @@ footer{
 .parallax-content_2{
     margin-top: 10%;
     width: 90%;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 7%;
+    max-width: 1170px;
 }
 #submit-review button{
     margin-bottom: 50px;
