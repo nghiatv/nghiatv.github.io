@@ -40,3 +40,121 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+STEVE JOB
+
+
+
+        <div class="parallax-container parallax-bot valign-wrapper">
+                    <div class="section no-pad-bot">
+                        <div class="container">
+                            <div class="row center">
+                                <h5 class="header col s12 white-text light">"Tôi thấy tự hào về những điều chúng tôi chưa làm
+                                    cũng như
+                                    đã làm. Sáng tạo có nghĩa là nói 'không' với hàng nghìn thứ".</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="parallax"><img src="parallax.jpg" alt="Steve Job"></div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                SACH
+
+                 <div id="main_row_4" class="col s12">
+                            <div class="divider"></div>
+                            <div class="row">
+                                <div class="col s12 center-align " id="book-title">
+                                    <h2> Book</h2>
+                                </div>
+                                <div id="book-content">
+                                    <div class="row">
+                                        <div class="col s12 m4">
+                                            <div class="card book-item">
+                                                <div class="card-image">
+                                                    <img src="postgresql-server-programming-2nd-edition.jpg">
+
+                                                </div>
+
+                                                <div class="card-content">
+                                                    <span class="card-title book-name-item">PostgreSQL Server Programming 2nd Edition</span>
+
+                                                    <div class="book-name-description">Tác giả viết sâu, ví dụ dễ hiểu. Với lập trình
+                                                        mới bắt đầu...
+                                                    </div>
+                                                </div>
+                                                <div class="card-action">
+                                                    <a href="#">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s12 m4">
+                                            <div class="card book-item">
+                                                <div class="card-image">
+                                                    <img src="learning-python-data-visualization.jpg">
+
+                                                </div>
+
+                                                <div class="card-content">
+                                                    <span class="card-title book-name-item">Learning Python Data Visualization</span>
+
+                                                    <div class="book-name-description">Postgresql đang rất thịnh hành trong 5 năm gần
+                                                        đây. Heroku...
+                                                    </div>
+                                                </div>
+                                                <div class="card-action">
+                                                    <a href="#">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s12 m4">
+                                            <div class="card book-item">
+                                                <div class="card-image">
+                                                    <img src="the-art-of-readable-code.jpg">
+
+                                                </div>
+
+                                                <div class="card-content">
+                                                    <span class="card-title book-name-item">The Art of Readable Code</span>
+
+                                                    <div class="book-name-description">Một lập trình viên giỏi không thể viết code lem
+                                                        nhem. Một...
+                                                    </div>
+                                                </div>
+                                                <div class="card-action">
+                                                    <a href="#">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
