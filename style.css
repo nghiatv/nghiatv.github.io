@@ -458,7 +458,7 @@ td{
     color: #307699;
 
 }
-#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #how-learn-content,#check-out-row-2{
+#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #how-learn-content{
     margin: 0 auto;
     max-width: 400px;
     margin-bottom: 40px !important;
@@ -477,7 +477,7 @@ td{
     padding: 0 .75em;
 }
 @media (min-width: 769px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content,#check-out-row-2{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content{
         max-width: 800px;
         width: 85%;
     }
@@ -499,7 +499,7 @@ td{
 
 
 @media (min-width: 993px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content,#course_container,#check-out-row-2{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content,#course_container{
         width: 90%;
         max-width: 1170px;
     }
@@ -667,7 +667,7 @@ footer{
     margin-bottom: 0 !important;
 }
 #price-list{
-    margin: 0 auto;
+    margin: 50px auto;
     width: 90%;
     max-width: 1280px;
 }
@@ -904,15 +904,23 @@ footer{
 
 /*Css check-out page*/
 
+#bill{
+    border-radius: 8px;
+}
 #check-out-form{
     padding-top: 20px;
 }
 #check-out-form .label-input{
     font-weight: 300;
     font-size: 15px;
+    line-height: 28.8px;
+}
+#check-out-form .label-input-number strong{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 28.8px;
 }
 #check-out-form label{
-    color: white;
 }
 #check-out-submit a{
     margin: 30px auto;
