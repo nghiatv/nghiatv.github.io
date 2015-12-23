@@ -666,13 +666,16 @@ footer{
     margin-top: 0 !important;
     margin-bottom: 0 !important;
 }
-#price-list{
+#price-list,#check-out{
     margin: 50px auto;
     width: 90%;
     max-width: 1280px;
 }
 .price-header h2{
     font-weight: 800;
+}
+#price-list-title h4, #check-out-title h4{
+    margin-bottom: 50px;
 }
 .feature-item{
     line-height: 1.6;
@@ -846,12 +849,24 @@ footer{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 16px;
+    display: inline;
+    width: auto;
+}
+
+#all-lession-title::after,#course-benifit-title::after,#course-result-title::after,#course-author-title::after,#comment-list-title::after, #course-relate-title::after {
+    border-bottom: 1px solid #000;
+    content: "";
+    display: block;
+    padding-bottom: 15px;
 }
 #course-benifit-content li,#course-result-content li{
     list-style-type: disc;
     list-style-position: inside;
     margin-left: 20px;
 
+}
+#course-author-content{
+    margin: 20px auto;
 }
 #course-author-content > .col, #course-relate-content > .col{
    padding-left: 0;
@@ -904,24 +919,67 @@ footer{
 
 /*Css check-out page*/
 
+
+
+
 #bill{
     border-radius: 8px;
 }
 #check-out-form{
     padding-top: 20px;
 }
-#check-out-form .label-input{
-    font-weight: 300;
-    font-size: 15px;
-    line-height: 28.8px;
-}
-#check-out-form .label-input-number strong{
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 28.8px;
-}
-#check-out-form label{
-}
-#check-out-submit a{
+
+#check-out-content{
     margin: 30px auto;
+    width: 90%;
+    max-width: 400px;
+}
+.form-content{
+    margin: 30px auto;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+@media only screen and (min-width: 769px) {
+    #check-out-content{
+        width: 80%;
+        max-width: 600px;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 993px) {
+    #check-out-content{
+        width: 70%;
+        max-width: 800px;
+        padding: 40px;
+    }
+}
+.form-title h4{
+    margin: 40px auto 20px;
+    font-weight: 200;
+    line-height: 1.2;
+   font-size: 48px;
+}
+.form-title::after{
+    border-bottom: 1px solid #000;
+    content: "";
+    display: block;
+    margin: 0 auto 0px;
+    padding-bottom: 30px;
+    width: 25%;
+}
+.form-text,.form-number{
+    font-size: 18px;
+    font-weight: 600;
+}
+#send-bill{
+    margin: 40px auto 0;
+    height: auto !important;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    padding: 15px 25px;
+}
+.form-number::after{
+    content: " đ";
+    display: inline;
 }
