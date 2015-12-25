@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,300italic&subset=vietnamese'
+          rel='stylesheet' type='text/css'>
+
+    <!--import massonry-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+
+
+    <!--import Marterilize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="test-blog.css" type="text/css">
+
+</head>
+
+
+<body>
+<!--Header-->
+
+<header class="page-header white">
+    <div class="navbar-fixed ">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <div class="col s12">
+                    <div>
+                        <div class="row">
+                            <div class="col s12">
+                                <a href="index.html" class="brand-logo "><img
+                                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                                        alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
+                                                                                       style="color: rgba(33, 23, 34, 0.96)"></i></a>
+
+                    <div class="right hide-on-med-and-down">
+                        <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
+                           id="signup-navbar" onclick="show_form_login1()">đăng nhập</a>
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                           onclick="show_form_register1()">đăng kí</a>
+                    </div>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a class="tab" href="">Khóa học</a></li>
+                        <!--<li><a class="tab" href="">Thực tập</a></li>-->
+                        <li><a class="tab" href="">Blog</a></li>
+                        <li><a class="tab" href="">Việc làm</a></li>
+                        <!--<li><a class="tab" href="">Phỏng vấn</a></li>-->
+                        <li><a class="tab" href="">Ebooks</a></li>
+                        <li><a class="tab" href="">Bảng giá</a></li>
+                        <li><a class="tab" href="">Chúng tôi</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-nav">
+                        <li><a href="">Khóa học</a></li>
+                        <li><a href="">Thực tập</a></li>
+                        <li><a href="">Việc làm</a></li>
+                        <li><a href="">Phỏng vấn</a></li>
+                        <li><a href="">Ebooks</a></li>
+                        <li><a href="">chúng tôi</a></li>
+                        <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
+                           id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
+                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                           onclick="show_form_login1()">đăng nhập</a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<!--Main-->
+
+<main id="main-content">
+    <div class="page-heading right-align">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <form class="card search-wrapper col s12 m6 hoverable">
+                        <div class="input-field">
+                            <input id="blog-search" name="s" type="text" placeholder="Search">
+                            <i class="material-icons">search</i>
+
+                        </div>
+
+                    </form>
+                </div>
+                <h2 class="col s12 m6">Blog</h2>
+            </div>
+        </div>
+    </div>
+    <div class="page-main">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12">
+                    <div class="grid">
+                        <div class="grid-sizer"></div>
+                        <div class="gutter-sizer"></div>
+                        <div class="grid-item grid-item--width2">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item "> <div class="card">
+                            <div class="card-image">
+                                <img src="slide1.png">
+                                <span class="card-title">Card Title</span>
+                            </div>
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.
+                                    I am convenient beca very simple card. I am good at containing small bits of information.
+                                    I am convenient beca very simple card. I am good at containing small bits of information.
+                                    I am convenient beca very simple card. I am good at containing small bits of information.
+                                    I am convenient beca very simple card. I am good at containing small bits of information.
+                                    I am convenient because I require little markup to use effectively.</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="#">This is a link</a>
+                            </div>
+                        </div></div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple c very simple card. I am good at containing small bits of information.
+                                        I am convenient beca very simple card. I am good at containing small bits of information.
+                                        I am convenient beca very simple card. I am good at containing small bits of information.
+                                        I am convenient becaard. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I req very simple card. I am good at containing small bits of information.
+                                        I am convenient beca very simple card. I am good at containing small bits of information.
+                                        I am convenient becauire little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient v very simple card. I am good at containing small bits of information.
+                                        I am convenient beca very simple card. I am good at containing small bits of information.
+                                        I am convenient becabecause I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <img src="slide1.png">
+                                    <span class="card-title">Card Title</span>
+                                </div>
+                                <div class="card-content">
+                                    <p>I am a very simple card. I am good at containing small bits of information.
+                                        I am convenient beca very simple card. I am good at containing small bits of information.
+                                        I am convenient because I require little markup to use effectively.</p>
+                                </div>
+                                <div class="card-action">
+                                    <a href="#">This is a link</a>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<!--Footer-->
+<footer class="blue-grey darken-3">
+    <div id="footer__main" class="container blue-grey darken-3 white-text   ">
+        <article class="fit-fixed">
+            <div class="row padding-top--half">
+                <div class="col m4 s12 footer_m4">
+                    <img alt="Logo__bottom" class="lighten-5" id="footer__logo"
+                         src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"/>
+
+                    <p><i class="fa fa-map-marker"></i> Cơ sở 1:
+                        Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+
+                    <p>
+                        <i class="fa fa-map-marker"></i> Cơ sở 2:
+                        Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội
+                    </p>
+
+                    <div id="footer__company__links">
+                        <a href="https://www.facebook.com/techmastervn"><i class="fa fa-2x fa-facebook"></i>
+                        </a>
+                        <a href=""><i class="fa fa-2x fa-twitter"></i>
+                        </a>
+                        <a href=""><i class="fa fa-2x fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col m8 s12 row ">
+                    <div class="col m4 s12">
+                        <h5><strong>Về TechmasterVn</strong></h5>
+                        <ul>
+                            <li><a href="">Về chúng tôi</a></li>
+                            <li><a href="">Việc làm</a></li>
+                            <li><a href="">Thực tập</a></li>
+                            <li><a href="">Đặt câu hỏi cho chúng tôi</a></li>
+                            <li><a href="">Blog</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col m4 s12">
+                        <h5><strong>Learn To Code</strong></h5>
+                        <ul>
+                            <li>
+                                <a href="/">Lập trình iOS Objective-C</a>
+                            </li>
+                            <li>
+                                <a href="/">Web cơ bản HTML5, CSS3 và Javascript</a>
+                            </li>
+                            <li>
+                                <a href="">Node.js xây dựng web site tốc độ cao</a>
+                            </li>
+                            <li>
+                                <a href="">Lập trình Arrowjs Core và CMS</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Java căn bản thực hành</a>
+                            </li>
+
+                            <li>
+                                <a href="">Lập trình Python ứng dụng thực tế</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col m4 s12">
+                        <h5><strong>Tài nguyên</strong></h5>
+                        <ul>
+                            <li><a href="">HTML &amp; CSS</a></li>
+                            <li><a href="">JavaScript</a></li>
+                            <li><a href="">jQuery</a></li>
+                            <li><a href="">PHP</a></li>
+                            <li><a href="">Python</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+        <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+            <i class=" fa fa-2x fa-arrow-up"></i>
+        </a>
+    </div>
+</footer>
+
+<!-- Modal login and sign up -->
+
+<script>
+    function show_form_login() {
+        $(".mdl_form_register").hide(600);
+        $(".mdl_form").show(600);
+
+    }
+    function show_form_login1() {
+        $(".mdl_form_register").hide();
+        $(".mdl_form").show();
+    }
+    function show_form_register() {
+        $(".mdl_form").hide(600);
+        $(".mdl_form_register").show(600);
+    }
+    function show_form_register1() {
+        $(".mdl_form").hide();
+        $(".mdl_form_register").show();
+    }
+    //Modal
+
+    $(document).ready(function () {
+        $('.modal-trigger').leanModal({
+//                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+//                    opacity: .6, // Opacity of modal background
+//                    in_duration: 300, // Transition in duration
+//                    out_duration: 200, // Transition out duration
+
+                }
+        );
+    });
+
+    //    Slider
+
+    //    $(document).ready(function () {
+    //        $('.slider').slider({full_width: true,
+    //        });
+    //    });
+
+
+    //    sideNav
+
+    $(document).ready(function () {
+
+        $(".button-collapse").sideNav();
+
+
+        $('.grid').masonry({
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true
+        })
+
+    });
+
+    //    collapsible
+
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').removeClass('hide');
+                    } else {
+                        $('#back-to-top').addClass('hide');
+                    }
+                };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1200);
+        });
+    }
+
+    $(document).ready(function () {
+        $("#blog-search").focusin(function () {
+                    $(".search-wrapper").addClass("focused");
+                }
+        );
+        $("#blog-search").focusout(function () {
+                    $(".search-wrapper").removeClass("focused");
+                }
+        );
+
+
+    });
+
+</script>
+</body>
+</html>

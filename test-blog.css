@@ -1,0 +1,25 @@
+.grid-sizer,
+.grid-item { width: 48%; }
+
+.gutter-sizer { width: 4%; }
+
+.grid-item--width2 { width: 100%; }
+
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+main{
+    min-height: 2000px;
+}
+@media (min-width: 993px) {
+    .grid-sizer,
+    .grid-item { width: 32%; }
+
+    .gutter-sizer { width: 2%; }
+    .grid-item--width2 { width: 66%; }
+}
+.card-image{
+    height: 62.5% !important;
+}

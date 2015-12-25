@@ -185,7 +185,7 @@
 
                                 <tbody>
                                 <tr>
-                                    <td colspan="2"><a class="link-cam" href="#"><i class="fa fa-video-camera"></i></a>
+                                    <td colspan="2"><a class="link-cam modal-trigger" href="#modal2"><i class="fa fa-video-camera"></i></a>
                                         HTML là gì? <a href="#!" class="secondary-content"
                                                        style="font-weight:500; margin-right: 20px">3:25</a></td>
                                 </tr>
@@ -706,7 +706,7 @@
             <h4 class="center">Bước 1: Xem thông tin khóa học</h4>
         </div>
         <div class="col s12" id="price-content">
-            <div class="col s12 m4 ">
+            <div class="col s12 l4 ">
                 <div class="card white lighten-1 ">
                     <div class="card-content black-text">
                                 <span class="card-title activator course-title">Tiết kiệm<i
@@ -744,7 +744,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 ">
+            <div class="col s12 l4 ">
                 <div class="card white lighten-1 ">
 
                     <div class="card-content black-text">
@@ -785,7 +785,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m4 ">
+            <div class="col s12 l4 ">
                 <div class="card white lighten-1 ">
 
                     <div class="card-content black-text">
@@ -938,14 +938,10 @@
         </div>
     </div>
 </main>
-<footer class="blue-grey darken-3 white-text">
-
-
-    <div id="footer__main">
+<footer class="blue-grey darken-3">
+    <div id="footer__main" class="container blue-grey darken-3 white-text   ">
         <article class="fit-fixed">
-
             <div class="row padding-top--half">
-
                 <div class="col m4 s12 footer_m4">
                     <img alt="Logo__bottom" class="lighten-5" id="footer__logo"
                          src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"/>
@@ -959,19 +955,17 @@
                     </p>
 
                     <div id="footer__company__links">
-
                         <a href="https://www.facebook.com/techmastervn"><i class="fa fa-2x fa-facebook"></i>
                         </a>
                         <a href=""><i class="fa fa-2x fa-twitter"></i>
                         </a>
                         <a href=""><i class="fa fa-2x fa-instagram"></i>
                         </a>
-
                     </div>
                 </div>
 
                 <div class="col m8 s12 row ">
-                    <div class="col m4">
+                    <div class="col m4 s12">
                         <h5><strong>Về TechmasterVn</strong></h5>
                         <ul>
                             <li><a href="">Về chúng tôi</a></li>
@@ -980,78 +974,55 @@
                             <li><a href="">Đặt câu hỏi cho chúng tôi</a></li>
                             <li><a href="">Blog</a></li>
                         </ul>
+                    </div>
 
-                        <h5 class="margin-top--1"><strong>Tài nguyên</strong></h5>
+                    <div class="col m4 s12">
+                        <h5><strong>Learn To Code</strong></h5>
                         <ul>
-                            <li><a href="/articles">Arrowjs</a></li>
-                            <li><a href="/schools">Ebook</a></li>
+                            <li>
+                                <a href="/">Lập trình iOS Objective-C</a>
+                            </li>
+                            <li>
+                                <a href="/">Web cơ bản HTML5, CSS3 và Javascript</a>
+                            </li>
+                            <li>
+                                <a href="">Node.js xây dựng web site tốc độ cao</a>
+                            </li>
+                            <li>
+                                <a href="">Lập trình Arrowjs Core và CMS</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Java căn bản thực hành</a>
+                            </li>
+
+                            <li>
+                                <a href="">Lập trình Python ứng dụng thực tế</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col m4 s12">
+                        <h5><strong>Tài nguyên</strong></h5>
+                        <ul>
+                            <li><a href="">HTML &amp; CSS</a></li>
+                            <li><a href="">JavaScript</a></li>
+                            <li><a href="">jQuery</a></li>
+                            <li><a href="">PHP</a></li>
+                            <li><a href="">Python</a></li>
+
                         </ul>
                     </div>
 
-                    <div class="col m8 s12">
-                        <h5><strong>Learn To Code</strong></h5>
-
-                        <div class='row'>
-
-                            <div class="col m7">
-                                <ul>
-                                    <li>
-                                        <a href="/skills/make-a-website">Lập trình iOS Objective-C</a>
-                                    </li>
-                                    <li>
-                                        <a href="/skills/make-an-interactive-website">Web cơ bản HTML5, CSS3 và
-                                            Javascript</a>
-                                    </li>
-                                    <li>
-                                        <a href="/courses/learn-rails">Node.js xây dựng web site tốc độ cao</a>
-                                    </li>
-                                    <li>
-                                        <a href="/courses/rails-auth">Lập trình Arrowjs Core và CMS</a>
-                                    </li>
-                                    <li>
-                                        <a href="/courses/learn-angularjs">
-                                            Java căn bản thực hành</a>
-                                    </li>
-                                    <li>
-                                        <a href="/courses/learn-the-command-line">Learn the Command Line</a>
-                                    </li>
-                                    <li>
-                                        <a href="/courses/learn-sql">Learn SQL</a>
-                                    </li>
-                                    <li>
-                                        <a href="/courses/sql-analyzing-business-metrics">Lập trình Python ứng dụng thực
-                                            tế</a>
-                                    </li>
-
-                                </ul>
-                            </div>
-
-                            <div class="col m5">
-                                <ul>
-                                    <li><a href="">HTML &amp; CSS</a></li>
-                                    <li><a href="">JavaScript</a></li>
-                                    <li><a href="">jQuery</a></li>
-                                    <li><a href="">PHP</a></li>
-                                    <li><a href="">Python</a></li>
-
-                                </ul>
-                            </div>
-
-                        </div>
-
-                    </div>
                 </div>
             </div>
         </article>
     </div>
-
-
     <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
         <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
             <i class=" fa fa-2x fa-arrow-up"></i>
         </a>
     </div>
-
 </footer>
 
 
@@ -1162,7 +1133,7 @@
         </div>
     </div>
     <div class="modal-footer">
-        <a href="" class=" modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        <a href="" class=" modal-action modal-close waves-effect btn-flat">Close</a>
     </div>
 </div>
 
