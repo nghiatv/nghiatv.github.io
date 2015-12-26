@@ -991,53 +991,5 @@ footer{
 
 
 /*CSS trang blog*/
-.page-heading{
-    padding-top:20px;
-    padding-bottom: 20px;
-}
-.search-wrapper{
-    max-width: 270px;
-    margin: 0 12px;
-    transition: margin .25s ease;
-}
-/*.search-wrapper.focused{*/
-    /*margin: 0;*/
-    /*transition: margin 0.2s ease;*/
-/*}*/
-.search-wrapper > .input-field{
-    padding-left: 15px;
 
-}
-
-input#blog-search, input#blog-search:focus{
-    height: 1.5em;
-    border-bottom: none !important;
-    box-shadow: none;
-}
-.search-wrapper > .input-field > i.material-icons {
-    position: absolute;
-    top: 0px;
-    right: 10px;
-    cursor: pointer;
-
-}
-
-.search-btn{
-    /*z-index: 3;*/
-    /*background: none;*/
-     /*border: none;*/
-    top: 7px;
-    opacity: 0;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-}
-
-
-.page-heading h2{
-    font-size: 32px;
-    line-height: 50px;
-    color: #307699;
-    font-weight: 500;
-    margin: 0 auto;
-}
 

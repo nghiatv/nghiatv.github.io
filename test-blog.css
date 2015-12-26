@@ -19,6 +19,9 @@
     padding-top:20px;
     padding-bottom: 20px;
 }
+.page-heading h2{
+    text-align: left;
+}
 .search-wrapper{
     max-width: 400px;
 }
@@ -63,13 +66,34 @@ input#blog-search, input#blog-search:focus{
 }
 
 
+.most-view-title h3, .top-author-title h3,.newest-title h3{
+    /*color: #ffffff;*/
+    /*font-family: ', sans-serif;*/
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 28px;
+    margin: 0 0 28px;
+    display: inline-block;
+}
 
 
-#main-blog-content{
+#main-blog-content,#main-blog-most-view,#main-blog-top-author{
     margin: 0 auto;
     max-width: 400px;
 }
 
+.main-blog-bottom{
+    width: 100%;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.top-author-content > .col > .card > .card-content > img{
+    width: 150px;
+    height: 150px;
+    overflow-y: hidden;
+}
 
 
 .grid-sizer,
@@ -104,9 +128,21 @@ main{
 
 
     }
-    #main-blog-content{
+    #main-blog-content,#main-blog-most-view,#main-blog-top-author{
         width: 80%;
         max-width: 800px;
+    }
+    .most-view-title h3, .top-author-title h3, .newest-title h3{
+        /*color: #ffffff;*/
+        /*font-family: ', sans-serif;*/
+        font-size: 34px;
+
+        line-height: 38px;
+        margin: 0 0 38px;
+
+    }
+    .page-heading h2{
+        text-align: right;
     }
 }
 
@@ -118,11 +154,11 @@ main{
     .gutter-sizer { width: 2%; }
     .grid-item--width2 { width: 66%; }
 
-    #main-blog-content{
+    #main-blog-content,#main-blog-top-author,#main-blog-most-view{
         width: 90%;
         max-width: 1170px;
     }
-}
+
 .grid-item > .card > .card-image{
     max-height: 300px;
     overflow: hidden;
@@ -149,9 +185,12 @@ main{
     transform: scale(1.0);
     opacity: 0.8;
 }
-.grid-item > .card > .card-content > h2.card-title{
-    font-size: 24px;
-    font-weight: 300;
+
+}
+.grid-item > .card > .card-content > h2.card-title, .most-view-content  h2.card-title {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
     margin-bottom: 12px;
-    line-height: 36px !important;
+    line-height: 24px !important;
 }
