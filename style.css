@@ -549,9 +549,7 @@ td{
 }
 
 
-.card-title {
-    padding-bottom: 20px !important;
-}
+
 .card-title h4{
     font-size: 1.14em;
 }
@@ -1043,8 +1041,3 @@ input#blog-search, input#blog-search:focus{
     margin: 0 auto;
 }
 
-
-.grid-sizer,
-.grid-item { width: 30%; }
-/* 2 columns */
-.grid-item--width2 { width: 60%; }

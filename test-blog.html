@@ -16,7 +16,7 @@
           rel='stylesheet' type='text/css'>
 
     <!--import massonry-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.3.2/masonry.pkgd.min.js"></script>
+    <script src="masonry/masonry.min.js" type="text/javascript"></script>
 
 
     <!--import Marterilize-->
@@ -27,7 +27,9 @@
 
 
     <link rel="stylesheet" href="style.css" type="text/css">
+
     <link rel="stylesheet" href="test-blog.css" type="text/css">
+
 
 </head>
 
@@ -89,198 +91,224 @@
 
 <!--Main-->
 
-<main id="main-content">
-    <div class="page-heading right-align">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m6">
-                    <form class="card search-wrapper col s12 m6 hoverable">
-                        <div class="input-field">
-                            <input id="blog-search" name="s" type="text" placeholder="Search">
-                            <i class="material-icons">search</i>
-
-                        </div>
-
-                    </form>
-                </div>
-                <h2 class="col s12 m6">Blog</h2>
+<main id="main-blog-content">
+    <div class="page-heading">
+        <div class="row nav-wrapper">
+            <div class="col s12" id="breadcrumb-content">
+                <a href="#!" class="breadcrumb">Trang chủ</a>
+                <a href="#!" class="breadcrumb">Blog</a>
             </div>
         </div>
-    </div>
-    <div class="page-main">
-        <div class="container">
-            <div class="row">
-                <div class="col s12 m12">
-                    <div class="grid">
-                        <div class="grid-sizer"></div>
-                        <div class="gutter-sizer"></div>
-                        <div class="grid-item grid-item--width2">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item "> <div class="card">
-                            <div class="card-image">
-                                <img src="slide1.png">
-                                <span class="card-title">Card Title</span>
-                            </div>
-                            <div class="card-content">
-                                <p>I am a very simple card. I am good at containing small bits of information.
-                                    I am convenient beca very simple card. I am good at containing small bits of information.
-                                    I am convenient beca very simple card. I am good at containing small bits of information.
-                                    I am convenient beca very simple card. I am good at containing small bits of information.
-                                    I am convenient beca very simple card. I am good at containing small bits of information.
-                                    I am convenient because I require little markup to use effectively.</p>
-                            </div>
-                            <div class="card-action">
-                                <a href="#">This is a link</a>
-                            </div>
-                        </div></div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple c very simple card. I am good at containing small bits of information.
-                                        I am convenient beca very simple card. I am good at containing small bits of information.
-                                        I am convenient beca very simple card. I am good at containing small bits of information.
-                                        I am convenient becaard. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I req very simple card. I am good at containing small bits of information.
-                                        I am convenient beca very simple card. I am good at containing small bits of information.
-                                        I am convenient becauire little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient v very simple card. I am good at containing small bits of information.
-                                        I am convenient beca very simple card. I am good at containing small bits of information.
-                                        I am convenient becabecause I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="grid-item">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="slide1.png">
-                                    <span class="card-title">Card Title</span>
-                                </div>
-                                <div class="card-content">
-                                    <p>I am a very simple card. I am good at containing small bits of information.
-                                        I am convenient beca very simple card. I am good at containing small bits of information.
-                                        I am convenient because I require little markup to use effectively.</p>
-                                </div>
-                                <div class="card-action">
-                                    <a href="#">This is a link</a>
-                                </div>
-                            </div>
-                        </div>
-
+        <div class="row">
+            <div class="col s12 m6">
+                <form class="card search-wrapper col s12 hoverable">
+                    <div class="input-field">
+                        <input id="blog-search" name="s" type="text" placeholder="Search">
+                        <i class="material-icons">search</i>
 
                     </div>
+
+                </form>
+            </div>
+            <h2 class="col s12 m6 right-align">Blog</h2>
+        </div>
+
+    </div>
+    <div class="page-main">
+
+        <div class="row">
+            <div class="col s12">
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item grid-item--width2">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title no-padding center"><a href="#">Microsoft giới thiệu một engine
+                                    JavaScript mới dành cho Node.js</a></h2>
+
+                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
+                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item ">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/tim-viec-lap-trinh-vien-25122015.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title no-padding center"><a href="#">Làm thế nào để có được một công
+                                    việc lập trình?</a></h2>
+
+                                <p>Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                    chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Liệu Web Designer có cần kỹ năng lập
+                                    trình?</a></h2>
+
+                                <p>Thuật ngữ "web designer" là chủ quan và có ý nghĩa khác nhau đối với những người khác
+                                    nhau.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/bigdate.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
+                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+
+                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
+                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
+                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/lamthenao.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Làm thế nào để tuyển dụng một lập
+                                    trình viên giỏi khi bạn không biết code</a></h2>
+
+                                <p>Là một startup founder, việc thuê lập trình viên đầu tiên sẽ là một trong những quyết
+                                    định quan trọng nhất mà bạn phải làm.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/son.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Cách dạy con của người Đức: Vui chơi
+                                    là chính, học chỉ là phụ!</a></h2>
+
+                                <p>Cách dạy con của người Đức: Vui chơi là chính, học chỉ là phụ!</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/single.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Nguyên tắc trách nhiệm duy nhất
+                                    (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
+
+                                <p>Trong bài viết này tôi sẽ thảo luận về Nguyên tắc trách nhiệm duy nhất (Single
+                                    Responsibility Principle) và một số kỹ thuật xoay quanh nó để có thể giúp bạn nâng
+                                    cao chất lượng code chương trình của mình.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/bigdate.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
+                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+
+                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
+                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
+                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17th March</time>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="page-pagination center">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#!">1</a></li>
+                        <li class="waves-effect"><a href="#!">2</a></li>
+                        <li class="waves-effect"><a href="#!">3</a></li>
+                        <li class="waves-effect"><a href="#!">4</a></li>
+                        <li class="waves-effect"><a href="#!">5</a></li>
+                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
                 </div>
             </div>
+
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab col s3"><a href="#test1">Test 1</a></li>
+                    <li class="tab col s3"><a class="active" href="#test2">Test 2</a></li>
+                    <li class="tab col s3"><a href="#test3">Disabled Tab</a></li>
+                    <li class="tab col s3"><a href="#test4">Test 4</a></li>
+                </ul>
+            </div>
+            <div id="test1" class="col s12">Test 1</div>
+            <div id="test2" class="col s12">Test 2</div>
+            <div id="test3" class="col s12">Test 3</div>
+            <div id="test4" class="col s12">Test 4</div>
         </div>
     </div>
+
+
 </main>
 
 
@@ -403,6 +431,8 @@
 
                 }
         );
+        $(".button-collapse").sideNav();   //    sideNav
+        $('ul.tabs').tabs(); // Tabs
     });
 
     //    Slider
@@ -413,23 +443,14 @@
     //    });
 
 
-    //    sideNav
-
-    $(document).ready(function () {
-
-        $(".button-collapse").sideNav();
-
-
+    $(window).bind('load', function () {
         $('.grid').masonry({
             columnWidth: '.grid-sizer',
             gutter: '.gutter-sizer',
             itemSelector: '.grid-item',
             percentPosition: true
         })
-
     });
-
-    //    collapsible
 
 
     if ($('#back-to-top').length) {
@@ -454,18 +475,6 @@
         });
     }
 
-    $(document).ready(function () {
-        $("#blog-search").focusin(function () {
-                    $(".search-wrapper").addClass("focused");
-                }
-        );
-        $("#blog-search").focusout(function () {
-                    $(".search-wrapper").removeClass("focused");
-                }
-        );
-
-
-    });
 
 </script>
 </body>
