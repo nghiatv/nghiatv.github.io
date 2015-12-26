@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
 
 
     <!--link font awesome-->
-
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
-    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">-->
+
     <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,100,100italic,300,300italic,500,500italic,700,900,900italic&subset=vietnamese'-->
     <!--rel='stylesheet' type='text/css'>-->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,300italic&subset=vietnamese'
@@ -22,8 +22,14 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <!--typed.js-->
     <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
+
+    <!--style.css-->
     <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!--animated.css-->
     <link rel="stylesheet" href="animate.css" type="text/css">
 
 
@@ -35,12 +41,6 @@
 
 
 <body>
-<!--facebook fangate-->
-<script>
-    $(document).ready(function () {
-        $('.parallax').parallax();
-    });
-</script>
 
 <!--Header-->
 
@@ -94,94 +94,97 @@
         </nav>
     </div>
 </header>
-<!--Parallax-->
-<div class="parallax-container parallax-top teal lighten-2">
-    <div class="parallax">
-        <!--<img src="slider1.jpg"> -->
-    </div>
-    <div class="parallax-content white-text">
-        <div class="row center-align">
-            <div class="col s12 m6 parallax-text">
-                <div class="parallax-title">
 
-                    <div id="typed-strings">
-                        <p> echo "Hello World";</p>
-
-                        <p> System.out.print( "Hello World");</p>
-
-                        <p> Console.log("Hello World" );</p>
-
-                        <p> print "Hello World";</p>
-
-                        <p> NSLog (@"Hello World!");</p>
-                    </div>
-                    <div id="parallax-title-top">
-                        <span id="typed"></span>
-                    </div>
-                    <br>
-
-                    <h3>
-                        Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
-                    </h3>
-                    <!--<div id="typed"></div>-->
-                </div>
-
-
-                <!--<div class="parallax-button">-->
-                <!--<button class="btn waves-effect waves-teal  ">Đăng kí ngay</button>-->
-                <!--</div>-->
-            </div>
-            <div class="col s12 m6" id="parallax-sigh-up">
-                <h5 class="center-align teal lighten-2 parallax-form-title">Đăng kí</h5>
-
-                <div class="row ">
-                    <form class="col s12 white parallax-form black-text ">
-                        <div class="row">
-                            <div class="input-field col s12 m6">
-                                <input id="email" type="email" class="validate">
-                                <label for="email">Email</label>
-                            </div>
-                            <div class="input-field col s12 m6">
-                                <input id="name" type="text" class="validate">
-                                <label for="name">Name</label>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="input-field col s12">
-                                <input id="pass" type="password" class="validate">
-                                <label for="pass">Password</label>
-                            </div>
-                        </div>
-
-                        <!--<div class="divider"></div>-->
-                        <div class="row btn-field">
-                            <div class="col s12">
-                                <p class="center-align">
-                                    <button class="btn teal white-text waves-effect waves-light" id="sign-up" type="button"
-                                            name="action">Đăng kí
-                                    </button>
-                                </p>
-                                <p class="social-registration-buttons">
-                                    <a class="btn white teal-text  social-btn" id="gplus-sign-up" type="button"><img src="images/google.svg"><span> Google</span> </a>
-                                    <a class="btn white teal-text  social-btn" id="facebook-sign-up" type="button"><img src="images/facebook.svg"><span> Facebook</span> </a>
-
-                                </p>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="triangle"></div>
 
 <!--Main-->
 
 <main>
     <div class="row">
+        <!--Parallax-->
+        <div class="parallax-container parallax-top teal lighten-2">
+            <div class="parallax">
+                <!--<img src="slider1.jpg"> -->
+            </div>
+            <div class="parallax-content white-text">
+                <div class="row center-align">
+                    <div class="col s12 m6 parallax-text">
+                        <div class="parallax-title">
 
-        <div id="main_row_2" class="col s12">
+                            <div id="typed-strings">
+                                <p> echo "Hello World";</p>
+
+                                <p> System.out.print( "Hello World");</p>
+
+                                <p> Console.log("Hello World" );</p>
+
+                                <p> print "Hello World";</p>
+
+                                <p> NSLog (@"Hello World!");</p>
+                            </div>
+                            <div id="parallax-title-top">
+                                <span id="typed"></span>
+                            </div>
+                            <br>
+
+                            <h3>
+                                Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
+                            </h3>
+                            <!--<div id="typed"></div>-->
+                        </div>
+
+
+                        <!--<div class="parallax-button">-->
+                        <!--<button class="btn waves-effect waves-teal  ">Đăng kí ngay</button>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="col s12 m6" id="parallax-sigh-up">
+                        <h5 class="center-align teal lighten-2 parallax-form-title">Đăng kí</h5>
+
+                        <div class="row ">
+                            <form class="col s12 white parallax-form black-text ">
+                                <div class="row">
+                                    <div class="input-field col s12 m6">
+                                        <input id="email" type="email" class="validate">
+                                        <label for="email">Email</label>
+                                    </div>
+                                    <div class="input-field col s12 m6">
+                                        <input id="name" type="text" class="validate">
+                                        <label for="name">Name</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="pass" type="password" class="validate">
+                                        <label for="pass">Password</label>
+                                    </div>
+                                </div>
+
+                                <!--<div class="divider"></div>-->
+                                <div class="row btn-field">
+                                    <div class="col s12">
+                                        <p class="center-align">
+                                            <button class="btn teal white-text waves-effect waves-light" id="sign-up"
+                                                    type="button"
+                                                    name="action">Đăng kí
+                                            </button>
+                                        </p>
+                                        <p class="social-registration-buttons">
+                                            <a class="btn white teal-text  social-btn" id="gplus-sign-up" type="button"><img
+                                                    src="images/google.svg"><span> Google</span> </a>
+                                            <a class="btn white teal-text  social-btn" id="facebook-sign-up"
+                                               type="button"><img src="images/facebook.svg"><span> Facebook</span> </a>
+
+                                        </p>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="triangle"></div>
+        <div id="main_row_2" class="  col s12">
 
             <div class="row">
                 <div class=" center-align" id="list-course-title">
@@ -197,14 +200,15 @@
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   center-align">Lập trình iOS Objective-C</h2>
+
                             <div class="path-button  center-align">
-                                <a href="course.html" class="waves-effect waves-light btn blue darken-3">Xem khóa học</a>
+                                <a href="course.html" class="waves-effect waves-light btn blue darken-3">Xem khóa
+                                    học</a>
                             </div>
                             <p class="center-align">
                                 Objective-C hóa học lập trình iOS Objective-C: cập nhật công nghệ mới, nhiều
                                 mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
                         </div>
-
 
 
                     </div>
@@ -217,6 +221,7 @@
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   center-align">Web cơ bản HTML5, CSS3 và Javascript</h2>
+
                             <div class="path-button center-align">
                                 <a href="course.html" class="waves-effect waves-light btn red darken-3">Xem khóa học</a>
                             </div>
@@ -232,7 +237,6 @@
                         </div>
 
 
-
                     </div>
                 </div>
                 <div class="col s12 m6 l4 ">
@@ -243,8 +247,10 @@
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   center-align">Node.js xây dựng web site tốc độ cao</h2>
+
                             <div class="path-button center-align">
-                                <a href="course.html" class="waves-effect waves-light btn light-blue darken-2">Xem khóa học</a>
+                                <a href="course.html" class="waves-effect waves-light btn light-blue darken-2">Xem khóa
+                                    học</a>
                             </div>
                             <p class="center-align">
                                 Lập trình web site tốc độ cao sử dụng Node.js (4.x), JavaScript 6, Arrowjs.io</p>
@@ -261,8 +267,10 @@
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   center-align">Lập trình Arrowjs Core và CMS</h2>
+
                             <div class="path-button  center-align">
-                                <a href="course.html" class="waves-effect waves-light btn blue darken-3">Xem khóa học</a>
+                                <a href="course.html" class="waves-effect waves-light btn blue darken-3">Xem khóa
+                                    học</a>
                             </div>
                             <p class="center-align">
                                 Khóa học lập trình Arrowjs Core - Arrowjs CMS, hướng dẫn xây dựng ứng dụng web - web
@@ -281,6 +289,7 @@
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   center-align">Java căn bản thực hành</h2>
+
                             <div class="path-button center-align">
                                 <a href="course.html" class="waves-effect waves-light btn red darken-3">Xem khóa học</a>
                             </div>
@@ -300,8 +309,10 @@
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   center-align">Lập trình Python ứng dụng thực tế</h2>
+
                             <div class="path-button center-align">
-                                <a href="course.html" class="waves-effect waves-light btn light-blue darken-2">Xem khóa học</a>
+                                <a href="course.html" class="waves-effect waves-light btn light-blue darken-2">Xem khóa
+                                    học</a>
                             </div>
                             <p class="center-align">
                                 Python được chọn làm ngôn ngữ lập trình đầu tiên để dạy cho những người chưa biết lập
@@ -310,21 +321,18 @@
                         </div>
 
 
-
                     </div>
                 </div>
             </div>
 
 
         </div>
-
-        <div class=" col s12 section white">
+        <div id="how-learning" class=" col s12  white" >
             <div class="container">
-                <div class="section">
                     <div class="row">
                         <div class="center-align" id="how-learn-title">
 
-                                <h2>Học ở Techmaster như nào?</h2>
+                            <h2>Học ở Techmaster như nào?</h2>
 
                         </div>
                     </div>
@@ -332,8 +340,8 @@
                     <div class="row" id="how-learn-content">
                         <div class="col s12 m4">
                             <div class="icon-block">
-                                <h2 class="center brown-text"><i class="fa fa-video-camera"></i> </h2>
-                                <h5 class="center" >Xem Video</h5>
+                                <h2 class="center brown-text"><i class="fa fa-video-camera"></i></h2>
+                                <h5 class="center">Xem Video</h5>
 
                                 <p class="light">Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất</p>
                             </div>
@@ -344,65 +352,65 @@
                         </div>
                         <div class="col s12 m4">
                             <div class="icon-block">
-                                <h2 class="center brown-text"><i class="fa fa-keyboard-o"></i> </h2>
+                                <h2 class="center brown-text"><i class="fa fa-keyboard-o"></i></h2>
                                 <h5 class="center">Code Code Code</h5>
 
-                                <p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho bạn
+                                <p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho
+                                    bạn
                                     trong quá trình lập trình</p>
                             </div>
                         </div>
 
                         <div class="col s12 m4">
                             <div class="icon-block ib-last">
-                                <h2 class="center brown-text"><i class="fa fa-briefcase"></i> </h2>
+                                <h2 class="center brown-text"><i class="fa fa-briefcase"></i></h2>
                                 <h5 class="center">Làm Project thật</h5>
 
-                                <p class="light">We have provided detailed documentation as well as specific code examples
+                                <p class="light">We have provided detailed documentation as well as specific code
+                                    examples
                                     to help new users get started.</p>
                             </div>
                         </div>
                     </div>
 
-                </div>
             </div>
 
         </div>
-        <div class=" col s12 section">
-            <div id="video-promotion-content">
-                <div class="section">
+        <div id="video-promotion" class= "col s12 " >
 
-                    <!--   Icon Section   -->
-                    <div class="row">
-                        <div class="col s12 m6" id="video-promotion-text">
-                            <h3 class="center">Tại sao lại là Techmaster ?</h3>
+            <div class="row" id="video-promotion-content">
+                <div class="col s12 m6" id="video-promotion-text">
+                    <h3 class="center">Tại sao lại là Techmaster ?</h3>
 
-                            <p class="center">Hãy nghe câu trả lời từ những học viên đã và đang tham gia Techmaster nhé !</p>
+                    <p class="center">Hãy nghe câu trả lời từ những học viên đã và đang tham gia Techmaster nhé !</p>
+                </div>
+
+                <div class="col s12 m6 " >
+                    <div class="row" id="video-promotion-youtube">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/czltl9isRdM"
+                                    frameborder="0" allowfullscreen></iframe>
                         </div>
-
-                        <div class="col s12 m6" id="video-promotion-youtube">
-                            <div class="row">
-                                <div class="video-container">
-                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/czltl9isRdM" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                            </div>
-                        </div>
-
-
                     </div>
-
                 </div>
+
+
             </div>
 
+
         </div>
-
-
-
-
-
+        <div id="blog" class="col s12">
+            <div id="blog-content">
+                <div class="row">
+                    <div class="col s12 m4 l3">sad</div>
+                    <div class="col s12 m8 l8 offset-l1">sadsd</div>
+                </div>
+            </div>
+        </div>
         <div id="main_row_3" class="parallax-container">
             <div class="parallax"><img src="images/parallax2.jpg"></div>
             <div class="parallax-content_2 row white-text ">
-                <div class = "review-item col s12 l4">
+                <div class="review-item col s12 l4">
                     <div class="col s4">
                         <img src="images/NguyenMinhThuc.jpg" class="circle responsive-img">
                     </div>
@@ -416,7 +424,7 @@
                     </div>
 
                 </div>
-                <div class = "review-item col s12 l4">
+                <div class="review-item col s12 l4">
                     <div class="col s4">
                         <img src="images/NguyenThanhDao.jpg" class="circle responsive-img">
                     </div>
@@ -432,7 +440,7 @@
                     </div>
 
                 </div>
-                <div class = "review-item col s12 l4">
+                <div class="review-item col s12 l4">
                     <div class="col s4">
                         <img src="images/NguyenTuanViet.jpg" class="circle responsive-img">
                     </div>
@@ -455,169 +463,70 @@
                 </div>
             </div>
         </div>
-        <!--<div id= "main_row_5" class="col s12">-->
-        <!--<div class="row">-->
-        <!--<div class="col s12 center-align " id="list-link-title">-->
-        <!--&lt;!&ndash;<h2> Việc làm</h2>&ndash;&gt;-->
-        <!--</div>-->
-        <!--<div id="list-link-content">-->
-        <!--<div class="row">-->
-        <!--<div class="col s12 m6">-->
-        <!--<div id="blg-title">-->
-        <!--<h2>Blog</h2>-->
-        <!--</div>-->
-        <!--<div id="blg-content">-->
-        <!--<ul>-->
-        <!--<li><a class="waves-effect waves-teal" href="#">3 Lý do để bắt đầu học lập trình-->
-        <!--ngay cả khi bạn đã lớn tuổi</a></li>-->
-        <!--<li><a href="">-->
-        <!--Các dự án mã nguồn mở có thể chuẩn bị tương lai nghề nghiệp cho sinh viên như-->
-        <!--thế nào?</a></li>-->
-        <!--<li><a href="">MongoDB 3.2: giờ đây phải dựa vào sức mạnh của PostgreSQL - Phần-->
-        <!--2</a></li>-->
-        <!--<li><a href="">Giới thiệu kỹ thuật Long-Polling, Websockets, Server-Sent Events,-->
-        <!--Comet</a></li>-->
-        <!--<li><a href="">Cách thức Node.js xử lý nhiều giao diện người dùng của Netflix</a>-->
-        <!--</li>-->
-        <!--<li><a href="">MongoDB 3.2: giờ đây phải dựa vào sức mạnh của PostgreSQL - Phần-->
-        <!--1</a></li>-->
-        <!--<li><a href="">10 Cuốn sách lập trình C++ tốt nhất dành cho các developer</a></li>-->
-        <!--<li><a href="">Những lời khuyên nghề nghiệp hàng đầu cho tương lai các lập trình-->
-        <!--viên</a></li>-->
-        <!--<li><a href="">5 Lý do để chọn Python là ngôn ngữ lập trình đầu tiên của bạn</a>-->
-        <!--</li>-->
-        <!--<li><a href="">Lập trình viên 12 tuổi là một thiên tài trong việc chế tạo robot</a>-->
-        <!--</li>-->
-        <!--<li><a href="">Tìm hiểu PHP 7, có điều gì mới, và hơn thế nữa</a></li>-->
-        <!--<li><a href="">9 Lý do bạn nên biết một chút về HTML và CSS</a></li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--<div class="col s12 m6">-->
-        <!--<div id="job-title">-->
-        <!--<h2>Việc làm</h2>-->
-        <!--</div>-->
-        <!--<div id="job-content">-->
-        <!--<ul>-->
-        <!--<li><a class="waves-effect waves-teal" href="#">3 Lý do để bắt đầu học lập trình-->
-        <!--ngay cả khi bạn đã lớn tuổi</a></li>-->
-        <!--<li><a href="">-->
-        <!--Các dự án mã nguồn mở có thể chuẩn bị tương lai nghề nghiệp cho sinh viên như-->
-        <!--thế nào?</a></li>-->
-        <!--<li><a href="">MongoDB 3.2: giờ đây phải dựa vào sức mạnh của PostgreSQL - Phần-->
-        <!--2</a></li>-->
-        <!--<li><a href="">Giới thiệu kỹ thuật Long-Polling, Websockets, Server-Sent Events,-->
-        <!--Comet</a></li>-->
-        <!--<li><a href="">Cách thức Node.js xử lý nhiều giao diện người dùng của Netflix</a>-->
-        <!--</li>-->
-        <!--<li><a href="">MongoDB 3.2: giờ đây phải dựa vào sức mạnh của PostgreSQL - Phần-->
-        <!--1</a></li>-->
-        <!--<li><a href="">10 Cuốn sách lập trình C++ tốt nhất dành cho các developer</a></li>-->
-        <!--<li><a href="">Những lời khuyên nghề nghiệp hàng đầu cho tương lai các lập trình-->
-        <!--viên</a></li>-->
-        <!--<li><a href="">5 Lý do để chọn Python là ngôn ngữ lập trình đầu tiên của bạn</a>-->
-        <!--</li>-->
-        <!--<li><a href="">Lập trình viên 12 tuổi là một thiên tài trong việc chế tạo robot</a>-->
-        <!--</li>-->
-        <!--<li><a href="">Tìm hiểu PHP 7, có điều gì mới, và hơn thế nữa</a></li>-->
-        <!--<li><a href="">9 Lý do bạn nên biết một chút về HTML và CSS</a></li>-->
-        <!--</ul>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
-        <!--</div>-->
     </div>
 </main>
 
-
 <!--Footer-->
-<footer class="blue-grey darken-3">
-    <div id="footer__main" class="container blue-grey darken-3 white-text   ">
-        <article class="fit-fixed">
-            <div class="row padding-top--half">
-                <div class="col m4 s12 footer_m4">
-                    <img alt="Logo__bottom" class="lighten-5" id="footer__logo"
-                         src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"/>
+<footer class="footer-distributed">
 
-                    <p><i class="fa fa-map-marker"></i> Cơ sở 1:
-                        Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+    <div class="footer-left">
 
-                    <p>
-                        <i class="fa fa-map-marker"></i> Cơ sở 2:
-                        Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội
-                    </p>
 
-                    <div id="footer__company__links">
-                        <a href="https://www.facebook.com/techmastervn"><i class="fa fa-2x fa-facebook"></i>
-                        </a>
-                        <a href=""><i class="fa fa-2x fa-twitter"></i>
-                        </a>
-                        <a href=""><i class="fa fa-2x fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+        <p class="footer-links">
+            <a href="/index.html">Home</a>
+            ·
+            <a href="/test-blog.html">Blog</a>
+            ·
+            <a href="#">Khoá học</a>
+            ·
+            <a href="#">Về chúng tôi</a>
 
-                <div class="col m8 s12 row ">
-                    <div class="col m4 s12">
-                        <h5><strong>Về TechmasterVn</strong></h5>
-                        <ul>
-                            <li><a href="">Về chúng tôi</a></li>
-                            <li><a href="">Việc làm</a></li>
-                            <li><a href="">Thực tập</a></li>
-                            <li><a href="">Đặt câu hỏi cho chúng tôi</a></li>
-                            <li><a href="">Blog</a></li>
-                        </ul>
-                    </div>
+        </p>
 
-                    <div class="col m4 s12">
-                        <h5><strong>Learn To Code</strong></h5>
-                        <ul>
-                            <li>
-                                <a href="/">Lập trình iOS Objective-C</a>
-                            </li>
-                            <li>
-                                <a href="/">Web cơ bản HTML5, CSS3 và Javascript</a>
-                            </li>
-                            <li>
-                                <a href="">Node.js xây dựng web site tốc độ cao</a>
-                            </li>
-                            <li>
-                                <a href="">Lập trình Arrowjs Core và CMS</a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Java căn bản thực hành</a>
-                            </li>
-
-                            <li>
-                                <a href="">Lập trình Python ứng dụng thực tế</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="col m4 s12">
-                        <h5><strong>Tài nguyên</strong></h5>
-                        <ul>
-                            <li><a href="">HTML &amp; CSS</a></li>
-                            <li><a href="">JavaScript</a></li>
-                            <li><a href="">jQuery</a></li>
-                            <li><a href="">PHP</a></li>
-                            <li><a href="">Python</a></li>
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </article>
+        <p class="footer-company-name">TechmasterVn &copy; 2015</p>
     </div>
-    <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
-        <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
-            <i class=" fa fa-2x fa-arrow-up"></i>
-        </a>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+
+            <p><span>Số 14, ngõ 4, Nguyễn Đình Chiểu</span> Hà nội, Việt nam.</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+
+            <p>090.220.9011</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+
+            <p><a href="mailto:support@company.com">cuong@techmaster.vn</a></p>
+        </div>
+
     </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about hide-on-small-and-down">
+            <span>Techmaster</span>
+            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+            vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
 </footer>
 
 <!-- Modal login and sign up -->
@@ -712,19 +621,6 @@
 </div>
 
 <script>
-    $(function () {
-        $("#typed").typed({
-            stringsElement: $('#typed-strings'),
-            typeSpeed: 100,
-            startDelay: 1000,
-            loop: true,
-            contentType: 'text',
-            loopCount: 2,
-
-        });
-    });
-</script>
-<script>
     function show_form_login() {
         $(".mdl_form_register").hide(600);
         $(".mdl_form").show(600);
@@ -786,19 +682,6 @@
         maxHeightBook();
     });
 
-
-    $(document).ready(function () {
-        $(".badge").hover(
-                function () {
-                    $(this).addClass("animated").addClass("pulse");
-                },
-                function () {
-                    $(this).removeClass("animated").removeClass("pulse");
-                }
-        );
-    });
-
-
     //Modal
 
     $(document).ready(function () {
@@ -808,27 +691,14 @@
 //                    in_duration: 300, // Transition in duration
 //                    out_duration: 200, // Transition out duration
 
-                }
-        );
-    });
-
-    //    Slider
-
-    //    $(document).ready(function () {
-    //        $('.slider').slider({full_width: true,
-    //        });
-    //    });
-
-
-    //    sideNav
-
-    $(document).ready(function () {
-
+        });
+        $('.parallax').parallax();
         $(".button-collapse").sideNav();
-
+        $('.collapsible').collapsible({
+            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
     });
 
-    //    collapsible
 
     $('.count').each(function () {
         $(this).prop('Counter', 0).animate({
@@ -841,13 +711,6 @@
             }
         });
     });
-
-    $(document).ready(function () {
-        $('.collapsible').collapsible({
-            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-        });
-    });
-
 
     if ($('#back-to-top').length) {
         var scrollTrigger = 100, // px
@@ -870,7 +733,17 @@
             }, 1200);
         });
     }
+    $(function () {
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            startDelay: 1000,
+            loop: true,
+            contentType: 'text',
+            loopCount: 2,
 
+        });
+    });
 </script>
 </body>
 </html>

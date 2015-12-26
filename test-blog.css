@@ -40,7 +40,7 @@ input#blog-search, input#blog-search:focus{
 }
 .search-wrapper > .input-field > i.material-icons {
     position: absolute;
-    top: 0px;
+    top: 0;
     right: 10px;
     cursor: pointer;
 
@@ -101,7 +101,7 @@ input#blog-search, input#blog-search:focus{
 
 }
 
-.gutter-sizer { width: 0%; }
+.gutter-sizer { width: 0; }
 
 .grid-item--width2 { width: 100%;
 
@@ -166,7 +166,7 @@ main{
 .grid-item > .card > .card-image:hover img{
     -webkit-transition: all 400ms ease-in;
     -webkit-transform: scale(1.1);
-    -ms-transition: all 400ms ease-in;
+    /*-ms-transition: all 400ms ease-in;*/
     -ms-transform: scale(1.1);
     -moz-transition: all 400ms ease-in;
     -moz-transform: scale(1.1);
@@ -177,7 +177,7 @@ main{
 .grid-item > .card > .card-image img{
     -webkit-transition: all 400ms ease-in;
     -webkit-transform: scale(1.0);
-    -ms-transition: all 400ms ease-in;
+    /*-ms-transition: all 400ms ease-in;*/
     -ms-transform: scale(1.0);
     -moz-transition: all 400ms ease-in;
     -moz-transform: scale(1.0);

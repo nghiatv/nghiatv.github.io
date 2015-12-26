@@ -3,17 +3,16 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-html {
-
-}
 
 body {
     min-height: 1200px;
     box-sizing: border-box;
-    /*background-color: #f3f3f3;*/
     background-color:#e9eaea;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-family: "Open Sans",sans-serif;
+    font-size: 14px;
 }
+
+
 .page-header {
     margin: 0;
     padding: 0;
@@ -28,16 +27,12 @@ nav .nav-wrapper {
 .brand-logo img {
     max-height: 44px;
     margin-top: 10px;
-    /*margin-left: 20px;*/
 }
 
 nav ul a {
     display: inline-block;
-    /*font-style: 1.5rem;*/
     padding: 0 15px;
     color: #000000 !important;
-    /*box-sizing: border-box;*/
-    /*padding-bottom: 5px !important;*/
 }
 
 nav ul li:hover, nav ul li:focus {
@@ -45,26 +40,18 @@ nav ul li:hover, nav ul li:focus {
 }
 
 nav ul li:hover a {
-    /*color: #000000 !important;*/
-    /*background-color: rgba(0,0,0,0.1);*/
     color: #ffffff !important;
-    /*border-bottom: 5px solid #0288D1;*/
     transition: all .3s;
 }
 
-
-
-
-#main_row_1 {
-    /*padding-top: 40px;*/
-    /*padding: 0!important;*/
-    /*background-color: #FFFFFF;*/
-}
-#main_row_2{
+#main_row_2,{
     padding-top: 40px;
     background-color: #e9eaea;
     padding-bottom: 40px;
-    /*float: left;*/
+}
+#video-promotion,#blog {
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 #list-course-title h2,#book-title h2, #review-title h2,#list-link-title h2, #blg-title h2, #job-title h2,#how-learn-title h2{
     font-size: 32px;
@@ -72,22 +59,17 @@ nav ul li:hover a {
     color: #307699;
     font-weight: 500;
 }
-#how-learn{
-    padding-bottom: 40px;
-    /*padding-top: 40px;*/
-}
+
 #list-course-title h2{
+    padding-top: 40px;
     padding-bottom: 40px;
 }
 
 .parallax-container{
-    /*background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.4));*/
-    /*background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
-    /*background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
-    /*background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));*/
-
-
-
+    background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.4));
+    background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+    background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+    background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
 }
 
 .parallax-container.parallax-top.teal.lighten-2{
@@ -98,15 +80,13 @@ nav ul li:hover a {
     background: -ms-linear-gradient(to bottom left, #34b3a0, #204056);
 }
 
-.parallax img{
+.parallax img, #main_row_3 > .parallax img{
     -webkit-filter: grayscale(0.1) sepia(1);
 }
+
 .parallax-top > .parallax-content{
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin: 10% auto;
 }
 .triangle{
     position: relative;
@@ -115,7 +95,6 @@ nav ul li:hover a {
 .triangle::after{
     top: -3px;
     left: 50%;
-    border: solid transparent;
     content: " ";
     height: 0;
     width: 0;
@@ -135,7 +114,6 @@ nav ul li:hover a {
 .triangle-course::after{
     top: -3px;
     left: 50%;
-    border: solid transparent;
     content: " ";
     height: 0;
     width: 0;
@@ -173,7 +151,7 @@ form.col.s12.white.parallax-form{
     margin: 1.25rem auto .75rem;
     vertical-align: middle;
     color: lime;
-    font-family: "Courier";
+    font-family: "Courier", sans-serif;
     /*font-size: 45px;*/
     font-size: 1.8125rem;
 
@@ -228,7 +206,7 @@ form.col.s12.white.parallax-form{
         display: inline-block;
         /*background-color: #8670FF;*/
         line-height: 1.2em;
-        margin: 20px auto 0px auto;
+        margin: 20px auto 0 auto;
         padding-left: 5px;
     }
     .col.s12.m6.parallax-text {
@@ -243,8 +221,6 @@ form.col.s12.white.parallax-form{
     }
      #parallax-sigh-up .row form{
         max-width: 450px;
-
-
     }
 }
 
@@ -283,7 +259,7 @@ form.col.s12.white.parallax-form{
 .social-btn{
     text-transform: none;
     float: left;
-    padding: 0px 11px 11px 11px;
+    padding: 0 11px 11px 11px;
     height: 40px;
     border: none;
     font-size: 0.8em;
@@ -383,16 +359,15 @@ td{
         top: 10%;
     }
 }
-.section > .container{
+#how-learning{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#how-learning > .container{
     width: 90%;
 }
 
-@media(min-width : 768px) {
-    #index-banner .section {
-        top: 0;
-    }
 
-}
 .icon-block{
     width: 70%;
     margin: 0 auto;
@@ -449,16 +424,14 @@ td{
     overflow: hidden;
     max-height: 110px;
 }
-#video-promotion-content{
-    margin: 40px auto !important;
-}
+
 #video-promotion-text{
     margin:2% auto;
     padding: 2%;
     color: #307699;
 
 }
-#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #how-learn-content{
+#book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #blog-content, #how-learn-content{
     margin: 0 auto;
     max-width: 400px;
     margin-bottom: 40px !important;
@@ -477,7 +450,7 @@ td{
     padding: 0 .75em;
 }
 @media (min-width: 769px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #blog-content,#how-learn-content{
         max-width: 800px;
         width: 85%;
     }
@@ -487,10 +460,6 @@ td{
     #video-promotion-text{
         margin: 0 auto;
     }
-    #video-promotion-content{
-
-        margin: 0 auto !important;
-    }
     #video-promotion-text h3{
         margin: 5.99% 0;
         font-size: 2.21em;
@@ -499,7 +468,7 @@ td{
 
 
 @media (min-width: 993px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#how-learn-content,#course_container{
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#blog-content, #how-learn-content,#course_container{
         width: 90%;
         max-width: 1170px;
     }
@@ -510,6 +479,8 @@ td{
     }
     #video-promotion-youtube{
         max-width: 450px;
+        margin: 0 auto;
+
     }
     #list-course-content .m4{
         padding: 0 1.25em       ;
@@ -587,21 +558,177 @@ td{
 }
 
 /*Footer Css*/
-footer{
-    padding-top: 20px;
+.footer-distributed{
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+   font-weight: bold;
+    font-size: 16px;
+
+    padding: 55px 50px;
+
 }
-#footer__logo{
-    margin: 20px;
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+    display: inline-block;
+    vertical-align: top;
 }
-.footer_m4 p{
-    margin: 20px;
+
+/* Footer left */
+
+.footer-distributed .footer-left{
+    width: 40%;
 }
-#footer__company__links{
-    padding: 20px;
+
+/* The company logo */
+
+.footer-distributed h3{
+    color:  #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
 }
-#footer__company__links a{
-    margin-right: 20px;
+
+.footer-distributed h3 span{
+    color:  #5383d3;
 }
+
+/* Footer links */
+
+.footer-distributed .footer-links{
+    color:  #ffffff;
+    margin: 20px 0 12px;
+    padding: 0;
+}
+
+.footer-distributed .footer-links a{
+    display:inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+    color:  #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-distributed .footer-center{
+    width: 35%;
+}
+
+.footer-distributed .footer-center i{
+    background-color:  #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-distributed .footer-center i.fa-envelope{
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-distributed .footer-center p{
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin:0;
+}
+
+.footer-distributed .footer-center p span{
+    display:block;
+    font-weight: normal;
+    font-size:14px;
+    line-height:2;
+}
+
+.footer-distributed .footer-center p a{
+    color:  #5383d3;
+    text-decoration: none;;
+}
+
+
+/* Footer Right */
+
+.footer-distributed .footer-right{
+    width: 20%;
+}
+
+.footer-distributed .footer-company-about{
+    line-height: 20px;
+    color:  #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-distributed .footer-company-about span{
+    display: block;
+    color:  #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer-distributed .footer-icons{
+    margin-top: 25px;
+}
+
+.footer-distributed .footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #33383b;
+    border-radius: 2px;
+
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 880px) {
+
+    .footer-distributed{
+       font-size: 14px;
+        font-weight: bold;
+    }
+
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right{
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .footer-distributed .footer-center i{
+        margin-left: 0;
+    }
+
+}
+
 
 /*CSS trang chu*/
 
@@ -682,7 +809,7 @@ footer{
 }
 .feature-item:before{
     content: "\f00c  ";
-    font-family: FontAwesome ;
+    font-family: "FontAwesome",sans-serif ;
 
 }
 .feature-list{
@@ -690,7 +817,6 @@ footer{
 }
 .feature-list li:before{
     content: "\f00c";
-    /*font-family: FontAwesome;*/
 }
 .price-number span{
     font-weight: 500;
@@ -748,11 +874,9 @@ footer{
     background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
 }
 .parallax-content_2{
-    margin-top: 10%;
+    margin: 10% auto 7%;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 7%;
+
     max-width: 1170px;
 }
 #submit-review button{
@@ -858,8 +982,7 @@ footer{
     padding-bottom: 15px;
 }
 #course-benifit-content li,#course-result-content li{
-    list-style-type: disc;
-    list-style-position: inside;
+    list-style: disc inside;
     margin-left: 20px;
 
 }
@@ -965,7 +1088,7 @@ footer{
     border-bottom: 1px solid #000;
     content: "";
     display: block;
-    margin: 0 auto 0px;
+    margin: 0 auto;
     padding-bottom: 30px;
     width: 25%;
 }
