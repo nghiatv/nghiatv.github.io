@@ -19,7 +19,7 @@ body {
     background-color: #fff;
 }
 .page-header > div > nav{
-    box-shadow: none;
+    /*box-shadow: none;*/
 }
 .navbar-fixed, nav .nav-wrapper{
     height: 64px;
@@ -33,7 +33,7 @@ nav .nav-wrapper {
 
 .brand-logo img {
     max-height: 34px;
-    margin-top: 15px;
+    margin: 15px auto;
 }
 
 nav .button-collapse i {
@@ -49,11 +49,23 @@ nav .button-collapse{
 
     }
     nav .nav-wrapper {
-        padding: 10px 30px;
+        padding: 10px 10%;
 
     }
     .navbar-fixed, nav .nav-wrapper{
         height: 84px;
+    }
+    nav{
+        height: 84px;
+        line-height: 84px;
+    }
+    .log-btn{
+        padding: 12px 0;
+    }
+}
+@media (min-width: 993px) {
+    nav .nav-wrapper {
+        padding: 10px 7.5%;
     }
 }
 nav ul {
@@ -83,11 +95,11 @@ nav ul li a {
     color: #343434;
     text-decoration: none;
     display: block;
-    padding: 25px 25px;
+    padding: 25px 15px 20px;
     font-family: 'Open Sans', sans-serif;
-    /*font-weight: 700;*/
-    text-transform: uppercase;
-    font-size: 14px;
+    font-weight: 600;
+    /*text-transform: uppercase;*/
+    font-size: 12.8px;
     position: relative;
     -webkit-transition: color .25s;
     -moz-transition: color .25s;
@@ -95,6 +107,12 @@ nav ul li a {
     -o-transition: color .25s;
     transition: color .25s;
 
+}
+#login-navbar,#signup-navbar{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    /*text-transform: uppercase;*/
+    font-size: 12.8px;
 }
 
 nav ul li a:before{
@@ -119,7 +137,7 @@ nav ul li a:after{
     background: #ffffff;
     opacity: .5;
 }
-nav ul li:hover {
+nav ul li:hover,nav ul li.active {
     background-color: transparent;
 }
 
@@ -129,7 +147,7 @@ nav ul li a:hover:before {
 
 
 nav ul li.active a {
-    color: #333333;
+    /*color: #333333;*/
 }
 nav ul li.active a:before {
     width: 100%;
@@ -301,7 +319,7 @@ form.col.s12.white.parallax-form{
 
         max-width: 1280px;
     }
-     #parallax-sigh-up .row form{
+     #parallax-sigh-up .row form,#social-button{
         max-width: 450px;
     }
 }
@@ -317,7 +335,7 @@ form.col.s12.white.parallax-form{
     padding-left: 5px;
     line-height: 1.5em;
 }
-#parallax-sigh-up h5, #parallax-sigh-up .row form{
+#parallax-sigh-up h5, #parallax-sigh-up .row form,#social-button{
     max-width: 400px;
     margin: 0 auto;
     float: none;
@@ -336,7 +354,13 @@ form.col.s12.white.parallax-form{
 
 .social-registration-buttons{
     margin-top: 2em;
+    margin-bottom: 2em;
 }
+
+form p:last-child{
+    margin-bottom: auto;
+}
+
 
 .social-btn{
     text-transform: none;
@@ -460,9 +484,6 @@ td{
     border-bottom: none;
 }
 
-.row {
-    margin-bottom: 0 !important;
-}
 #row-right1 > .card{
     margin-top: 0!important;
 
@@ -956,6 +977,7 @@ td{
     background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
     background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
     background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+
 }
 .parallax-content_2{
     margin: 10% auto 7%;
@@ -1115,7 +1137,12 @@ td{
 }
 
 #bot-register{
-    padding: 45px 0 60px
+    padding: 44px 0 45px
+}
+@media (min-width: 769px) {
+    #bot-register{
+        padding: 64px 0 65px;
+    }
 }
 .all-course{
     margin: 0;
