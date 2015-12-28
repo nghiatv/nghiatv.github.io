@@ -28,7 +28,7 @@
 
     <link rel="stylesheet" href="style.css" type="text/css">
 
-    <link rel="stylesheet" href="test-blog-detail.css" type="text/css">
+    <link rel="stylesheet" href="test-blog.css" type="text/css">
 
 
 </head>
@@ -37,52 +37,53 @@
 <body>
 <!--Header-->
 
-<header class="page-header white">
-    <div class="navbar-fixed ">
-        <nav class="white">
-            <div class="nav-wrapper">
-                <div class="col s12">
-                    <div>
-                        <div class="row">
-                            <div class="col s12">
-                                <a href="index.html" class="brand-logo "><img
-                                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
-                                        alt=""></a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
-                                                                                       style="color: rgba(33, 23, 34, 0.96)"></i></a>
+<header class="page-header">
+    <div class="navbar-fixed white ">
+        <nav>
+            <div class="nav-wrapper col s12">
 
-                    <div class="right hide-on-med-and-down">
-                        <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
-                           id="signup-navbar" onclick="show_form_login1()">đăng nhập</a>
-                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                           onclick="show_form_register1()">đăng kí</a>
-                    </div>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a class="tab" href="">Khóa học</a></li>
-                        <!--<li><a class="tab" href="">Thực tập</a></li>-->
-                        <li><a class="tab" href="">Blog</a></li>
-                        <li><a class="tab" href="">Việc làm</a></li>
-                        <!--<li><a class="tab" href="">Phỏng vấn</a></li>-->
-                        <li><a class="tab" href="">Ebooks</a></li>
-                        <li><a class="tab" href="">Bảng giá</a></li>
-                        <li><a class="tab" href="">Chúng tôi</a></li>
-                    </ul>
-                    <ul class="side-nav" id="mobile-nav">
-                        <li><a href="">Khóa học</a></li>
-                        <li><a href="">Thực tập</a></li>
-                        <li><a href="">Việc làm</a></li>
-                        <li><a href="">Phỏng vấn</a></li>
-                        <li><a href="">Ebooks</a></li>
-                        <li><a href="">chúng tôi</a></li>
-                        <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
-                           id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
-                        <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                           onclick="show_form_login1()">đăng nhập</a>
-                    </ul>
-                </div>
+                <a href="index.html" class="brand-logo "><img
+                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                        alt=""></a>
+
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
+                                                                                   style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                <ul class="right hide-on-med-and-down log-btn">
+                    <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
+                       id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
+                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                       id="signup-navbar"
+                       onclick="show_form_register1()">đăng kí</a>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="">Blog</a></li>
+
+
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="">Blog</a></li>
+
+
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+                    <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
+                       id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
+                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                       onclick="show_form_login1()">đăng nhập</a>
+                </ul>
+
             </div>
         </nav>
     </div>
@@ -94,14 +95,25 @@
 <main id="main-blog-content">
     <div class="page-heading">
         <div class="row nav-wrapper">
-            <div class="col s12" id="breadcrumb-content">
+            <div class="col s12 12" id="breadcrumb-content">
                 <a href="#!" class="breadcrumb">Trang chủ</a>
                 <a href="#!" class="breadcrumb">Blog</a>
+                <a href="#!" class="breadcrumb">Tại sao bạn nên đóng góp vào các dự án mã nguồn mở</a>
             </div>
+
         </div>
         <div class="row">
+            <div class="col s12 m6 hide-on-med-and-down" id="blog-filter">
+                <ul class="tabs">
+                    <li class="tab "><a href="/test-blog.html"><span>Blog</span></a></li>
+                    <li class="tab drop"><a href="#test2"><span>Category</span></a></li>
+                    <li class="tab drop"><a href="#test3"><span>Tag</span></a></li>
+                    <li class="tab drop"><a href="#test4"><span>Date</span></a></li>
+                </ul>
+
+            </div>
             <div class="col s12 m6">
-                <form class="card search-wrapper col s12 hoverable">
+                <form class="card search-wrapper col s12 hoverable center">
                     <div class="input-field">
                         <input id="blog-search" name="s" type="text" placeholder="Search">
                         <i class="material-icons">search</i>
@@ -109,434 +121,601 @@
                     </div>
 
                 </form>
+                <nav class="hide">
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
             </div>
-            <h2 class="col s12 m6">Blog</h2>
-        </div>
 
+        </div>
+        <ul class="row" id="data-filter">
+            <li id="test1" class="col s12"></li>
+            <li id="test2" class="col s12">
+                <ul class="tags">
+                    <li class="chip"><a href="">Agile (8)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">C++ (13)</a></li>
+                    <li class="chip"><a href="">Cloud (7)</a></li>
+                    <li class="chip"><a href="">công việc (125)</a></li>
+
+
+                </ul>
+            </li>
+            <li id="test3" class="col s12">
+                <ul class="tags">
+                    <li class="chip"><a href="">Agile (8)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">C++ (13)</a></li>
+                    <li class="chip"><a href="">Cloud (7)</a></li>
+                    <li class="chip"><a href="">công việc (125)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+
+
+                </ul>
+            </li>
+            <li id="test4" class="col s12">
+                <ul class="tags">
+                    <li class="chip"><a href="">Agile (8)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">C++ (13)</a></li>
+                    <li class="chip"><a href="">Cloud (7)</a></li>
+                    <li class="chip"><a href="">công việc (125)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">C++ (13)</a></li>
+                    <li class="chip"><a href="">Cloud (7)</a></li>
+                    <li class="chip"><a href="">công việc (125)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+                    <li class="chip"><a href="">Android (53)</a></li>
+                    <li class="chip"><a href="">ASP.net (6)</a></li>
+                    <li class="chip"><a href="">Altassian (4)</a></li>
+
+                </ul>
+            </li>
+        </ul>
     </div>
-    <div class="page-main">
+    <div class="page-main white">
         <div class="row">
             <div class="col s12">
                 <!--<div class="newest-title">-->
                 <!--<h3>Newest</h3>-->
                 <!--</div>-->
-                <div class="grid">
-                    <div class="grid-sizer"></div>
-                    <div class="gutter-sizer"></div>
-                    <div class="grid-item grid-item--width2">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+                <div class="post-content ">
+                    <div class="header-post center">
+                        <h1 class="heading-title-large" itemprop="name">Tại sao bạn nên đóng góp vào các dự án mã nguồn
+                            mở</h1>
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title no-padding center"><a href="#">Microsoft giới thiệu một engine
-                                    JavaScript mới dành cho Node.js</a></h2>
+                        <div class="info">
+                            <ul>
+                                <li>23 tháng Mười Hai</li>
+                                <li>Bởi <strong class="color-green">HỒ SỸ HÙNG</strong></li>
+                                <li>trong
+                                    <strong><a href="/category/web-design-tag/">Web Design</a></strong>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--<h2>Самые лучшие агенства по веб дизайну в Росии</h2>-->
+                        <div class="list-share">
+                            <ul>
+                                <li class="facebook">
+                                    <span> <i class="fa fa-3x fa-facebook"></i> </span>
+                                </li>
+                                <li class="twitter">
+                                    <span> <i class="fa fa-3x fa-twitter"></i> </span>
+                                </li>
+                                <li class="google">
+                                    <span> <i class="fa fa-3x fa-google"></i> </span>
+                                </li>
+                                <li class="pinterest">
+                                    <span> <i class="fa fa-3x fa-pinterest-p"></i> </span>
+                                </li>
+                                <li class="linkedin">
+                                    <span> <i class="fa fa-3x fa-linkedin"></i> </span>
+                                </li>
+                            </ul>
 
-                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
-                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
                         </div>
                     </div>
-                    <div class="grid-item ">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/tim-viec-lap-trinh-vien-25122015.jpg">
+                    <div class="main-post center">
+                        <article class="content">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title no-padding center"><a href="#">Làm thế nào để có được một công
-                                    việc lập trình?</a></h2>
+                            <p><em><strong>Bài viết được dịch từ trang web <a
+                                    href="http://www.makeuseof.com/tag/contribute-opensource-projects/" target="_blank">Makeuseof</a></strong></em>
+                            </p>
 
-                                <p>Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
-                                    chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
+                            <p><img alt="Học lập trình trực tuyến cơ bản đến nâng cao" height="230"
+                                    src="http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-1.png"
+                                    style="float:right" title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                    width="230">Khái niệm về phần mềm mã nguồn mở không phải là mới, và với những dự án
+                                thành công rất lớn như Ubuntu, Android, và rất nhiều các ứng dụng khác, tôi nghĩ chúng
+                                ta có thể nói nó là một mô hình đã được chứng minh cho việc tạo ra và duy trì phần mềm
+                                chất lượng cao. Nhưng nếu bạn là một lập trình viên chỉ mới bắt đầu vào nghề và đang suy
+                                nghĩ về việc <a href="http://techmaster.vn/posts/33710/xu-huong-lap-trinh-ma-nguon-mo"
+                                                target="_blank">liệu có nên tham gia vào các dự án nguồn mở</a>, và nó
+                                sẽ mang lại giá trị gì để bù lại lượng thời gian và công sức mà bạn bỏ ra?</p>
+
+                            <p>Tôi viết bài này để cho bạn thấy lý do tại sao bạn nên nghiêm túc xem xét việc cho đi
+                                thời gian và công sức của bạn miễn phí, vì bạn sẽ nhận lại được rất nhiều.</p>
+
+                            <h2>Học bằng cách làm</h2>
+
+                            <p style="text-align:center"><img alt="Học lập trình online cơ bản đến nâng cao"
+                                                              height="314"
+                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-2.png"
+                                                              title="Học lập trình online cơ bản đến nâng cao"
+                                                              width="317"></p>
+
+                            <p>Chọn một dự án mã nguồn mở để đóng góp cho phép bạn có được cơ hội tham gia giải quyết
+                                những vấn đề cụ thể và thực tế. Việc này sẽ không hề dễ dàng lúc ban đầu, nhưng bạn sẽ
+                                biết về codebase và những phần bên trong của một sản phẩm nào đó mà bạn đã biết và yêu
+                                thích. Và thú vị nhất là hiện nay bạn có thể thực hiện được điều này mà không thực sự
+                                cần sự cho phép. Ảnh chụp màn hình ở trên xuất phát từ trang <a
+                                        href="https://github.com/" target="_blank">Github</a>, đó là một trong những
+                                repository dự án mã nguồn mở tốt nhất hiện nay.&nbsp;</p>
+
+                            <p>Github sử dụng <a href="http://en.wikipedia.org/wiki/Git_(software)"
+                                                 target="_blank">Git</a>, một "hệ thống kiểm soát phiên bản phân tán".
+                                Trong thực tế, điều này có nghĩa là bạn có thể "fork" một repository - tạo ra một bản
+                                sao của nó - và làm việc trên bản sao của riêng bạn. Một khi bạn đã sẵn sàng, bạn có thể
+                                thông báo cho những người quản lý dự án gốc rằng bạn muốn gửi một bản vá (patch). Cách
+                                thức ở đây là đầu tiên bạn cứ làm việc, và sau đó bạn xem họ có chấp nhận nó không. Nếu
+                                họ chấp nhận phần code của bạn - thì thật tuyệt vời. Nếu không, hy vọng bạn đã học được
+                                một điều gì đó mới, và bây giờ bạn có thể sửa lại phần code của mình và thử lại.</p>
+
+                            <h2>Làm những việc quan trọng</h2>
+
+                            <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                              height="338"
+                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-3.png"
+                                                              title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                              width="300"></p>
+
+                            <p>Ảnh chụp màn hình ở trên xuất phát từ <a href="http://bartaz.github.com/impress.js/#/big"
+                                                                        target="_blank">Impress.js</a>, một framework
+                                JavaScript ấn tượng để tạo những phần trình diễn (presentations) trong một trình duyệt.
+                                Hãy nghĩ nó có phần giống PowerPoint, ít nhất là về cái nhìn và cảm nhận ở sản phẩm cuối
+                                cùng. Impress.js là mã nguồn mở, và bạn có thể tìm thấy nó trên <a
+                                        href="https://github.com/bartaz/impress.js" target="_blank">Github.</a> Đây là
+                                một dự án có nhiều người tham gia, được follow bởi hơn 6.300 nhà phát triển và được fork
+                                gần 6000 lần. Việc đóng góp cho một cái gì đó như thế này sẽ rất có ý nghĩa, và là một
+                                công việc tuyệt vời.</p>
+
+                            <p>Nếu bạn đang tìm kiếm một tác vụ cụ thể, bạn có thể kiểm tra trang liệt kê các <a
+                                    href="https://github.com/bartaz/impress.js/issues" target="_blank">Issues</a> (những
+                                bug) của dự án này. Bạn có thể làm việc trên một vấn đề cụ thể, hoặc thậm chí tìm một
+                                vấn đề trong dự án này cho chính mình, sửa chữa nó, và submit phần chỉnh sửa của bạn,
+                                giống như bức hình ở dưới đây:</p>
+
+                            <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                              height="285"
+                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-4.png"
+                                                              title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                              width="592"></p>
+
+                            <p>Ảnh chụp màn hình ở trên có kích thước hơi nhỏ, nhưng bạn có thể thấy rằng lập trình viên
+                                này (<a href="https://github.com/dwiash" target="_blank">dwiash</a>) đã chia sẻ một ý
+                                tưởng, cùng với code để thực hiện nó. Điều này làm cho nó trở nên dễ dàng để các nhà
+                                phát triển chấp nhận phần code đó. Nhưng mà tại sao lại chỉ dừng lại ở đó? Bạn có thể
+                                đóng góp trực tiếp cho các dự án lớn hơn nhiều, ví dụ như dự án <a
+                                        href="https://github.com/rails/rails" target="_blank">Ruby on Rails.</a> Nên nhớ
+                                rằng, chỉ có bầu trời xanh kia là giới hạn của bạn mà thôi!</p>
+
+                            <h2>Củng cố thêm hồ sơ xin việc của bạn</h2>
+
+                            <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                              height="107"
+                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-5.png"
+                                                              title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                              width="590"></p>
+
+                            <p>Ảnh chụp màn hình này là từ một <a href="http://jobs.37signals.com/jobs/10551"
+                                                                  target="_blank">quảng cáo công việc</a> ngẫu nhiên tôi
+                                tìm thấy trên trang tuyển dụng 37signals. Nhiều quảng cáo cho các vị trí kỹ thuật hiện
+                                nay yêu cầu cho xem hồ sơ Github của bạn, và đó cũng là một lý do chính đáng. Trở lại
+                                năm 2010, Jeff Atwood đã viết một bài đăng trên blog Coding Horror với tiêu đề là <a
+                                        href="http://vinacode.net/2014/10/27/lap-trinh-vien-khong-biet-lap-trinh/"
+                                        target="_blank">"Lập trình viên không biết lập trình".</a> Trong đó, anh nói với
+                                kinh nghiệm cá nhân của mình trong việc phỏng vấn ứng viên cho các vị trí lập trình
+                                viên... những người thực sự không biết lập trình. Tôi không nói về lập trình viên tồi -
+                                ý tôi là về những người chỉ đơn giản là không biết lập trình một chút nào cả.</p>
+
+                            <p>Nhưng công nghiệp phần mềm là một ngành phát triển rất nhanh, để khắc phục xu hướng này
+                                và làm cho quá trình sàng lọc nhanh hơn và tốt hơn, nhiều nhà tuyển dụng yêu cầu xem
+                                những phần code thực tế và lịch sử đóng góp của bạn. Rõ ràng, nếu tất cả công việc bạn
+                                làm trước đây là mã nguồn đóng và bạn chỉ có thể nói rằng bạn đã làm việc tại công ty X
+                                trong bao nhiêu năm đó, hay một điều gì tương tự. Nhưng điều gì sẽ xảy ra nếu bạn cho
+                                phép nhà tuyển dụng nhìn vào profile Github của mình và xem tất cả các dự án bạn đã đóng
+                                góp, xem có bao nhiêu bản vá lỗi của bạn đã được chấp nhận, và họ thực sự đọc code của
+                                bạn?</p>
+
+                            <p>Chỉ cần tưởng tượng là họ sẽ ấn tượng về bạn như thế nào - và đó là những bằng chứng thể
+                                hiện năng lực thực sự của bạn.</p>
+
+                            <h2>Nhận được những món quà miễn phí tuyệt vời</h2>
+
+                            <p style="text-align:center"><img alt="Học lập trình trực tuyến xin việc làm" height="289"
+                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-6.png"
+                                                              title="Học lập trình trực tuyến xin việc làm" width="430">
+                            </p>
+
+                            <p>Ảnh chụp màn hình ở trên xuất phát từ trang bán sản phẩm <a
+                                    href="http://www.jetbrains.com/ruby/index.html" target="_blank">RubyMine</a> của
+                                JetBrains. JetBrains là công ty làm ra rất nhiều IDE tuyệt vời cho <a
+                                        href="http://techmaster.vn/khoa-hoc/8231/lap-trinh-ruby-on-rails"
+                                        target="_blank">Ruby</a>, <a
+                                        href="http://techmaster.vn/khoa-hoc/25486/lap-trinh-php-7-co-ban-qua-vi-du"
+                                        target="_blank">PHP</a>, <a
+                                        href="http://techmaster.vn/khoa-hoc/25487/web-co-ban-html5-css3-va-javascript"
+                                        target="_blank">JavaScript</a>, và nhiều hơn nữa - và nếu bạn là một người đứng
+                                đầu dự án hoặc một người có nhiều đóng góp vào một dự án mã nguồn mở, thì bạn có thể
+                                nhận được một giấy phép <em><strong>miễn phí</strong></em> để sử dụng đầy đủ sản phẩm
+                                này. Đây chỉ là một ví dụ khá tuyệt vời. Và JetBrains không phải là công ty duy nhất
+                                chia sẻ các sản phẩm của mình với cộng đồng mã nguồn mở một cách hào phóng như vậy.</p>
+
+                            <h2>Làm quen những đồng nghiệp mới</h2>
+
+                            <p style="text-align:center"><img alt="Học lập trình trực tuyến tốt nhất" height="270"
+                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-7.png"
+                                                              title="Học lập trình trực tuyến tốt nhất" width="400"></p>
+
+                            <p>Đây chỉ là một <a href="https://github.com/josh" target="_blank">hồ sơ public</a> trên
+                                Github; Josh có 1600 người follow, và đã forked hơn 80 repositories. Gã này rõ ràng là
+                                biết anh ta đang làm gì. Được làm việc trên cùng các dự án mà anh ta làm, committing
+                                code và đợi anh ta review phần code của bạn là một cách tuyệt vời để bắt đầu một cuộc
+                                trò chuyện để làm quen. Nếu bạn đang tìm cách để làm việc như một lập trình viên, thì
+                                việc xây dựng mối quan hệ là một phần quan trọng trong việc tìm kiếm việc làm. Hãy biết
+                                rõ về ngành công nghiệp này từ bên trong, và cho mọi người thấy những gì bạn thực sự
+                                biết.</p>
+
+                            <h2>Kết luận</h2>
+
+                            <p>Lý do tôi thích mã nguồn mở rất nhiều là vì nó là một cách để cho thấy năng lực của bạn.
+                                Nếu bạn đóng góp vào nhiều dự án nguồn mở, thì mọi người sẽ thấy điều đó. Điều này còn
+                                tốt hơn so với bất kỳ bản hồ sơ xin việc màu mè nào.</p>
+
+                            <p>Bạn có đóng góp tới các dự án mã nguồn mở? Những đóng góp cho dự án mã nguồn mở đó có
+                                giúp cho bạn kiếm được một việc làm mơ ước? Hãy chia sẻ câu chuyện của bạn trong phần
+                                bình luận phía dưới nhé!</p>
+
+                        </article>
                     </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
+                    <div class="post-nav full clearfix">
+                        <a href="http://www.charitywater.org/blog/campaigns-we-love-sadies-6th-birthday/"
+                           class="post-previous">
+                            <span class="thumb"><img width="80" height="80"
+                                                     src="http://www.charitywater.org/blog/../../_files/blog/wp-content/uploads/2015/10/blog-charity-water-campaigns-we-love-sadies-6th-birthday-150x150.png"
+                                                     class="attachment-80x80 wp-post-image"
+                                                     alt="blog-charity-water-campaigns-we-love-sadies-6th-birthday"></span>
+                <span class="valign">
+                    <span class="caption show-on-mobile"><i class="cw-icon-angle-left"></i> Previous</span>
+                    <span class="heading">Campaigns We Love: Sadie’s 6th Birthday</span>
+                    <span class="quiet caption show-on-desktop">
+                        <time datetime="2015-10-29" pubdate="">10.29.2015</time>
+                         by Cubby Graham                    </span>
+                </span>
+                        </a>
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Liệu Web Designer có cần kỹ năng lập
-                                    trình?</a></h2>
 
-                                <p>Thuật ngữ "web designer" là chủ quan và có ý nghĩa khác nhau đối với những người khác
-                                    nhau.</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/bigdate.jpg">
+                        <a href="/blog/" class="btn grey home-link">Blog Home</a>
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
-                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+                        <a href="http://www.charitywater.org/blog/campaigns-we-love-rebecca-grant/" class="post-next">
+                                                     <span class="thumb"><img width="80" height="80"
+                                                     src="http://www.charitywater.org/blog/../../_files/blog/wp-content/uploads/2015/11/blog-charity-water-campaigns-we-love-rebecca-grant-150x150.png"
+                                                     class="attachment-80x80 wp-post-image"
+                                                     alt="blog-charity-water-campaigns-we-love-rebecca-grant"></span>
+                                                   <span class="valign">
+                    <span class="caption show-on-mobile">Next <i class="cw-icon-angle-right"></i></span>
+                    <span class="heading">Campaigns We Love: Rebecca Grant</span>
+                    <span class="quiet caption show-on-desktop">
+                        <time datetime="2015-11-12" pubdate="">11.12.2015</time>
+                         by Nina Nirema                    </span>
+                </span>
+                        </a>
 
-                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
-                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
-                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/lamthenao.jpg">
-
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Làm thế nào để tuyển dụng một lập
-                                    trình viên giỏi khi bạn không biết code</a></h2>
-
-                                <p>Là một startup founder, việc thuê lập trình viên đầu tiên sẽ là một trong những quyết
-                                    định quan trọng nhất mà bạn phải làm.</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/son.jpg">
-
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Cách dạy con của người Đức: Vui chơi
-                                    là chính, học chỉ là phụ!</a></h2>
-
-                                <p>Cách dạy con của người Đức: Vui chơi là chính, học chỉ là phụ!</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/single.jpg">
-
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Nguyên tắc trách nhiệm duy nhất
-                                    (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
-
-                                <p>Trong bài viết này tôi sẽ thảo luận về Nguyên tắc trách nhiệm duy nhất (Single
-                                    Responsibility Principle) và một số kỹ thuật xoay quanh nó để có thể giúp bạn nâng
-                                    cao chất lượng code chương trình của mình.</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/bigdate.jpg">
-
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
-                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
-
-                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
-                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
-                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
-                            </div>
-                            <div class="card-action">
-                                <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
-                            </div>
-                        </div>
                     </div>
 
+                    <div class="footer-post">
+                        <div class="list-share">
+                            <ul>
+                                <li class="facebook">
+                                    <span> <i class="fa fa-3x fa-facebook"></i> </span>
+                                </li>
+                                <li class="twitter">
+                                    <span> <i class="fa fa-3x fa-twitter"></i> </span>
+                                </li>
+                                <li class="google">
+                                    <span> <i class="fa fa-3x fa-google"></i> </span>
+                                </li>
+                                <li class="pinterest">
+                                    <span> <i class="fa fa-3x fa-pinterest-p"></i> </span>
+                                </li>
+                                <li class="linkedin">
+                                    <span> <i class="fa fa-3x fa-linkedin"></i> </span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <figure>
+                            <img class="responsive-img circle" src="images/hungho.png"
+                                 alt="Hung ho">
+                        </figure>
+                        <h4 class="author">
+                            Bởi <strong>HỒ SỸ HÙNG</strong>
+                        </h4>
+
+                        <p class="link"><a href="http://www.awwwards.com" target="_blank">awwwards.com</a></p>
+
+                        <p>Hồ Sỹ Hùng thuộc thế hệ 8x, sinh ra ở Nghệ An, học ở Hà Nội, có vài năm làm việc tại Sài Gòn,
+                            và Đồng Nai. Anh là lập trình viên có nhiều năm kinh nghiệm trong lĩnh vực: C#, VB.NET,
+                            ASP.NET, SQL Server, XML, MVC, Entity Framework… và đồng thời cũng là admin của blog
+                            http://vinacode.net/. Bạn có thể liên hệ với anh qua email hungpm2000[at]gmail.com</p>
+                    </div>
 
                 </div>
-                <div class="page-pagination center">
-                    <ul class="pagination">
 
-                        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li class="waves-effect"><a href="#">2</a></li>
-                        <li class="waves-effect"><a href="#">3</a></li>
-                        <li class="waves-effect"><a href="#">4</a></li>
-                        <li class="waves-effect"><a href="#">5</a></li>
-                        <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                    </ul>
-                </div>
-                <div class="page-tag-cloud">
-
-                </div>
             </div>
-
         </div>
+
     </div>
 
 
 </main>
-<div class="main-blog-bottom white">
-    <div id="main-blog-most-view"   >
-        <div class="row">
+<!--<div class="main-blog-bottom white">-->
+<!--<div id="main-blog-most-view">-->
+<!--<div class="row">-->
 
-            <div class="most-view-title col s12">
-                <h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>
-            </div>
-            <div class="most-view-content  s12">
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
+<!--<div class="most-view-title col s12">-->
+<!--<h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>-->
+<!--</div>-->
+<!--<div class="most-view-content  s12">-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi
-                                là chính, học chỉ là phụ!</a> </h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi-->
+<!--là chính, học chỉ là phụ!</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất
-                                (Single Responsibility Principle): Một công thức để viết ra code tốt</a> </h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/lamthenao.jpg">
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+<!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/lamthenao.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập
-                                trình?</a> </h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập-->
+<!--trình?</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất
-                                (Single Responsibility Principle): Một công thức để viết ra code tốt</a> </h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+<!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-        </div>
-    </div>
-</div>
-<div class="main-blog-bottom">
-    <div id="main-blog-top-author"  class="row"  >
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
 
-        <div class="top-author-title col s12">
-            <h3>Top Blogger</h3>
-        </div>
-        <div class="top-author-content s12">
-            <div class="col s12 m6 l3">
-                <div class="card blue lighten-1">
-                    <div class="card-content center-align">
-                        <div class="card-title truncate">Vũ Hoàng Chung</div>
-                        <img class="circle responsive-img" src="images/chungvh.png" height="150" width="150">
-
-                    </div>
-                    <div class="card-action center-align truncate">
-                        <a href="#" class="blue-text text-darken-4"></a>
-                    </div>
-                </div><!--/card-->
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card blue lighten-1">
-                    <div class="card-content center-align">
-                        <div class="card-title truncate">Trịnh Minh Cường</div>
-                        <img class="circle responsive-img" src="images/cuongtm.jpg" height="150" width="150">
-
-                        <br>
-
-                    </div>
-                    <div class="card-action center-align truncate">
-                        <a href="#" class="blue-text text-darken-4">
-
-                        </a>
-                    </div>
-                </div><!--/card-->
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card blue lighten-1">
-                    <div class="card-content center-align">
-                        <div class="card-title truncate">
-                            Hồ Sỹ Hùng</div>
-                        <img class="circle responsive-img center" src="images/hungho.png" height="150" width="150">
-
-                        <br>
-
-                    </div>
-                    <div class="card-action center-align truncate">
-                        <a href="#" class="blue-text text-darken-4"></a>
-                    </div>
-                </div><!--/card-->
-            </div>
-            <div class="col s12 m6 l3">
-                <div class="card blue lighten-1">
-                    <div class="card-content center-align">
-                        <div class="card-title truncate">Nguyễn Văn Phong</div>
-                        <img class="circle responsive-img" src="images/nguyen-van-phong.jpg" height="150" width="150">
-
-                        <br>
-
-                    </div>
-                    <div class="card-action right-align truncate">
-                        <a href="#" class="white-text text-darken-4">
-                            Xem Blogger
-                        </a>
-                    </div>
-                </div><!--/card-->
-            </div>
-
-        </div>
-
-
-    </div>
-</div>
 
 <!--Footer-->
-<footer class="blue-grey darken-3">
-    <div id="footer__main" class="container blue-grey darken-3 white-text   ">
-        <article class="fit-fixed">
-            <div class="row padding-top--half">
-                <div class="col m4 s12 footer_m4">
-                    <img alt="Logo__bottom" class="lighten-5" id="footer__logo"
-                         src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"/>
+<footer class="footer-distributed">
 
-                    <p><i class="fa fa-map-marker"></i> Cơ sở 1:
-                        Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</p>
+    <div class="footer-left">
 
-                    <p>
-                        <i class="fa fa-map-marker"></i> Cơ sở 2:
-                        Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh Xuân, Hà Nội
-                    </p>
 
-                    <div id="footer__company__links">
-                        <a href="https://www.facebook.com/techmastervn"><i class="fa fa-2x fa-facebook"></i>
-                        </a>
-                        <a href=""><i class="fa fa-2x fa-twitter"></i>
-                        </a>
-                        <a href=""><i class="fa fa-2x fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
+        <p class="footer-links">
+            <a href="/index.html">Home</a>
+            ·
+            <a href="/test-blog.html">Blog</a>
+            ·
+            <a href="#">Khoá học</a>
+            ·
+            <a href="#">Về chúng tôi</a>
 
-                <div class="col m8 s12 row ">
-                    <div class="col m4 s12">
-                        <h5><strong>Về TechmasterVn</strong></h5>
-                        <ul>
-                            <li><a href="">Về chúng tôi</a></li>
-                            <li><a href="">Việc làm</a></li>
-                            <li><a href="">Thực tập</a></li>
-                            <li><a href="">Đặt câu hỏi cho chúng tôi</a></li>
-                            <li><a href="">Blog</a></li>
-                        </ul>
-                    </div>
+        </p>
 
-                    <div class="col m4 s12">
-                        <h5><strong>Learn To Code</strong></h5>
-                        <ul>
-                            <li>
-                                <a href="/">Lập trình iOS Objective-C</a>
-                            </li>
-                            <li>
-                                <a href="/">Web cơ bản HTML5, CSS3 và Javascript</a>
-                            </li>
-                            <li>
-                                <a href="">Node.js xây dựng web site tốc độ cao</a>
-                            </li>
-                            <li>
-                                <a href="">Lập trình Arrowjs Core và CMS</a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    Java căn bản thực hành</a>
-                            </li>
-
-                            <li>
-                                <a href="">Lập trình Python ứng dụng thực tế</a>
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="col m4 s12">
-                        <h5><strong>Tài nguyên</strong></h5>
-                        <ul>
-                            <li><a href="">HTML &amp; CSS</a></li>
-                            <li><a href="">JavaScript</a></li>
-                            <li><a href="">jQuery</a></li>
-                            <li><a href="">PHP</a></li>
-                            <li><a href="">Python</a></li>
-
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </article>
+        <p class="footer-company-name">TechmasterVn &copy; 2015</p>
     </div>
-    <div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
-        <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
-            <i class=" fa fa-2x fa-arrow-up"></i>
-        </a>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+
+            <p><span>Số 14, ngõ 4, Nguyễn Đình Chiểu</span> Hà nội, Việt nam.</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+
+            <p>090.220.9011</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+
+            <p><a href="mailto:support@company.com">cuong@techmaster.vn</a></p>
+        </div>
+
     </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about hide-on-small-and-down">
+            <span>Techmaster</span>
+            TechMaster là trung tâm đào tạo công nghệ thông tin được thành lập bởi nhóm chuyên gia CNTT, lập trình viên
+            có nhiều năm kinh nghiệm làm việc tại tập đoàn Microsoft
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
 </footer>
 
 <!-- Modal login and sign up -->
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="mdl-close">
+                <a class=" modal-action modal-close btn-flat"><i class="fa fa-times"></i> </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="s12 center-align"><img style="height: 30px;width: auto"
+                                               src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                                               alt="Techmaster" title="Techmaster"></div>
+        </div>
+        <div class="row">
+            <div class="col s12  ">
+                <div class="mdl_form">
+
+                    <!--<div class="social-log">-->
+                    <!--<button type="submit" class="waves-effect waves-light btn blue">Facebook</button>-->
+                    <!--&lt;!&ndash;<span> or </span>&ndash;&gt;-->
+                    <!--<button type="button" class="waves-effect waves-light btn red">Google</button>-->
+                    <!--</div>-->
+
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="email" name="email" maxlength="30" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="password" id="heslo" name="heslo" maxlength="30" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="center-align mdl-button">
+                            <button type="submit" class="waves-effect waves-light btn mdl_submit"><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn"
+                                    onclick="show_form_register()"><i class="mdi-social-person-add left"></i>Đăng kí
+                                miễn phĩ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl_form_register" style="display: none;">
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="text" name="name" class="validate" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="email" name="email" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-field">
+
+                            <input type="password" name="repass" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+
+
+                        <div class="center-align">
+                            <div class="g-recaptcha" data-sitekey="6LcL0RITAAAAAGN_prn2qh7rGi9AS-3EtUPjhy7B"></div>
+                        </div>
+
+
+                        <div class="center-align mdl-button">
+                            <button class="waves-effect waves-light btn mdl_submit" onclick=""><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" id="registrace"
+                                    onclick="show_form_login()"><i class="mdi-social-person-add left"></i>Trở lại đăng
+                                nhập
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col s12 center-align">
+                <a href="#" class="">Quên mật khẩu?</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Back to top button-->
+<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+    <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+        <i class=" fa fa-2x fa-arrow-up"></i>
+    </a>
+</div>
 
 <script>
     function show_form_login() {
@@ -613,5 +792,7 @@
 
 
 </script>
+
+
 </body>
 </html>

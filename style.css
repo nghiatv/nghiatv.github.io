@@ -95,7 +95,7 @@ nav ul li a {
     color: #343434;
     text-decoration: none;
     display: block;
-    padding: 25px 15px 20px;
+    padding: 25px 10px 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     /*text-transform: uppercase;*/
@@ -107,6 +107,11 @@ nav ul li a {
     -o-transition: color .25s;
     transition: color .25s;
 
+}
+@media (min-width: 1200px) {
+    nav ul li a{
+        padding: 25px 15px 20px;
+    }
 }
 #login-navbar,#signup-navbar{
     font-family: 'Open Sans', sans-serif;
@@ -703,9 +708,10 @@ td{
 
 .footer-distributed .footer-links{
     color:  #ffffff;
-    margin: 20px 0 12px;
+    margin: 0 auto;
     padding: 0;
 }
+
 
 .footer-distributed .footer-links a{
     display:inline-block;
