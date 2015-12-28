@@ -445,16 +445,7 @@ main{
     text-align: center;
     overflow: hidden;
 }
-.footer-post:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 100px;
-    height: 2px;
-    margin-left: -50px;
-    background: #3c948b;
-}
+
 .footer-post figure{
     width: 120px;
     margin: 0 auto 20px auto;
