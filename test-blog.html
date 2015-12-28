@@ -57,20 +57,27 @@
                     </ul>
                     <ul class="right hide-on-med-and-down">
 
-                        <!--<li><a class="tab" href="">Thực tập</a></li>-->
-                        <li><a class="tab" href="">Khóa học</a></li>
-                        <li><a class="tab" href="">Blog</a></li>
-                        <!--<li><a class="tab" href="">Phỏng vấn</a></li>-->
-                        <li><a class="tab" href="">Chúng tôi</a></li>
+                        <li><a href="">Khóa học</a></li>
+                        <li><a href="">Thực tập</a></li>
+                        <li><a href="">Blog</a></li>
+
+
+                        <li><a href="">Việc làm</a></li>
+
+                        <li><a href="">Sách</a></li>
+                        <li><a href="">Chúng tôi</a></li>
 
                     </ul>
                     <ul class="side-nav" id="mobile-nav">
                         <li><a href="">Khóa học</a></li>
                         <li><a href="">Thực tập</a></li>
+                        <li><a href="">Blog</a></li>
+
+
                         <li><a href="">Việc làm</a></li>
-                        <li><a href="">Phỏng vấn</a></li>
-                        <li><a href="">Ebooks</a></li>
-                        <li><a href="">chúng tôi</a></li>
+
+                        <li><a href="">Sách</a></li>
+                        <li><a href="">Chúng tôi</a></li>
                         <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
                            id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
                         <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
@@ -88,14 +95,12 @@
 <main id="main-blog-content">
     <div class="page-heading">
         <div class="row nav-wrapper">
-            <div class="col s12" id="breadcrumb-content">
+            <div class="col s12 m6" id="breadcrumb-content">
                 <a href="#!" class="breadcrumb">Trang chủ</a>
                 <a href="#!" class="breadcrumb">Blog</a>
             </div>
-        </div>
-        <div class="row">
             <div class="col s12 m6">
-                <form class="card search-wrapper col s12 hoverable">
+                <form class="card search-wrapper col s12 hoverable right">
                     <div class="input-field">
                         <input id="blog-search" name="s" type="text" placeholder="Search">
                         <i class="material-icons">search</i>
@@ -103,10 +108,51 @@
                     </div>
 
                 </form>
+                <nav class="hide">
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
             </div>
-            <h2 class="col s12 m6">Blog</h2>
         </div>
+        <div class="row">
+            <div class="col s12 m6 hide-on-small-and-down" id="blog-filter">
 
+                    <ul class="tabs">
+                        <li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>
+                        <li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>
+                        <li class="tab drop open col s3"><a href="#test3"><span>Tag</span></a></li>
+                        <li class="tab drop col s3"><a href="#test4"><span>Date</span></a></li>
+                    </ul>
+
+            </div>
+
+
+        </div>
+        <ul class="row animated fadeInUp" id="data-filter">
+            <div id="test1" class="col s12"></div>
+            <li id="test2" class="col s12">
+               <ul class="tags">
+                   <li class="chip"><a href="">Agile (8)</a></li>
+                   <li class="chip"><a href="">Altassian (4)</a></li>
+                   <li class="chip"><a href="">Android (53)</a></li>
+                   <li class="chip"><a href="">ASP.net (6)</a></li>
+                   <li class="chip"><a href="">C++ (13)</a></li>
+                   <li class="chip"><a href="">Cloud (7)</a></li>
+                   <li class="chip"><a href="">công việc (125)</a></li>
+
+
+               </ul>
+            </li>
+            <li id="test3" class="col s12">Test 3</li>
+            <li id="test4" class="col s12">Test 4</li>
+        </ul>
     </div>
     <div class="page-main">
         <div class="row">
@@ -117,7 +163,7 @@
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
-                    <div class="grid-item grid-item--width2">
+                    <div class="grid-item">
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
@@ -133,7 +179,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -152,7 +198,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -171,7 +217,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -191,7 +237,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -210,7 +256,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -228,7 +274,27 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
+                                    engine
+                                    JavaScript mới dành cho Node.js</a></h2>
+
+                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
+                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -248,7 +314,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -268,7 +334,7 @@
                             </div>
                             <div class="card-action">
                                 <a class="" href="#">Web Design</a>
-                                <time class="right">17th March</time>
+                                <time class="right">17 tháng Ba</time>
                             </div>
                         </div>
                     </div>
@@ -297,79 +363,79 @@
 
 
 </main>
-<div class="main-blog-bottom white">
-    <div id="main-blog-most-view">
-        <div class="row">
+<!--<div class="main-blog-bottom white">-->
+    <!--<div id="main-blog-most-view">-->
+        <!--<div class="row">-->
 
-            <div class="most-view-title col s12">
-                <h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>
-            </div>
-            <div class="most-view-content  s12">
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
+            <!--<div class="most-view-title col s12">-->
+                <!--<h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>-->
+            <!--</div>-->
+            <!--<div class="most-view-content  s12">-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi
-                                là chính, học chỉ là phụ!</a></h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi-->
+                                <!--là chính, học chỉ là phụ!</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất
-                                (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/lamthenao.jpg">
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+                                <!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/lamthenao.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập
-                                trình?</a></h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 m3">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập-->
+                                <!--trình?</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
 
-                        </div>
-                        <div class="card-content">
-                            <h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất
-                                (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">This is a link</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+                                <!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
 
-        </div>
-    </div>
-</div>
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
 
 
 <!--Footer-->
@@ -418,8 +484,7 @@
 
         <p class="footer-company-about hide-on-small-and-down">
             <span>Techmaster</span>
-            Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
-            vehicula sit amet.
+            TechMaster là trung tâm đào tạo công nghệ thông tin được thành lập bởi nhóm chuyên gia CNTT, lập trình viên có nhiều năm kinh nghiệm làm việc tại tập đoàn Microsoft
         </p>
 
         <div class="footer-icons">
