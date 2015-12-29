@@ -2,9 +2,735 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,300italic&subset=vietnamese'
+          rel='stylesheet' type='text/css'>
+
+    <!--import massonry-->
+    <script src="masonry/masonry.min.js" type="text/javascript"></script>
+
+
+    <!--import Marterilize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <link rel="stylesheet" href="test-book.css" type="text/css">
+
+
 </head>
+
+
 <body>
+<!--Header-->
+
+<header class="page-header">
+    <div class="navbar-fixed white ">
+        <nav>
+            <div class="nav-wrapper col s12">
+
+                <a href="index.html" class="brand-logo "><img
+                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                        alt=""></a>
+
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
+                                                                                   style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                <ul class="right hide-on-med-and-down log-btn">
+                    <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
+                       id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
+                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                       id="signup-navbar"
+                       onclick="show_form_register1()">đăng kí</a>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="">Blog</a></li>
+
+
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="">Blog</a></li>
+
+
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+                    <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
+                       id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
+                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                       onclick="show_form_login1()">đăng nhập</a>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<!--Main-->
+
+<main id="main-book-content">
+    <div class="page-heading">
+        <div class="row nav-wrapper">
+            <div class="col s12 m6" id="breadcrumb-content">
+                <a href="#" class="breadcrumb">Trang chủ</a>
+                <a href="#" class="breadcrumb">Book</a>
+            </div>
+            <div class="col s12 m6">
+                <form class="card search-wrapper col s12 hoverable right">
+                    <div class="input-field">
+                        <input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">
+                        <i class="material-icons">search</i>
+
+                    </div>
+
+                </form>
+                <nav class="hide">
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required>
+                                <label for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12" id="book-filter">
+                <!--<ul class="tabs">-->
+                <!--<li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>-->
+                <!--<li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>-->
+                <!--&lt;!&ndash;<li class="tab drop open col s3"><a href="#test3"><span>Tag</span></a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="tab drop col s3"><a href="#test4"><span>Date</span></a></li>&ndash;&gt;-->
+                <!--</ul>-->
+
+
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><span>Category</span></a></div>
+                        <div class="collapsible-body" id="data-filter">
+                            <ul class="tags">
+                                <li class="chip"><a href="">Agile (8)</a></li>
+                                <li class="chip"><a href="">Altassian (4)</a></li>
+                                <li class="chip"><a href="">Android (53)</a></li>
+                                <li class="chip"><a href="">ASP.net (6)</a></li>
+                                <li class="chip"><a href="">C++ (13)</a></li>
+                                <li class="chip"><a href="">Cloud (7)</a></li>
+                                <li class="chip"><a href="">công việc (125)</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <!--<ul class="row animated fadeInUp" id="data-filter">-->
+        <!--<div id="test1" class="col s12"></div>-->
+        <!--<li id="test2" class="col s12">-->
+        <!--<ul class="tags">-->
+        <!--<li class="chip"><a href="">Agile (8)</a></li>-->
+        <!--<li class="chip"><a href="">Altassian (4)</a></li>-->
+        <!--<li class="chip"><a href="">Android (53)</a></li>-->
+        <!--<li class="chip"><a href="">ASP.net (6)</a></li>-->
+        <!--<li class="chip"><a href="">C++ (13)</a></li>-->
+        <!--<li class="chip"><a href="">Cloud (7)</a></li>-->
+        <!--<li class="chip"><a href="">công việc (125)</a></li>-->
+
+
+        <!--</ul>-->
+        <!--</li>-->
+        <!--</ul>-->
+    </div>
+    <div class="page-main">
+        <div class="row">
+            <div class="col s12">
+                <!--<div class="newest-title">-->
+                <!--<h3>Newest</h3>-->
+                <!--</div>-->
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/pro-unity-game-development-with-c.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/version-control-with-git-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/pro-bash-programming.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/the-passionate-programmer-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/seven-databases-in-seven-weeks.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/programming-ios-7-4th-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/postgresql-server-programming-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/learning-python-data-visualization.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/crafting-rails-4-applications-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/elasticsearch-the-definitive-guide.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/version-control-with-git-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/java-cookbook-3rd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/databases-for-small-business.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/css3-the-missing-manual-3rd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/crafting-rails-4-applications-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/building-microservices.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="grid-item">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="page-pagination center">
+                    <ul class="pagination">
+
+                        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li class="waves-effect"><a href="#">2</a></li>
+                        <li class="waves-effect"><a href="#">3</a></li>
+                        <li class="waves-effect"><a href="#">4</a></li>
+                        <li class="waves-effect"><a href="#">5</a></li>
+                        <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+                <div class="page-tag-cloud">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+<!--<div class="main-blog-bottom white">-->
+<!--<div id="main-blog-most-view">-->
+<!--<div class="row">-->
+
+<!--<div class="most-view-title col s12">-->
+<!--<h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>-->
+<!--</div>-->
+<!--<div class="most-view-content  s12">-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">-->
+
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi-->
+<!--là chính, học chỉ là phụ!</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
+
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+<!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/lamthenao.jpg">-->
+
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập-->
+<!--trình?</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="col s12 m3">-->
+<!--<div class="card">-->
+<!--<div class="card-image">-->
+<!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
+
+<!--</div>-->
+<!--<div class="card-content">-->
+<!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+<!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+<!--</div>-->
+<!--<div class="card-action">-->
+<!--<a href="#">This is a link</a>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+<!--</div>-->
+<!--</div>-->
+<!--</div>-->
+
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l3">
+                <div class=" clearfix">
+                    <a href="/index.html"> <strong class="logo"><h4>Techmaster Inc. </h4></strong></a>
+                </div>
+                <div class="nav nav-pills add-nav">
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Quy định </a></p>
+
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Điều khoản</a></p>
+                    <!--<li><a href="">Privacy Policy</a></li>-->
+                </div>
+            </div>
+            <div class="col s12 l9">
+                <div class="row">
+                    <div class="col s12 l7 m6">
+                        <div class="row">
+                            <div class="col s12 l5 m6"><h4>Về chúng tôi</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="" class="jobs">Việc làm</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
+                                    <!--<li><a href="https://codemyviews.com/our-work/code"></a></li>-->
+                                </ul>
+                            </div>
+                            <div class="col s12 l7 m6"><h4>Contact</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="tel:0902209011">Mr Cường : 090.220.9011</a></li>
+                                    <li><a href="tel:0932225065">Mr. Cần: 093.222.5065</a></li>
+
+                                    <li><a href="mailto:cuong@techmaster.vn">cuong@techmaster.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l5 m6">
+                        <h4>Địa chỉ
+                        </h4>
+
+                        <div class="chat-block">
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-1">
+                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-2">
+                                    <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
+                                        Xuân, Hà Nội
+                                    </address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Modal login and sign up -->
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="mdl-close">
+                <a class=" modal-action modal-close btn-flat"><i class="fa fa-times"></i> </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="s12 center-align"><img style="height: 30px;width: auto"
+                                               src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                                               alt="Techmaster" title="Techmaster"></div>
+        </div>
+        <div class="row">
+            <div class="col s12  ">
+                <div class="mdl_form">
+
+                    <!--<div class="social-log">-->
+                    <!--<button type="submit" class="waves-effect waves-light btn blue">Facebook</button>-->
+                    <!--&lt;!&ndash;<span> or </span>&ndash;&gt;-->
+                    <!--<button type="button" class="waves-effect waves-light btn red">Google</button>-->
+                    <!--</div>-->
+
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="email" name="email" maxlength="30" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="password" id="heslo" name="heslo" maxlength="30" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="center-align mdl-button">
+                            <button type="submit" class="waves-effect waves-light btn mdl_submit"><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn"
+                                    onclick="show_form_register()"><i class="mdi-social-person-add left"></i>Đăng kí
+                                miễn phĩ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl_form_register" style="display: none;">
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="text" name="name" class="validate" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="email" name="email" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-field">
+
+                            <input type="password" name="repass" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+
+
+                        <div class="center-align">
+                            <div class="g-recaptcha" data-sitekey="6LcL0RITAAAAAGN_prn2qh7rGi9AS-3EtUPjhy7B"></div>
+                        </div>
+
+
+                        <div class="center-align mdl-button">
+                            <button class="waves-effect waves-light btn mdl_submit" onclick=""><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" id="registrace"
+                                    onclick="show_form_login()"><i class="mdi-social-person-add left"></i>Trở lại đăng
+                                nhập
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col s12 center-align">
+                <a href="#" class="">Quên mật khẩu?</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Back to top button-->
+<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+    <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+        <i class=" fa fa-2x fa-arrow-up"></i>
+    </a>
+</div>
+
+<script>
+    function show_form_login() {
+        $(".mdl_form_register").hide(600);
+        $(".mdl_form").show(600);
+
+    }
+    function show_form_login1() {
+        $(".mdl_form_register").hide();
+        $(".mdl_form").show();
+    }
+    function show_form_register() {
+        $(".mdl_form").hide(600);
+        $(".mdl_form_register").show(600);
+    }
+    function show_form_register1() {
+        $(".mdl_form").hide();
+        $(".mdl_form_register").show();
+    }
+    //Modal
+
+    $(document).ready(function () {
+        $('.modal-trigger').leanModal({
+//                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+//                    opacity: .6, // Opacity of modal background
+//                    in_duration: 300, // Transition in duration
+//                    out_duration: 200, // Transition out duration
+
+                }
+        );
+        $(".button-collapse").sideNav();   //    sideNav
+        $('ul.tabs').tabs(); // Tabs
+    });
+
+    //    Slider
+
+    //    $(document).ready(function () {
+    //        $('.slider').slider({full_width: true,
+    //        });
+    //    });
+
+
+    $(window).bind('load', function () {
+        $('.grid').masonry({
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true
+        })
+    });
+
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').removeClass('hide');
+                    } else {
+                        $('#back-to-top').addClass('hide');
+                    }
+                };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1200);
+        });
+    }
+
+
+</script>
+
 
 </body>
 </html>

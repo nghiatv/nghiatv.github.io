@@ -9,11 +9,10 @@
     color: #cccccc;
 }
 .grid-sizer,
-.grid-item { width: 100%;
-
+.grid-item { width: 48%;
 }
 
-.gutter-sizer { width: 0; }
+.gutter-sizer { width: 4%; }
 
 .grid-item--width2 { width: 100%;
 
@@ -29,22 +28,17 @@
 main{
     min-height: 1200px;
 }
-#main-blog-content,#main-blog-most-view,#main-blog-top-author{
+#main-book-content,#main-blog-most-view,#main-blog-top-author{
     margin: 0 auto;
     max-width: 600px;
 }
 @media (min-width: 769px) {
     .grid-sizer,
-    .grid-item { width: 48%;
-    }
+    .grid-item { width: 32%; }
 
-    .gutter-sizer { width: 4%; }
-
-    .grid-item--width2 { width: 100%;
-
-
-    }
-    #main-blog-content,#main-blog-most-view,#main-blog-top-author{
+    .gutter-sizer { width: 2%; }
+    .grid-item--width2 { width: 66%; }
+    #main-book-content,#main-blog-most-view,#main-blog-top-author{
         width: 80%;
         max-width: 800px;
     }
@@ -60,7 +54,7 @@ main{
     .page-heading h2{
         text-align: right;
     }
-    #main-blog-content form{
+    #main-book-content form{
         float: right!important;
     }
 }
@@ -68,29 +62,29 @@ main{
 
 @media (min-width: 993px) {
     .grid-sizer,
-    .grid-item { width: 32%; }
+    .grid-item { width: 23.5%; }
 
     .gutter-sizer { width: 2%; }
-    .grid-item--width2 { width: 66%; }
+    .grid-item--width2 { width: 47%; }
 
-    #main-blog-content,#main-blog-top-author,#main-blog-most-view{
+    #main-book-content,#main-blog-top-author,#main-blog-most-view{
         width: 90%;
         max-width: 1170px;
     }
 
     .grid-item > .card > .card-image{
-        max-height: 300px;
+        /*max-height: 300px;*/
         overflow: hidden;
     }
     .grid-item > .card > .card-image:hover img{
         -webkit-transition: all 400ms ease-in;
-        -webkit-transform: scale(1.1);
+        -webkit-transform: scale(1.0);
         /*-ms-transition: all 400ms ease-in;*/
-        -ms-transform: scale(1.1);
+        -ms-transform: scale(1.0);
         -moz-transition: all 400ms ease-in;
-        -moz-transform: scale(1.1);
+        -moz-transform: scale(1.0);
         transition: all 400ms ease-in;
-        transform: scale(1.1);
+        transform: scale(1.0);
         opacity: 1;
     }
     .grid-item > .card > .card-image img{
@@ -102,7 +96,7 @@ main{
         -moz-transform: scale(1.0);
         transition: all 400ms ease-in;
         transform: scale(1.0);
-        opacity: 0.8;
+        opacity: 1;
     }
     .post-content{
         width: 80%;
@@ -122,12 +116,12 @@ main{
 }
 
 
-#blog-filter > ul.collapsible{
+#book-filter > ul.collapsible{
     box-shadow: none;
     border: none;
 
 }
-#blog-filter > ul.collapsible li{
+#book-filter > ul.collapsible li{
 
     /*border-left: 1px solid #d2d6d5;*/
     /*border-right: 1px solid #d2d6d5;*/
@@ -136,7 +130,7 @@ main{
 }
 
 
-#blog-filter > ul.collapsible > li >.collapsible-header{
+#book-filter > ul.collapsible > li >.collapsible-header{
 
     display: inline-block;
     border-top: 1px solid #ddd;
@@ -153,15 +147,15 @@ main{
     text-transform: none;
 }
 
-#blog-filter > ul.collapsible > li.active >.collapsible-header{
+#book-filter > ul.collapsible > li.active >.collapsible-header{
     border-bottom: none;
 }
-#blog-filter > ul.collapsible > li >.collapsible-header span{
+#book-filter > ul.collapsible > li >.collapsible-header span{
     position: relative;
     padding-right: 30px;
 }
 
-#blog-filter > ul.collapsible > li >.collapsible-header span::before,#blog-filter > ul.collapsible > li >.collapsible-header span::after{
+#book-filter > ul.collapsible > li >.collapsible-header span::before,#book-filter > ul.collapsible > li >.collapsible-header span::after{
     content: '';
     display: block;
     position: absolute;
@@ -177,19 +171,19 @@ main{
     transition: all .25s ease-out;
 }
 
-#blog-filter > ul.collapsible > li >.collapsible-header span::after{
+#book-filter > ul.collapsible > li >.collapsible-header span::after{
     right: 15px;
     -webkit-transform: rotate(-135deg);
     transform: rotate(-135deg);
 }
 
-#blog-filter > .collapsible > li.active > .collapsible-header span::after{
+#book-filter > .collapsible > li.active > .collapsible-header span::after{
     right: 19px;
     /*-webkit-transform: rotate(135deg);*/
     /*transform: rotate(135deg);*/
 }
 
-#blog-filter > .collapsible > li.active > .collapsible-header span::before{
+#book-filter > .collapsible > li.active > .collapsible-header span::before{
     right: 15px;
     /*-webkit-transform: rotate(225deg);*/
     /*transform: rotate(225deg);*/
