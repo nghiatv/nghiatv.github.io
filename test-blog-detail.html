@@ -95,27 +95,15 @@
 <main id="main-blog-content">
     <div class="page-heading">
         <div class="row nav-wrapper">
-            <div class="col s12 12" id="breadcrumb-content">
+            <div class="col s12 m6" id="breadcrumb-content">
                 <a href="#!" class="breadcrumb">Trang chủ</a>
                 <a href="#!" class="breadcrumb">Blog</a>
                 <a href="#!" class="breadcrumb">Tại sao bạn nên đóng góp vào các dự án mã nguồn mở</a>
             </div>
-
-        </div>
-        <div class="row">
-            <div class="col s12 m6 hide-on-med-and-down" id="blog-filter">
-                <ul class="tabs">
-                    <li class="tab "><a href="/test-blog.html"><span>Blog</span></a></li>
-                    <li class="tab drop"><a href="#test2"><span>Category</span></a></li>
-                    <li class="tab drop"><a href="#test3"><span>Tag</span></a></li>
-                    <li class="tab drop"><a href="#test4"><span>Date</span></a></li>
-                </ul>
-
-            </div>
-            <div class="col s12 m6">
-                <form class="card search-wrapper col s12 hoverable center">
+            <div class="col s12 m6" id="search-top">
+                <form class="card search-wrapper col s12 hoverable left">
                     <div class="input-field">
-                        <input id="blog-search" name="s" type="text" placeholder="Search">
+                        <input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">
                         <i class="material-icons">search</i>
 
                     </div>
@@ -133,66 +121,44 @@
                     </div>
                 </nav>
             </div>
+        </div>
+        <div class="row">
+
+            <div class="col s12" id="blog-filter">
+                <!--<ul class="tabs">-->
+                <!--<li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>-->
+                <!--<li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>-->
+                <!--&lt;!&ndash;<li class="tab drop open col s3"><a href="#test3"><span>Tag</span></a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="tab drop col s3"><a href="#test4"><span>Date</span></a></li>&ndash;&gt;-->
+                <!--</ul>-->
+
+
+
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+                        <div class="collapsible-header"><span>Category</span></a></div>
+                        <div class="collapsible-body" id="data-filter">
+                            <ul class="tags">
+                                <li class="chip"><a href="">Agile (8)</a></li>
+                                <li class="chip"><a href="">Altassian (4)</a></li>
+                                <li class="chip"><a href="">Android (53)</a></li>
+                                <li class="chip"><a href="">ASP.net (6)</a></li>
+                                <li class="chip"><a href="">C++ (13)</a></li>
+                                <li class="chip"><a href="">Cloud (7)</a></li>
+                                <li class="chip"><a href="">công việc (125)</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
 
         </div>
-        <ul class="row" id="data-filter">
-            <li id="test1" class="col s12"></li>
-            <li id="test2" class="col s12">
-                <ul class="tags">
-                    <li class="chip"><a href="">Agile (8)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">C++ (13)</a></li>
-                    <li class="chip"><a href="">Cloud (7)</a></li>
-                    <li class="chip"><a href="">công việc (125)</a></li>
 
-
-                </ul>
-            </li>
-            <li id="test3" class="col s12">
-                <ul class="tags">
-                    <li class="chip"><a href="">Agile (8)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">C++ (13)</a></li>
-                    <li class="chip"><a href="">Cloud (7)</a></li>
-                    <li class="chip"><a href="">công việc (125)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-
-
-                </ul>
-            </li>
-            <li id="test4" class="col s12">
-                <ul class="tags">
-                    <li class="chip"><a href="">Agile (8)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">C++ (13)</a></li>
-                    <li class="chip"><a href="">Cloud (7)</a></li>
-                    <li class="chip"><a href="">công việc (125)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">C++ (13)</a></li>
-                    <li class="chip"><a href="">Cloud (7)</a></li>
-                    <li class="chip"><a href="">công việc (125)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-                    <li class="chip"><a href="">Android (53)</a></li>
-                    <li class="chip"><a href="">ASP.net (6)</a></li>
-                    <li class="chip"><a href="">Altassian (4)</a></li>
-
-                </ul>
-            </li>
-        </ul>
     </div>
     <div class="page-main white">
         <div class="row">
@@ -535,66 +501,67 @@
 
 
 <!--Footer-->
-<footer class="footer-distributed">
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l3">
+                <div class=" clearfix">
+                    <a href="/index.html"> <strong class="logo"><h4>Techmaster Inc. </h4> </div></strong></a>
 
-    <div class="footer-left">
+                <div class="nav nav-pills add-nav">
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Quy định </a></p>
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Điều khoản</a></p>
+                    <!--<li><a href="">Privacy Policy</a></li>-->
+                </div>
+            </div>
+            <div class="col s12 l9">
+                <div class="row">
+                    <div class="col s12 l7 m6">
+                        <div class="row">
+                            <div class="col s12 l5 m6"><h4>Về chúng tôi</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="" class="jobs">Việc làm</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
+                                    <!--<li><a href="https://codemyviews.com/our-work/code"></a></li>-->
+                                </ul>
+                            </div>
+                            <div class="col s12 l7 m6"><h4>Contact</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="tel:0902209011">Mr Cường : 090.220.9011</a></li>
+                                    <li><a href="tel:0932225065">Mr. Cần: 093.222.5065</a></li>
 
+                                    <li><a href="mailto:cuong@techmaster.vn">cuong@techmaster.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l5 m6">
+                        <h4>Địa chỉ
+                        </h4>
 
-        <p class="footer-links">
-            <a href="/index.html">Home</a>
-            ·
-            <a href="/test-blog.html">Blog</a>
-            ·
-            <a href="#">Khoá học</a>
-            ·
-            <a href="#">Về chúng tôi</a>
+                        <div class="chat-block">
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-1">
+                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-2">
+                                    <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
+                                        Xuân, Hà Nội
+                                    </address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
 
-        </p>
-
-        <p class="footer-company-name">TechmasterVn &copy; 2015</p>
-    </div>
-
-    <div class="footer-center">
-
-        <div>
-            <i class="fa fa-map-marker"></i>
-
-            <p><span>Số 14, ngõ 4, Nguyễn Đình Chiểu</span> Hà nội, Việt nam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div>
-            <i class="fa fa-phone"></i>
-
-            <p>090.220.9011</p>
-        </div>
-
-        <div>
-            <i class="fa fa-envelope"></i>
-
-            <p><a href="mailto:support@company.com">cuong@techmaster.vn</a></p>
-        </div>
-
-    </div>
-
-    <div class="footer-right">
-
-        <p class="footer-company-about hide-on-small-and-down">
-            <span>Techmaster</span>
-            TechMaster là trung tâm đào tạo công nghệ thông tin được thành lập bởi nhóm chuyên gia CNTT, lập trình viên
-            có nhiều năm kinh nghiệm làm việc tại tập đoàn Microsoft
-        </p>
-
-        <div class="footer-icons">
-
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-
-        </div>
-
-    </div>
-
 </footer>
 
 <!-- Modal login and sign up -->

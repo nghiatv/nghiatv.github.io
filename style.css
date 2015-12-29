@@ -666,178 +666,151 @@ td{
 }
 
 /*Footer Css*/
-.footer-distributed{
-    background-color: #292c2f;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-    box-sizing: border-box;
-    width: 100%;
-    text-align: left;
-   font-weight: bold;
-    font-size: 16px;
 
-    padding: 55px 50px;
+
+#footer{
+    margin-top: 100px;
+    background: #222428;
+    color: #919294;
+    padding: 61px 0;
+    text-align: center;
+}
+#footer a{
+    color: rgb(145, 146, 148);
+
+}
+#footer a:hover{
+    text-decoration: underline;
+}
+
+#footer .holder {
+
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+}
+
+#footer .holder .logo {
+    float: none;
+    display: block;
+
+    color: #ffffff;
+
 
 }
 
-.footer-distributed .footer-left,
-.footer-distributed .footer-center,
-.footer-distributed .footer-right{
+@media (min-width: 769px) {
+    #footer .holder .logo {
+        float: left;
+        width: 215px;
+        margin-right: 21px;
+    }
+    #footer{
+        text-align: left;
+    }
+    #footer p{
+        display: inline;
+        margin-right: 5px;
+    }
+}
+
+#footer .holder strong {
+    font-weight: 400;
+
+}
+
+#footer .holder .logo a {
+    display: block;
+    height: 31px;
+    /*background: url(/images/logo-footer.png) no-repeat;*/
+    background-size: cover;
+    margin: -12px 0 0;
+    text-align: left;
+}
+
+
+
+#footer .holder .copyright, .quote-form .btn, .select-area, .select-options ul a {
+    letter-spacing: 2px;
+}
+
+
+#footer .add-nav {
+
+    padding-bottom: 20px;
+}
+#footer .add-nav>li+li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -18px;
+    bottom: 0;
+    width: 2px;
+    background: #fff;
+    opacity: .1;
+}
+#footer .add-nav>li+li {
+    margin-left: 34px;
+}
+#footer .add-nav>li {
+    position: relative;
+    padding: 3px 0;
+}
+.nav-pills>li {
+    float: left;
+}
+.nav-pills>li+li {
+    margin-left: 2px;
+}
+
+#footer .nav-list {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.list-inline, .list-unstyled {
+    padding-left: 0;
+    list-style: none;
+}
+
+#footer .nav-list li {
+    padding: 0 0 11px;
+}
+#footer h4 {
+    color: #fff;
+    font-size: 18px;
+
+}
+
+#footer h4 .state {
     display: inline-block;
     vertical-align: top;
-}
-
-/* Footer left */
-
-.footer-distributed .footer-left{
-    width: 40%;
-}
-
-/* The company logo */
-
-.footer-distributed h3{
-    color:  #ffffff;
-    font: normal 36px 'Cookie', cursive;
-    margin: 0;
-}
-
-.footer-distributed h3 span{
-    color:  #5383d3;
-}
-
-/* Footer links */
-
-.footer-distributed .footer-links{
-    color:  #ffffff;
-    margin: 0 auto;
-    padding: 0;
-}
-
-
-.footer-distributed .footer-links a{
-    display:inline-block;
-    line-height: 1.8;
-    text-decoration: none;
-    color:  inherit;
-}
-
-.footer-distributed .footer-company-name{
-    color:  #8f9296;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
-}
-
-/* Footer Center */
-
-.footer-distributed .footer-center{
-    width: 35%;
-}
-
-.footer-distributed .footer-center i{
-    background-color:  #33383b;
-    color: #ffffff;
-    font-size: 25px;
-    width: 38px;
-    height: 38px;
+    margin: 0 0 0 7px;
+    position: relative;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    -webkit-border-radius: 50%;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 50%;
+    -moz-background-clip: padding;
     border-radius: 50%;
-    text-align: center;
-    line-height: 42px;
-    margin: 10px 15px;
-    vertical-align: middle;
+    background: #e11f1f;
 }
-
-.footer-distributed .footer-center i.fa-envelope{
-    font-size: 17px;
-    line-height: 38px;
+#footer p {
+    margin-bottom: 16px;
 }
-
-.footer-distributed .footer-center p{
-    display: inline-block;
-    color: #ffffff;
-    vertical-align: middle;
-    margin:0;
+#footer .btn-chat {
+    -webkit-border-radius: 22px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 22px;
+    -moz-background-clip: padding;
+    border-radius: 22px;
+    background-clip: padding-box;
 }
-
-.footer-distributed .footer-center p span{
-    display:block;
-    font-weight: normal;
-    font-size:14px;
-    line-height:2;
+.chat-block div{
+    margin-bottom: 10px;
 }
-
-.footer-distributed .footer-center p a{
-    color:  #5383d3;
-    text-decoration: none;;
-}
-
-
-/* Footer Right */
-
-.footer-distributed .footer-right{
-    width: 20%;
-}
-
-.footer-distributed .footer-company-about{
-    line-height: 20px;
-    color:  #92999f;
-    font-size: 13px;
-    font-weight: normal;
-    margin: 0;
-}
-
-.footer-distributed .footer-company-about span{
-    display: block;
-    color:  #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.footer-distributed .footer-icons{
-    margin-top: 25px;
-}
-
-.footer-distributed .footer-icons a{
-    display: inline-block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-    background-color:  #33383b;
-    border-radius: 2px;
-
-    font-size: 20px;
-    color: #ffffff;
-    text-align: center;
-    line-height: 35px;
-
-    margin-right: 3px;
-    margin-bottom: 5px;
-}
-
-/* If you don't want the footer to be responsive, remove these media queries */
-
-@media (max-width: 880px) {
-
-    .footer-distributed{
-       font-size: 14px;
-        font-weight: bold;
-    }
-
-    .footer-distributed .footer-left,
-    .footer-distributed .footer-center,
-    .footer-distributed .footer-right{
-        display: block;
-        width: 100%;
-        margin-bottom: 40px;
-        text-align: center;
-    }
-
-    .footer-distributed .footer-center i{
-        margin-left: 0;
-    }
-
-}
-
 
 /*CSS trang chu*/
 
