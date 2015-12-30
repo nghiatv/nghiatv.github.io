@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="./Techmaster_files/jquery-2.1.1.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+
+    <link rel="stylesheet" href="./Techmaster_files/font-awesome.min.css">
+    <link href="./Techmaster_files/css" rel="stylesheet" type="text/css">
+
+    <!--import massonry-->
+    <script src="./Techmaster_files/masonry.min.js" type="text/javascript"></script>
+
+
+    <!--import Marterilize-->
+    <link href="./Techmaster_files/icon" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="./Techmaster_files/materialize.min.css" media="screen,projection">
+    <script type="text/javascript" src="./Techmaster_files/materialize.min.js"></script>
+    <link rel="stylesheet" href="./Techmaster_files/animate.css" type="text/css">
+
+
+    <link rel="stylesheet" href="./Techmaster_files/style.css" type="text/css">
+
+    <link rel="stylesheet" href="./Techmaster_files/test-blog.css" type="text/css">
+
+
+</head>
+
+
+<body>
+<!--Header-->
+
+<header class="page-header">
+    <div class="navbar-fixed white ">
+        <nav>
+            <div class="nav-wrapper col s12">
+
+                            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/index.html" class="brand-logo "><img src="./Techmaster_files/logo.png" alt=""></a>
+
+                    <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars" style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                    <ul class="right hide-on-med-and-down log-btn">
+                        <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#modal1" class="waves-effect waves-light btn-flat login modal-trigger" id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
+                        <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#modal1" class="waves-effect waves-light btn modal-trigger" id="signup-navbar" onclick="show_form_register1()">đăng kí</a>
+                    </ul>
+                    <ul class="right hide-on-med-and-down">
+
+                        <li><a href="">Khóa học</a></li>
+                        <li><a href="">Thực tập</a></li>
+                        <li><a href="">Blog</a></li>
+
+
+                        <li><a href="">Việc làm</a></li>
+
+                        <li><a href="">Sách</a></li>
+                        <li><a href="">Chúng tôi</a></li>
+
+                    </ul>
+                    <ul class="side-nav" id="mobile-nav" style="left: -250px;">
+                        <li><a href="">Khóa học</a></li>
+                        <li><a href="">Thực tập</a></li>
+                        <li><a href="">Blog</a></li>
+
+
+                        <li><a href="">Việc làm</a></li>
+
+                        <li><a href="">Sách</a></li>
+                        <li><a href="">Chúng tôi</a></li>
+                        <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#modal1" class="waves-effect waves-light btn-flat btn modal-trigger" id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
+                        <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#modal1" class="waves-effect waves-light btn modal-trigger" onclick="show_form_login1()">đăng nhập</a>
+                    </ul>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<!--Main-->
+
+<main id="main-blog-content">
+    <div class="page-heading">
+        <div class="row nav-wrapper">
+            <div class="col s12 m6" id="breadcrumb-content">
+                <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#!" class="breadcrumb">Trang chủ</a>
+                <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#!" class="breadcrumb">Blog</a>
+            </div>
+            <div class="col s12 m6">
+                <form class="card search-wrapper col s12 hoverable right">
+                    <div class="input-field">
+                        <input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">
+                        <i class="material-icons">search</i>
+
+                    </div>
+
+                </form>
+                <nav class="hide">
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" required="">
+                                <label for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12" id="blog-filter">
+                    <!--<ul class="tabs">-->
+                        <!--<li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>-->
+                        <!--<li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>-->
+                        <!--&lt;!&ndash;<li class="tab drop open col s3"><a href="#test3"><span>Tag</span></a></li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;<li class="tab drop col s3"><a href="#test4"><span>Date</span></a></li>&ndash;&gt;-->
+                    <!--</ul>-->
+
+
+
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li class="">
+                        <div class="collapsible-header"><span>Category</span></div>
+                        <div class="collapsible-body" style="display: none;">
+                            <ul class="tags">
+                                <li class="chip"><a href="">Agile (8)</a></li>
+                                <li class="chip"><a href="">Altassian (4)</a></li>
+                                <li class="chip"><a href="">Android (53)</a></li>
+                                <li class="chip"><a href="">ASP.net (6)</a></li>
+                                <li class="chip"><a href="">C++ (13)</a></li>
+                                <li class="chip"><a href="">Cloud (7)</a></li>
+                                <li class="chip"><a href="">công việc (125)</a></li>
+
+
+                            </ul>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+        </div>
+        <!--<ul class="row animated fadeInUp" id="data-filter">-->
+            <!--<div id="test1" class="col s12"></div>-->
+            <!--<li id="test2" class="col s12">-->
+               <!--<ul class="tags">-->
+                   <!--<li class="chip"><a href="">Agile (8)</a></li>-->
+                   <!--<li class="chip"><a href="">Altassian (4)</a></li>-->
+                   <!--<li class="chip"><a href="">Android (53)</a></li>-->
+                   <!--<li class="chip"><a href="">ASP.net (6)</a></li>-->
+                   <!--<li class="chip"><a href="">C++ (13)</a></li>-->
+                   <!--<li class="chip"><a href="">Cloud (7)</a></li>-->
+                   <!--<li class="chip"><a href="">công việc (125)</a></li>-->
+
+
+               <!--</ul>-->
+            <!--</li>-->
+        <!--</ul>-->
+    </div>
+    <div class="page-main">
+        <div class="row">
+            <div class="col s12">
+                <!--<div class="newest-title">-->
+                <!--<h3>Newest</h3>-->
+                <!--</div>-->
+                <div class="grid" style="position: relative; height: 4569px;">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 0px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title no-padding center"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#" class="">Microsoft giới thiệu một
+                                    engine
+                                    JavaScript mới dành cho Node.js</a></h2>
+
+                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
+                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item " style="position: absolute; left: 0%; top: 520px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/tim-viec-lap-trinh-vien-25122015.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title no-padding center"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Làm thế nào để có được một công
+                                    việc lập trình?</a></h2>
+
+                                <p>Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                    chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item " style="position: absolute; left: 0%; top: 992px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Liệu Web Designer có cần kỹ năng lập
+                                    trình?</a></h2>
+
+                                <p>Thuật ngữ "web designer" là chủ quan và có ý nghĩa khác nhau đối với những người khác
+                                    nhau.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 1422px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/bigdate.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
+                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+
+                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
+                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
+                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 1939px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/lamthenao.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Làm thế nào để tuyển dụng một lập
+                                    trình viên giỏi khi bạn không biết code</a></h2>
+
+                                <p>Là một startup founder, việc thuê lập trình viên đầu tiên sẽ là một trong những quyết
+                                    định quan trọng nhất mà bạn phải làm.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 2389px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/son.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Cách dạy con của người Đức: Vui chơi
+                                    là chính, học chỉ là phụ!</a></h2>
+
+                                <p>Cách dạy con của người Đức: Vui chơi là chính, học chỉ là phụ!</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 2856px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title no-padding center"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#" class="">Microsoft giới thiệu một
+                                    engine
+                                    JavaScript mới dành cho Node.js</a></h2>
+
+                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
+                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 3376px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/single.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Nguyên tắc trách nhiệm duy nhất
+                                    (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
+
+                                <p>Trong bài viết này tôi sẽ thảo luận về Nguyên tắc trách nhiệm duy nhất (Single
+                                    Responsibility Principle) và một số kỹ thuật xoay quanh nó để có thể giúp bạn nâng
+                                    cao chất lượng code chương trình của mình.</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item" style="position: absolute; left: 0%; top: 4052px;">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./Techmaster_files/bigdate.jpg">
+
+                            </div>
+                            <div class="card-content">
+                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
+                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+
+                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
+                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
+                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Web Design</a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="page-pagination center">
+                    <ul class="pagination">
+
+                        <li class="disabled"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#"><i class="material-icons">chevron_left</i></a></li>
+                        <li class="active"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">1</a></li>
+                        <li class="waves-effect"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">2</a></li>
+                        <li class="waves-effect"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">3</a></li>
+                        <li class="waves-effect"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">4</a></li>
+                        <li class="waves-effect"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">5</a></li>
+                        <li class="waves-effect"><a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#"><i class="material-icons">chevron_right</i></a></li>
+                    </ul>
+                </div>
+                <div class="page-tag-cloud">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+<!--<div class="main-blog-bottom white">-->
+    <!--<div id="main-blog-most-view">-->
+        <!--<div class="row">-->
+
+            <!--<div class="most-view-title col s12">-->
+                <!--<h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>-->
+            <!--</div>-->
+            <!--<div class="most-view-content  s12">-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">-->
+
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi-->
+                                <!--là chính, học chỉ là phụ!</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
+
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+                                <!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/lamthenao.jpg">-->
+
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập-->
+                                <!--trình?</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col s12 m3">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-image">-->
+                            <!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
+
+                        <!--</div>-->
+                        <!--<div class="card-content">-->
+                            <!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
+                                <!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-action">-->
+                            <!--<a href="#">This is a link</a>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+
+<!--Footer-->
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+
+
+        <p class="footer-links">
+            <a href="file:///index.html">Home</a>
+            ·
+            <a href="file:///test-blog.html">Blog</a>
+            ·
+            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Khoá học</a>
+            ·
+            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#">Về chúng tôi</a>
+
+        </p>
+
+        <p class="footer-company-name">TechmasterVn © 2015</p>
+    </div>
+
+    <div class="footer-center">
+
+        <div>
+            <i class="fa fa-map-marker"></i>
+
+            <p><span>Số 14, ngõ 4, Nguyễn Đình Chiểu</span> Hà nội, Việt nam.</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+
+            <p>090.220.9011</p>
+        </div>
+
+        <div>
+            <i class="fa fa-envelope"></i>
+
+            <p><a href="mailto:support@company.com">cuong@techmaster.vn</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about hide-on-small-and-down">
+            <span>Techmaster</span>
+            TechMaster là trung tâm đào tạo công nghệ thông tin được thành lập bởi nhóm chuyên gia CNTT, lập trình viên có nhiều năm kinh nghiệm làm việc tại tập đoàn Microsoft
+        </p>
+
+        <div class="footer-icons">
+
+            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#"><i class="fa fa-facebook"></i></a>
+            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#"><i class="fa fa-twitter"></i></a>
+            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#"><i class="fa fa-linkedin"></i></a>
+            <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#"><i class="fa fa-github"></i></a>
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Modal login and sign up -->
+
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="mdl-close">
+                <a class=" modal-action modal-close btn-flat"><i class="fa fa-times"></i> </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="s12 center-align"><img style="height: 30px;width: auto" src="./Techmaster_files/logo.png" alt="Techmaster" title="Techmaster"></div>
+        </div>
+        <div class="row">
+            <div class="col s12  ">
+                <div class="mdl_form">
+
+                    <!--<div class="social-log">-->
+                    <!--<button type="submit" class="waves-effect waves-light btn blue">Facebook</button>-->
+                    <!--&lt;!&ndash;<span> or </span>&ndash;&gt;-->
+                    <!--<button type="button" class="waves-effect waves-light btn red">Google</button>-->
+                    <!--</div>-->
+
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="email" name="email" maxlength="30" class="validate" required="">
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="password" id="heslo" name="heslo" maxlength="30" class="validate" required="">
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="center-align mdl-button">
+                            <button type="submit" class="waves-effect waves-light btn mdl_submit"><i class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" onclick="show_form_register()"><i class="mdi-social-person-add left"></i>Đăng kí
+                                miễn phĩ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl_form_register" style="display: none;">
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="text" name="name" class="validate" required="">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="email" name="email" class="validate" required="">
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-field">
+
+                            <input type="password" name="repass" class="validate" required="">
+                            <label for="pass">Password</label>
+                        </div>
+
+
+                        <div class="center-align">
+                            <div class="g-recaptcha" data-sitekey="6LcL0RITAAAAAGN_prn2qh7rGi9AS-3EtUPjhy7B"></div>
+                        </div>
+
+
+                        <div class="center-align mdl-button">
+                            <button class="waves-effect waves-light btn mdl_submit" onclick=""><i class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" id="registrace" onclick="show_form_login()"><i class="mdi-social-person-add left"></i>Trở lại đăng
+                                nhập
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col s12 center-align">
+                <a href="file:///Users/nghia/Desktop/nghiatv.github.io/test-blog.html#" class="">Quên mật khẩu?</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Back to top button-->
+<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+    <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+        <i class=" fa fa-2x fa-arrow-up"></i>
+    </a>
+</div>
+
+<script>
+    function show_form_login() {
+        $(".mdl_form_register").hide(600);
+        $(".mdl_form").show(600);
+
+    }
+    function show_form_login1() {
+        $(".mdl_form_register").hide();
+        $(".mdl_form").show();
+    }
+    function show_form_register() {
+        $(".mdl_form").hide(600);
+        $(".mdl_form_register").show(600);
+    }
+    function show_form_register1() {
+        $(".mdl_form").hide();
+        $(".mdl_form_register").show();
+    }
+    //Modal
+
+    $(document).ready(function () {
+        $('.modal-trigger').leanModal({
+//                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+//                    opacity: .6, // Opacity of modal background
+//                    in_duration: 300, // Transition in duration
+//                    out_duration: 200, // Transition out duration
+
+                }
+        );
+        $(".button-collapse").sideNav();   //    sideNav
+        $('ul.tabs').tabs(); // Tabs
+    });
+
+    //    Slider
+
+    //    $(document).ready(function () {
+    //        $('.slider').slider({full_width: true,
+    //        });
+    //    });
+
+
+    $(window).bind('load', function () {
+        $('.grid').masonry({
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true
+        })
+    });
+
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').removeClass('hide');
+                    } else {
+                        $('#back-to-top').addClass('hide');
+                    }
+                };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1200);
+        });
+    }
+
+
+</script>
+
+
+
+<div class="hiddendiv common"></div><div class="drag-target" style="left: 0px; touch-action: pan-y; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></div></body></html>
