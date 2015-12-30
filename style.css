@@ -10,6 +10,8 @@ body {
     background-color:#e9eaea;
     font-family: "Open Sans",sans-serif;
     font-size: 14px;
+    padding: 0;
+    margin: 0;
 }
 
 
@@ -177,8 +179,9 @@ nav ul li.active a:before {
 }
 
 #list-course-title h2{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
 }
 
 .parallax-container{
@@ -186,9 +189,14 @@ nav ul li.active a:before {
     background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
     background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
     background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
+    background: linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -o-linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -webkit-linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -moz-linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -ms-linear-gradient(to bottom left, #34b3a0, #204056);
 }
 
-.parallax-container.parallax-top.teal.lighten-2{
+#home-parallax.parallax-container.parallax-top.teal.lighten-2 {
     background: linear-gradient(to bottom left, #34b3a0, #204056);
     background: -o-linear-gradient(to bottom left, #34b3a0, #204056);
     background: -webkit-linear-gradient(to bottom left, #34b3a0, #204056);
@@ -467,8 +475,8 @@ td{
     }
 }
 #how-learning{
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 #how-learning > .container{
     width: 90%;
@@ -893,15 +901,61 @@ td{
 #price-list-title h4, #check-out-title h4{
     margin-bottom: 50px;
 }
+
+#price-list .card {
+    position: relative;
+    padding: 0;
+    border-radius: 4px;
+    background: white;
+    text-align: left;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.15);
+    margin: 0 0 30px;
+}
+
+#price-list .card .card-content, #price-list .card .card-action, #price-list .card .card-reveal {
+    padding: 30px;
+}
+
+.basic-course, .standard-course, .intern-course {
+
+}
+
+.basic-course {
+    top: 60px;
+}
 .feature-item{
-    line-height: 1.6;
-    font-size: 1.2em;
-    font-weight: 300    ;
+    position: relative;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    padding: 0 0 0 34px;
+    list-style: none;
+    vertical-align: baseline;
+    font-size: 16px;
 }
 .feature-item:before{
-    content: "\f00c  ";
-    font-family: "FontAwesome",sans-serif ;
+    content: "";
+    background: url("images/check.png");
+    font-size: 1.5em;
+    /*content: "\f058";*/
+    /*font-family: "FontAwesome" ;*/
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    color: #5fcf80;
+}
 
+.basic-course .feature-item:before {
+    color: #00796b;
+}
+
+.standard-course .feature-item:before {
+    color: #0059bc;
+}
+
+.intern-course .feature-item:before {
+    color: red;
 }
 .feature-list{
     min-height: 288px;
@@ -918,12 +972,12 @@ td{
     max-height: 661px;
 }
 .course-price{
-    text-align: center;
-    line-height: 36px;
-    height: 36px !important;
-    font-style: normal;
-    font-size: 28px;
-    font-weight: 600;
+    text-align: right;
+
+    font-size: 20px;
+    /*font-size: 28px;*/
+    font-weight: bolder;
+    margin: 0;
 }
 
 
@@ -945,6 +999,10 @@ td{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 5%;
+    }
+
+    .course-price {
+        font-size: 24px;
     }
 }
 .review-item:before{
@@ -1029,6 +1087,10 @@ td{
 @media (min-width: 993px) {
     #center-title {
         width: 50%;
+    }
+
+    .course-price {
+        font-size: 26px;
     }
 }
 .para-container{
@@ -1152,16 +1214,31 @@ td{
 #check-out-content{
     margin: 30px auto;
     width: 90%;
-    max-width: 400px;
+    max-width: 600px;
 }
 #price-content > .card{
-    margin: 20px auto!important;
+    position: relative;
+    margin: 20px auto;
     max-width: 400px;
+}
+
+#price-list .col {
+    padding: 0 1.25rem;
 }
 #price-content .course-title{
     font-weight: 600;
-
+    font-size: 26px;
 }
+
+#price-list span.card-title i {
+    line-height: 36px;
+}
+
+#price-content span.course-title i {
+    line-height: 48px;
+}
+
+
 .form-content{
     margin: 30px auto;
     padding-left: 40px;
@@ -1172,6 +1249,10 @@ td{
         width: 80%;
         max-width: 600px;
         padding: 20px;
+    }
+
+    #price-list .card {
+        margin-bottom: 0;
     }
 }
 @media only screen and (min-width: 993px) {

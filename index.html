@@ -34,8 +34,9 @@
 
 
     <!--Captcha-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 
+    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
 
 </head>
 
@@ -97,11 +98,22 @@
 
 
 <!--Main-->
-
+<script>
+    wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+    )
+    wow.init();
+</script>
 <main>
 
     <!--Parallax-->
-    <div class="parallax-container parallax-top teal lighten-2">
+    <div id="home-parallax" class="parallax-container parallax-top teal lighten-2">
         <div class="parallax">
             <!--<img src="slider1.jpg"> -->
         </div>
@@ -370,7 +382,7 @@
             <!--   Icon Section   -->
             <div class="row" id="how-learn-content">
                 <div class="col s12 m4">
-                    <div class="icon-block">
+                    <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                         <h2 class="center brown-text"><i class="fa fa-video-camera"></i></h2>
                         <h5 class="center">Xem Video</h5>
 
@@ -382,7 +394,7 @@
 
                 </div>
                 <div class="col s12 m4">
-                    <div class="icon-block">
+                    <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2s">
                         <h2 class="center brown-text"><i class="fa fa-keyboard-o"></i></h2>
                         <h5 class="center">Code Code Code</h5>
 
@@ -393,7 +405,7 @@
                 </div>
 
                 <div class="col s12 m4">
-                    <div class="icon-block ib-last">
+                    <div class="icon-block ib-last wow fadeInLeft" data-wow-duration="1s" data-wow-delay="3s">
                         <h2 class="center brown-text"><i class="fa fa-briefcase"></i></h2>
                         <h5 class="center">Làm Project thật</h5>
 

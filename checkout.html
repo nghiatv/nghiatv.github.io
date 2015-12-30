@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <!--<link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,700italic,100,100italic,300,300italic,500,500italic,700,900,900italic&subset=vietnamese'-->
+    <!--rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700,800,300italic&subset=vietnamese'
+          rel='stylesheet' type='text/css'>
+
+    <!--import Marterilize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <!--typed.js-->
+    <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
+
+    <!--style.css-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+    <!--animated.css-->
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
+    <!--Captcha-->
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+
+</head>
+
+
+<body>
+
+<!--Header-->
+<header class="page-header">
+    <div class="navbar-fixed white ">
+        <nav>
+            <div class="nav-wrapper col s12">
+
+                <a href="index.html" class="brand-logo "><img
+                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                        alt=""></a>
+
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
+                                                                                   style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                <ul class="right hide-on-med-and-down log-btn">
+                    <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
+                       id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
+                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                       id="signup-navbar"
+                       onclick="show_form_register1()">đăng kí</a>
+                </ul>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="">Blog</a></li>
+
+
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+
+                </ul>
+                <ul class="side-nav" id="mobile-nav">
+                    <li><a href="">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="">Blog</a></li>
+
+
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+                    <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
+                       id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
+                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
+                       onclick="show_form_login1()">đăng nhập</a>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+<!--Main-->
+<script>
+    wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: false,       // default
+                live: true        // default
+            }
+    )
+    wow.init();
+</script>
+
+
+<main>
+
+    <!--Parallax-->
+    <div id="checkout-parallax" class="parallax-container  teal lighten-2">
+        <div class="parallax">
+            <!--<img src="slider1.jpg"> -->
+        </div>
+        <div class="parallax-content" id="parallax-checkout-content">
+            <div id="price-list" class="row ">
+                <div class="col s12" id="price-content">
+
+                    <div class="col s12 l4  wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
+                        <div class="card white  standard-course ">
+
+                            <div class="card-content black-text">
+                                <span class="card-title activator course-title">Tiết kiệm<i
+                                        class="material-icons right">more_vert</i></span>
+
+                                <div class="course-feature">
+
+                                    <ul>
+                                        <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
+                                        <li class="feature-item"> Xem video</li>
+                                        <li class="feature-item">Trắc nghiệm</li>
+                                        <li class="feature-item">Thảo luận</li>
+                                        <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="card-action  ">
+                                <p class="course-price green-text">
+                                    <strong> 1,500,000 đ
+                                        <small>/khóa</small>
+                                    </strong>
+                                </p>
+
+                            </div>
+                            <div class="card-reveal blue white-text">
+                                <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
+
+                                <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và
+                                    tham gia dự án.
+                                    <br>
+
+                                    Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
+                                    Học phí học thử là 500,000 VND cho 7 ngày.<br>
+                                    Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
+                                    Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát
+                                    chặt chẽ nhất chất lượng đào tạo.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l4  wow bounceIn" data-wow-duration="2s" data-wow-delay="3s">
+                        <div class="card white  standard-course ">
+
+                            <div class="card-content black-text">
+                                <span class="card-title activator course-title">Tiêu chuẩn<i
+                                        class="material-icons right">more_vert</i></span>
+
+                                <div class="course-feature">
+
+                                    <ul>
+                                        <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
+                                        <li class="feature-item"> Xem video</li>
+                                        <li class="feature-item">Trắc nghiệm</li>
+                                        <li class="feature-item">Thảo luận</li>
+                                        <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
+                                        <li class="feature-item">Được giảng viên chấm bài</li>
+                                        <li class="feature-item">Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                            <div class="card-action  ">
+                                <p class="course-price green-text">
+                                    <strong> 1,500,000 đ
+                                        <small>/khóa</small>
+                                    </strong>
+                                </p>
+
+                            </div>
+                            <div class="card-reveal blue white-text">
+                                <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
+
+                                <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và
+                                    tham gia dự án.
+                                    <br>
+
+                                    Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
+                                    Học phí học thử là 500,000 VND cho 7 ngày.<br>
+                                    Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
+                                    Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát
+                                    chặt chẽ nhất chất lượng đào tạo.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l4  wow bounceIn" data-wow-duration="2s" data-wow-delay="5s">
+                        <div class="card white lighten-1 intern-course ">
+
+                            <div class="card-content black-text">
+                                <span class="card-title activator course-title">Thực tập<i class="material-icons right">more_vert</i></span>
+
+                                <div class="course-feature">
+
+                                    <ul>
+                                        <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
+                                        <li class="feature-item"> Xem video</li>
+                                        <li class="feature-item">Trắc nghiệm</li>
+                                        <li class="feature-item">Thảo luận</li>
+                                        <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
+                                        <li class="feature-item">Được giảng viên chấm bài</li>
+                                        <li class="feature-item">Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer
+                                        </li>
+                                        <li class="feature-item">Thực tập trực tiếp tại Techmasternd</li>
+                                    </ul>
+
+
+                                </div>
+                            </div>
+                            <div class="card-action">
+                                <p class="course-price green-text">
+                                    <strong> 2,000,000 đ
+                                        <small>/ tháng</small>
+                                    </strong>
+                                </p>
+                            </div>
+                            <div class="card-reveal red white-text">
+                                <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
+
+                                <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và
+                                    tham gia dự án.
+                                    <br>
+
+                                    Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
+                                    Học phí học thử là 500,000 VND cho 7 ngày.<br>
+                                    Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
+                                    Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát
+                                    chặt chẽ nhất chất lượng đào tạo.<br></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="check-out">
+        <div class="col s12" id="check-out-title">
+            <h4 class="center"> Bước 2: Chọn hình thức thanh toán</h4>
+        </div>
+        <div class="col s12 white" id="check-out-content">
+            <div class="row">
+                <div class="form-title col s12">
+                    <h4 class="center">Hóa đơn</h4>
+                </div>
+
+                <form class="col s12 form-content">
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <p class="form-text">Chọn khoa học</p>
+                            <select>
+                                <option value="" disabled>Chọn khóa học</option>
+                                <option value="1" data-icon="images/saving.png" class="left circle">Tiết kiệm 1.500.000
+                                    đ
+                                </option>
+                                <option value="2" data-icon="images/standard.png" class="left circle">Tiêu chuẩn
+                                    1.800.000 đ
+                                </option>
+                                <option value="3" data-icon="images/trainning.png" class="left circle">Thực tập
+                                    6.000.000 đ
+                                </option>
+                            </select>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s12">
+                            <p>
+                                <input name="group1" type="radio" id="ck1"/>
+                                <label for="ck1">Thanh toán tại Techmaster</label>
+                            </p>
+
+                            <p>
+                                <input name="group1" type="radio" id="ck2" checked/>
+                                <label for="ck2">Chuyển khoản</label>
+                            </p>
+
+                            <p>
+                                <input name="group1" type="radio" id="ck3"/>
+                                <label for="ck3">Paypal</label>
+                            </p>
+                        </div>
+                        <div class="col s12">
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s7 m8">
+
+                            <p class="form-text">Tổng giá trị</p>
+                        </div>
+                        <div class="input-field col s5 m4">
+                            <p class="form-number"> 1.000.000</p>
+                        </div>
+                        <div class="col s12">
+                            <hr>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <p>
+                                <input type="checkbox" id="ck4"/>
+                                <label for="ck4">Tôi chắc chắn mua khóa học này</label>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <p class="center">
+                                <button type="button" id="send-bill" class="btn teal white-text" disabled>Tạo tài khoản
+                                    để hoàn tất đăng kí
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l3">
+                <div class=" clearfix">
+                    <a href="/index.html"> <strong class="logo"><h4>Techmaster Inc. </h4></strong></a>
+                </div>
+                <div class="nav nav-pills add-nav">
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Quy định </a></p>
+
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Điều khoản</a></p>
+                    <!--<li><a href="">Privacy Policy</a></li>-->
+                </div>
+            </div>
+            <div class="col s12 l9">
+                <div class="row">
+                    <div class="col s12 l7 m6">
+                        <div class="row">
+                            <div class="col s12 l5 m6"><h4>Về chúng tôi</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="" class="jobs">Việc làm</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
+                                    <!--<li><a href="https://codemyviews.com/our-work/code"></a></li>-->
+                                </ul>
+                            </div>
+                            <div class="col s12 l7 m6"><h4>Contact</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="tel:0902209011">Mr Cường : 090.220.9011</a></li>
+                                    <li><a href="tel:0932225065">Mr. Cần: 093.222.5065</a></li>
+
+                                    <li><a href="mailto:cuong@techmaster.vn">cuong@techmaster.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l5 m6">
+                        <h4>Địa chỉ
+                        </h4>
+
+                        <div class="chat-block">
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-1">
+                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-2">
+                                    <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
+                                        Xuân, Hà Nội
+                                    </address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal login and sign up -->
+<div id="modal1" class="modal">
+    <div class="modal-content">
+        <div class="row">
+            <div class="mdl-close">
+                <a class=" modal-action modal-close btn-flat"><i class="fa fa-times"></i> </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="s12 center-align"><img style="height: 30px;width: auto"
+                                               src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                                               alt="Techmaster" title="Techmaster"></div>
+        </div>
+        <div class="row">
+            <div class="col s12  ">
+                <div class="mdl_form">
+
+                    <!--<div class="social-log">-->
+                    <!--<button type="submit" class="waves-effect waves-light btn blue">Facebook</button>-->
+                    <!--&lt;!&ndash;<span> or </span>&ndash;&gt;-->
+                    <!--<button type="button" class="waves-effect waves-light btn red">Google</button>-->
+                    <!--</div>-->
+
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="email" name="email" maxlength="30" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="password" id="heslo" name="heslo" maxlength="30" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+                        <div class="center-align mdl-button">
+                            <button type="submit" class="waves-effect waves-light btn mdl_submit"><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn"
+                                    onclick="show_form_register()"><i class="mdi-social-person-add left"></i>Đăng kí
+                                miễn phĩ
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div class="mdl_form_register" style="display: none;">
+                    <form action="" autocomplete="off" method="POST">
+                        <div class="input-field">
+
+                            <input type="text" name="name" class="validate" required>
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="input-field">
+
+                            <input type="email" name="email" class="validate" required>
+                            <label for="email">Email</label>
+                        </div>
+
+                        <div class="input-field">
+
+                            <input type="password" name="repass" class="validate" required>
+                            <label for="pass">Password</label>
+                        </div>
+
+
+                        <div class="center-align">
+                            <div class="g-recaptcha" data-sitekey="6LcL0RITAAAAAGN_prn2qh7rGi9AS-3EtUPjhy7B"></div>
+                        </div>
+
+
+                        <div class="center-align mdl-button">
+                            <button class="waves-effect waves-light btn mdl_submit" onclick=""><i
+                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
+                            </button>
+                            <button type="button" class="waves-effect waves-light btn" id="registrace"
+                                    onclick="show_form_login()"><i class="mdi-social-person-add left"></i>Trở lại đăng
+                                nhập
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col s12 center-align">
+                <a href="#" class="">Quên mật khẩu?</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!--Back to top button-->
+
+<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+    <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+        <i class=" fa fa-2x fa-arrow-up"></i>
+    </a>
+</div>
+
+<script>
+    function show_form_login() {
+        $(".mdl_form_register").hide(600);
+        $(".mdl_form").show(600);
+
+    }
+    function show_form_login1() {
+        $(".mdl_form_register").hide();
+        $(".mdl_form").show();
+    }
+    function show_form_register() {
+        $(".mdl_form").hide(600);
+        $(".mdl_form_register").show(600);
+    }
+    function show_form_register1() {
+        $(".mdl_form").hide();
+        $(".mdl_form_register").show();
+    }
+    function show_more() {
+        $(".hide").addClass("animated");
+        $(".hide").addClass("fadeInUp");
+        $(".mbl").removeClass("hide");
+
+        $(".show_more").addClass("hide");
+    }
+    function maxHeight() {
+//        alert();
+        var h = 0;
+        $(".path-item .card-content").css('height', 'auto');
+
+        $(".path-item .card-content").each(function () {
+            var value = $(this).height();
+
+            if (value > h) {
+                h = value;
+            }
+//                alert(h + " " + value);
+        });
+        $(".path-item .card-content").height(h);
+    }
+
+    function maxHeightBook() {
+        var h = 0;
+        $(".book-item .card-content").css('height', 'auto');
+
+        $(".book-item .card-content").each(function () {
+            var value = $(this).height();
+            if (value > h) {
+                h = value;
+            }
+        });
+        $(".book-item .card-content").height(h);
+    }
+    $(document).ready(function () {
+        maxHeight();
+        maxHeightBook();
+    });
+    $(window).on("resize", function () {
+        maxHeight();
+        maxHeightBook();
+    });
+
+    //Modal
+
+    $(document).ready(function () {
+        $('.modal-trigger').leanModal({
+//                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
+//                    opacity: .6, // Opacity of modal background
+//                    in_duration: 300, // Transition in duration
+//                    out_duration: 200, // Transition out duration
+
+        });
+        $('.parallax').parallax();
+        $(".button-collapse").sideNav();
+        $('.collapsible').collapsible({
+            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+    });
+
+
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').removeClass('hide');
+                    } else {
+                        $('#back-to-top').addClass('hide');
+                    }
+                };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1200);
+        });
+    }
+    $(function () {
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            startDelay: 1000,
+            loop: true,
+            contentType: 'text',
+            loopCount: 2,
+
+        });
+    });
+</script>
+</body>
+</html>
