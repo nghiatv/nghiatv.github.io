@@ -9,6 +9,7 @@
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
     <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
 
+
     <!--link font awesome-->
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
 
@@ -22,16 +23,19 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
+    <!--wowjs-->
+    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
+    <!--animated.css-->
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
     <!--typed.js-->
     <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
 
     <!--style.css-->
     <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="job.css" type="text/css">
 
-    <!--animated.css-->
-    <link rel="stylesheet" href="animate.css" type="text/css">
 
-    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
     <!--Captcha-->
     <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
 
@@ -100,253 +104,246 @@
                 boxClass: 'wow',      // default
                 animateClass: 'animated', // default
                 offset: 0,          // default
-                mobile: false,       // default
+                mobile: true,       // default
                 live: true        // default
             }
     )
     wow.init();
 </script>
-
-
 <main>
 
     <!--Parallax-->
-    <div id="checkout-parallax" class="parallax-container  teal lighten-2">
+    <div id="job-parallax" class="parallax-container parallax-top teal lighten-2">
         <div class="parallax">
             <!--<img src="slider1.jpg"> -->
         </div>
-        <div class="parallax-content" id="parallax-checkout-content">
-            <div id="price-list" class="row ">
-                <div class="col s12" id="price-content">
-
-                    <div class="col s12 l4  wow bounceIn" data-wow-duration="2s" data-wow-delay="1s">
-                        <div class="card white  standard-course ">
-
-                            <div class="card-content black-text">
-                                <span class="card-title activator course-title">Tiết kiệm<i
-                                        class="material-icons right">more_vert</i></span>
-
-                                <div class="course-feature">
-
-                                    <ul>
-                                        <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
-                                        <li class="feature-item"> Xem video</li>
-                                        <li class="feature-item">Trắc nghiệm</li>
-                                        <li class="feature-item">Thảo luận</li>
-                                        <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
-
-
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="card-action  ">
-                                <p class="course-price green-text">
-                                    <strong> 1,500,000 đ
-                                        <small>/khóa</small>
-                                    </strong>
-                                </p>
-
-                            </div>
-                            <div class="card-reveal blue white-text">
-                                <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
-
-                                <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và
-                                    tham gia dự án.
-                                    <br>
-
-                                    Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
-                                    Học phí học thử là 500,000 VND cho 7 ngày.<br>
-                                    Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
-                                    Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát
-                                    chặt chẽ nhất chất lượng đào tạo.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 l4  wow bounceIn" data-wow-duration="2s" data-wow-delay="3s">
-                        <div class="card white  standard-course ">
-
-                            <div class="card-content black-text">
-                                <span class="card-title activator course-title">Tiêu chuẩn<i
-                                        class="material-icons right">more_vert</i></span>
-
-                                <div class="course-feature">
-
-                                    <ul>
-                                        <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
-                                        <li class="feature-item"> Xem video</li>
-                                        <li class="feature-item">Trắc nghiệm</li>
-                                        <li class="feature-item">Thảo luận</li>
-                                        <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
-                                        <li class="feature-item">Được giảng viên chấm bài</li>
-                                        <li class="feature-item">Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer
-                                        </li>
-
-                                    </ul>
-
-                                </div>
-                            </div>
-                            <div class="card-action  ">
-                                <p class="course-price green-text">
-                                    <strong> 1,500,000 đ
-                                        <small>/khóa</small>
-                                    </strong>
-                                </p>
-
-                            </div>
-                            <div class="card-reveal blue white-text">
-                                <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
-
-                                <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và
-                                    tham gia dự án.
-                                    <br>
-
-                                    Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
-                                    Học phí học thử là 500,000 VND cho 7 ngày.<br>
-                                    Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
-                                    Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát
-                                    chặt chẽ nhất chất lượng đào tạo.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col s12 l4  wow bounceIn" data-wow-duration="2s" data-wow-delay="5s">
-                        <div class="card white lighten-1 intern-course ">
-
-                            <div class="card-content black-text">
-                                <span class="card-title activator course-title">Thực tập<i class="material-icons right">more_vert</i></span>
-
-                                <div class="course-feature">
-
-                                    <ul>
-                                        <!--<li class="collection-header blue-grey darken-1"><h4>First Names</h4></li>-->
-                                        <li class="feature-item"> Xem video</li>
-                                        <li class="feature-item">Trắc nghiệm</li>
-                                        <li class="feature-item">Thảo luận</li>
-                                        <li class="feature-item">Tham khảo nhóm thảo luận Facebook</li>
-                                        <li class="feature-item">Được giảng viên chấm bài</li>
-                                        <li class="feature-item">Hỗ trợ trực tuyến qua Facebook, Skype hoặc Teamviewer
-                                        </li>
-                                        <li class="feature-item">Thực tập trực tiếp tại Techmasternd</li>
-                                    </ul>
-
-
-                                </div>
-                            </div>
-                            <div class="card-action">
-                                <p class="course-price green-text">
-                                    <strong> 2,000,000 đ
-                                        <small>/ tháng</small>
-                                    </strong>
-                                </p>
-                            </div>
-                            <div class="card-reveal red white-text">
-                                <span class="card-title ">Thực tập<i class="material-icons right">close</i></span>
-
-                                <p>Học viên thực tập toàn thời gian từ thứ 2 đến thứ 7. Được đội lập trình hướng dẫn và
-                                    tham gia dự án.
-                                    <br>
-
-                                    Học phí đóng 3 tháng một lần. Học phí mỗi tháng 2 triệu VND.<br>
-                                    Học phí học thử là 500,000 VND cho 7 ngày.<br>
-                                    Giảng viên + trợ giảng hỗ trợ hàng ngày.<br>
-                                    Techmaster cam kết giới thiệu việc làm cho học viên thực tập bởi chúng tôi kiểm soát
-                                    chặt chẽ nhất chất lượng đào tạo.<br></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="check-out">
-        <div class="col s12" id="check-out-title">
-            <h4 class="center"> Bước 2: Chọn hình thức thanh toán</h4>
-        </div>
-        <div class="col s12 white" id="check-out-content">
+        <div class="container white-text">
             <div class="row">
-                <div class="form-title col s12">
-                    <h4 class="center">Hóa đơn</h4>
+                <div class="col s12 m8 l6 parallax-text">
+                    <div class="parallax-title">
+
+                        <h1>
+                            Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
+                        </h1>
+                    </div>
+                    <p>Bạn có kĩ năng nhưng chưa tìm được công việc mong muốn? Bạn muốn tìm những lập trình viên xuất
+                        sắc cho những vị trí còn thiếu trong công ty của mình? Bấm tìm việc để bắt đầu</p>
+                    <!--<div id="typed"></div>-->
+                    <div class="job-parallax-button">
+                        <a class="btn btn-flat btn-large white" id="find-job">Tìm việc</a>
+                        <a class="btn btn-flat btn-large white" id="recruit">Đăng việc</a>
+                    </div>
+
+
+                    <!--<div class="parallax-button">-->
+                    <!--<button class="btn waves-effect waves-teal  ">Đăng kí ngay</button>-->
+                    <!--</div>-->
                 </div>
 
-                <form class="col s12 form-content">
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <p class="form-text">Chọn khóa học</p>
-                            <select>
-                                <option value= "" disabled>Chọn khóa học</option>
-                                <option value="1" data-icon="images/saving.png" class="left circle">Tiết kiệm 1.500.000 đ
-                                </option>
-                                <option value="2" data-icon="images/standard.png" class="left circle">Tiêu chuẩn
-                                    1.800.000 đ
-                                </option>
-                                <option value="3" data-icon="images/trainning.png" class="left circle">Thực tập
-                                    6.000.000 đ
-                                </option>
-                            </select>
-
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <p>
-                                <input name="group1" type="radio" id="ck1"/>
-                                <label for="ck1">Thanh toán tại Techmaster</label>
-                            </p>
-
-                            <p>
-                                <input name="group1" type="radio" id="ck2" checked/>
-                                <label for="ck2">Chuyển khoản</label>
-                            </p>
-
-                            <p>
-                                <input name="group1" type="radio" id="ck3"/>
-                                <label for="ck3">Paypal</label>
-                            </p>
-                        </div>
-                        <div class="col s12">
-                            <hr>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s7 m8">
-
-                            <p class="form-text">Tổng giá trị</p>
-                        </div>
-                        <div class="input-field col s5 m4">
-                            <p class="form-number"> 1.000.000</p>
-                        </div>
-                        <div class="col s12">
-                            <hr>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <p>
-                                <input type="checkbox" id="ck4"/>
-                                <label for="ck4">Tôi chắc chắn mua khóa học này</label>
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <p class="center">
-                                <button type="button" id="send-bill" class="btn teal white-text" disabled>Tạo tài khoản
-                                    để hoàn tất đăng kí
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
+    <div class="section" id="search-job">
 
+    </div>
+    <div class="section" id="top-job">
+        <div class="container">
+           <div class="row">
+               <div class="col s12 m8 l9" id="job-list-item">
+                   <div class="row"></div>
+                   <div class="row">
+                       <div class="col s12 ">
+                           <div class="card">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
 
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col s12 ">
+                           <div class="card white">
+                               <div class="card-content black-text">
+                                   <span class="card-title">Senior VoIP Software Engineer</span>
+                                   <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
+                                   <p> Software development, testing and deployment of VoIP related services/applications. • Design, implement and monitor scalability, redundancy, quality of service for VoIP services.</p>
+                                   <a href="#">Chi tiết</a>
+                               </div>
+                               <div class="card-action">
+
+                                   <div class="chip">HTML</div>
+                                   <div class="chip">CSS</div>
+                                   <div class="chip">Javascript</div>
+                                   <div class="chip">PHP</div>
+
+                               </div>
+                           </div>
+                       </div>
+
+                   </div>
+               </div>
+
+               <div class="col s12 m4 l3" id="job-menu">
+
+               </div>
+           </div>
+        </div>
+    </div>
+    <div class="section" id="intro-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m7 l6" id="intro-text">
+                    <h2 class="intro-title">Cần hoàn thành công việc?</h2>
+                    <p>Đăng dự án và nhận các đấu giá cạnh tranh từ các freelancer chỉ trong vài phút. Hệ thống đánh giá danh tiếng của chúng tôi sẽ giúp bạn dễ dàng tìm ra freelancer hoàn hảo cho công việc của bạn. Đây là cách đơn giản và an toàn nhất để thực hiện công việc trực tuyến!</p>
+                    <p><strong>Bạn có được lợi ích như thế nào?</strong></p>
+                    <ul class="intro-feature-list">
+                        <li>Bạn sẽ nhận được các đấu giá cạnh tranh từ các freelancer tài năng của chúng tôi chỉ trong vài phút</li>
+                        <li>Việc cập nhật thực sự dễ dàng với công cụ trò chuyện thời gian thực tế của chúng tôi, hỗ trợ 24/7, theo dõi thời gian, và các ứng dụng di động.</li>
+                    </ul>
+                </div>
+                <div class="col s12 m5 l6">
+                    <img class="responsive-img" src="images/slide1.png">
+                </div>
+            </div>
+        </div>
+    </div>
 </main>
+
 
 <!--Footer-->
 <footer id="footer">
@@ -415,7 +412,7 @@
 </footer>
 
 <!-- Modal login and sign up -->
-<div id="modal1" class="modal">
+<div id="modal1" class="modal bottom-sheet">
     <div class="modal-content">
         <div class="row">
             <div class="mdl-close">
@@ -586,15 +583,16 @@
 
         });
         $('.parallax').parallax();
-        $(".button-collapse").sideNav( {
-            menuWidth: 200, // Default is 240
-            edge: 'right', // Choose the horizontal origin
-            closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
-        });
+        $(".button-collapse").sideNav(
+                {
+                    menuWidth: 200, // Default is 240
+                    edge: 'right', // Choose the horizontal origin
+                    closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                }
+        );
         $('.collapsible').collapsible({
             accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
         });
-        $('select').material_select();
     });
 
 
