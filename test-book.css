@@ -192,3 +192,10 @@ main{
     /*padding: 20px;*/
     /*border-left: 1px solid #ddd;*/
 }
+.tabs .indicator{
+
+   /*background-color: white;*/
+}
+#book-filter .tabs .tab a.active{
+    /*background-color: teal;*/
+}

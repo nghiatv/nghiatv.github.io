@@ -48,6 +48,7 @@
 
                 <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
                                                                                    style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                <!--<a href="#" data-activates="mobile-nav" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
                 <ul class="right hide-on-med-and-down log-btn">
                     <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
                        id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
@@ -57,26 +58,23 @@
                 </ul>
                 <ul class="right hide-on-med-and-down">
 
-                    <li><a href="">Khóa học</a></li>
+                    <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
-
-
+                    <li><a href="test-blog.html">Blog</a></li>
                     <li><a href="">Việc làm</a></li>
-
-                    <li><a href="">Sách</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
                     <li><a href="">Chúng tôi</a></li>
 
                 </ul>
                 <ul class="side-nav" id="mobile-nav">
-                    <li><a href="">Khóa học</a></li>
+                    <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="test-blog.html">Blog</a></li>
 
 
                     <li><a href="">Việc làm</a></li>
 
-                    <li><a href="">Sách</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
                     <li><a href="">Chúng tôi</a></li>
                     <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
                        id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
@@ -94,35 +92,36 @@
 
 <main id="main-book-content">
     <div class="page-heading">
-        <div class="row nav-wrapper">
-            <div class="col s12 m6" id="breadcrumb-content">
+        <div class="row ">
+            <div class="col s12" id="breadcrumb-content">
                 <a href="#" class="breadcrumb">Trang chủ</a>
                 <a href="#" class="breadcrumb">Book</a>
             </div>
-            <div class="col s12 m6">
-                <form class="card search-wrapper col s12 hoverable right">
-                    <div class="input-field">
-                        <input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">
-                        <i class="material-icons">search</i>
 
-                    </div>
-
-                </form>
-                <nav class="hide">
-                    <div class="nav-wrapper">
-                        <form>
-                            <div class="input-field">
-                                <input id="search" type="search" required>
-                                <label for="search"><i class="material-icons">search</i></label>
-                                <i class="material-icons">close</i>
-                            </div>
-                        </form>
-                    </div>
-                </nav>
-            </div>
         </div>
-        <div class="row">
-            <div class="col s12" id="book-filter">
+        <div class="row nav-wrapper">
+            <!--<div class="col s12 m6">-->
+                <!--<form class="card search-wrapper col s12 hoverable right">-->
+                    <!--<div class="input-field">-->
+                        <!--<input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">-->
+                        <!--<i class="material-icons">search</i>-->
+
+                    <!--</div>-->
+
+                <!--</form>-->
+                <!--<nav class="hide">-->
+                    <!--<div class="nav-wrapper">-->
+                        <!--<form>-->
+                            <!--<div class="input-field">-->
+                                <!--<input id="search" type="search" required>-->
+                                <!--<label for="search"><i class="material-icons">search</i></label>-->
+                                <!--<i class="material-icons">close</i>-->
+                            <!--</div>-->
+                        <!--</form>-->
+                    <!--</div>-->
+                <!--</nav>-->
+            <!--</div>-->
+            <div class="col s12 m6" id="book-filter">
                 <!--<ul class="tabs">-->
                 <!--<li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>-->
                 <!--<li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>-->
@@ -131,24 +130,11 @@
                 <!--</ul>-->
 
 
-                <ul class="collapsible" data-collapsible="accordion">
-                    <li>
-                        <div class="collapsible-header"><span>Category</span></a></div>
-                        <div class="collapsible-body" id="data-filter">
-                            <ul class="tags">
-                                <li class="chip"><a href="">Agile (8)</a></li>
-                                <li class="chip"><a href="">Altassian (4)</a></li>
-                                <li class="chip"><a href="">Android (53)</a></li>
-                                <li class="chip"><a href="">ASP.net (6)</a></li>
-                                <li class="chip"><a href="">C++ (13)</a></li>
-                                <li class="chip"><a href="">Cloud (7)</a></li>
-                                <li class="chip"><a href="">công việc (125)</a></li>
+                <ul class="tabs">
 
-
-                            </ul>
-                        </div>
-                    </li>
-
+                    <li class="tab col s6 m3"><a class="active" href="#test2">Sách hay</a></li>
+                    <li class="tab col s6 m3 "><a href="#test3">Mới</a></li>
+                    <!--<li class="tab col s3"><a href="#test4">Test 4</a></li>-->
                 </ul>
 
             </div>
@@ -206,16 +192,11 @@
                     <div class="grid-item">
                         <div class="card">
                             <div class="card-image">
-                               <figure>
-                                   <img src="images/version-control-with-git-2nd-edition.jpg">
-                                   <figcaption>
-                                       <h2>This is a cool title!</h2>
-                                       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
-                                   </figcaption>
-                               </figure>
-
+                                <img src="images/version-control-with-git-2nd-edition.jpg">
                             </div>
-
+                            <div class="card-content">
+                                <p>C++ vẫn là ngôn ngữ lập trình quan trọng để tạo nên các phần...</p>
+                            </div>
 
                         </div>
                     </div>
@@ -681,7 +662,11 @@
 
                 }
         );
-        $(".button-collapse").sideNav();   //    sideNav
+        $(".button-collapse").sideNav( {
+            menuWidth: 200, // Default is 240
+            edge: 'right', // Choose the horizontal origin
+            closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+        });   //    sideNav
         $('ul.tabs').tabs(); // Tabs
     });
 

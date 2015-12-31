@@ -50,7 +50,6 @@
 </script>
 
 <!--Header-->
-
 <header class="page-header">
     <div class="navbar-fixed white ">
         <nav>
@@ -62,7 +61,8 @@
 
                 <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
                                                                                    style="color: rgba(33, 23, 34, 0.96)"></i></a>
-                <ul  class="right hide-on-med-and-down log-btn">
+                <!--<a href="#" data-activates="mobile-nav" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
+                <ul class="right hide-on-med-and-down log-btn">
                     <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
                        id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
                     <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
@@ -71,26 +71,23 @@
                 </ul>
                 <ul class="right hide-on-med-and-down">
 
-                    <li><a href="">Khóa học</a></li>
+                    <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
-
-
+                    <li><a href="test-blog.html">Blog</a></li>
                     <li><a href="">Việc làm</a></li>
-
-                    <li><a href="">Sách</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
                     <li><a href="">Chúng tôi</a></li>
 
                 </ul>
                 <ul class="side-nav" id="mobile-nav">
-                    <li><a href="">Khóa học</a></li>
+                    <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
+                    <li><a href="test-blog.html">Blog</a></li>
 
 
                     <li><a href="">Việc làm</a></li>
 
-                    <li><a href="">Sách</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
                     <li><a href="">Chúng tôi</a></li>
                     <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
                        id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
@@ -1157,7 +1154,13 @@
                         // alert('Closed');
                     } // Callback for Modal close
                 });
-        $(".button-collapse").sideNav();
+        $(".button-collapse").sideNav(
+                {
+                    menuWidth: 200, // Default is 240
+                    edge: 'right', // Choose the horizontal origin
+                    closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                }
+        );
         $('.parallax').parallax();
         $('select').material_select();
     });
