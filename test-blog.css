@@ -32,6 +32,10 @@ main{
 #main-blog-content,#main-blog-most-view,#main-blog-top-author{
     margin: 0 auto;
     max-width: 600px;
+    padding: 30px;
+}
+.post-content{
+    width: 90%;
 }
 @media (min-width: 769px) {
     .grid-sizer,
@@ -45,7 +49,7 @@ main{
 
     }
     #main-blog-content,#main-blog-most-view,#main-blog-top-author{
-        width: 80%;
+        width: 85%;
         max-width: 800px;
     }
     .most-view-title h3, .top-author-title h3, .newest-title h3{
@@ -62,6 +66,9 @@ main{
     }
     #main-blog-content form{
         float: right!important;
+    }
+    .post-content{
+        width: 90%;
     }
 }
 
@@ -105,12 +112,12 @@ main{
         opacity: 0.8;
     }
     .post-content{
-        width: 80%;
+        width: 85%;
     }
 }
 @media (min-width: 1200px) {
     .post-content{
-        width: 70%;
+        width: 80%;
     }
 }
 .grid-item > .card > .card-content > h2.card-title, .most-view-content  h2.card-title {

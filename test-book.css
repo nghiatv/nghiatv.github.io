@@ -29,7 +29,7 @@ main{
     min-height: 1200px;
 }
 #main-book-content,#main-blog-most-view,#main-blog-top-author{
-    margin: 0 auto;
+    margin: 0px auto;
     max-width: 600px;
 }
 @media (min-width: 769px) {

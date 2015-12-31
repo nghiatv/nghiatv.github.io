@@ -148,7 +148,9 @@
     padding-left: 15px;
 }
 
-
+.page-main{
+margin: 30px auto;
+}
 
 
 input#blog-search, input#blog-search:focus{
@@ -174,7 +176,7 @@ input#blog-search, input#blog-search:focus{
     transition: all 0.3s;
 }
 
-main{
+main {
     min-height: 1200px;
 }
 @media (min-width: 769px) {
@@ -191,6 +193,7 @@ main{
     #main-blog-content,#main-blog-most-view,#main-blog-top-author{
         width: 80%;
         max-width: 800px;
+
     }
     .most-view-title h3, .top-author-title h3, .newest-title h3{
         /*color: #ffffff;*/
@@ -231,6 +234,7 @@ main{
 #main-blog-content,#main-blog-most-view,#main-blog-top-author{
     margin: 0 auto;
     max-width: 400px;
+
 }
 
 .main-blog-bottom{

@@ -69,6 +69,7 @@ nav .button-collapse{
     nav .nav-wrapper {
         padding: 10px 7.5%;
     }
+
 }
 nav ul {
     list-style: none;
@@ -1464,7 +1465,7 @@ input#blog-search, input#blog-search:focus{
 
 
 .header-post h1{
-    font-size: 34px;
+    font-size: 2.5em;
     line-height: normal;
     margin-bottom: 23px;
     font-weight: 900;
@@ -1476,7 +1477,7 @@ input#blog-search, input#blog-search:focus{
     color: #3c948b;
     overflow: hidden;
 }
-.header-post .info{
+.header-post .info::before{
     content: '';
     position: absolute;
     top: 0;
@@ -1589,7 +1590,7 @@ input#blog-search, input#blog-search:focus{
     max-width: 100%;
     height: auto;
 }
-.post-nav{
+.post-nav,.location-nav{
     /*background: #f9f9f9;*/
     border-top: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
@@ -1625,6 +1626,10 @@ input#blog-search, input#blog-search:focus{
 @media (min-width: 769px) {
     .post-nav > a > .v-align{
         padding-right: 1em;
+    }
+    .header-post h1{
+        font-size: 3.5em;
+
     }
 }
 .post-nav .home-link{
@@ -1677,4 +1682,65 @@ input#blog-search, input#blog-search:focus{
     /*background: url(/blog/wp-content/themes/cw-2013/images/next.png) 99% 50% no-repeat;*/
     padding-right: 20px;
     padding-left: 65px;
+}
+
+
+
+.card figure{
+    margin: 0;
+    padding: 0;
+}
+
+.card figure figcaption {
+    display:block;
+    position:absolute;
+    z-index:5;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+.card figure h2 {
+    color:#fff;
+    font-size:20px;
+    text-align:left
+}
+.card figure p {
+    display:block;
+    font-size:12px;
+    line-height:18px;
+    margin:0;
+    color:#fff;
+    text-align:left
+}
+.card figure figcaption {
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    padding:20px 40px;
+    background-color:rgba(26,76,110,0.5);
+    text-align:center;
+    backface-visibility:hidden;
+    -webkit-transform:rotateY(-180deg);
+    -moz-transform:rotateY(-180deg);
+    transform:rotateY(-180deg);
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.card figure img {
+    backface-visibility:hidden;
+    -webkit-transition:all .5s;
+    -moz-transition:all .5s;
+    transition:all .5s
+}
+.card figure:hover img {
+    -webkit-transform:rotateY(180deg);
+    -moz-transform:rotateY(180deg);
+    transform:rotateY(180deg)
+}
+.card figure:hover figcaption {
+    -webkit-transform:rotateY(0deg);
+    -moz-transform:rotateY(0deg);
+    transform:rotateY(0deg);
 }
