@@ -5,15 +5,11 @@
 }
 
 body {
-    min-height: 1200px;
     box-sizing: border-box;
     background-color:#e9eaea;
-    font-family: "Open Sans",sans-serif;
-    font-size: 14px;
     padding: 0;
     margin: 0;
 }
-
 
 .page-header {
     margin: 0;
@@ -489,6 +485,15 @@ td{
     padding: 0 5px;
     /*border-bottom: thin solid silver;*/
 }
+.icon-block h2{
+    margin: 30px 0 0 0;
+    line-height: 1;
+}
+.icon-block h5{
+    font-weight: 400;
+    margin-top: 0.5em;
+}
+
 .ib-last{
     border-bottom: none;
 }
