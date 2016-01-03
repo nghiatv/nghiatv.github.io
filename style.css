@@ -665,8 +665,7 @@ td{
     margin-right: 10%;
 }
 .mdl-button button {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .g-recaptcha div{
     width: auto!important;
@@ -830,8 +829,9 @@ td{
 .path-item .card-content p{
     font-size: 16px;
     font-weight: 300;
+    line-height: 24px;
+    letter-spacing: .04em;
     padding-top: 20px;
-    /*color:#939598;*/
 }
 .path-item:hover{
     /*background-color: #00796b !important;*/

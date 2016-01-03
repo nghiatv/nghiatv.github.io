@@ -32,7 +32,7 @@ main{
 #main-blog-content,#main-blog-most-view,#main-blog-top-author{
     margin: 0 auto;
     max-width: 600px;
-    padding: 30px;
+    padding: 10px;
 }
 .post-content{
     width: 90%;
@@ -51,6 +51,7 @@ main{
     #main-blog-content,#main-blog-most-view,#main-blog-top-author{
         width: 85%;
         max-width: 800px;
+        padding: 20px;
     }
     .most-view-title h3, .top-author-title h3, .newest-title h3{
         /*color: #ffffff;*/
@@ -83,6 +84,7 @@ main{
     #main-blog-content,#main-blog-top-author,#main-blog-most-view{
         width: 90%;
         max-width: 1170px;
+        padding: 30px;
     }
 
     .grid-item > .card > .card-image{

@@ -23,9 +23,25 @@ span.badge.new:after{
 #job-count{
     border-top: 1px solid #dedede;
 }
-@media all and (min-width: 769px){
+
+
+@media(min-width: 769px){
     #job-parallax .parallax-text{
         text-align: left;
     }
-
+    .job-parallax-img img{
+        width: 100%;
+        margin: 9.1em auto;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .job-parallax-img {
+        padding: 0;
+    }
+    .job-parallax-img img{
+        /*width: 80%;*/
+        max-width: 80%;
+        height: 60%;
+        margin: 20% auto;
+    }
 }

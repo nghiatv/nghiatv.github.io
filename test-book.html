@@ -23,10 +23,7 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     <link rel="stylesheet" href="animate.css" type="text/css">
-
-
     <link rel="stylesheet" href="style.css" type="text/css">
-
     <link rel="stylesheet" href="test-book.css" type="text/css">
 
 
@@ -89,7 +86,7 @@
 
 <!--Main-->
 
-<main id="main-book-content">
+<main id="main-book-content" >
     <div class="page-heading">
         <div class="row ">
             <div class="col s12" id="breadcrumb-content">
@@ -98,48 +95,48 @@
             </div>
 
         </div>
-        <div class="row nav-wrapper">
-            <!--<div class="col s12 m6">-->
-                <!--<form class="card search-wrapper col s12 hoverable right">-->
-                    <!--<div class="input-field">-->
-                        <!--<input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">-->
-                        <!--<i class="material-icons">search</i>-->
+        <!--<div class="row nav-wrapper">-->
+            <!--&lt;!&ndash;<div class="col s12 m6">&ndash;&gt;-->
+                <!--&lt;!&ndash;<form class="card search-wrapper col s12 hoverable right">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="input-field">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<i class="material-icons">search</i>&ndash;&gt;-->
 
-                    <!--</div>-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
 
-                <!--</form>-->
-                <!--<nav class="hide">-->
-                    <!--<div class="nav-wrapper">-->
-                        <!--<form>-->
-                            <!--<div class="input-field">-->
-                                <!--<input id="search" type="search" required>-->
-                                <!--<label for="search"><i class="material-icons">search</i></label>-->
-                                <!--<i class="material-icons">close</i>-->
-                            <!--</div>-->
-                        <!--</form>-->
-                    <!--</div>-->
-                <!--</nav>-->
-            <!--</div>-->
-            <div class="col s12 m6" id="book-filter">
+                <!--&lt;!&ndash;</form>&ndash;&gt;-->
+                <!--&lt;!&ndash;<nav class="hide">&ndash;&gt;-->
+                    <!--&lt;!&ndash;<div class="nav-wrapper">&ndash;&gt;-->
+                        <!--&lt;!&ndash;<form>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<div class="input-field">&ndash;&gt;-->
+                                <!--&lt;!&ndash;<input id="search" type="search" required>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<label for="search"><i class="material-icons">search</i></label>&ndash;&gt;-->
+                                <!--&lt;!&ndash;<i class="material-icons">close</i>&ndash;&gt;-->
+                            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                        <!--&lt;!&ndash;</form>&ndash;&gt;-->
+                    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+                <!--&lt;!&ndash;</nav>&ndash;&gt;-->
+            <!--&lt;!&ndash;</div>&ndash;&gt;-->
+            <!--<div class="col s12 m6" id="book-filter">-->
+                <!--&lt;!&ndash;<ul class="tabs">&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;<li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<li class="tab drop open col s3"><a href="#test3"><span>Tag</span></a></li>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;&lt;!&ndash;<li class="tab drop col s3"><a href="#test4"><span>Date</span></a></li>&ndash;&gt;&ndash;&gt;-->
+                <!--&lt;!&ndash;</ul>&ndash;&gt;-->
+
+
                 <!--<ul class="tabs">-->
-                <!--<li class="tab col s3"><a href="/test-blog.html"><span>Blog</span></a></li>-->
-                <!--<li class="tab drop col s3"><a href="#test2"><span>Category</span></a></li>-->
-                <!--&lt;!&ndash;<li class="tab drop open col s3"><a href="#test3"><span>Tag</span></a></li>&ndash;&gt;-->
-                <!--&lt;!&ndash;<li class="tab drop col s3"><a href="#test4"><span>Date</span></a></li>&ndash;&gt;-->
+
+                    <!--<li class="tab col s6 m3"><a class="active" href="#test2">Sách hay</a></li>-->
+                    <!--<li class="tab col s6 m3 "><a href="#test3">Mới</a></li>-->
+                    <!--&lt;!&ndash;<li class="tab col s3"><a href="#test4">Test 4</a></li>&ndash;&gt;-->
                 <!--</ul>-->
 
-
-                <ul class="tabs">
-
-                    <li class="tab col s6 m3"><a class="active" href="#test2">Sách hay</a></li>
-                    <li class="tab col s6 m3 "><a href="#test3">Mới</a></li>
-                    <!--<li class="tab col s3"><a href="#test4">Test 4</a></li>-->
-                </ul>
-
-            </div>
+            <!--</div>-->
 
 
-        </div>
+        <!--</div>-->
         <!--<ul class="row animated fadeInUp" id="data-filter">-->
         <!--<div id="test1" class="col s12"></div>-->
         <!--<li id="test2" class="col s12">-->
@@ -159,10 +156,59 @@
     </div>
     <div class="page-main">
         <div class="row">
-            <div class="col s12">
-                <!--<div class="newest-title">-->
-                <!--<h3>Newest</h3>-->
-                <!--</div>-->
+            <div class="col s12 m4 l3">
+                <ul class="collapsible" data-collapsible="expandable">
+                    <li class="collapsible-header"><strong>Danh sách thu hẹp</strong></li>
+                    <li >
+                        <div class="collapsible-header"><i class="material-icons">subject</i>Category</div>
+                        <div class="collapsible-body"><p>Lorem ipsum dolor sit amet.</p></div>
+                    </li>
+                    <li >
+                        <div class="collapsible-header"><i class="material-icons">label</i>Book Tag</div>
+                        <div class="collapsible-body"><p>
+                            <a href="test-book.html"><span class="chip">3d (105)</span></a>
+                            <a href="test-book.html"><span class="chip">access (163)</span></a>
+                            <a href="test-book.html"><span class="chip">administrator (65)</span></a>
+                            <a href="test-book.html"><span class="chip">agile (56)</span></a>
+                            <a href="test-book.html"><span class="chip">ajax (48)</span></a>
+                            <a href="test-book.html"><span class="chip">analytics (29)</span></a>
+                            <a href="test-book.html"><span class="chip">android (192)</span></a>
+                            <a href="test-book.html"><span class="chip">angularjs(16)</span></a>
+                            <a href="test-book.html"><span class="chip">apache (59)</span></a>
+                            <a href="test-book.html"><span class="chip">api (87)</span></a>
+                            <a href="test-book.html"><span class="chip">arduino (52)</span></a>
+                            <a href="test-book.html"><span class="chip">asp (2)</span></a>
+                            <a href="test-book.html"><span class="chip">asp.net (100)</span></a>
+                        </p></div>
+                    </li>
+                    <li >
+                        <div class="collapsible-header"><i class="material-icons">language</i>Popularity</div>
+                        <div class="collapsible-body">
+
+                            <form action="#">
+                                <p>
+                                    <input name="group1" type="radio" id="test1" />
+                                    <label for="test1">Top rated</label>
+                                </p>
+                                <p>
+                                    <input name="group1" type="radio" id="test2" />
+                                    <label for="test2">Best seller</label>
+                                </p>
+                                <p>
+                                    <input name="group1" type="radio" id="test3"  />
+                                    <label for="test3">Techmaster suggest</label>
+                                </p>
+
+                            </form>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col s12 m8 l9">
+                <ul class="collapsible">
+                    <li class="collapsible-header"><strong> Newest</strong></li>
+                </ul>
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
@@ -170,31 +216,67 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
                             </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                   <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
 
+                            </div>
 
                         </div>
                     </div>
 
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/pro-unity-game-development-with-c.jpg">
 
-                            </div>
-
-
-                        </div>
-                    </div>
 
                     <div class="grid-item">
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/version-control-with-git-2nd-edition.jpg">
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="card-content">
-                                <p>C++ vẫn là ngôn ngữ lập trình quan trọng để tạo nên các phần...</p>
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    GIT là công nghệ (công cụ, phương pháp) quản lý mã nguồn phi...
+                                </div>
+
                             </div>
 
                         </div>
@@ -204,9 +286,32 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/pro-bash-programming.jpg">
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
                             </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Adam Freeman là một lập trình viên web giỏi, đã từng lập...
+                                </div>
 
+                            </div>
 
                         </div>
                     </div>
@@ -215,9 +320,32 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/the-passionate-programmer-2nd-edition.jpg">
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
                             </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Lập trình viên không thể code tay to mãi rồi hy vọng một...
+                                </div>
 
+                            </div>
 
                         </div>
                     </div>
@@ -226,9 +354,32 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/seven-databases-in-seven-weeks.jpg">
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
                             </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Cần cho những lập trình viên Java cần có ngay những đoạn...
+                                </div>
 
+                            </div>
 
                         </div>
                     </div>
@@ -239,9 +390,32 @@
                         <div class="card">
                             <div class="card-image">
                                 <img src="images/postgresql-server-programming-2nd-edition.jpg">
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
                             </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Một lập trình viên giỏi không thể viết code lem nhem. Một.
+                                </div>
 
+                            </div>
 
                         </div>
                     </div>
@@ -251,8 +425,32 @@
                             <div class="card-image">
                                 <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
 
+                            <div class="price-block discount">
+                                <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                </div>
+                                <div class="price-corner-right"></div>
+                                <div class="price-corner-left">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                        <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                    </svg>
+                                </div>
                             </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    90% sách dạy lập trình web - web service thường chỉ dạy xây...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -262,8 +460,32 @@
                             <div class="card-image">
                                 <img src="images/learning-python-data-visualization.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Sách cực hay dành cho những anh em nghiêm túc học và làm...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -284,8 +506,32 @@
                             <div class="card-image">
                                 <img src="images/elasticsearch-the-definitive-guide.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -295,8 +541,32 @@
                             <div class="card-image">
                                 <img src="images/version-control-with-git-2nd-edition.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -306,8 +576,32 @@
                             <div class="card-image">
                                 <img src="images/java-cookbook-3rd-edition.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -317,8 +611,32 @@
                             <div class="card-image">
                                 <img src="images/databases-for-small-business.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -328,8 +646,32 @@
                             <div class="card-image">
                                 <img src="images/css3-the-missing-manual-3rd-edition.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
@@ -339,33 +681,37 @@
                             <div class="card-image">
                                 <img src="images/crafting-rails-4-applications-2nd-edition.jpg">
 
-                            </div>
+                                <div class="price-block discount">
+                                    <div class="template-price js-template-price" data-price="89" data-tid="57536" itemprop="price">Hot
+                                    </div>
+                                    <div class="price-corner-right"></div>
+                                    <div class="price-corner-left">
+                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="10px" height="27px">
+                                            <polygon fill="#1C64A1" points="0,13 8,0 10,0 10,27 8,27 "></polygon>
+                                        </svg>
+                                    </div>
+                                </div>
 
+                            </div>
+                            <div class="card-content">
+                                <div class="card-title">
+                                    <a href="#">Mobile design pattern gallery</a>
+                                </div>
+                                <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                                </div>
+                                <div class="card-action">
+                                    Giao diện và trải nghiệm người dùng đối với ứng dụng di động...
+                                </div>
+
+                            </div>
 
                         </div>
                     </div>
 
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/building-microservices.jpg">
 
-                            </div>
-
-
-                        </div>
-                    </div>
-
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">
-
-                            </div>
-
-
-                        </div>
-                    </div>
 
 
                 </div>
@@ -385,7 +731,6 @@
 
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -667,6 +1012,11 @@
             closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
         });   //    sideNav
         $('ul.tabs').tabs(); // Tabs
+
+
+    });
+    $(document).ready(function(){
+        $('.carousel').carousel();
     });
 
     //    Slider

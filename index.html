@@ -100,7 +100,7 @@
                 boxClass: 'wow',      // default
                 animateClass: 'animated', // default
                 offset: 0,          // default
-                mobile: true,       // default
+                mobile: false,       // default
                 live: true        // default
             }
     )
@@ -230,7 +230,7 @@
                             <div class="path-button  left-align">
 
                             </div>
-                            <p class="left-align grey-text">
+                            <p class="left-align  ">
                                 iOS Objective-C: cập nhật công nghệ mới, nhiều
                                 mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
                         </div>
@@ -252,7 +252,7 @@
                             <div class="path-button  left-align">
 
                             </div>
-                            <p class="left-align grey-text">
+                            <p class="left-align  ">
                                 Lập trình web site tốc độ cao sử dụng Node.js (4.x), JavaScript 6, Arrowjs.io</p>
                         </div>
 
@@ -273,7 +273,7 @@
                             <div class="path-button  left-align">
 
                             </div>
-                            <p class="left-align grey-text">
+                            <p class="left-align  ">
                                 Khóa học Java căn bản cho người mới bắt đầu. Nhiều ví dụ thực hành trực quan. Mô hình
                                 đào tạo chia nhóm nhỏ để giảng viên kèm cặp, điều chỉnh.</p>
                         </div>
@@ -295,7 +295,7 @@
                             <div class="path-button  left-align">
 
                             </div>
-                            <p class="left-align grey-text">
+                            <p class="left-align  ">
                                 Python được chọn làm ngôn ngữ lập trình đầu tiên để dạy cho những người chưa biết lập
                                 trình, thanh thiếu niên. Dễ hiểu, uyển chuyển, hiệu quả, áp dụng thực tế, nhu cầu tuyển
                                 dụng tăng là tiêu chí để mở khóa học này.</p>
@@ -318,7 +318,7 @@
                             <div class="path-button  left-align">
 
                             </div>
-                            <p class="left-align grey-text">
+                            <p class="left-align  ">
                                 Khóa học lập trình PHP 7 cơ bản.<br>
 
                                 Yêu cầu: có sẵn kiến thức cơ bản về HTML, CSS, Javascript.<br>
@@ -346,7 +346,7 @@
                             <div class="path-button  left-align">
 
                             </div>
-                            <p class="left-align grey-text">
+                            <p class="left-align  ">
                                 Khóa học lập trình web front-end cơ bản.<br>
 
                                 Yêu cầu: có đam mê lập trình.<br>
@@ -378,7 +378,7 @@
             <!--   Icon Section   -->
             <div class="row" id="how-learn-content">
                 <div class="col s12 m4">
-                    <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="icon-block wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
                         <h2 class="center brown-text"><i class="fa fa-video-camera"></i></h2>
                         <h5 class="center">Xem Video</h5>
 
@@ -390,7 +390,7 @@
 
                 </div>
                 <div class="col s12 m4">
-                    <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2s">
+                    <div class="icon-block wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="1s">
                         <h2 class="center brown-text"><i class="fa fa-keyboard-o"></i></h2>
                         <h5 class="center">Code Code Code</h5>
 
@@ -401,7 +401,7 @@
                 </div>
 
                 <div class="col s12 m4">
-                    <div class="icon-block ib-last wow fadeInLeft" data-wow-duration="1s" data-wow-delay="3s">
+                    <div class="icon-block ib-last wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="1.5s">
                         <h2 class="center brown-text"><i class="fa fa-briefcase"></i></h2>
                         <h5 class="center">Làm Project thật</h5>
 
@@ -712,27 +712,26 @@
         $(".path-item .card-content").height(h);
     }
 
-    function maxHeightBook() {
-        var h = 0;
-        $(".book-item .card-content").css('height', 'auto');
-
-        $(".book-item .card-content").each(function () {
-            var value = $(this).height();
-            if (value > h) {
-                h = value;
-            }
-        });
-        $(".book-item .card-content").height(h);
-    }
+//    function maxHeightBook() {
+//        var h = 0;
+//        $(".book-item .card-content").css('height', 'auto');
+//
+//        $(".book-item .card-content").each(function () {
+//            var value = $(this).height();
+//            if (value > h) {
+//                h = value;
+//            }
+//        });
+//        $(".book-item .card-content").height(h);
+//    }
     $(document).ready(function () {
         maxHeight();
-        maxHeightBook();
+//        maxHeightBook();
     });
     $(window).on("resize", function () {
         maxHeight();
-        maxHeightBook();
+//        maxHeightBook();
     });
-
     //Modal
 
     $(document).ready(function () {

@@ -1,6 +1,8 @@
 
 .grid-item .card{
     box-shadow: none;
+    background: transparent;
+    border: 1px solid silver;
 }
 .grid-item a{
     color: #000;
@@ -9,35 +11,136 @@
     color: #cccccc;
 }
 .grid-sizer,
-.grid-item { width: 48%;
+.grid-item { width: 100%;
 }
 
 .gutter-sizer { width: 4%; }
 
-.grid-item--width2 { width: 100%;
-
-
-}
 
 .grid:after {
     content: '';
     display: block;
     clear: both;
 }
-
+.template-price {
+    background: #1c64a1;
+    font-size: 18px;
+    line-height: 18px;
+    height: 27px;
+    color: #fff;
+    padding: 4px 10px 5px 10px;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.2);
+}
+.price-corner-right {
+    position: absolute;
+    display: block;
+    border-color: transparent;
+    border-style: solid;
+    top: 18px;
+    right: -9px;
+    border-left-color: #3b3b3b;
+    content: " ";
+    border-width: 9px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+.price-corner-left {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: -9px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+.price-block {
+    position: absolute;
+    bottom: -14px;
+    right: -10px;
+}
+.rating.dynamic{
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    padding: .4px 0 0 1px;
+}
+.rating{
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 1px;
+}
+.rating:before {
+    font-family: FontAwesome;
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+.rating.dynamic:before {
+    color: #fba617;
+}
+.book-rate{
+    padding: 5px;
+    padding-left: 0;
+    text-align: left;
+}
 main{
     min-height: 1200px;
 }
 #main-book-content,#main-blog-most-view,#main-blog-top-author{
-    margin: 0px auto;
+    margin: 0 auto;
     max-width: 600px;
+}
+.gird-item .card .chip{
+    background: #cccccc;
+}
+ .card-title a:hover{
+    color: #6d8797;
+    text-decoration: none;
+}
+ .card .card-content .card-title a{
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: bold;
+
+}
+.grid-item .card .card-content .card-title{
+    line-height: 1.5;
+}
+.card-author{
+    color: #6d8797;
+}
+.collapsible .collapsible-body p{
+    padding: 1em 1.5em 1em;
+}
+.collapsible .collapsible-body p label{
+    font-size: 0.8em;
+}
+li:not(:first-child) .collapsible-header{
+    background: transparent;
+}
+li .collapsible-header{
+    position: relative;
+    overflow: hidden;
+}
+
+.collapsible-body{
+    background: white;
+}
+.collapsible-body .chip{
+    background-color: #e9eaea;
 }
 @media (min-width: 769px) {
     .grid-sizer,
-    .grid-item { width: 32%; }
+    .grid-item { width: 48%; }
 
-    .gutter-sizer { width: 2%; }
-    .grid-item--width2 { width: 66%; }
+    .gutter-sizer { width: 4%; }
+
     #main-book-content,#main-blog-most-view,#main-blog-top-author{
         width: 80%;
         max-width: 800px;
@@ -54,18 +157,11 @@ main{
     .page-heading h2{
         text-align: right;
     }
-    #main-book-content form{
-        float: right!important;
-    }
 }
-
-
-@media (min-width: 993px) {
+@media (min-width: 992px) {
     .grid-sizer,
-    .grid-item { width: 23.5%; }
-
+    .grid-item { width: 32%; }
     .gutter-sizer { width: 2%; }
-    .grid-item--width2 { width: 47%; }
 
     #main-book-content,#main-blog-top-author,#main-blog-most-view{
         width: 90%;
@@ -74,7 +170,7 @@ main{
 
     .grid-item > .card > .card-image{
         /*max-height: 300px;*/
-        overflow: hidden;
+        /*overflow: hidden;*/
     }
     .grid-item > .card > .card-image:hover img{
         -webkit-transition: all 400ms ease-in;
@@ -102,11 +198,12 @@ main{
         width: 80%;
     }
 }
-@media (min-width: 1200px) {
-    .post-content{
-        width: 70%;
-    }
-}
+
+
+
+
+
+
 .grid-item > .card > .card-content > h2.card-title, .most-view-content  h2.card-title {
     font-size: 18px;
     font-weight: 600;
