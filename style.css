@@ -41,32 +41,8 @@ nav .button-collapse i {
 nav .button-collapse{
     height: 64px;
 }
-@media (min-width: 769px) {
-    .brand-logo img {
-        max-height: 44px;
 
-    }
-    nav .nav-wrapper {
-        padding: 10px 10%;
 
-    }
-    .navbar-fixed, nav .nav-wrapper{
-        height: 84px;
-    }
-    nav{
-        height: 84px;
-        line-height: 84px;
-    }
-    .log-btn{
-        padding: 12px 0;
-    }
-}
-@media (min-width: 993px) {
-    nav .nav-wrapper {
-        padding: 10px 7.5%;
-    }
-
-}
 nav ul {
     list-style: none;
     margin: 0;
@@ -95,10 +71,9 @@ nav ul li a {
     text-decoration: none;
     display: block;
     padding: 25px 10px 20px;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     /*text-transform: uppercase;*/
-    font-size: 12.8px;
+    font-size: 13px;
     position: relative;
     -webkit-transition: color .25s;
     -moz-transition: color .25s;
@@ -107,13 +82,8 @@ nav ul li a {
     transition: color .25s;
 
 }
-@media (min-width: 1200px) {
-    nav ul li a{
-        padding: 25px 15px 20px;
-    }
-}
+
 #login-navbar,#signup-navbar{
-    font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     /*text-transform: uppercase;*/
     font-size: 12.8px;
@@ -289,36 +259,9 @@ form.col.s12.white.parallax-form{
 }
 
 
-@media (min-width: 769px) {
-    .col.s12.m6.parallax-text {
 
-        margin-top: 2%;
-    }
-    .parallax-top > .parallax-content{
-        width: 88%;
-        margin-top: 6%;
-        margin-bottom:6%;
-    }
 
-}
 
-@media (min-width: 993px){
-    .parallax-top > .parallax-content{
-        width: 84%;
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }
-     .parallax-title h3, {
-        display: inline-block;
-        /*background-color: #8670FF;*/
-        line-height: 1.2em;
-        margin: 20px auto 0 auto;
-        padding-left: 5px;
-    }
-    .col.s12.m6.parallax-text {
-        margin-top: 2%;
-    }
-}
 @media (min-width: 1200px){
     .parallax-top > .parallax-content{
         width: 78%;
@@ -402,23 +345,9 @@ form p:last-child{
         margin-right: 20px;
     }
 }
-@media (min-width: 769px) {
-    .social-btn{
-        font-size: 1em;
-    }
-    .social-btn img{
-        margin-right: 10px;
-    }
-}
 
-@media (min-width: 993px) {
-    .social-btn{
-        font-size: 1.1em;
-    }
-    .social-btn img{
-        margin-right: 15px;
-    }
-}
+
+
 
 .mbl{
     padding-left: 10px;
@@ -568,51 +497,13 @@ td{
 #list-course-content .m4, #video-promotion-content{
     padding: 0 .75em;
 }
-@media (min-width: 769px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #blog-content,#how-learn-content{
-        max-width: 800px;
-        width: 85%;
-    }
-    #course_container{
-        width: 80%;
-    }
-    #video-promotion-text{
-        margin: 0 auto;
-    }
-    #video-promotion-text h3{
-        margin: 5.99% 0;
-        font-size: 2.21em;
-    }
-}
 
 
-@media (min-width: 993px) {
-    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#blog-content, #how-learn-content,#course_container{
-        width: 90%;
-        max-width: 1170px;
-    }
-    #video-promotion-text{
-        margin: 2% 0;
-        padding: 0 1.25em;
-
-    }
-    #video-promotion-youtube{
-        max-width: 450px;
-        margin: 0 auto;
-
-    }
-    #list-course-content .m4{
-        padding: 0 1.25em       ;
-    }
-}
 
 
-@media (min-width: 769px) {
-    #main_row_3 .section{
-        top: 20%;
-        margin-bottom: 2%;
-    }
-}
+
+
+
 .book-item img{
     max-height: 255px;
 }
@@ -637,8 +528,6 @@ td{
 #blg-content ul li a:hover, #job-content ul li a:hover{
     color: #3782c4;
 }
-
-
 
 .card-title h4{
     font-size: 1.14em;
@@ -708,20 +597,7 @@ td{
 
 }
 
-@media (min-width: 769px) {
-    #footer .holder .logo {
-        float: left;
-        width: 215px;
-        margin-right: 21px;
-    }
-    #footer{
-        text-align: left;
-    }
-    #footer p{
-        display: inline;
-        margin-right: 5px;
-    }
-}
+
 
 #footer .holder strong {
     font-weight: 400;
@@ -1058,11 +934,7 @@ td{
     width: 90%;
     margin: 0 auto;
 }
-@media (min-width: 769px) {
-    .course-parallax-content{
-        width: 100%;
-    }
-}
+
 
 
 #back2course {
@@ -1085,31 +957,15 @@ td{
     margin-left: auto;
     margin-right: auto;
 }
-@media (min-width: 769px) {
-    #center-title {
-        width: 50%;
-    }
-}
-@media (min-width: 993px) {
-    #center-title {
-        width: 50%;
-    }
 
-    .course-price {
-        font-size: 26px;
-    }
-}
+
 .para-container{
     width: 100%;
     margin: 0 auto;
     max-width: 1280px;
     padding-bottom: 20px;
 }
-@media (min-width: 769px) {
-    .para-container{
-        width: 90%;
-    }
-}
+
 
 
 
@@ -1118,11 +974,7 @@ td{
     width: 90%;
 
 }
-@media (min-width: 993px) {
-    .video-product > .video-container{
-        width: 80%;
-    }
-}
+
 @media (min-width: 1200px) {
     .video-product > .video-container{
         width: 70%;
@@ -1195,11 +1047,7 @@ td{
 #bot-register{
     padding: 44px 0 45px
 }
-@media (min-width: 769px) {
-    #bot-register{
-        padding: 64px 0 65px;
-    }
-}
+
 .all-course{
     margin: 0;
 }
@@ -1250,24 +1098,8 @@ td{
     padding-left: 40px;
     padding-right: 40px;
 }
-@media only screen and (min-width: 769px) {
-    #check-out-content{
-        width: 80%;
-        max-width: 600px;
-        padding: 20px;
-    }
 
-    #price-list .card {
-        margin-bottom: 0;
-    }
-}
-@media only screen and (min-width: 993px) {
-    #check-out-content{
-        width: 70%;
-        max-width: 800px;
-        padding: 40px;
-    }
-}
+
 .form-title h4{
     margin: 40px auto 20px;
     font-weight: 200;
@@ -1444,11 +1276,7 @@ input#blog-search, input#blog-search:focus{
     width: 100%;
     overflow-y: hidden;
 }
-@media (min-width: 769px) {
-    .post-content{
-        width: 90%;
-    }
-}
+
 
 .header-post {
 
@@ -1628,15 +1456,7 @@ input#blog-search, input#blog-search:focus{
     padding-right: 0em;
 }
 
-@media (min-width: 769px) {
-    .post-nav > a > .v-align{
-        padding-right: 1em;
-    }
-    .header-post h1{
-        font-size: 3.5em;
 
-    }
-}
 .post-nav .home-link{
     border: 1px solid #d5d5d5;
     color: #6b6b6b;
@@ -1761,4 +1581,166 @@ input#blog-search, input#blog-search:focus{
 /*}*/
 .tabs .indicator:before{
     content: "";
+}
+
+@media (min-width: 769px) {
+    #check-out-content{
+        width: 80%;
+        max-width: 600px;
+        padding: 20px;
+    }
+
+    #price-list .card {
+        margin-bottom: 0;
+    }
+    #footer .holder .logo {
+        float: left;
+        width: 215px;
+        margin-right: 21px;
+    }
+    #footer{
+        text-align: left;
+    }
+    #footer p{
+        display: inline;
+        margin-right: 5px;
+    }
+    .post-nav > a > .v-align{
+        padding-right: 1em;
+    }
+    .header-post h1{
+        font-size: 3.5em;
+
+    }
+    .post-content{
+        width: 90%;
+    }
+    #bot-register{
+        padding: 64px 0 65px;
+    }
+    .para-container{
+        width: 90%;
+    }
+    #center-title {
+        width: 50%;
+    }
+    .course-parallax-content{
+        width: 100%;
+    }
+    #main_row_3 .section{
+        top: 20%;
+        margin-bottom: 2%;
+    }
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content, #blog-content,#how-learn-content{
+        max-width: 800px;
+        width: 85%;
+    }
+    #course_container{
+        width: 80%;
+    }
+    #video-promotion-text{
+        margin: 0 auto;
+    }
+    #video-promotion-text h3{
+        margin: 5.99% 0;
+        font-size: 2.21em;
+    }
+    .social-btn{
+        font-size: 1em;
+    }
+    .social-btn img{
+        margin-right: 10px;
+    }
+    .col.s12.m6.parallax-text {
+
+        margin-top: 2%;
+    }
+    .parallax-top > .parallax-content{
+        width: 88%;
+        margin-top: 6%;
+        margin-bottom:6%;
+    }
+    .brand-logo img {
+        max-height: 44px;
+
+    }
+    nav .nav-wrapper {
+        padding: 10px 10%;
+
+    }
+    .navbar-fixed, nav .nav-wrapper{
+        height: 84px;
+    }
+    nav{
+        height: 84px;
+        line-height: 84px;
+    }
+    .log-btn{
+        padding: 12px 0;
+    }
+}
+@media only screen and (min-width: 993px) {
+    #check-out-content{
+        width: 70%;
+        max-width: 800px;
+        padding: 40px;
+    }
+    nav .nav-wrapper {
+        padding: 10px 7.5%;
+    }
+    .video-product > .video-container{
+        width: 80%;
+    }
+    #center-title {
+        width: 50%;
+    }
+
+    .course-price {
+        font-size: 26px;
+    }
+    #book-content,#list-course-content,#review-content,#list-link-content,#video-promotion-content,#blog-content, #how-learn-content,#course_container{
+        width: 90%;
+        max-width: 1170px;
+    }
+    #video-promotion-text{
+        margin: 2% 0;
+        padding: 0 1.25em;
+
+    }
+    #video-promotion-youtube{
+        max-width: 450px;
+        margin: 0 auto;
+
+    }
+    #list-course-content .m4{
+        padding: 0 1.25em       ;
+    }
+    .social-btn{
+        font-size: 1.1em;
+    }
+    .social-btn img{
+        margin-right: 15px;
+    }
+    .parallax-top > .parallax-content{
+        width: 84%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .parallax-title h3, {
+        display: inline-block;
+        /*background-color: #8670FF;*/
+        line-height: 1.2em;
+        margin: 20px auto 0 auto;
+        padding-left: 5px;
+    }
+    .col.s12.m6.parallax-text {
+        margin-top: 2%;
+    }
+
+
+}
+@media (min-width: 1200px) {
+    nav ul li a{
+        padding: 25px 15px 20px;
+    }
 }
