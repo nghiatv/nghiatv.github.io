@@ -100,7 +100,7 @@
 </section>
 <section class="white book-content">
     <div class="container   ">
-        <div class="row">
+        <div class="row" id="book-detail">
             <div class="col s12 m6">
                 <div class="valign-wrapper book-feature center ">
                     <img class="valign responsive-img" src="images/mobile-design-pattern-gallery-2nd-edition.jpg" width="80"></img>
@@ -128,52 +128,48 @@
 
                 </div>
             </div>
+
         </div>
-        <div class="row">
+        <div class="row" id="book-description">
             <div class="col s12">
                 <ul class="tabs">
-                    <li class="tab col s3"><a class="active" href="#test1">Test 1</a></li>
-                    <li class="tab col s3"><a  href="#test2">Test 2</a></li>
+                    <li class="tab"><a class="active" href="#test1" id="book-info">Thông tin chi tiết</a></li>
+                    <li class="tab"><a  href="#test2" id="book-comment">Đánh giá</a></li>
                 </ul>
             </div>
             <div id="test1" class="tab-content col s12">
                 <div  class="book-description">
 
-                    <div class="about-book  ">
+                    <div class="about-book">
                         <p>AngularJS is the leading framework for building dynamic JavaScript applications that take advantage of the capabilities of modern browsers and devices. AngularJS, which is maintained by Google, brings the power of the MVC pattern to the client, providing the foundation for complex and rich web apps. It allows you to build applications that are smaller, faster, and with a lighter resource footprint than ever before. Best-selling author Adam Freeman explains how to get the most from AngularJS. He begins by describing the MVC pattern and the many benefits that can be gained from separating your logic and presentation code. He then shows how you can use AngularJS's features within in your projects to produce professional-quality results. Starting from the nuts-and-bolts and building up to the most advanced and sophisticated features AngularJS is carefully unwrapped, going in-depth to give you the knowledge you need.</p>
                     </div>
 
 
-                    <div class="product-ldesc">
+                    <div class="book-ldesc">
 
-                        <table class="table table-hover">
+                        <table class="table">
                             <tbody>
                             <tr class="">
-                                <th>Book Author</th>
+                                <th>Tác giả:    </th>
                                 <td>
                                     <p>Author name</p>
                                 </td>
                             </tr>
-                            <tr class="alt">
-                                <th>Publisher</th>
-                                <td>
-                                    <p>joomlabuff</p>
-                                </td>
-                            </tr>
+
                             <tr class="">
-                                <th>Language</th>
+                                <th>Ngôn ngữ</th>
                                 <td>
                                     <p>English</p>
                                 </td>
                             </tr>
                             <tr class="alt">
-                                <th>Pages</th>
+                                <th>Số trang: </th>
                                 <td>
                                     <p>412</p>
                                 </td>
                             </tr>
                             <tr class="">
-                                <th>Year Published</th>
+                                <th>Năm xuất bản: </th>
                                 <td>
                                     <p>1948</p>
                                 </td>
@@ -185,7 +181,114 @@
                 </div>
 
             </div>
-            <div id="test2" class="col s12">Test 2</div>
+            <div id="test2" class="tab-content col s12">
+                <div class="user-comment">
+                    <h3><i class="fa fa-comment-o"></i> Customer Reviews on Amazon:</h3>
+                    <ul class="list-comment">
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R29V22JK9GWSL4/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 100%"></span></span>
+                                    This is one of the best books out there on MEAN.  I wish I could give it more than 5 stars!!!.  Finished first 8 chapters, which contains the meat of MEAN tutorial and was able to implement all the codes given i...
+                                    <span class="amazon-user"> -  - Lubna Nazarani</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R2QEG7EUNF85OC/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 60%"></span></span>
+                                    It does not go into as much depth as I was hoping, and the grammar is poor - it should have been proof read by a technical writer that speaks fluent English.
+                                    ...
+                                    <span class="amazon-user"> -  - Greg Sullivan</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R1B65DBJQX7LG8/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 100%"></span></span>
+                                    First the negative, not even worth losing any points: The examples are primitive, but I suppose as MEAN is such as vast topic, bootstrap was not a concern.I truly enjoyed this book. I caution you, that while PAC...
+                                    <span class="amazon-user"> -  - BradentonMCPD</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R11RG97GF9MLT3/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 100%"></span></span>
+                                    Perfectly organized with excellent, concise examples. I've been a software engineer for over 24 years and have taught software engineering at the college level. As such, I've read thousands of technical books. T...
+                                    <span class="amazon-user"> -  - Kevin</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R3IQYYFKWV97NC/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 100%"></span></span>
+                                    A great Book to learn MEAN stackI really enjoyed reading "MEAN Web Development" : it is well written, well organized and easy to follow, achieving its goal to be a book for new programmers willing to learn the M...
+                                    <span class="amazon-user"> -  - Massera Riccardo</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R36S11Z9LJVHDZ/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 100%"></span></span>
+                                    For me, this has been the best resource on the MEAN stack. I'm a hobbyist JavaScripter and have been dabbling with Node, Express and Angular over the past year. I have read different books on each topic but this...
+                                    <span class="amazon-user"> -  - Mark A</span>
+                                </p>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="http://www.amazon.com/review/R3OTWY3K1YYVWV/ref=cm_cr_dp_title/177-6357845-5896824?ie=UTF8&amp;ASIN=1783983280&amp;nodeID=283155&amp;store=books">
+                                                <span class="rating">
+                                                    <span class="rating dynamic" style="width: 94%;"></span>94
+                                                </span>
+
+                                <p>
+                                    <span class="s-rating smaller static maroon "><span style="width: 100%"></span></span>
+                                    The MEAN stack is a collection of the most popular modern tools for web development; it comprises MongoDB, Express, AngularJS, and Node.js.If you would like to start working with these technologies, the new book...
+                                    <span class="amazon-user"> -  - Philip Arad</span>
+                                </p>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
         </div>
         </div>
 </section>

@@ -168,17 +168,42 @@ li .collapsible-header{
 }
 .link-to-book a{
     margin-right: 20px;
+    margin-bottom: 20px;
+}
+#book-detail{
+   padding: 40px 0;
+    border-bottom:  1px solid silver;
+    border-top:  1px solid silver;
 }
 .tab-content{
-
     padding: 2.4em 2em 2.4em;
     border-radius: 3px;
 }
-.book-description{
+.book-description,.user-comment{
     background: #e9eaea;
-    padding: 2em 1em;
+    padding: 2em;
+    border: 1px solid silver;
+    border-top: none;
 }
-
+ .tabs .tab a{
+     background-color: white;
+     border-bottom: 1px solid silver;
+ }
+ .tabs{
+    width: 100% !important;
+    border: 1px solid silver;
+    border-bottom: none;
+}
+.tabs .tab a.active{
+    background-color: #e9eaea;
+    border-bottom: none ;
+}
+.book-ldesc tr{
+    border-bottom: 1px solid silver;
+}
+#book-info{
+    border-right: 1px solid silver;
+}
 
 @media (min-width: 769px) {
     .grid-sizer,

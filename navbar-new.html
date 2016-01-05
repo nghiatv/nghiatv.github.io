@@ -25,7 +25,7 @@
     <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
 
     <!--style.css-->
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="style2.css" type="text/css">
 
     <!--animated.css-->
     <link rel="stylesheet" href="animate.css" type="text/css">
@@ -42,74 +42,30 @@
 <body>
 
 <!--Header-->
-<header class="page-header">
-    <div class="navbar-fixed white ">
-        <nav>
-            <div class="nav-wrapper col s12">
-
-                <a href="index.html" class="brand-logo "><img
-                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
-                        alt=""></a>
-
-                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
-                                                                                   style="color: rgba(33, 23, 34, 0.96)"></i></a>
-                <!--<a href="#" data-activates="mobile-nav" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
-                <ul class="right hide-on-med-and-down log-btn">
-
-                </ul>
-                <ul class="right hide-on-med-and-down">
-
-                    <li><a href="course.html">Khóa học</a></li>
-                    <li><a href="">Thực tập</a></li>
-                    <li><a href="test-blog.html">Blog</a></li>
-                    <li><a href="">Việc làm</a></li>
-                    <li><a href="test-book.html">Sách</a></li>
-                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Chúng tôi</a></li>
-                    <!-- Dropdown Structure -->
-                    <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="#!">Khách hàng - đối tác</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Giảng viên</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Thiết bị đào tạo</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Quy định chung</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Tuyển dụng giảng viên</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Chơi thể thao</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Team building - Royal City </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Video hoạt động</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#!">Thực tập</a></li>
-                    </ul>
-                    <li><a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
-                           id="login-navbar">đăng nhập</a></li>
-                    <li><a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                           id="signup-navbar"
-                            >đăng kí</a></li>
-                </ul>
-                <ul class="side-nav" id="mobile-nav">
-                    <li><a href="course.html">Khóa học</a></li>
-                    <li><a href="">Thực tập</a></li>
-                    <li><a href="test-blog.html">Blog</a></li>
 
 
-                    <li><a href="">Việc làm</a></li>
 
-                    <li><a href="test-book.html">Sách</a></li>
-                    <li><a href="">Chúng tôi</a></li>
-                    <li><a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
-                           id="signup-mobile-navbar">Đăng kí</a></li>
-                   <li> <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                           >đăng nhập</a></li>
-                </ul>
+<header>
+   <div class="navbar-fixed">
+       <nav>
+           <div class="nav-wrapper">
+               <a href="#!" class="brand-logo">Logo</a>
+               <ul class="right hide-on-med-and-down">
+                   <li><a href="#">A link</a></li>
+                   <li><a class="waves-effect waves-light btn">A button</a></li>
+                   <li><a class="waves-effect waves-light btn-large">A large button</a></li>
 
-            </div>
-        </nav>
-    </div>
+                   <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
+                   <ul id="dropdown1" class="dropdown-content">
+                       <li><a href="#!">one</a></li>
+                       <li><a href="#!">two</a></li>
+                       <li class="divider"></li>
+                       <li><a href="#!">three</a></li>
+                   </ul>
+               </ul>
+           </div>
+       </nav>
+   </div>
 </header>
 
 
@@ -586,10 +542,10 @@
 <div id="modal1" class="modal">
     <div class="row">
 
-            <ul class="tabs">
-                <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
-                <li class="tab"><a  href="#signup">Đăng kí</a></li>
-            </ul>
+        <ul class="tabs">
+            <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
+            <li class="tab"><a  href="#signup">Đăng kí</a></li>
+        </ul>
 
         <div id="login" class="col s12">
             <form action="" method="post">
@@ -612,9 +568,9 @@
                     </div>
                 </div>
                 <div class="row">
-                   <div class="col s12" >
-                       <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
-                   </div>
+                    <div class="col s12" >
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="center col s12">
@@ -622,7 +578,7 @@
                     </div>
                     <div class="col s6">
                         <button class="btn waves-effect waves-light blue"  name="action"><i class="fa fa-facebook"></i>
-                               facebook
+                            facebook
                         </button>
                     </div>
                     <div class="col s6">
@@ -655,9 +611,9 @@
                     </div>
                 </div>
                 <div class="row ">
-                  <div class="col s12" id="recaptcha">
-                      <div class="g-recaptcha" data-sitekey="6LfsghQTAAAAACsMkPBtk0-gewtKG_4waTW9_G09"></div>
-                  </div>
+                    <div class="col s12" id="recaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LfsghQTAAAAACsMkPBtk0-gewtKG_4waTW9_G09"></div>
+                    </div>
                 </div>
                 <div class="row">
                     <div class="col s12" >
@@ -740,10 +696,10 @@
         }
         $('ul.tabs').tabs('select_tab', 'signin');
         $('.modal-trigger').leanModal({
-                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
-                    opacity: .6, // Opacity of modal background
-                    in_duration: 400, // Transition in duration
-                    out_duration: 300, // Transition out duration
+            dismissible: true, // Modal can be dismissed by clicking outside of the modal
+            opacity: .6, // Opacity of modal background
+            in_duration: 400, // Transition in duration
+            out_duration: 300, // Transition out duration
 
         });
         $('.parallax').parallax();
