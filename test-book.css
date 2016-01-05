@@ -153,6 +153,7 @@ li .collapsible-header{
     font-size: 30px;
 }
 .techmaster-comment{
+    background-color: #e9eaea;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
     margin: 0 0 25px;
@@ -172,7 +173,7 @@ li .collapsible-header{
 }
 #book-detail{
    padding: 40px 0;
-    border-bottom:  1px solid silver;
+
     border-top:  1px solid silver;
 }
 .tab-content{
@@ -180,14 +181,19 @@ li .collapsible-header{
     border-radius: 3px;
 }
 .book-description,.user-comment{
-    background: #e9eaea;
+    background: white;
     padding: 2em;
     border: 1px solid silver;
     border-top: none;
 }
  .tabs .tab a{
-     background-color: white;
+     background-color: #e9eaea;
      border-bottom: 1px solid silver;
+     text-transform: uppercase;
+     font-weight: 600;
+ }
+ .tabs .tab a:hover{
+     color: rgba(38, 38, 38, 0.65);
  }
  .tabs{
     width: 100% !important;
@@ -195,7 +201,7 @@ li .collapsible-header{
     border-bottom: none;
 }
 .tabs .tab a.active{
-    background-color: #e9eaea;
+    background-color: white;
     border-bottom: none ;
 }
 .book-ldesc tr{

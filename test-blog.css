@@ -88,7 +88,7 @@ main{
     }
 
     .grid-item > .card > .card-image{
-        max-height: 300px;
+
         overflow: hidden;
     }
     .grid-item > .card > .card-image:hover img{

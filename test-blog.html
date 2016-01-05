@@ -47,40 +47,60 @@
 
                 <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
                                                                                    style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                <!--<a href="#" data-activates="mobile-nav" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
                 <ul class="right hide-on-med-and-down log-btn">
-                    <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
-                       id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
-                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                       id="signup-navbar"
-                       onclick="show_form_register1()">đăng kí</a>
+
                 </ul>
                 <ul class="right hide-on-med-and-down">
 
-                    <li><a href="">Khóa học</a></li>
+                    <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
-
-
+                    <li><a href="test-blog.html">Blog</a></li>
                     <li><a href="">Việc làm</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Chúng tôi</a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="">Khách hàng - đối tác</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thiết bị đào tạo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Quy định chung</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Tuyển dụng giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Chơi thể thao</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Team building - Royal City </a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Video hoạt động</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thực tập</a></li>
+                    </ul>
+                    <li><a href="#modal1" class="waves-effect waves-light btn teal white-text btn-flat login modal-trigger"
+                           id="login-navbar">đăng nhập</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light  modal-trigger"
+                           id="signup-navbar"
+                            >đăng kí</a></li>
 
-                    <li><a href="">Sách</a></li>
-                    <li><a href="">Chúng tôi</a></li>
 
                 </ul>
-                <ul class="side-nav" id="mobile-nav">
-                    <li><a href="">Khóa học</a></li>
+                <ul class="side-nav center" id="mobile-nav">
+                    <!--<li><a href="index.html"><img src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png" </a></li>-->
+                    <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
-
-
+                    <li><a href="test-blog.html">Blog</a></li>
                     <li><a href="">Việc làm</a></li>
 
-                    <li><a href="">Sách</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
                     <li><a href="">Chúng tôi</a></li>
-                    <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
-                       id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
-                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                       onclick="show_form_login1()">đăng nhập</a>
+                    <li><a href="#modal1" class="waves-effect waves-light btn teal btn-flat modal-trigger"
+                            >đăng nhập</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light modal-trigger "
+                           id="signup-mobile-navbar">Đăng kí</a></li>
+
                 </ul>
 
             </div>
@@ -110,10 +130,10 @@
                 <!--</ul>-->
 
 
-                <ul class="collapsible" data-collapsible="accordion">
+                <ul class="collapsible" data-collapsible="accordion" >
                     <li>
-                        <div class="collapsible-header"><span>Category</span></a></div>
-                        <div class="collapsible-body" id="data-filter">
+                        <div class="collapsible-header  white "><span>Category</span></a></div>
+                        <div class="collapsible-body white z-depth-1" id="data-filter">
                             <ul class="tags">
                                 <li class="chip"><a href="">Agile (8)</a></li>
                                 <li class="chip"><a href="">Altassian (4)</a></li>
@@ -130,7 +150,7 @@
 
             </div>
             <div class="col s12 m6">
-                <form class="card search-wrapper col s12 hoverable right">
+                <form class="card search-wrapper col s12 right">
                     <div class="input-field">
                         <input id="blog-search" name="s" type="text" placeholder="Tìm kiếm">
                         <i class="material-icons">search</i>
@@ -209,7 +229,7 @@
                     <div class="grid-item">
                         <div class="card">
                             <div class="card-image">
-                                <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
 
                             </div>
                             <div class="card-content">
@@ -324,7 +344,7 @@
                     <div class="grid-item">
                         <div class="card">
                             <div class="card-image">
-                                <img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">
+                                <img src="images/pro-unity-game-development-with-c.jpg">
 
                             </div>
                             <div class="card-content">
@@ -648,23 +668,7 @@
 </div>
 
 <script>
-    function show_form_login() {
-        $(".mdl_form_register").hide(600);
-        $(".mdl_form").show(600);
 
-    }
-    function show_form_login1() {
-        $(".mdl_form_register").hide();
-        $(".mdl_form").show();
-    }
-    function show_form_register() {
-        $(".mdl_form").hide(600);
-        $(".mdl_form_register").show(600);
-    }
-    function show_form_register1() {
-        $(".mdl_form").hide();
-        $(".mdl_form_register").show();
-    }
     //Modal
 
     $(document).ready(function () {
@@ -677,6 +681,16 @@
                 }
         );
         $(".button-collapse").sideNav();   //    sideNav
+        $('.dropdown-button').dropdown({
+                    inDuration: 0,
+                    outDuration: 225,
+                    constrain_width: false, // Does not change width of dropdown to that of the activator
+                    hover: true, // Activate on click
+                    alignment: 'left', // Aligns dropdown to left or right edge (works with constrain_width)
+                    gutter: 0, // Spacing from edge
+                    belowOrigin: true // Displays dropdown below the button
+                }
+        );
 //        $('ul.tabs').tabs(); // Tabs
     });
 

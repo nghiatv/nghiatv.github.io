@@ -49,11 +49,7 @@
                                                                                    style="color: rgba(33, 23, 34, 0.96)"></i></a>
                 <!--<a href="#" data-activates="mobile-nav" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
                 <ul class="right hide-on-med-and-down log-btn">
-                    <a href="#modal1" class="waves-effect waves-light btn-flat login modal-trigger"
-                       id="login-navbar" onclick="show_form_login1()">đăng nhập</a>
-                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                       id="signup-navbar"
-                       onclick="show_form_register1()">đăng kí</a>
+
                 </ul>
                 <ul class="right hide-on-med-and-down">
 
@@ -62,23 +58,49 @@
                     <li><a href="test-blog.html">Blog</a></li>
                     <li><a href="">Việc làm</a></li>
                     <li><a href="test-book.html">Sách</a></li>
-                    <li><a href="">Chúng tôi</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Chúng tôi</a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="">Khách hàng - đối tác</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thiết bị đào tạo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Quy định chung</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Tuyển dụng giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Chơi thể thao</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Team building - Royal City </a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Video hoạt động</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thực tập</a></li>
+                    </ul>
+                    <li><a href="#modal1" class="waves-effect waves-light btn teal white-text btn-flat login modal-trigger"
+                           id="login-navbar">đăng nhập</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light  modal-trigger"
+                           id="signup-navbar"
+                            >đăng kí</a></li>
+
 
                 </ul>
-                <ul class="side-nav" id="mobile-nav">
+                <ul class="side-nav center" id="mobile-nav">
+                    <!--<li><a href="index.html"><img src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png" </a></li>-->
                     <li><a href="course.html">Khóa học</a></li>
                     <li><a href="">Thực tập</a></li>
                     <li><a href="test-blog.html">Blog</a></li>
-
-
                     <li><a href="">Việc làm</a></li>
 
                     <li><a href="test-book.html">Sách</a></li>
                     <li><a href="">Chúng tôi</a></li>
-                    <a href="#modal1" class="waves-effect waves-light btn-flat btn modal-trigger"
-                       id="signup-mobile-navbar" onclick="show_form_register1()">Đăng kí</a>
-                    <a href="#modal1" class="waves-effect waves-light btn modal-trigger"
-                       onclick="show_form_login1()">đăng nhập</a>
+                    <li><a href="#modal1" class="waves-effect waves-light btn teal btn-flat modal-trigger"
+                            >đăng nhập</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light modal-trigger "
+                           id="signup-mobile-navbar">Đăng kí</a></li>
+
                 </ul>
 
             </div>
