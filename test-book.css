@@ -12,6 +12,10 @@
 }
 .grid-sizer,
 .grid-item { width: 100%;
+    -webkit-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -moz-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    -o-transition: left .4s ease-in-out, top .4s ease-in-out .4s;
+    transition: left .4s ease-in-out, top .4s ease-in-out .4s;
 }
 
 .gutter-sizer { width: 4%; }
@@ -208,7 +212,7 @@ li .collapsible-header{
     border-bottom: 1px solid silver;
 }
 .book-ldesc tr:last-child{
-    border-bottom: ;
+    border-bottom: none ;
 }
 #book-info{
     border-right: 1px solid silver;

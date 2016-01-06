@@ -16,6 +16,7 @@
 
     <!--import massonry-->
     <script src="masonry/masonry.min.js" type="text/javascript"></script>
+    <script src="masonry/imagesloaded.min.js" type="text/javascript"></script>
 
 
     <!--import Marterilize-->
@@ -50,11 +51,11 @@
                 </ul>
                 <ul class="right hide-on-med-and-down">
 
-                    <li><a href="course.html">Khóa học</a></li>
-                    <li><a href="">Thực tập</a></li>
-                    <li><a href="test-blog.html">Blog</a></li>
-                    <li><a href="">Việc làm</a></li>
-                    <li><a href="test-book.html">Sách</a></li>
+                    <li class="waves-effect waves-light waves-teal" ><a href="course.html">Khóa học</a></li>
+                    <li class="waves-effect waves-light waves-teal"><a href="">Thực tập</a></li>
+                    <li class="waves-effect waves-light waves-teal"><a href="test-blog.html">Blog</a></li>
+                    <li class="waves-effect waves-light waves-teal"><a href="">Việc làm</a></li>
+                    <li class="waves-effect waves-light waves-teal"><a href="test-book.html">Sách</a></li>
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Chúng tôi</a></li>
                     <!-- Dropdown Structure -->
                     <ul id="dropdown1" class="dropdown-content">
@@ -171,9 +172,7 @@
                 </ul>
             </div>
             <div class="col s12 m8 l9">
-                <ul class="collapsible">
-                    <li class="collapsible-header"><strong> Newest</strong></li>
-                </ul>
+
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
@@ -210,9 +209,6 @@
 
                         </div>
                     </div>
-
-
-
                     <div class="grid-item">
                         <div class="card">
                             <div class="card-image">
@@ -943,23 +939,6 @@
 </div>
 
 <script>
-    function show_form_login() {
-        $(".mdl_form_register").hide(600);
-        $(".mdl_form").show(600);
-
-    }
-    function show_form_login1() {
-        $(".mdl_form_register").hide();
-        $(".mdl_form").show();
-    }
-    function show_form_register() {
-        $(".mdl_form").hide(600);
-        $(".mdl_form_register").show(600);
-    }
-    function show_form_register1() {
-        $(".mdl_form").hide();
-        $(".mdl_form_register").show();
-    }
     //Modal
 
     $(document).ready(function () {
@@ -977,11 +956,50 @@
             closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
         });   //    sideNav
         $('ul.tabs').tabs(); // Tabs
+        $('.dropdown-button').dropdown({
+                    inDuration: 500,
+                    outDuration: 500,
+                    constrain_width: false, // Does not change width of dropdown to that of the activator
+                    hover: true, // Activate on click
+                    alignment: 'left', // Aligns dropdown to left or right edge (works with constrain_width)
+                    gutter: 0, // Spacing from edge
+                    belowOrigin: true // Displays dropdown below the button
+                }
+        );
+
+        var $grid = $('.grid').masonry({
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true
+        });
+
+        var $items = $('.grid-item');
+        $grid.masonryImagesReveal( $items );
+
 
 
     });
 
+    $.fn.masonryImagesReveal = function( $items ) {
+        var msnry = this.data('masonry');
+        var itemSelector = msnry.options.itemSelector;
+        // hide by default
+        $items.hide();
+        // append to container
+        this.append( $items );
+        $items.imagesLoaded().progress( function( imgLoad, image ) {
+            // get item
+            // image is imagesLoaded class, not <img>, <img> is image.img
+            var $item = $( image.img ).parents( itemSelector );
+            // un-hide item
+            $item.show();
+            // masonry does its thing
+            msnry.appended( $item );
+        });
 
+        return this;
+    };
     //    Slider
 
     //    $(document).ready(function () {
@@ -990,20 +1008,16 @@
     //    });
 
 
-    $(window).bind('load', function () {
-        $('.grid').masonry({
-            columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer',
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            isAnimated: true,
-            animationOptions: {
-                duration: 750,
-                easing: 'linear',
-                queue: false
-            }
-        });
-    });
+//    $(window).bind('load', function () {
+//        $('.grid').masonry({
+//            columnWidth: '.grid-sizer',
+//            gutter: '.gutter-sizer',
+//            itemSelector: '.grid-item',
+//            percentPosition: true,
+//            isAnimated: true,
+//
+//        });
+//    });
 
 
     if ($('#back-to-top').length) {
