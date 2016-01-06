@@ -25,7 +25,7 @@
     <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
 
     <!--style.css-->
-    <link rel="stylesheet" href="style2.css" type="text/css">
+    <link rel="stylesheet" href="style.css" type="text/css">
 
     <!--animated.css-->
     <link rel="stylesheet" href="animate.css" type="text/css">
@@ -44,28 +44,90 @@
 <!--Header-->
 
 
+<header class="page-header">
+    <div class="navbar-fixed white ">
+        <nav>
+            <div class="nav-wrapper col s12">
 
-<header>
-   <div class="navbar-fixed">
-       <nav>
-           <div class="nav-wrapper">
-               <a href="#!" class="brand-logo">Logo</a>
-               <ul class="right hide-on-med-and-down">
-                   <li><a href="#">A link</a></li>
-                   <li><a class="waves-effect waves-light btn">A button</a></li>
-                   <li><a class="waves-effect waves-light btn-large">A large button</a></li>
+                <a href="index.html" class="brand-logo "><img
+                        src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
+                        alt=""></a>
 
-                   <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Dropdown<i class="material-icons right">arrow_drop_down</i></a></li>
-                   <ul id="dropdown1" class="dropdown-content">
-                       <li><a href="#!">one</a></li>
-                       <li><a href="#!">two</a></li>
-                       <li class="divider"></li>
-                       <li><a href="#!">three</a></li>
-                   </ul>
-               </ul>
-           </div>
-       </nav>
-   </div>
+                <a href="#" data-activates="mobile-nav" class="button-collapse"><i class="fa fa-2x fa-bars"
+                                                                                   style="color: rgba(33, 23, 34, 0.96)"></i></a>
+                <!--<a href="#" data-activates="mobile-nav" class="button-collapse show-on-large"><i class="mdi-navigation-menu"></i></a>-->
+                <ul class="right hide-on-med-and-down log-btn">
+
+                </ul>
+                <ul class="right hide-on-med-and-down">
+
+                    <li><a href="course.html">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li class="active"><a href="test-blog.html">Blog</a></li>
+                    <li><a href="">Việc làm</a></li>
+                    <li><a href="test-book.html">Sách</a></li>
+                    <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Chúng tôi</a></li>
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="">Khách hàng - đối tác</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thiết bị đào tạo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Quy định chung</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Tuyển dụng giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Chơi thể thao</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Team building - Royal City </a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Video hoạt động</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thực tập</a></li>
+                    </ul>
+
+                    <li>
+                        <div class="user">
+                            <span class="dropdown-button" href="#!" data-activates="dropdown2">
+                                <img src="images/cuongtm.jpg" height="44px" alt="sdsa" class="circle">
+                                <span class="title">Cường trịnh <minh></minh></span>
+
+
+                                <span class="secondary-content"><i class="material-icons">grade</i></span>
+
+                            </a>
+                        </div>
+                        </li>
+                    <ul id="dropdown2" class="dropdown-content">
+                        <li><a href="">Khóa học của tôi</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Hồ sơ cá nhân</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Xóa</a></li>
+                    </ul>
+
+                </ul>
+                <ul class="side-nav center" id="mobile-nav">
+                    <!--<li><a href="index.html"><img src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png" </a></li>-->
+                    <li><a href="course.html">Khóa học</a></li>
+                    <li><a href="">Thực tập</a></li>
+                    <li><a href="test-blog.html">Blog</a></li>
+                    <li><a href="">Việc làm</a></li>
+
+                    <li><a href="test-book.html">Sách</a></li>
+                    <li><a href="">Chúng tôi</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light btn teal btn-flat modal-trigger"
+                            >đăng nhập</a></li>
+                    <li><a href="#modal1" class="waves-effect waves-light modal-trigger "
+                           id="signup-mobile-navbar">Đăng kí</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+    </div>
 </header>
 
 
@@ -544,7 +606,7 @@
 
         <ul class="tabs">
             <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
-            <li class="tab"><a  href="#signup">Đăng kí</a></li>
+            <li class="tab"><a href="#signup">Đăng kí</a></li>
         </ul>
 
         <div id="login" class="col s12">
@@ -560,7 +622,7 @@
                 </div>
                 <div class="row">
                     <div class="col ">
-                        <input type="checkbox" id="test5" />
+                        <input type="checkbox" id="test5"/>
                         <label for="test5">Ghi nhơ tài khoản</label>
                     </div>
                     <div class="col">
@@ -568,7 +630,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12" >
+                    <div class="col s12">
                         <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
                     </div>
                 </div>
@@ -577,7 +639,7 @@
                         <span></span>
                     </div>
                     <div class="col s6">
-                        <button class="btn waves-effect waves-light blue"  name="action"><i class="fa fa-facebook"></i>
+                        <button class="btn waves-effect waves-light blue" name="action"><i class="fa fa-facebook"></i>
                             facebook
                         </button>
                     </div>
@@ -616,7 +678,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12" >
+                    <div class="col s12">
                         <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
                     </div>
                 </div>
@@ -633,7 +695,6 @@
 
     </div>
 </div>
-
 
 
 <!--Back to top button-->
@@ -681,17 +742,17 @@
     //    }
 
     $(window).on("resize", function () {
-        if(window.innerWidth > 768){
+        if (window.innerWidth > 768) {
             maxHeight();
         }
 //        maxHeightBook();
     });
     //Modal
-    $(document).ready(function(){
+    $(document).ready(function () {
         $('ul.tabs').tabs('select_tab', '#signup');
     });
     $(document).ready(function () {
-        if(window.innerWidth > 768){
+        if (window.innerWidth > 768) {
             maxHeight();
         }
         $('ul.tabs').tabs('select_tab', 'signin');

@@ -207,6 +207,9 @@ li .collapsible-header{
 .book-ldesc tr{
     border-bottom: 1px solid silver;
 }
+.book-ldesc tr:last-child{
+    border-bottom: none;
+}
 #book-info{
     border-right: 1px solid silver;
 }

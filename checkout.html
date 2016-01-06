@@ -436,95 +436,100 @@
     </div>
 </footer>
 
-<!-- Modal login and sign up -->
+<!-- Modal Structure -->
 <div id="modal1" class="modal">
-    <div class="modal-content">
-        <div class="row">
-            <div class="mdl-close">
-                <a class=" modal-action modal-close btn-flat"><i class="fa fa-times"></i> </a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="s12 center-align"><img style="height: 30px;width: auto"
-                                               src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"
-                                               alt="Techmaster" title="Techmaster"></div>
-        </div>
-        <div class="row">
-            <div class="col s12  ">
-                <div class="mdl_form">
+    <div class="row">
 
-                    <!--<div class="social-log">-->
-                    <!--<button type="submit" class="waves-effect waves-light btn blue">Facebook</button>-->
-                    <!--&lt;!&ndash;<span> or </span>&ndash;&gt;-->
-                    <!--<button type="button" class="waves-effect waves-light btn red">Google</button>-->
-                    <!--</div>-->
+        <ul class="tabs">
+            <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
+            <li class="tab"><a  href="#signup">Đăng kí</a></li>
+        </ul>
 
-                    <form action="" autocomplete="off" method="POST">
-                        <div class="input-field">
+        <div id="login" class="col s12">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="Email">
 
-                            <input type="email" name="email" maxlength="30" class="validate" required>
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="input-field">
-
-                            <input type="password" id="heslo" name="heslo" maxlength="30" class="validate" required>
-                            <label for="pass">Password</label>
-                        </div>
-                        <div class="center-align mdl-button">
-                            <button type="submit" class="waves-effect waves-light btn mdl_submit"><i
-                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
-                            </button>
-                            <button type="button" class="waves-effect waves-light btn"
-                                    onclick="show_form_register()"><i class="mdi-social-person-add left"></i>Đăng kí
-                                miễn phĩ
-                            </button>
-                        </div>
-                    </form>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
+                    </div>
                 </div>
-                <div class="mdl_form_register" style="display: none;">
-                    <form action="" autocomplete="off" method="POST">
-                        <div class="input-field">
-
-                            <input type="text" name="name" class="validate" required>
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="input-field">
-
-                            <input type="email" name="email" class="validate" required>
-                            <label for="email">Email</label>
-                        </div>
-
-                        <div class="input-field">
-
-                            <input type="password" name="repass" class="validate" required>
-                            <label for="pass">Password</label>
-                        </div>
-
-
-                        <div class="center-align">
-                            <div class="g-recaptcha" data-sitekey="6LcL0RITAAAAAGN_prn2qh7rGi9AS-3EtUPjhy7B"></div>
-                        </div>
-
-
-                        <div class="center-align mdl-button">
-                            <button class="waves-effect waves-light btn mdl_submit" onclick=""><i
-                                    class="mdi-hardware-keyboard-arrow-left left"></i>Vào
-                            </button>
-                            <button type="button" class="waves-effect waves-light btn" id="registrace"
-                                    onclick="show_form_login()"><i class="mdi-social-person-add left"></i>Trở lại đăng
-                                nhập
-                            </button>
-                        </div>
-                    </form>
+                <div class="row">
+                    <div class="col ">
+                        <input type="checkbox" id="test5" />
+                        <label for="test5">Ghi nhơ tài khoản</label>
+                    </div>
+                    <div class="col">
+                        <a id="forgot-link" href="/user/forgot-pass">Quên mật khẩu?</a>
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="col s12" >
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center col s12">
+                        <span></span>
+                    </div>
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light blue"  name="action"><i class="fa fa-facebook"></i>
+                            facebook
+                        </button>
+                    </div>
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light red" type="submit" name="action">
+                            <i class="fa fa-google"></i>
+                            Google
 
-            <div class="col s12 center-align">
-                <a href="#" class="">Quên mật khẩu?</a>
-            </div>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
         </div>
+        <div id="signup" class="col s12">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="Email">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="text" class="validate" placeholder="Tên đăng nhập">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="text" class="validate" placeholder="Số điện thoại">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col s12" id="recaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LfsghQTAAAAACsMkPBtk0-gewtKG_4waTW9_G09"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12" >
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="helper col s12">
+                        Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các
+                        <a href="/trungtam/quy-dinh" target="_blank"> Quy&nbsp;định </a> của chúng tôi.
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
     </div>
-
 </div>
 
 <!--Back to top button-->
