@@ -16,13 +16,14 @@
 
     <!--import massonry-->
     <script src="masonry/masonry.min.js" type="text/javascript"></script>
-    <script src="masonry/imagesloaded.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
 
 
     <!--import Marterilize-->
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
     <link rel="stylesheet" href="animate.css" type="text/css">
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="test-book.css" type="text/css">
@@ -33,7 +34,18 @@
 
 <body>
 <!--Header-->
-
+<script>
+    wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // default
+                offset:       0,          // default
+                mobile:       false,       // default
+                live:         true        // default
+            }
+    )
+    wow.init();
+</script>
 <header class="page-header">
     <div class="navbar-fixed white ">
         <nav>
@@ -59,7 +71,7 @@
                     <li><a class="dropdown-button" href="#!" data-activates="dropdown1">Chúng tôi</a></li>
                     <!-- Dropdown Structure -->
                     <ul id="dropdown1" class="dropdown-content">
-                        <li><a href="">Khách hàng - đối tác</a></li>
+                        <li><a href="blog.html">Khách hàng - đối tác</a></li>
                         <li class="divider"></li>
                         <li><a href="">Giảng viên</a></li>
                         <li class="divider"></li>
@@ -940,6 +952,24 @@
 
 <script>
     //Modal
+    $('.grid-item').addClass('wow animated zoomIn');
+    $(function(){
+
+        var $grid = $('.grid').masonry({
+            columnWidth: '.grid-sizer',
+            gutter: '.gutter-sizer',
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            isAnimated:true
+        });
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry();
+        });
+
+
+    });
+
+
 
     $(document).ready(function () {
         $('.modal-trigger').leanModal({
@@ -967,58 +997,8 @@
                 }
         );
 
-        var $grid = $('.grid').masonry({
-            columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer',
-            itemSelector: '.grid-item',
-            percentPosition: true
-        });
-
-        var $items = $('.grid-item');
-        $grid.masonryImagesReveal( $items );
-
-
 
     });
-
-    $.fn.masonryImagesReveal = function( $items ) {
-        var msnry = this.data('masonry');
-        var itemSelector = msnry.options.itemSelector;
-        // hide by default
-        $items.hide();
-        // append to container
-        this.append( $items );
-        $items.imagesLoaded().progress( function( imgLoad, image ) {
-            // get item
-            // image is imagesLoaded class, not <img>, <img> is image.img
-            var $item = $( image.img ).parents( itemSelector );
-            // un-hide item
-            $item.show();
-            // masonry does its thing
-            msnry.appended( $item );
-        });
-
-        return this;
-    };
-    //    Slider
-
-    //    $(document).ready(function () {
-    //        $('.slider').slider({full_width: true,
-    //        });
-    //    });
-
-
-//    $(window).bind('load', function () {
-//        $('.grid').masonry({
-//            columnWidth: '.grid-sizer',
-//            gutter: '.gutter-sizer',
-//            itemSelector: '.grid-item',
-//            percentPosition: true,
-//            isAnimated: true,
-//
-//        });
-//    });
-
 
     if ($('#back-to-top').length) {
         var scrollTrigger = 100, // px
