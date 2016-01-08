@@ -46,8 +46,6 @@
 
 <header class="site-nav">
 
-    <div class="divider"></div>
-    <div class="navbar-fixed">
         <nav class="user-nav hide">
             <div class="nav-wrapper container">
                 <ul class="right">
@@ -88,7 +86,6 @@
         </nav>
         <nav class="main-nav">
             <div class="nav-wrapper">
-                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul class="right-align hide-on-med-and-down">
                     <li><a href="">Trang chủ</a></li>
                     <li><a href="">khóa học</a></li>
@@ -126,24 +123,52 @@
                         </ul>
                     </li>
                 </ul>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
-                <ul class="side-nav" id="mobile-demo">
-                    <li><a href="">Trang chủ</a></li>
-                    <li><a href="">khóa học</a></li>
-                    <li><a href="">Thực tập</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Việc làm</a></li>
-                    <li><a href="">Phỏng vấn</a></li>
-                    <li><a href="">EBooks</a></li>
-                    <li><a href="">Chúng tôi</a></li>
+                <ul class="side-nav collapsible no-padding" id="mobile-demo"  data-collapsible="accordion">
+                    <li><a class="bold" href="">Trang chủ</a></li>
+                    <div class="divider"></div>
+                    <li><a class="bold" href="">khóa học</a></li>
+                    <div class="divider"></div>
+                    <li><a class="bold" href="">Thực tập</a></li>
+                    <div class="divider"></div>
+                    <li><a class="bold" href="">Blog</a></li>
+                    <div class="divider"></div>
+                    <li><a class="bold" href="">Việc làm</a></li>
+                    <div class="divider"></div>
+                    <li><a class="bold" href="">Phỏng vấn</a></li>
+                    <div class="divider"></div>
+                    <li><a class="bold" href="">EBooks</a></li>
+                    <div class="divider"></div>
+                        <li class="bold no-padding">
+                        <a class="collapsible-header  waves-effect waves-teal">Chúng tôi</a>
+                        <div class="collapsible-body" >
+                            <ul class="">
+                                <li><a href="">Khách hàng - đối tác</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Giảng viên</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Thiết bị đào tạo</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Quy định chung</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Tuyển dụng giảng viên</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Chơi thể thao</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Team building - Royal City </a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Video hoạt động</a></li>
+                                <li class="divider"></li>
+                                <li><a href="">Thực tập</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
-
 
             </div>
         </nav>
 
-
-    </div>
 </header>
 
 
@@ -729,7 +754,7 @@
         $(".show_more").addClass("hide");
     }
     function maxHeight() {
-//        alert();
+
         var h = 0;
         $(".path-item .card-content").css('height', 'auto');
 
@@ -743,24 +768,12 @@
         $(".path-item .card-content").height(h);
     }
 
-    //    function maxHeightBook() {
-    //        var h = 0;
-    //        $(".book-item .card-content").css('height', 'auto');
-    //
-    //        $(".book-item .card-content").each(function () {
-    //            var value = $(this).height();
-    //            if (value > h) {
-    //                h = value;
-    //            }
-    //        });
-    //        $(".book-item .card-content").height(h);
-    //    }
 
     $(window).on("resize", function () {
         if (window.innerWidth > 768) {
             maxHeight();
         }
-//        maxHeightBook();
+
     });
     //Modal
     $(document).ready(function () {
@@ -782,7 +795,7 @@
         $(".button-collapse").sideNav(
                 {
                     menuWidth: 200, // Default is 240
-                    edge: 'right', // Choose the horizontal origin
+                    edge: 'left', // Choose the horizontal origin
                     closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
                 }
         );

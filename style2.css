@@ -69,7 +69,9 @@ body {
     width: 100%;
     padding: 0;
 }
-
+.main-nav > .nav-wrapper >ul.side-nav li a{
+    text-align: left;
+}
 .main-nav > .nav-wrapper > ul > li {
     display: inline-block;
     float: none;
@@ -96,7 +98,16 @@ body {
     font-weight: 500;
     text-transform: uppercase;
 }
-
+.main-nav > .nav-wrapper > ul.side-nav > li > a, .side-nav li .collapsible-body li a {
+    height: 55px;
+    line-height: 55px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0%;
+}
+.main-nav > .nav-wrapper > ul.side-nav > li > a.collapsible-header,.main-nav > .nav-wrapper > ul.side-nav > li > .collapsible-body > ul >li{
+   margin-left: 15px    ;
+}
 nav .button-collapse i {
 
     color: #000;
