@@ -533,4 +533,66 @@ STEVE JOB
                                          </div>
                                      </div>
                                 </div>
+
                             </div>
+
+
+
+                            Menu chuan
+
+
+
+
+                             <nav>
+                                    <div class="nav-wrapper">
+                                        <a href="#!" class="brand-logo">Logo</a>
+                                        <a href="#" data-activates="mobile-dem1o" class="button-collapse"><i class="material-icons">menu</i></a>
+                                        <ul class="right hide-on-med-and-down">
+                                            <li><a href="sass.html">Sass</a></li>
+                                            <li><a href="badges.html">Components</a></li>
+                                            <li><a href="collapsible.html">Javascript</a></li>
+                                            <li><a href="mobile.html">Mobile</a></li>
+                                        </ul>
+                                        <ul class="side-nav collapsible" id="mobile-dem1o" data-collapsible="accordion">
+                                            <li><a class="bold" href="">Trang chủ</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="bold" href="">khóa học</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="bold" href="">Thực tập</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="bold" href="">Blog</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="bold" href="">Việc làm</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="bold" href="">Phỏng vấn</a></li>
+                                            <li class="divider"></li>
+                                            <li><a class="bold" href="">EBooks</a></li>
+                                            <li class="divider"></li>
+                                            <li class="bold no-padding">
+                                                <a class="collapsible-header  waves-effect waves-teal">Chúng tôi</a>
+
+                                                <div class="collapsible-body">
+                                                    <ul class="">
+                                                        <li><a href="">Khách hàng - đối tác</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Giảng viên</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Thiết bị đào tạo</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Quy định chung</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Tuyển dụng giảng viên</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Chơi thể thao</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Team building - Royal City </a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Video hoạt động</a></li>
+                                                        <li class="divider"></li>
+                                                        <li><a href="">Thực tập</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </nav>

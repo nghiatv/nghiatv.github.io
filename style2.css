@@ -15,9 +15,12 @@ body {
     padding: 0;
     margin: 0;
 }
-
-.navbar-fixed {
-    height: 102px;
+nav{
+    color: black;
+    background: white;
+}
+nav ul a{
+    color: #000;
 }
 
 .main-nav-logo {
@@ -42,72 +45,29 @@ body {
     z-index: 998;
 }
 
-.main-nav {
-    top: 38px;
-}
 
-.user-nav {
-    z-index: 1000;
-}
 
-.main-nav > .nav-wrapper {
-    background: transparent;
-    display: flex;
-    -webkit-box-pack: justify;
-    -webkit-justify-content: space-between;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
 
-}
-
-.main-nav > .nav-wrapper > ul {
-    width: 45%;
-    padding: 0 2em;
-}
-
-.main-nav > .nav-wrapper > ul.side-nav {
-    width: 100%;
-    padding: 0;
-}
-.main-nav > .nav-wrapper >ul.side-nav li a{
-    text-align: left;
-}
-.main-nav > .nav-wrapper > ul > li {
-    display: inline-block;
-    float: none;
-}
-
-.main-nav > .nav-wrapper > ul.side-nav > li {
-    display: block;
-    text-align: center;
-
-}
-
-.main-nav > .nav-wrapper > ul > li > a {
-    display: block;
-
-    /*color: #343434;*/
-    text-decoration: none;
-    /*font-weight: normal;*/
-    /* text-transform: uppercase; */
-    font-size: 13px;
-    position: relative;
-    -webkit-transition: all 200ms ease-in-out;
-    transition: all 200ms ease-in-out;
-    color: #576366;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-.main-nav > .nav-wrapper > ul.side-nav > li > a, .side-nav li .collapsible-body li a {
+.side-nav li .collapsible-body li a {
     height: 55px;
     line-height: 55px;
     overflow: hidden;
     margin: 0;
     padding: 0%;
 }
-.main-nav > .nav-wrapper > ul.side-nav > li > a.collapsible-header,.main-nav > .nav-wrapper > ul.side-nav > li > .collapsible-body > ul >li{
-   margin-left: 15px    ;
+.side-nav li{
+    padding: 0;
 }
+.side-nav .collapsible-header{
+    margin: 0%;
+}
+.side-nav li .collapsible-body li{
+    padding-left: 30px;
+}
+
+ul.side-nav > li > .collapsible-body > ul >li{
+    padding-left: 30px;
+ }
 nav .button-collapse i {
 
     color: #000;
@@ -499,7 +459,7 @@ td{
     max-width: 1280px;
 }
 #list-course-content .col,#how-learn-content .col{
-    padding: 0 1.25rem;
+    padding: 0 .75rem;
 }
 #container-course-page{
     margin: 0 auto;
@@ -789,7 +749,7 @@ form button{
     border-radius: 0;
 }
 .path-item .card-content p{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
     line-height: 24px;
     letter-spacing: .04em;
@@ -819,12 +779,17 @@ form button{
     border: 5px solid white;
 }
 .path-title{
-    margin-top: 0;
-    font-size: 24px;
-    font-weight: 600;
+    /*margin-top: 0;*/
+    /*font-size: 24px;*/
+    /*font-weight: 600;*/
     position: relative;
 
     /*color: #000000;*/
+
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin: 15px 0;
 }
 .path-title::before{
     content: '';
