@@ -15,10 +15,6 @@
 
 .gutter-sizer { width: 0; }
 
-.grid-item--width2 { width: 100%;
-
-
-}
 
 .grid:after {
     content: '';
@@ -36,13 +32,6 @@ main{
 }
 .post-content{
     width: 90%;
-}
-.grid-item > .card > .card-content > h2.card-title, .most-view-content  h2.card-title {
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 0;
-    margin-bottom: 12px;
-    line-height: 24px !important;
 }
 
 
@@ -240,19 +229,17 @@ main{
 }
 
 /*Het css blog cu*/
-
-
-@media (min-width: 769px) {
+@media (min-width: 600px) {
     .grid-sizer,
     .grid-item { width: 48%;
     }
 
     .gutter-sizer { width: 4%; }
+}
 
-    .grid-item--width2 { width: 100%;
+@media (min-width: 769px) {
 
 
-    }
     #main-blog-content,#main-blog-most-view,#main-blog-top-author{
         width: 85%;
         max-width: 800px;
@@ -330,6 +317,11 @@ main{
     }
 }
 @media (min-width: 1200px) {
+    .grid-sizer,
+    .grid-item { width: 23.5%;
+    }
+
+    .gutter-sizer { width: 2%; }
     .post-content{
         width: 80%;
     }

@@ -8,6 +8,8 @@
     <script type="text/javascript" src="materialize/jquery.min.js"></script>
     <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
 
+    <!--import wow-->
+    <script src="wowjs/dist/wow.min.js"></script>
 
     <!--link font awesome-->
 
@@ -16,6 +18,7 @@
 
     <!--import massonry-->
     <script src="masonry/masonry.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
 
 
     <!--import Marterilize-->
@@ -216,46 +219,10 @@
 
         </div>
 
-        <!--<div class="row">-->
-            <!--<ul class="col s12" id="data-filter">-->
-                <!--<li id="test1" class="col s12">-->
-                    <!--<ul class="tags">-->
-                    <!--<li class="chip"><a href="">Agile (8)</a></li>-->
-                    <!--<li class="chip"><a href="">Altassian (4)</a></li>-->
-                    <!--<li class="chip"><a href="">Android (53)</a></li>-->
-                    <!--<li class="chip"><a href="">ASP.net (6)</a></li>-->
-                    <!--<li class="chip"><a href="">C++ (13)</a></li><li class="chip"><a href="">ASP.net (6)</a></li>-->
-                    <!--<li class="chip"><a href="">C++ (13)</a></li><li class="chip"><a href="">ASP.net (6)</a></li>-->
-                    <!--<li class="chip"><a href="">C++ (13)</a></li><li class="chip"><a href="">ASP.net (6)</a></li>-->
-                    <!--<li class="chip"><a href="">C++ (13)</a></li>-->
-                    <!--<li class="chip"><a href="">Cloud (7)</a></li>-->
-                    <!--<li class="chip"><a href="">công việc (125)</a></li>-->
-
-
-                <!--</ul>-->
-                <!--</li>-->
-                <!--<li id="test2" class="col s12">-->
-                    <!--<ul class="tags">-->
-                        <!--<li class="chip"><a href="">Agile (8)</a></li>-->
-                        <!--<li class="chip"><a href="">Altassian (4)</a></li>-->
-                        <!--<li class="chip"><a href="">Android (53)</a></li>-->
-                        <!--<li class="chip"><a href="">ASP.net (6)</a></li>-->
-                        <!--<li class="chip"><a href="">C++ (13)</a></li>-->
-                        <!--<li class="chip"><a href="">Cloud (7)</a></li>-->
-                        <!--<li class="chip"><a href="">công việc (125)</a></li>-->
-
-
-                    <!--</ul>-->
-                <!--</li>-->
-            <!--</ul>-->
-        <!--</div>-->
     </div>
     <div class="page-main">
         <div class="row">
             <div class="col s12">
-                <!--<div class="newest-title">-->
-                <!--<h3>Newest</h3>-->
-                <!--</div>-->
                 <div class="grid">
                     <div class="grid-sizer"></div>
                     <div class="gutter-sizer"></div>
@@ -728,24 +695,27 @@
                     belowOrigin: true // Displays dropdown below the button
                 }
         );
-//        $('ul.tabs').tabs(); // Tabs
+//
     });
 
-    //    Slider
-
-    //    $(document).ready(function () {
-    //        $('.slider').slider({full_width: true,
-    //        });
-    //    });
 
 
-    $(window).bind('load', function () {
-        $('.grid').masonry({
+
+    $('.grid-item').addClass('wow animated zoomIn');
+    $(function(){
+
+        var $grid = $('.grid').masonry({
             columnWidth: '.grid-sizer',
             gutter: '.gutter-sizer',
             itemSelector: '.grid-item',
-            percentPosition: true
-        })
+            percentPosition: true,
+            isAnimated:true
+        });
+        $grid.imagesLoaded().progress( function() {
+            $grid.masonry();
+        });
+
+
     });
 
 
@@ -774,56 +744,6 @@
 
 
     //hide and show class active
-
-    $(document).ready(function(){
-
-        $('ul.tabs li a').click(function(){
-
-            $(this).removeClass();
-//            alert();
-
-            //turn off the link so it doesn't try to jump down the page
-//            event.preventDefault();
-//
-//            //un-highlight the buttons
-//            $('ul.tabs li').removeClass();
-//
-//            //hide all the slides
-//            $('#data-filter').hide();
-//
-//            //highlight the current button
-//            $(this).addClass('selected');
-//
-//            //get the index of the current button...
-//            var index = $('ul.tabs li').index(this);
-//
-//            //and use that index to show the corresponding slide
-//            $('#slides > div:eq('+index+')').show();
-
-//return false;
-//            var tab_data = $(this).attr('href');
-////            alert($(this).hasClass('active'));
-////            return false;
-//            if($(this).hasClass('active')){
-//                $(this).removeClass('active');
-//              $(tab_data).addClass('animated').addClass('fadeOut').addClass('hide');
-////                console.log(data_content);
-//            }
-//            else{
-//                $(tab_data).removeClass('hide');
-//            }
-//            var tab_l = $(this).classList(tab_class);
-//            alert(tab_l);
-//            $(this).addClass('nghia');
-//            alert(tab_id);
-//            $('ul.tabs li').removeClass('current');
-//            $('.tab-content').removeClass('current');
-
-//            $(this).addClass('current');
-
-        })
-
-    })
 
 
 </script>
