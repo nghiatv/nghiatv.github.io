@@ -23,8 +23,63 @@ span.badge.new:after{
 #job-count{
     border-top: 1px solid #dedede;
 }
+/*CSS job detail page*/
+#job-detail{
+    margin-top: 0.5em;
+}
+#job-menu .card{
+    margin-bottom: 0;
+}
+#job-header h2{
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 1.2;
+}
+#job-header .card-action{
+    padding-bottom: 0;
 
+}
+.job-list-tag{
+    /*border-top: 1px solid rgba(160,160,160,0.2);*/
+}
+.job-list-tag .chip{
 
+    margin: 20px 10px 0 0;
+    /*margin-right: 10px;*/
+}
+#job-detail .card-panel{
+    border-top: 1px solid rgba(160,160,160,0.2);
+}
+.job-logo{
+    width: 100%;
+}
+.job-logo img{
+    margin: 0 auto;
+    width: 100px !important;
+    height: auto;
+}
+#job-company .col .card{
+   margin: 10px 20px 0;
+}
+.salary,.expire{
+    position: relative;
+    padding-left: 2rem;
+}
+.salary:before,.expire:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 4px;
+    background-color: red;
+}
+.salary i,.expire i{
+    margin-right: 1em;
+}
+.colection{
+    margin: 0;
+}
 @media(min-width: 769px){
     #job-parallax .parallax-text{
         text-align: left;
