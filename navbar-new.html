@@ -65,7 +65,7 @@
                 </li>
             </ul>
             <ul class="right hide-on-med-and-down">
-                <li><a class="dropdown-button-user" data-activates="dropdown2">Thân Văn Nghĩa
+                <li><a class="dropdown-button" data-activates="dropdown2">Thân Văn Nghĩa
                 </a>
                     <!-- Dropdown Structure log in success -->
                     <ul id="dropdown2" class="dropdown-content">
@@ -802,7 +802,15 @@
                     belowOrigin: true // Displays dropdown below the button
                 }
         );
-
+        $('.dropdown-button').dropdown({
+                    inDuration: 0,
+                    outDuration: 225,
+                    constrain_width: false, // Does not change width of dropdown to that of the activator
+                    hover: true, // Activate on click
+                    alignment: 'left', // Aligns dropdown to left or right edge (works with constrain_width)
+                    gutter: 0, // Spacing from edge//
+                     belowOrigin: true // Displays dropdown below the button
+        })
     });
 
 
