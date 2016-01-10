@@ -83,7 +83,8 @@
     </nav>
     <nav>
         <div class="nav-wrapper container">
-            <a class="brand-logo" href="/"><img class="responsive-img" src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
+            <a class="brand-logo" href="/"><img class="responsive-img"
+                                                src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">khóa học</a></li>
@@ -162,22 +163,12 @@
     </nav>
 
 
-
 </header>
 
 
 <!--Main-->
 <script>
-    wow = new WOW(
-            {
-                boxClass: 'wow',      // default
-                animateClass: 'animated', // default
-                offset: 0,          // default
-                mobile: false,       // default
-                live: true        // default
-            }
-    )
-    wow.init();
+
 </script>
 <main>
 
@@ -289,32 +280,41 @@
             </div>
         </div>
         <div class="row" id="list-course-content">
-            <div class="col s12 m6 l4 ">
+            <div class="col s12 m6 l4 o3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
-                        <div class="card-image valign-wrapper">
+
+                        <div class="card-image ">
                             <img src="images/iOSObjectiveC.jpg" class="responsive-img"
                                  alt="ios" title="ios">
                         </div>
                         <div class="card-content">
                             <h2 class="path-title   left-align">Lập trình iOS Objective-C</h2>
-
-                            <div class="path-button  left-align">
-
-                            </div>
                             <p class="left-align  ">
                                 iOS Objective-C: cập nhật công nghệ mới, nhiều
                                 mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
                         </div>
 
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <img src="images/cuongtm.jpg" alt="" class="circle">
+                                    <span class="title">Trinh Minh Cường</span>
+                                    <p>First Line
+
+                                    </p>
+
+                                </li>
+
+                            </ul>
+
 
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 ">
+            <div class="col s12 m6 l4 o3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
-                        <div class="card-image valign-wrapper">
+                        <div class="card-image ">
                             <img src="images/nodejs.jpg" class="responsive-img"
                                  alt="Ruby" title="Ruby">
                         </div>
@@ -332,7 +332,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 ">
+            <div class="col s12 m6 l4 o3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
                         <div class="card-image valign-wrapper">
@@ -354,10 +354,10 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 ">
+            <div class="col s12 m6 l4 o3">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
-                        <div class="card-image valign-wrapper">
+                        <div class="card-image ">
                             <img src="images/python_course.jpg" class="responsive-img"
                                  alt="Ruby" title="Ruby">
                         </div>
@@ -377,10 +377,10 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 ">
+            <div class="col s12 m6 l4 o3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
-                        <div class="card-image valign-wrapper">
+                        <div class="card-image ">
                             <img src="images/php7.jpg" class="responsive-img"
                                  alt="Ruby" title="Ruby">
                         </div>
@@ -405,10 +405,10 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 ">
+            <div class="col s12 m6 l4 o3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
-                        <div class="card-image valign-wrapper">
+                        <div class="card-image">
                             <img src="images/HTMLCSSJS.jpg" class="responsive-img"
                                  alt="Ruby" title="Ruby">
                         </div>
@@ -457,12 +457,10 @@
                 </div>
 
             </div>
-            <div class="col s1 hide-on-med-and-down">
 
-            </div>
             <div class="col s12 m4">
                 <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
-                    <h2 class="center brown-text"><i class="fa fa-keyboard-o"></i></h2>
+                    <h2 class="center brown-text"><i class="fa fa-code"></i></h2>
                     <h5 class="center">Code Code Code</h5>
 
                     <p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho
@@ -497,8 +495,7 @@
             </div>
 
             <div class="col s12 m6 ">
-                <div class="row wow fadeInRightBig" data-wow-duration="1s" data-wow-delay="2.5s"
-                     id="video-promotion-youtube">
+                <div class="row" id="video-promotion-youtube">
                     <div class="video-container">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/czltl9isRdM"
                                 frameborder="0" allowfullscreen></iframe>
@@ -743,7 +740,17 @@
 </div>
 
 <script>
-    $(".card").addClass("waves-effect waves-light waves-teal");
+    wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: false,       // default
+                live: true        // default
+            }
+    )
+    wow.init();
+
     function show_more() {
         $(".hide").addClass("animated");
         $(".hide").addClass("fadeInUp");
@@ -780,7 +787,7 @@
     //    }
 
     $(window).on("resize", function () {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 600) {
             maxHeight();
         }
 //        maxHeightBook();
@@ -790,10 +797,9 @@
         $('ul.tabs').tabs('select_tab', '#signup');
     });
     $(document).ready(function () {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 600) {
             maxHeight();
         }
-        $('ul.tabs').tabs('select_tab', 'signin');
         $('.modal-trigger').leanModal({
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
             opacity: .6, // Opacity of modal background
