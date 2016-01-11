@@ -133,12 +133,7 @@ li .collapsible-header{
     overflow: hidden;
 }
 
-.collapsible-body{
-    background: white;
-}
-.collapsible-body .chip{
-    background-color: #e9eaea;
-}
+
 .book-content{
     padding: 30px;
 }
@@ -168,9 +163,7 @@ li .collapsible-header{
     -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
     box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
 }
-.chip{
-    background-color: #e9eaea;
-}
+
 .link-to-book a{
     margin-right: 20px;
     margin-bottom: 20px;

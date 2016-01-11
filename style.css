@@ -1190,19 +1190,19 @@ form button{
 .page-heading h2{
     text-align: left;
 }
-#main-blog-content .input-field label.active{
+.page-heading .input-field label.active{
     transform: translateY(0);
     font-weight: bold;
 }
-#main-blog-content .input-field > i{
+.page-heading .input-field > i,#main-book-content .input-field > i{
     top: 0.6rem;
 }
-#main-blog-content input[type=search]{
+.page-heading input[type=search],#main-book-content input[type=search]{
     font-size: 1.5rem;
 
 }
 .search-bar{
-    padding: 0px;
+    padding: 0;
     border-radius: 4px;
     box-shadow: 0 2px 0 0 rgba(0,0,0,0.1);
 }
@@ -1255,7 +1255,7 @@ form button{
 
 .chip:hover{
     border: 2px solid teal;
-    color: teal;;
+    color: teal;
     -webkit-transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
     transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }

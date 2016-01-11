@@ -34,18 +34,7 @@
 
 <body>
 <!--Header-->
-<script>
-    wow = new WOW(
-            {
-                boxClass:     'wow',      // default
-                animateClass: 'animated', // default
-                offset:       0,          // default
-                mobile:       false,       // default
-                live:         true        // default
-            }
-    )
-    wow.init();
-</script>
+
 <header class="site-nav">
 
     <nav class="user-nav hide">
@@ -175,14 +164,171 @@
 
 <main id="main-book-content" >
     <div class="page-heading">
-        <div class="row ">
-            <div class="col s12" id="breadcrumb-content">
+        <div class="row nav-wrapper">
+            <div class="col s12 m6" id="breadcrumb-content">
                 <a href="#" class="breadcrumb">Trang chủ</a>
                 <a href="#" class="breadcrumb">Book</a>
             </div>
+        </div>
+        <div class="row hide">
+            <div class="col s12" id="blog-filter">
+                <ul class="collapsible" data-collapsible="accordion">
+                    <li>
+
+                        <nav>
+                            <div class="nav-wrapper">
+                                <form>
+                                    <div class="input-field">
+                                        <input id="search" type="search" required placeholder=" Gõ từ khóa để tìm kiếm">
+                                        <label for="search"><i class="material-icons">search</i></label>
+                                        <i class="material-icons">close</i>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </li>
+
+                </ul>
+            </div>
 
         </div>
+        <div class="row search-bar white">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="col s12 m7 l8 xl9 search-input">
 
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="Nhập từ khóa tìm kiếm" required>
+                                <label for="search"><i class="fa fa-2x fa-search"></i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class=" col s12 m5 l4 xl3 collapsible-header white ">
+                        <span class="chip square right"> Danh mục sách </span>
+
+                    </div>
+                    <div class="col s12 collapsible-body white z-depth-1" id="data-filter">
+                        <ul class="tags">
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip square" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                            <li ><a class="chip" href="">Altassian (4)</a></li>
+                            <li><a class="chip" href="">Android (53)</a></li>
+                            <li><a class="chip" href="">ASP.net (6)</a></li>
+                            <li><a class="chip" href="">C++ (13)</a></li>
+                            <li><a class="chip" href="">Cloud (7)</a></li>
+                            <li><a class="chip" href="">Công việc (125)</a></li>
+                        </ul>
+                    </div>
+                    <!--<div class="col s12 m4 hide">-->
+                    <!--<div class="filter-tag">-->
+                    <!--&lt;!&ndash; Dropdown Trigger &ndash;&gt;-->
+                    <!--<a class='dropdown-button right' href='#' data-activates='tag-content'>Drop Me!</a>-->
+
+                    <!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
+                    <!--<ul id='tag-content' class='dropdown-content'>-->
+                    <!--<li ><a class="chip" href="">Agile (8)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Altassian (4)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Android (53)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">ASP.net (6)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">C++ (13)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Cloud (7)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                    <!--<li class="divider"></li>-->
+
+                    <!--</ul>-->
+                    <!--</div>-->
+                    <!--</div>-->
+                </li>
+            </ul>
+
+        </div>
     </div>
     <div class="page-main">
         <div class="row">
@@ -761,79 +907,6 @@
 
 
 </main>
-<!--<div class="main-blog-bottom white">-->
-<!--<div id="main-blog-most-view">-->
-<!--<div class="row">-->
-
-<!--<div class="most-view-title col s12">-->
-<!--<h3>BÀI VIẾT ĐƯỢC QUAN TÂM</h3>-->
-<!--</div>-->
-<!--<div class="most-view-content  s12">-->
-<!--<div class="col s12 m3">-->
-<!--<div class="card">-->
-<!--<div class="card-image">-->
-<!--<img src="images/mobile-design-pattern-gallery-2nd-edition.jpg">-->
-
-<!--</div>-->
-<!--<div class="card-content">-->
-<!--<h2 class="card-title"><a href="#">Cách dạy con của người Đức: Vui chơi-->
-<!--là chính, học chỉ là phụ!</a></h2>-->
-<!--</div>-->
-<!--<div class="card-action">-->
-<!--<a href="#">This is a link</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="col s12 m3">-->
-<!--<div class="card">-->
-<!--<div class="card-image">-->
-<!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
-
-<!--</div>-->
-<!--<div class="card-content">-->
-<!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
-<!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
-<!--</div>-->
-<!--<div class="card-action">-->
-<!--<a href="#">This is a link</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="col s12 m3">-->
-<!--<div class="card">-->
-<!--<div class="card-image">-->
-<!--<img src="images/lamthenao.jpg">-->
-
-<!--</div>-->
-<!--<div class="card-content">-->
-<!--<h2 class="card-title"><a href="#">Liệu Web Designer có cần kỹ năng lập-->
-<!--trình?</a></h2>-->
-<!--</div>-->
-<!--<div class="card-action">-->
-<!--<a href="#">This is a link</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--<div class="col s12 m3">-->
-<!--<div class="card">-->
-<!--<div class="card-image">-->
-<!--<img src="images/hoc-lap-trinh-web-truc-tuyen-bang-nodejs-25122015-1.jpg">-->
-
-<!--</div>-->
-<!--<div class="card-content">-->
-<!--<h2 class="card-title"><a href="#">Nguyên tắc trách nhiệm duy nhất-->
-<!--(Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>-->
-<!--</div>-->
-<!--<div class="card-action">-->
-<!--<a href="#">This is a link</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
 
 
 <!--Footer-->
@@ -1003,6 +1076,16 @@
 </div>
 
 <script>
+    wow = new WOW(
+            {
+                boxClass:     'wow',      // default
+                animateClass: 'animated', // default
+                offset:       0,          // default
+                mobile:       false,       // default
+                live:         true        // default
+            }
+    )
+    wow.init();
     //Modal
     $('.grid-item').addClass('wow animated zoomIn');
     $(function(){
