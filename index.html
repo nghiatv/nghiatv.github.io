@@ -280,7 +280,7 @@
             </div>
         </div>
         <div class="row" id="list-course-content">
-            <div class="col s12 m6 l4 o3 ">
+            <div class="col s12 m6 l4 xl3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
 
@@ -295,23 +295,23 @@
                                 mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
                         </div>
 
-                            <ul class="collection">
-                                <li class="collection-item avatar">
-                                    <img src="images/cuongtm.jpg" alt="" class="circle">
-                                    <span class="title">Trinh Minh Cường</span>
-                                    <p>First Line
+                            <!--<ul class="collection">-->
+                                <!--<li class="collection-item avatar">-->
+                                    <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                                    <!--<span class="title">Trinh Minh Cường</span>-->
+                                    <!--<p>First Line-->
 
-                                    </p>
+                                    <!--</p>-->
 
-                                </li>
+                                <!--</li>-->
 
-                            </ul>
+                            <!--</ul>-->
 
 
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 o3 ">
+            <div class="col s12 m6 l4 xl3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
                         <div class="card-image ">
@@ -332,7 +332,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 o3 ">
+            <div class="col s12 m6 l4 xl3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
                         <div class="card-image valign-wrapper">
@@ -354,7 +354,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 o3">
+            <div class="col s12 m6 l4 xl3">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
                         <div class="card-image ">
@@ -377,7 +377,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 o3 ">
+            <div class="col s12 m6 l4 xl3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
                         <div class="card-image ">
@@ -405,7 +405,7 @@
                     </div>
                 </a>
             </div>
-            <div class="col s12 m6 l4 o3 ">
+            <div class="col s12 m6 l4 xl3 ">
                 <a href="course.html">
                     <div class="path-item card white  black-text hoverable">
                         <div class="card-image">
@@ -568,7 +568,7 @@
 
 </main>
 
-
+<i id="checkscreen"></i>
 <!--Footer-->
 <footer id="footer">
     <div class="container">
@@ -761,45 +761,33 @@
     function maxHeight() {
 //        alert();
         var h = 0;
-        $(".path-item .card-content").css('height', 'auto');
+        var $checkscreen = $('#checkscreen');
+        var $content = $(".path-item .card-content");
+        $content.css('height', 'auto');
 
-        $(".path-item .card-content").each(function () {
-            var value = $(this).height();
+//        Max height
+       if($checkscreen.css('font-size') != '1px'){
+           $content.each(function () {
+               var value = $(this).height();
 
-            if (value > h) {
-                h = value;
-            }
-        });
-        $(".path-item .card-content").height(h);
+               if (value > h) {
+                   h = value;
+               }
+           });
+           $content.height(h);
+       }
+        else{
+           $content.css('height', 'auto');
+       }
     }
-
-    //    function maxHeightBook() {
-    //        var h = 0;
-    //        $(".book-item .card-content").css('height', 'auto');
-    //
-    //        $(".book-item .card-content").each(function () {
-    //            var value = $(this).height();
-    //            if (value > h) {
-    //                h = value;
-    //            }
-    //        });
-    //        $(".book-item .card-content").height(h);
-    //    }
-
     $(window).on("resize", function () {
-        if (window.innerWidth > 600) {
             maxHeight();
-        }
-//        maxHeightBook();
     });
+
+
     //Modal
     $(document).ready(function () {
-        $('ul.tabs').tabs('select_tab', '#signup');
-    });
-    $(document).ready(function () {
-        if (window.innerWidth > 600) {
             maxHeight();
-        }
         $('.modal-trigger').leanModal({
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
             opacity: .6, // Opacity of modal background
@@ -812,7 +800,7 @@
                 {
                     menuWidth: 200, // Default is 240
                     edge: 'left', // Choose the horizontal origin
-                    closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
                 }
         );
         $('.collapsible').collapsible({
@@ -864,6 +852,8 @@
             }, 1200);
         });
     }
+
+    // like a type charecter
     $(function () {
         $("#typed").typed({
             stringsElement: $('#typed-strings'),
