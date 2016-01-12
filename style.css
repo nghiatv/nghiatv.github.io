@@ -384,7 +384,7 @@ td{
     line-height: 1;
 }
 .icon-block h5{
-    font-weight: 400;
+    font-weight: 500;
     margin-top: 0.5em;
 }
 
@@ -1246,6 +1246,10 @@ form button{
     transition: border-color 0.15s ease, background-color 0.15s ease, color 0.15s ease;
 }
 
+.chip.large {
+    padding: 12px 32px;
+    font-size: 1.2rem;
+}
 
 .chip:hover{
     border: 2px solid teal;
@@ -1279,6 +1283,18 @@ form button{
 .chip.red:hover{
     color: red;
     border: 2px solid red;
+    background: transparent !important;
+}
+
+.chip.white {
+    color: rgba(248, 244, 255, 0.97);
+    border: 2px solid rgba(248, 244, 255, 0.97);
+    background: transparent !important;
+}
+
+.chip.white:hover {
+    color: white;
+    border: 2px solid white;
     background: transparent !important;
 }
 
@@ -1660,31 +1676,50 @@ input#blog-search, input#blog-search:focus{
 }
 
 .page-404, .page-500 {
-    height: calc(100vh - 112px);
-    min-height: 320px;
-    vertical-align: middle;
-    line-height: 1;
+
 }
 
 .page-404-content, .page-500-content {
     margin: 0 auto;
+    padding: 72px 0;
 }
 
-.page-404-content span, .page-500-content span, .page-500-content > i {
-    font-size: 20vmin;
-    margin: 0;
-    padding: 0;
-    vertical-align: baseline;
+.page-404-content h2, .page-500-content h2 {
+    font-size: 40px;
 }
 
-.page-500-content > i {
-    font-size: 27vmin;
+.page-404-content h5, .page-500-content h5 {
+    font-size: 16px;
 }
 
-.page-404-content img {
-    height: 14vmin;
-    border: 2.0vmin white solid;
+.page-404-content h2, .page-404-content h5, .page-500-content h5, .page-500-content h2 {
+
+    /*color: #384047;*/
+    font-style: normal;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-rendering: optimizeLegibility;
+    font-weight: 500;
 }
+
+.page-404 img {
+    max-width: 128px;
+}
+
+.report {
+    padding: 80px 0;
+}
+
+.report h5 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.report p {
+    font-size: 16px;
+}
+
 
 .filter > ul.collapsible {
     box-shadow: none;
@@ -2081,7 +2116,7 @@ h3.widget-title {
         max-width: 400px;
     }
     .page-404, .page-500 {
-        height: calc(60vh - 79px);
+
     }
 
     .review-item {
@@ -2194,6 +2229,10 @@ h3.widget-title {
         height: 64px;
         line-height: 64px;
     }
+
+    .page-404 img {
+        max-width: 192px;
+    }
 }
 @media only screen and (min-width: 992px) {
 
@@ -2261,6 +2300,9 @@ h3.widget-title {
 
     }
 
+    .page-404 img {
+        max-width: 256px;
+    }
 
 }
 @media (min-width: 1200px) {
