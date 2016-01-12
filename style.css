@@ -1661,6 +1661,7 @@ input#blog-search, input#blog-search:focus{
 
 .page-404, .page-500 {
     height: calc(100vh - 112px);
+    min-height: 320px;
     vertical-align: middle;
     line-height: 1;
 }
@@ -1670,7 +1671,7 @@ input#blog-search, input#blog-search:focus{
 }
 
 .page-404-content span, .page-500-content span, .page-500-content > i {
-    font-size: 30vmin;
+    font-size: 20vmin;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
@@ -1681,8 +1682,8 @@ input#blog-search, input#blog-search:focus{
 }
 
 .page-404-content img {
-    height: 22vmin;
-    border: 2.4vmin white solid;
+    height: 14vmin;
+    border: 2.0vmin white solid;
 }
 
 .filter > ul.collapsible {
@@ -2080,7 +2081,7 @@ h3.widget-title {
         max-width: 400px;
     }
     .page-404, .page-500 {
-        height: calc(100vh - 79px);
+        height: calc(60vh - 79px);
     }
 
     .review-item {
