@@ -140,18 +140,11 @@ nav .button-collapse i {
     padding: 0 1.25rem;
 }
 .parallax-container{
-    background: -webkit-linear-gradient(left,rgba(0,0,0,0.6),rgba(0,0,0,0.4));
-    background: -o-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
-    background: -ms-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
-    background: -moz-linear-gradient(left,rgba(0,0,0,0.8),rgba(0,0,0,0.5));
-    background: linear-gradient(to bottom left, #34b3a0, #204056);
-    background: -o-linear-gradient(to bottom left, #34b3a0, #204056);
-    background: -webkit-linear-gradient(to bottom left, #34b3a0, #204056);
-    background: -moz-linear-gradient(to bottom left, #34b3a0, #204056);
-    background: -ms-linear-gradient(to bottom left, #34b3a0, #204056);
+
+
 }
 
-#home-parallax.parallax-container.parallax-top.teal.lighten-2 {
+#home-parallax  {
     background: linear-gradient(to bottom left, #34b3a0, #204056);
     background: -o-linear-gradient(to bottom left, #34b3a0, #204056);
     background: -webkit-linear-gradient(to bottom left, #34b3a0, #204056);
@@ -746,10 +739,11 @@ form button{
 }
 
 .path-item{
-    border-radius: 8px;
+
     margin-left:  auto;
     margin-right: auto;
     max-width: 300px;
+    margin-bottom: 3rem;
 }
 .path-item .card-content p{
     font-size: 14px;
@@ -1190,16 +1184,20 @@ form button{
 .page-heading h2{
     text-align: left;
 }
-.page-heading .input-field label.active{
+.search-input .input-field label.active{
+    -webkit-transform: translateY(0);
     transform: translateY(0);
     font-weight: bold;
 }
-.page-heading .input-field > i,#main-book-content .input-field > i{
+.search-input .input-field > i,#main-book-content .input-field > i{
     top: 0.6rem;
 }
-.page-heading input[type=search],#main-book-content input[type=search]{
+.search-input input[type=search],#main-book-content input[type=search]{
     font-size: 1.5rem;
 
+}
+.search-input .input-field input[type=search] ~ .material-icons{
+    font-size: 3rem;
 }
 .search-bar{
     padding: 0;
@@ -1323,7 +1321,9 @@ input#blog-search, input#blog-search:focus{
     cursor: pointer;
 
 }
-
+.search-wrapper .book-rate{
+    margin-top: 20px;
+}
 .search-btn{
     /*z-index: 3;*/
     /*background: none;*/
@@ -1912,6 +1912,106 @@ h3.widget-title {
     text-transform: none;
 }
 
+
+
+/*CSS trang Search*/
+
+
+#search-parallax{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#search-parallax h1{
+    font-size: 2.5em;
+
+}
+#search-page-title h2{
+    text-align: center;
+    color: #899193;
+    font-size: 28px;
+    display: block;
+    font-weight: 500;
+    line-height: 1.4;
+    margin: 80px 0 60px;
+}
+#search-page-title h2 span,#search-page-title h2 strong{
+    color: #2b3133;
+}
+#search-wrapper .row, #search-parallax .row {
+    max-width: 1030px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#search-wrapper .path-item{
+    max-width: 600px;
+}
+#search-wrapper .card-image{
+    -webkit-transition: background-color 200ms ease-in-out,background-position 200ms ease-in-out;
+    -moz-transition: background-color 200ms ease-in-out,background-position 200ms ease-in-out;
+     transition: background-color 200ms ease-in-out,background-position 200ms ease-in-out;
+     background-color: #5fcf80;
+    background-size: cover;
+    height: 180px;
+    overflow: hidden;
+    position: relative;
+}
+#search-wrapper .card-image::before{
+    -webkit-transition: background-color 200ms ease-in-out;
+    -moz-transition: background-color 200ms ease-in-out;
+    transition: background-color 200ms ease-in-out;
+    border-radius: 5px 5px 0 0;
+    background-color: rgba(182,192,199,0.6);
+    position: absolute;
+    content: " ";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+#main-blog-content .card-action,#search-wrapper .card-action{
+    padding: 10px;
+
+}
+#main-blog-content .card-action time,#search-wrapper .card-action time{
+    height: 36px;
+    margin: 10px;
+    line-height: 36px;
+
+}
+#search-wrapper .book-rate{
+    margin-top: 20px;
+}
+
+.rating.dynamic{
+    position: absolute;
+    left: 0;
+    overflow: hidden;
+    padding: .4px 0 0 1px;
+}
+.rating{
+    overflow: hidden;
+    position: relative;
+    white-space: nowrap;
+    display: inline-block;
+    padding: 1px;
+}
+.rating:before {
+    font-family: FontAwesome;
+    content: "\f005 \f005 \f005 \f005 \f005";
+    color: #aaa;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: 4px;
+}
+.rating.dynamic:before {
+    color: #fba617;
+}
+.book-rate{
+    padding: 5px;
+    padding-left: 0;
+    text-align: left;
+}
 @media (min-width: 600px) {
     #checkscreen{
         font-size: 2px;

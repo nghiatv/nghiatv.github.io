@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Techmaster</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Search</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Latest compiled and minified JavaScript -->
     <script type="text/javascript" src="materialize/jquery.min.js"></script>
     <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
@@ -20,26 +20,20 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
-    <!--import massonry-->
-    <script src="masonry/masonry.min.js" type="text/javascript"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.0.0/imagesloaded.pkgd.min.js"></script>
-
-    <!--Captcha-->
-    <script src='https://www.google.com/recaptcha/api.js'></script>
-
-    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
 
     <!--typed.js-->
     <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
 
     <!--style.css-->
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="search.css" type="text/css">
 
     <!--animated.css-->
     <link rel="stylesheet" href="animate.css" type="text/css">
 
+    <!--Captcha-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 
+    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
 
 </head>
 
@@ -89,7 +83,8 @@
     </nav>
     <nav>
         <div class="nav-wrapper container">
-            <a class="brand-logo" href="/"><img class="responsive-img" src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
+            <a class="brand-logo" href="/"><img class="responsive-img"
+                                                src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">khóa học</a></li>
@@ -168,276 +163,260 @@
     </nav>
 
 
-
 </header>
 
 
 <!--Main-->
-<main>
-    <section id="search-wrapper">
-        <div class="container">
-            <div class="page-heading">
-                <div class="row nav-wrapper">
-                    <div id="breadcrumb-content" class="col s12">
-                        <a href="#" class="breadcrumb">Trang chủ</a>
-                        <a href="#" class="breadcrumb">Tìm kiếm</a>
-                        <a href="#" class="breadcrumb">Từ khóa tìm kiếm</a>
-                    </div>
+<script>
+
+</script>
+<main class="white">
+
+    <!--Parallax-->
+    <div id="search-parallax" class="parallax-container parallax-top teal lighten-5">
+        <div class="parallax">
+           <img src="http://blog.teamtreehouse.com/wp-content/themes/treehouse-treehouse-blog-reboot-be830640121a2daec76fa664306a34eeff61d182/img/header-bg.svg">
+        </div>
+        <div class="parallax-content blue-grey-text">
+            <div class="row center-align">
+                    <h1>Tìm kiếm</h1>
+                <div  class=" white col s12 search-input">
+
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" placeholder="Nhập từ khóa tìm kiếm" required>
+                            <label for="search"><i class="fa fa-2x fa-search"></i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form>
+
 
                 </div>
-            </div>
-            <div class="row filter search-keyword">
-
-                    <nav class="col s12 m6 offset-m6">
-                        <div class="nav-wrapper">
-                            <form>
-                                <div class="input-field">
-                                    <input id="search" type="search" required placeholder=" Gõ từ khóa để tìm kiếm">
-                                    <label for="search"><i class="material-icons">search</i></label>
-                                    <i class="material-icons">close</i>
-                                </div>
-                            </form>
-                        </div>
-                    </nav>
-
-            </div>
-            <div class="row">
-                <div class="col s12">
-
-                </div>
-            </div>
-            <div class="row">
-
-                <div class="search-content col s12  white">
-                    <div class="row">
-                        <div class="search-job col s12">
-                            <h3 class="widget-title"><span>Kết quả tìm kiếm cho từ khóa: <strong class="flow-text">Một từ nào đó</strong> </span></h3>
-                            <div class="result-content">
-                                <div class="grid">
-                                    <div class="grid-sizer"></div>
-                                    <div class="gutter-sizer"></div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
-                                                    engine
-                                                    JavaScript mới dành cho Node.js</a></h2>
-
-                                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
-                                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item ">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/tim-viec-lap-trinh-vien-25122015.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title no-padding center"><a href="#">Làm thế nào để có được một công
-                                                    việc lập trình?</a></h2>
-
-                                                <p>Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
-                                                    chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item ">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title center no-padding"><a href="">Liệu Web Designer có cần kỹ năng lập
-                                                    trình?</a></h2>
-
-                                                <p>Thuật ngữ "web designer" là chủ quan và có ý nghĩa khác nhau đối với những người khác
-                                                    nhau.</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/bigdate.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
-                                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
-
-                                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
-                                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
-                                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/lamthenao.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title center no-padding"><a href="">Làm thế nào để tuyển dụng một lập
-                                                    trình viên giỏi khi bạn không biết code</a></h2>
-
-                                                <p>Là một startup founder, việc thuê lập trình viên đầu tiên sẽ là một trong những quyết
-                                                    định quan trọng nhất mà bạn phải làm.</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/son.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title center no-padding"><a href="">Cách dạy con của người Đức: Vui chơi
-                                                    là chính, học chỉ là phụ!</a></h2>
-
-                                                <p>Cách dạy con của người Đức: Vui chơi là chính, học chỉ là phụ!</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/pro-unity-game-development-with-c.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
-                                                    engine
-                                                    JavaScript mới dành cho Node.js</a></h2>
-
-                                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
-                                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/single.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title center no-padding"><a href="">Nguyên tắc trách nhiệm duy nhất
-                                                    (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
-
-                                                <p>Trong bài viết này tôi sẽ thảo luận về Nguyên tắc trách nhiệm duy nhất (Single
-                                                    Responsibility Principle) và một số kỹ thuật xoay quanh nó để có thể giúp bạn nâng
-                                                    cao chất lượng code chương trình của mình.</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="grid-item">
-                                        <div class="card">
-                                            <div class="card-image">
-                                                <img src="images/bigdate.jpg">
-
-                                            </div>
-                                            <div class="card-content">
-                                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
-                                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
-
-                                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
-                                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
-                                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a class="" href="#">Web Design</a>
-                                                <time class="right">17 tháng Ba</time>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="search-job">
-                            <div class="search-book col s12">
-                                <h3 class="widget-title"><span>Job</span></h3>
-                                <div class="result-content">
-                                    <div class="card">
-                                        <div class="card-content black-text">
-                                            <span class="card-title flow-text">Senior VoIP Software Engineer</span>
-
-                                            <p>HOIIO | HẠN NỘP HỒ SƠ : 31/12/2015</p>
-
-                                            <p> Software development, testing and deployment of VoIP related
-                                                services/applications. • Design, implement and monitor scalability, redundancy,
-                                                quality of service for VoIP services.</p>
-                                            <a href="#">Chi tiết</a>
-                                        </div>
-                                        <div class="card-action no-padding">
-
-                                            <div class="chip">HTML</div>
-                                            <div class="chip">CSS</div>
-                                            <div class="chip">Javascript</div>
-                                            <div class="chip">PHP</div>
-
-                                        </div>
-                                    </div>
-
-
-                                </div>
-
-                            </div>
-                        </div>
-                        <section class="search-blog"></section>
-                    </div>
-
-                </div>
-
             </div>
         </div>
-    </section>
+    </div>
+    <div id="search-wrapper">
+
+            <div class="row">
+                <div class=" center-align container" id="search-page-title">
+                    <h2>Chúng tôi tìm thấy <span>N</span> kết quả với từ khóa <strong>Cái đéo gì thế</strong></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l4 ">
+                        <div class="path-item card white  black-text hoverable">
+                            <div class="card-image">
+                                <img src="images/bigdate.jpg" class="responsive-img" alt="ioss">
+
+                            </div>
+                            <div class="card-content">
+                                <a href="test-blog-detail.html"><h2 class="path-title left-align">Làm thế nào để có được một công
+                                    việc lập trình?</h2></a>
+
+                                <p class="left-align">Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                    chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                            </div>
+                            <div class="card-action">
+                                <a class="" href="#"><span class="chip square">Web design</span> </a>
+                                <time class="right">17 tháng Ba</time>
+                            </div>
+                            <!--<ul class="collection">-->
+                            <!--<li class="collection-item avatar">-->
+                            <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                            <!--<span class="title">Trinh Minh Cường</span>-->
+                            <!--<p>First Line-->
+
+                            <!--</p>-->
+
+                            <!--</li>-->
+
+                            <!--</ul>-->
+
+
+                        </div>
+
+                </div>
+                <div class="col s12 m6 l4 ">
+                    <div class="path-item card white  black-text hoverable">
+                        <div class="card-image">
+                            <img src="images/single.jpg" class="responsive-img" alt="ioss">
+
+                        </div>
+                        <div class="card-content">
+                            <a href="test-blog-detail.html"><h2 class="path-title left-align">Làm thế nào để có được một công
+                                việc lập trình?</h2></a>
+
+                            <p class="left-align">Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                        </div>
+                        <div class="card-action">
+                            <a class="" href="#"><span class="chip square">Web design</span> </a>
+                            <time class="right">12/15/2015</time>
+                        </div>
+                        <!--<ul class="collection">-->
+                        <!--<li class="collection-item avatar">-->
+                        <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                        <!--<span class="title">Trinh Minh Cường</span>-->
+                        <!--<p>First Line-->
+
+                        <!--</p>-->
+
+                        <!--</li>-->
+
+                        <!--</ul>-->
+
+
+                    </div>
+
+                </div>
+                <div class="col s12 m6 l4 ">
+                    <div class="path-item card white  black-text hoverable">
+                        <div class="card-image">
+                            <img src="images/son.jpg" class="responsive-img" alt="ioss">
+
+                        </div>
+                        <div class="card-content">
+                            <a href="test-blog-detail.html"><h2 class="path-title left-align">Làm thế nào để có được một công
+                                việc lập trình?</h2></a>
+
+                            <p class="left-align">Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                        </div>
+                        <div class="card-action">
+                            <a class="" href="#"><span class="chip square">Web design</span> </a>
+                            <time class="right">17 tháng Ba</time>
+                        </div>
+                        <!--<ul class="collection">-->
+                        <!--<li class="collection-item avatar">-->
+                        <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                        <!--<span class="title">Trinh Minh Cường</span>-->
+                        <!--<p>First Line-->
+
+                        <!--</p>-->
+
+                        <!--</li>-->
+
+                        <!--</ul>-->
+
+
+                    </div>
+
+                </div>
+                <div class="col s12 m6 l4 ">
+                    <div class="path-item card white  black-text hoverable">
+                        <div class="card-image">
+                            <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg" class="responsive-img" alt="ioss">
+
+                        </div>
+                        <div class="card-content">
+                            <a href="test-blog-detail.html">
+                                <h2 class="path-title left-align">Làm thế nào để có được một công
+                                việc lập trình?</h2>
+                            </a>
+                            <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                            </div>
+                            <p class="left-align">Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                        </div>
+
+                        <!--<ul class="collection">-->
+                        <!--<li class="collection-item avatar">-->
+                        <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                        <!--<span class="title">Trinh Minh Cường</span>-->
+                        <!--<p>First Line-->
+
+                        <!--</p>-->
+
+                        <!--</li>-->
+
+                        <!--</ul>-->
+
+
+                    </div>
+
+                </div>
+                <div class="col s12 m6 l4 ">
+                    <div class="path-item card white  black-text hoverable">
+                        <div class="card-image">
+                            <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg" class="responsive-img" alt="ioss">
+
+                        </div>
+                        <div class="card-content">
+                            <a href="test-blog-detail.html">
+                                <h2 class="path-title left-align">Làm thế nào để có được một công
+                                    việc lập trình?</h2>
+                            </a>
+                            <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                            </div>
+                            <p class="left-align">Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                        </div>
+
+                        <!--<ul class="collection">-->
+                        <!--<li class="collection-item avatar">-->
+                        <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                        <!--<span class="title">Trinh Minh Cường</span>-->
+                        <!--<p>First Line-->
+
+                        <!--</p>-->
+
+                        <!--</li>-->
+
+                        <!--</ul>-->
+
+
+                    </div>
+
+                </div>
+                <div class="col s12 m6 l4 ">
+                    <div class="path-item card white  black-text hoverable">
+                        <div class="card-image">
+                            <img src="images/mobile-design-pattern-gallery-2nd-edition.jpg" class="responsive-img" alt="ioss">
+
+                        </div>
+                        <div class="card-content">
+                            <a href="test-blog-detail.html">
+                                <h2 class="path-title left-align">Làm thế nào để có được một công
+                                    việc lập trình?</h2>
+                            </a>
+                            <div class="book-rate">
+                                                 <span class="rating">
+                                                    <span class="rating dynamic" style="width: 100%;"></span>
+                                                 </span>
+                            </div>
+                            <p class="left-align">Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                        </div>
+
+                        <!--<ul class="collection">-->
+                        <!--<li class="collection-item avatar">-->
+                        <!--<img src="images/cuongtm.jpg" alt="" class="circle">-->
+                        <!--<span class="title">Trinh Minh Cường</span>-->
+                        <!--<p>First Line-->
+
+                        <!--</p>-->
+
+                        <!--</li>-->
+
+                        <!--</ul>-->
+
+
+                    </div>
+
+                </div>
+
+            </div>
+    </div>
+
+
 </main>
 
-
+<i id="checkscreen"></i>
 <!--Footer-->
 <footer id="footer">
     <div class="container">
@@ -609,33 +588,17 @@
 </div>
 
 <script>
-
     wow = new WOW(
             {
-                boxClass:     'wow',      // default
+                boxClass: 'wow',      // default
                 animateClass: 'animated', // default
-                offset:       0,          // default
-                mobile:       false,       // default
-                live:         true        // default
+                offset: 0,          // default
+                mobile: false,       // default
+                live: true        // default
             }
     )
     wow.init();
-    $('.grid-item').addClass('wow animated zoomIn');
-    $(function(){
 
-        var $grid = $('.grid').masonry({
-            columnWidth: '.grid-sizer',
-            gutter: '.gutter-sizer',
-            itemSelector: '.grid-item',
-            percentPosition: true,
-            isAnimated:true
-        });
-        $grid.imagesLoaded().progress( function() {
-            $grid.masonry();
-        });
-
-
-    });
     function show_more() {
         $(".hide").addClass("animated");
         $(".hide").addClass("fadeInUp");
@@ -646,43 +609,33 @@
     function maxHeight() {
 //        alert();
         var h = 0;
-        $(".path-item .card-content").css('height', 'auto');
+        var $checkscreen = $('#checkscreen');
+        var $content = $(".path-item .card-content");
+        $content.css('height', 'auto');
 
-        $(".path-item .card-content").each(function () {
-            var value = $(this).height();
+//        Max height
+        if($checkscreen.css('font-size') != '1px'){
+            $content.each(function () {
+                var value = $(this).height();
 
-            if (value > h) {
-                h = value;
-            }
-        });
-        $(".path-item .card-content").height(h);
-    }
-
-    //    function maxHeightBook() {
-    //        var h = 0;
-    //        $(".book-item .card-content").css('height', 'auto');
-    //
-    //        $(".book-item .card-content").each(function () {
-    //            var value = $(this).height();
-    //            if (value > h) {
-    //                h = value;
-    //            }
-    //        });
-    //        $(".book-item .card-content").height(h);
-    //    }
-
-    $(window).on("resize", function () {
-        if (window.innerWidth > 768) {
-            maxHeight();
+                if (value > h) {
+                    h = value;
+                }
+            });
+            $content.height(h);
         }
-//        maxHeightBook();
+        else{
+            $content.css('height', 'auto');
+        }
+    }
+    $(window).on("resize", function () {
+        maxHeight();
     });
+
+
     //Modal
     $(document).ready(function () {
-        if (window.innerWidth > 768) {
-            maxHeight();
-        }
-        $('ul.tabs').tabs('select_tab', 'signin');
+        maxHeight();
         $('.modal-trigger').leanModal({
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
             opacity: .6, // Opacity of modal background
@@ -695,7 +648,7 @@
                 {
                     menuWidth: 200, // Default is 240
                     edge: 'left', // Choose the horizontal origin
-                    closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                    closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
                 }
         );
         $('.collapsible').collapsible({
@@ -715,6 +668,17 @@
     });
 
 
+    $('.count').each(function () {
+        $(this).prop('Counter', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 4000,
+            easing: 'swing',
+            step: function (now) {
+                $(this).text(Math.ceil(now));
+            }
+        });
+    });
     if ($('#back-to-top').length) {
         var scrollTrigger = 100, // px
                 backToTop = function () {
@@ -735,9 +699,20 @@
                 scrollTop: 0
             }, 1200);
         });
-
     }
 
+    // like a type charecter
+    $(function () {
+        $("#typed").typed({
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            startDelay: 1000,
+            loop: true,
+            contentType: 'text',
+            loopCount: 2,
+
+        });
+    });
 </script>
 </body>
 </html>

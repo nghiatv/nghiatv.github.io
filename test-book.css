@@ -64,35 +64,7 @@
     bottom: -14px;
     right: -10px;
 }
-.rating.dynamic{
-    position: absolute;
-    left: 0;
-    overflow: hidden;
-    padding: .4px 0 0 1px;
-}
-.rating{
-    overflow: hidden;
-    position: relative;
-    white-space: nowrap;
-    display: inline-block;
-    padding: 1px;
-}
-.rating:before {
-    font-family: FontAwesome;
-    content: "\f005 \f005 \f005 \f005 \f005";
-    color: #aaa;
-    font-size: 16px;
-    line-height: 1;
-    letter-spacing: 4px;
-}
-.rating.dynamic:before {
-    color: #fba617;
-}
-.book-rate{
-    padding: 5px;
-    padding-left: 0;
-    text-align: left;
-}
+
 main{
     min-height: 1200px;
 }
