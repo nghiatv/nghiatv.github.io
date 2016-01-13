@@ -1703,7 +1703,7 @@ input#blog-search, input#blog-search:focus{
     font-weight: 500;
 }
 
-.page-404 img {
+.page-404 img,.page-500 img {
     max-width: 128px;
 }
 
@@ -1995,13 +1995,13 @@ h3.widget-title {
     display: block;
     font-weight: 500;
     line-height: 1.4;
-    margin: 80px 0 60px;
+    margin: 40px 0 20px;
 }
 #search-page-title h2 span,#search-page-title h2 strong{
     color: #2b3133;
 }
 #search-wrapper .row, #search-parallax .row,#all-course-wrapper .row, #all-course-parallax .row {
-    max-width: 1030px;
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -2230,7 +2230,7 @@ h3.widget-title {
         line-height: 64px;
     }
 
-    .page-404 img {
+    .page-404 img,.page-500 img {
         max-width: 192px;
     }
 }
@@ -2300,7 +2300,7 @@ h3.widget-title {
 
     }
 
-    .page-404 img {
+    .page-404 img, .page-500 img {
         max-width: 256px;
     }
 
