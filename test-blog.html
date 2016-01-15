@@ -40,31 +40,11 @@
 
 <header class="site-nav">
 
-    <nav class="user-nav hide">
+    <nav class="user-nav  ">
         <div class="nav-wrapper container">
+
             <ul class="right">
-                <li><a href="#modal1" class="waves-effect waves-light login modal-trigger">đăng kí</a></li>
-                <li><a href="#modal1" class="waves-effect waves-light login modal-trigger">đăng nhập</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav class="user-nav ">
-        <div class="nav-wrapper container">
-            <ul class="right hide-on-large-only">
-                <li><a class="dropdown-button" data-activates="dropdown3">Nguyễn Văn A</a>
-                    <!-- Dropdown Structure log in success -->
-                    <ul id="dropdown3" class="dropdown-content">
-                        <li><a href="">Khóa học của tôi</a></li>
-                        <li class="divider"></li>
-                        <li><a href="">Hồ sơ của tôi</a></li>
-                        <li class="divider"></li>
-                        <li><a href="">đăng xuất</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <ul class="right hide-on-med-and-down">
-                <li><a class="dropdown-button" data-activates="dropdown2">Thân Văn Nghĩa
-                </a>
+                <li><a class="dropdown-button" data-activates="dropdown2">Thân Văn Nghĩa</a>
                     <!-- Dropdown Structure log in success -->
                     <ul id="dropdown2" class="dropdown-content">
                         <li><a href="">Khóa học của tôi</a></li>
@@ -74,6 +54,8 @@
                         <li><a href="">đăng xuất</a></li>
                     </ul>
                 </li>
+                <li class="hide"><a href="#modal1" class=" modal-trigger">đăng kí</a></li>
+                <li class="hide"><a href="#modal1" class=" modal-trigger">đăng nhập</a></li>
             </ul>
 
         </div>
@@ -165,356 +147,333 @@
 
 <!--Main-->
 
-<main id="main-blog-content">
+<main>
     <div class="page-heading">
-        <div class="row nav-wrapper">
-            <div class="col s12 m6" id="breadcrumb-content">
-                <a href="#" class="breadcrumb">Trang chủ</a>
-                <a href="#" class="breadcrumb">Blog</a>
-            </div>
+       <div class="container">
+           <div class="row nav-wrapper">
+               <div id="breadcrumb-content">
+                   <a href="#" class="breadcrumb">Trang chủ</a>
+                   <a href="#" class="breadcrumb">Blog</a>
+               </div>
+           </div>
+           </div>
+        <div style="background-image: url('images/bigdate.jpg')" class="featured-post has-image-bg">
+            <section >
+                <div class="container">
+                    <div class="row">
+                        <h1><a href="">Tại sao bạn nên đóng góp vào các dự án mã nguồn mở</a> </h1>
+                        <a href="" class="chip square white large">Đọc bài viết</a>
+                    </div>
+
+                </div>
+            </section>
         </div>
+            <div class="container">
+           <div class="row search-bar white">
+               <ul class="collapsible" data-collapsible="accordion">
+                   <li>
+                       <div class="col s12 m7 l8 xl9 search-input">
 
-        <div class="row search-bar white">
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="col s12 m7 l8 xl9 search-input">
-
-                            <form>
-                                <div class="input-field">
-                                    <input id="search" type="search" placeholder="Nhập từ khóa tìm kiếm" required>
-                                    <label for="search"><i class="fa fa-2x fa-search"></i></label>
-                                    <i class="material-icons">close</i>
-                                </div>
-                            </form>
+                           <form>
+                               <div class="input-field">
+                                   <input id="search" type="search" placeholder="Nhập từ khóa tìm kiếm" required>
+                                   <label for="search"><i class="fa fa-2x fa-search"></i></label>
+                                   <i class="material-icons">close</i>
+                               </div>
+                           </form>
 
 
-                    </div>
-                    <div class=" col s12 m5 l4 xl3 collapsible-header white">
-                        <span class="chip square right"> Danh mục bài viết </span>
-                    </div>
-                    <div class="col s12 collapsible-body white z-depth-1" id="data-filter">
-                        <ul class="tags">
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip square" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                        </ul>
-                    </div>
-                    <!--<div class="col s12 m4 hide">-->
-                        <!--<div class="filter-tag">-->
-                            <!--&lt;!&ndash; Dropdown Trigger &ndash;&gt;-->
-                            <!--<a class='dropdown-button right' href='#' data-activates='tag-content'>Drop Me!</a>-->
+                       </div>
+                       <div class=" col s12 m5 l4 xl3 collapsible-header white">
+                           <span class="chip square right"> Danh mục bài viết </span>
+                       </div>
+                       <div class="col s12 collapsible-body white z-depth-1" id="data-filter">
+                           <ul class="tags">
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip square" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                               <li ><a class="chip dashed" href="">Agile (8)</a></li>
+                               <li ><a class="chip" href="">Altassian (4)</a></li>
+                               <li><a class="chip" href="">Android (53)</a></li>
+                               <li><a class="chip" href="">ASP.net (6)</a></li>
+                               <li><a class="chip" href="">C++ (13)</a></li>
+                               <li><a class="chip" href="">Cloud (7)</a></li>
+                               <li><a class="chip" href="">Công việc (125)</a></li>
+                           </ul>
+                       </div>
 
-                            <!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
-                            <!--<ul id='tag-content' class='dropdown-content'>-->
-                                <!--<li ><a class="chip" href="">Agile (8)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Altassian (4)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Android (53)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">ASP.net (6)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">C++ (13)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Cloud (7)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                                <!--<li class="divider"></li>-->
-                                <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                                <!--<li class="divider"></li>-->
+                   </li>
+               </ul>
 
-                            <!--</ul>-->
-                        <!--</div>-->
-                    <!--</div>-->
-                </li>
-            </ul>
-
-        </div>
+           </div>
+       </div>
     </div>
+
     <div class="page-main">
-        <div class="row">
-            <div class="col s12">
-                <div class="grid">
-                    <div class="grid-sizer"></div>
-                    <div class="gutter-sizer"></div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
+      <div class="container">
+          <div class="row">
+              <div class="grid">
+                  <div class="grid-sizer"></div>
+                  <div class="gutter-sizer"></div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
-                                    engine
-                                    JavaScript mới dành cho Node.js</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
+                                  engine
+                                  JavaScript mới dành cho Node.js</a></h2>
 
-                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
-                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item ">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/tim-viec-lap-trinh-vien-25122015.jpg">
+                              <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
+                                  sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item ">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/tim-viec-lap-trinh-vien-25122015.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title no-padding center"><a href="#">Làm thế nào để có được một công
-                                    việc lập trình?</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title no-padding center"><a href="#">Làm thế nào để có được một công
+                                  việc lập trình?</a></h2>
 
-                                <p>Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
-                                    chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item ">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
+                              <p>Làm thế nào để bạn có được một công việc lập trình? Có vẻ như cách thức ở đây là bạn
+                                  chỉ cần ứng tuyển thật nhiều nơi cho đến khi bạn kiếm được một công việc. </p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item ">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Liệu Web Designer có cần kỹ năng lập
-                                    trình?</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title center no-padding"><a href="">Liệu Web Designer có cần kỹ năng lập
+                                  trình?</a></h2>
 
-                                <p>Thuật ngữ "web designer" là chủ quan và có ý nghĩa khác nhau đối với những người khác
-                                    nhau.</p>
-                            </div>
-                            <div class="card-action ">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/bigdate.jpg">
+                              <p>Thuật ngữ "web designer" là chủ quan và có ý nghĩa khác nhau đối với những người khác
+                                  nhau.</p>
+                          </div>
+                          <div class="card-action ">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/bigdate.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
-                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
+                                  nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
 
-                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
-                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
-                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/lamthenao.jpg">
+                              <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
+                                  đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
+                                  tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/lamthenao.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Làm thế nào để tuyển dụng một lập
-                                    trình viên giỏi khi bạn không biết code</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title center no-padding"><a href="">Làm thế nào để tuyển dụng một lập
+                                  trình viên giỏi khi bạn không biết code</a></h2>
 
-                                <p>Là một startup founder, việc thuê lập trình viên đầu tiên sẽ là một trong những quyết
-                                    định quan trọng nhất mà bạn phải làm.</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/son.jpg">
+                              <p>Là một startup founder, việc thuê lập trình viên đầu tiên sẽ là một trong những quyết
+                                  định quan trọng nhất mà bạn phải làm.</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/son.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Cách dạy con của người Đức: Vui chơi
-                                    là chính, học chỉ là phụ!</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title center no-padding"><a href="">Cách dạy con của người Đức: Vui chơi
+                                  là chính, học chỉ là phụ!</a></h2>
 
-                                <p>Cách dạy con của người Đức: Vui chơi là chính, học chỉ là phụ!</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/pro-unity-game-development-with-c.jpg">
+                              <p>Cách dạy con của người Đức: Vui chơi là chính, học chỉ là phụ!</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/pro-unity-game-development-with-c.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
-                                    engine
-                                    JavaScript mới dành cho Node.js</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title no-padding center"><a href="#" class="">Microsoft giới thiệu một
+                                  engine
+                                  JavaScript mới dành cho Node.js</a></h2>
 
-                                <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
-                                    sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/single.jpg">
+                              <p>Microsoft đang chuẩn bị một engine JavaScript có thể sử dụng với Node.js, nó cung một
+                                  sự thay thế cho engine V8 của Google hiện tại đang rất phổ biến</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/single.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Nguyên tắc trách nhiệm duy nhất
-                                    (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title center no-padding"><a href="">Nguyên tắc trách nhiệm duy nhất
+                                  (Single Responsibility Principle): Một công thức để viết ra code tốt</a></h2>
 
-                                <p>Trong bài viết này tôi sẽ thảo luận về Nguyên tắc trách nhiệm duy nhất (Single
-                                    Responsibility Principle) và một số kỹ thuật xoay quanh nó để có thể giúp bạn nâng
-                                    cao chất lượng code chương trình của mình.</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <div class="card">
-                            <div class="card-image">
-                                <img src="images/bigdate.jpg">
+                              <p>Trong bài viết này tôi sẽ thảo luận về Nguyên tắc trách nhiệm duy nhất (Single
+                                  Responsibility Principle) và một số kỹ thuật xoay quanh nó để có thể giúp bạn nâng
+                                  cao chất lượng code chương trình của mình.</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="grid-item">
+                      <div class="card">
+                          <div class="card-image">
+                              <img src="images/bigdate.jpg">
 
-                            </div>
-                            <div class="card-content">
-                                <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
-                                    nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
+                          </div>
+                          <div class="card-content">
+                              <h2 class="card-title center no-padding"><a href="">Big Data: Cơ hội nghề nghiệp rất
+                                  nhiều trong lĩnh vực nóng nhất của công nghệ</a></h2>
 
-                                <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
-                                    đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
-                                    tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
-                            </div>
-                            <div class="card-action">
-                               <a class="" href="#"><span class="chip square">Web design</span> </a>
-                                <time class="right">17 tháng Ba</time>
-                            </div>
-                        </div>
-                    </div>
+                              <p>Lĩnh vực big data tiếp tục phát triển mạnh mẽ, các công ty khắp nơi trên thế giới
+                                  đang săn tìm để tuyển dụng những chuyên gia kỹ thuật trong mảng này - các nhà phân
+                                  tích dự đoán rằng xu hướng này sẽ tiếp tục tăng trong nhiều năm tới</p>
+                          </div>
+                          <div class="card-action">
+                              <a class="" href="#"><span class="chip square">Web design</span> </a>
+                              <time class="right">17 tháng Ba</time>
+                          </div>
+                      </div>
+                  </div>
 
 
-                </div>
-                <div class="page-pagination center">
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li class="waves-effect"><a href="#">2</a></li>
-                        <li class="waves-effect"><a href="#">3</a></li>
-                        <li class="waves-effect"><a href="#">4</a></li>
-                        <li class="waves-effect"><a href="#">5</a></li>
-                        <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
-                    </ul>
-                </div>
-                <div class="page-tag-cloud">
-
-                </div>
-            </div>
-
-        </div>
+              </div>
+              <div class="page-pagination center">
+                  <ul class="pagination">
+                      <li class="disabled"><a href="#"><i class="material-icons">chevron_left</i></a></li>
+                      <li class="active"><a href="#">1</a></li>
+                      <li class="waves-effect"><a href="#">2</a></li>
+                      <li class="waves-effect"><a href="#">3</a></li>
+                      <li class="waves-effect"><a href="#">4</a></li>
+                      <li class="waves-effect"><a href="#">5</a></li>
+                      <li class="waves-effect"><a href="#"><i class="material-icons">chevron_right</i></a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
     </div>
-
-
 </main>
 
 <!--Footer-->

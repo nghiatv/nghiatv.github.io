@@ -161,11 +161,7 @@ main{
 
 
 @media (min-width: 993px) {
-    .grid-sizer,
-    .grid-item { width: 32%; }
 
-    .gutter-sizer { width: 2%; }
-    .grid-item--width2 { width: 66%; }
 
     #main-blog-content,#main-blog-top-author,#main-blog-most-view{
         width: 90%;
@@ -202,7 +198,14 @@ main{
         width: 85%;
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1025px) {
+    .grid-sizer,
+    .grid-item { width: 32%; }
+
+    .gutter-sizer { width: 2%; }
+    .grid-item--width2 { width: 66%; }
+}
+@media (min-width: 1400px) {
     .grid-sizer,
     .grid-item { width: 23.5%;
     }

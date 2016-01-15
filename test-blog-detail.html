@@ -78,7 +78,8 @@
     </nav>
     <nav>
         <div class="nav-wrapper container">
-            <a class="brand-logo" href="/"><img class="responsive-img" src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
+            <a class="brand-logo" href="/"><img class="responsive-img"
+                                                src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="">Trang chủ</a></li>
                 <li><a href="">khóa học</a></li>
@@ -157,382 +158,421 @@
     </nav>
 
 
-
 </header>
 
 
 <!--Main-->
 
-<main id="main-blog-content">
+<main>
     <div class="page-heading">
-        <div class="row nav-wrapper">
-            <div class="col s12" id="breadcrumb-content">
-                <a href="#" class="breadcrumb">Trang chủ</a>
-                <a href="#" class="breadcrumb">Blog</a>
-                <a href="#" class="breadcrumb">Tại sao bạn nên đóng góp vào các dự án mã nguồn mở</a>
+        <div class="container">
+            <div class="row nav-wrapper">
+                <div id="breadcrumb-content">
+                    <a href="#" class="breadcrumb">Trang chủ</a>
+                    <a href="#" class="breadcrumb">Blog</a>
+                    <a href="#" class="breadcrumb">Tại sao bạn nên đóng góp vào các dự án mã nguồn mở</a>
+                </div>
             </div>
         </div>
-        <div class="row hide">
-            <div class="col s12" id="blog-filter">
+
+        <div class="container">
+            <div class="row search-bar white">
                 <ul class="collapsible" data-collapsible="accordion">
                     <li>
+                        <div class="col s12 m7 l8 xl9 search-input">
+                            <form>
+                                <div class="input-field">
+                                    <input id="search" type="search" placeholder="Nhập từ khóa tìm kiếm" required>
+                                    <label for="search"><i class="fa fa-2x fa-search"></i></label>
+                                    <i class="material-icons">close</i>
+                                </div>
+                            </form>
 
-                        <nav>
-                            <div class="nav-wrapper">
-                                <form>
-                                    <div class="input-field">
-                                        <input id="search" type="search" required placeholder=" Gõ từ khóa để tìm kiếm">
-                                        <label for="search"><i class="material-icons">search</i></label>
-                                        <i class="material-icons">close</i>
-                                    </div>
-                                </form>
-                            </div>
-                        </nav>
+
+                        </div>
+                        <div class=" col s12 m5 l4 xl3 collapsible-header white ">
+                            <span class="chip square right"> Danh mục bài viết </span>
+
+                        </div>
+                        <div class="col s12 collapsible-body white z-depth-1" id="data-filter">
+                            <ul class="tags">
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip square" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                                <li><a class="chip dashed" href="">Agile (8)</a></li>
+                                <li><a class="chip" href="">Altassian (4)</a></li>
+                                <li><a class="chip" href="">Android (53)</a></li>
+                                <li><a class="chip" href="">ASP.net (6)</a></li>
+                                <li><a class="chip" href="">C++ (13)</a></li>
+                                <li><a class="chip" href="">Cloud (7)</a></li>
+                                <li><a class="chip" href="">Công việc (125)</a></li>
+                            </ul>
+                        </div>
+                        <!--<div class="col s12 m4 hide">-->
+                        <!--<div class="filter-tag">-->
+                        <!--&lt;!&ndash; Dropdown Trigger &ndash;&gt;-->
+                        <!--<a class='dropdown-button right' href='#' data-activates='tag-content'>Drop Me!</a>-->
+
+                        <!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
+                        <!--<ul id='tag-content' class='dropdown-content'>-->
+                        <!--<li ><a class="chip" href="">Agile (8)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Altassian (4)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Android (53)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">ASP.net (6)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">C++ (13)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Cloud (7)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                        <!--<li class="divider"></li>-->
+                        <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
+                        <!--<li class="divider"></li>-->
+
+                        <!--</ul>-->
+                        <!--</div>-->
+                        <!--</div>-->
                     </li>
-
                 </ul>
             </div>
-
-        </div>
-        <div class="row search-bar white">
-            <ul class="collapsible" data-collapsible="accordion">
-                <li>
-                    <div class="col s12 m7 l8 xl9 search-input">
-
-                        <form>
-                            <div class="input-field">
-                                <input id="search" type="search" placeholder="Nhập từ khóa tìm kiếm" required>
-                                <label for="search"><i class="fa fa-2x fa-search"></i></label>
-                                <i class="material-icons">close</i>
-                            </div>
-                        </form>
-
-
-                    </div>
-                    <div class=" col s12 m5 l4 xl3 collapsible-header white ">
-                        <span class="chip square right"> Danh mục bài viết </span>
-
-                    </div>
-                    <div class="col s12 collapsible-body white z-depth-1" id="data-filter">
-                        <ul class="tags">
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip square" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                            <li ><a class="chip dashed" href="">Agile (8)</a></li>
-                            <li ><a class="chip" href="">Altassian (4)</a></li>
-                            <li><a class="chip" href="">Android (53)</a></li>
-                            <li><a class="chip" href="">ASP.net (6)</a></li>
-                            <li><a class="chip" href="">C++ (13)</a></li>
-                            <li><a class="chip" href="">Cloud (7)</a></li>
-                            <li><a class="chip" href="">Công việc (125)</a></li>
-                        </ul>
-                    </div>
-                    <!--<div class="col s12 m4 hide">-->
-                    <!--<div class="filter-tag">-->
-                    <!--&lt;!&ndash; Dropdown Trigger &ndash;&gt;-->
-                    <!--<a class='dropdown-button right' href='#' data-activates='tag-content'>Drop Me!</a>-->
-
-                    <!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
-                    <!--<ul id='tag-content' class='dropdown-content'>-->
-                    <!--<li ><a class="chip" href="">Agile (8)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Altassian (4)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Android (53)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">ASP.net (6)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">C++ (13)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Cloud (7)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li ><a class="chip" href="">Công việc (125)</a></li>-->
-                    <!--<li class="divider"></li>-->
-
-                    <!--</ul>-->
-                    <!--</div>-->
-                    <!--</div>-->
-                </li>
-            </ul>
-
         </div>
     </div>
-    <div class="page-main white">
-        <div class="post-content center ">
-                    <div class="header-post">
-                        <h1 class="heading-title-large" itemprop="name">Tại sao bạn nên đóng góp vào các dự án mã nguồn
-                            mở</h1>
+    <div class="page-main ">
+        <div class="container">
+            <div class="row white">
+                <div class="col s12">
+                    <div class="post-content ">
+                        <div class="header-post center ">
+                            <h1 class="heading-title-large" itemprop="name">Tại sao bạn nên đóng góp vào các dự án mã
+                                nguồn
+                                mở</h1>
 
-                        <div class="info">
-                            <ul>
-                                <li>23 tháng Mười Hai</li>
-                                <li>Bởi <strong class="color-green">HỒ SỸ HÙNG</strong></li>
-                                <li>trong
-                                    <strong><a href="">Web Design</a></strong>
-                                </li>
-                            </ul>
+                            <div class="info">
+                                <ul>
+                                    <li>23 tháng Mười Hai</li>
+                                    <li>Bởi <strong class="color-green">HỒ SỸ HÙNG</strong></li>
+                                    <li>trong
+                                        <strong><a href="">Web Design</a></strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--<h2>Самые лучшие агенства по веб дизайну в Росии</h2>-->
+                            <div class="list-share">
+                                <ul>
+                                    <li class="facebook">
+                                        <span> <i class="fa fa-3x fa-facebook"></i> </span>
+                                    </li>
+                                    <li class="twitter">
+                                        <span> <i class="fa fa-3x fa-twitter"></i> </span>
+                                    </li>
+                                    <li class="google">
+                                        <span> <i class="fa fa-3x fa-google"></i> </span>
+                                    </li>
+                                </ul>
+
+                            </div>
                         </div>
-                        <!--<h2>Самые лучшие агенства по веб дизайну в Росии</h2>-->
-                        <div class="list-share">
-                            <ul>
-                                <li class="facebook">
-                                    <span> <i class="fa fa-3x fa-facebook"></i> </span>
-                                </li>
-                                <li class="twitter">
-                                    <span> <i class="fa fa-3x fa-twitter"></i> </span>
-                                </li>
-                                <li class="google">
-                                    <span> <i class="fa fa-3x fa-google"></i> </span>
-                                </li>
-                            </ul>
+                        <div class="main-post  ">
+                            <article class="content">
 
+                                <p><em><strong>Bài viết được dịch từ trang web <a
+                                        href="http://www.makeuseof.com/tag/contribute-opensource-projects/"
+                                        target="_blank">Makeuseof</a></strong></em>
+                                </p>
+
+                                <p><img alt="Học lập trình trực tuyến cơ bản đến nâng cao" height="230"
+                                        src="http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-1.png"
+                                        style="float:right" title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                        width="230">Khái niệm về phần mềm mã nguồn mở không phải là mới, và với những dự
+                                    án
+                                    thành công rất lớn như Ubuntu, Android, và rất nhiều các ứng dụng khác, tôi nghĩ
+                                    chúng
+                                    ta có thể nói nó là một mô hình đã được chứng minh cho việc tạo ra và duy trì phần
+                                    mềm
+                                    chất lượng cao. Nhưng nếu bạn là một lập trình viên chỉ mới bắt đầu vào nghề và đang
+                                    suy
+                                    nghĩ về việc <a
+                                            href="http://techmaster.vn/posts/33710/xu-huong-lap-trinh-ma-nguon-mo"
+                                            target="_blank">liệu có nên tham gia vào các dự án nguồn mở</a>, và nó
+                                    sẽ mang lại giá trị gì để bù lại lượng thời gian và công sức mà bạn bỏ ra?</p>
+
+                                <p>Tôi viết bài này để cho bạn thấy lý do tại sao bạn nên nghiêm túc xem xét việc cho đi
+                                    thời gian và công sức của bạn miễn phí, vì bạn sẽ nhận lại được rất nhiều.</p>
+
+                                <h2>Học bằng cách làm</h2>
+
+                                <p style="text-align:center"><img alt="Học lập trình online cơ bản đến nâng cao"
+                                                                  height="314"
+                                                                  src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-2.png"
+                                                                  title="Học lập trình online cơ bản đến nâng cao"
+                                                                  width="317"></p>
+
+                                <p>Chọn một dự án mã nguồn mở để đóng góp cho phép bạn có được cơ hội tham gia giải
+                                    quyết
+                                    những vấn đề cụ thể và thực tế. Việc này sẽ không hề dễ dàng lúc ban đầu, nhưng bạn
+                                    sẽ
+                                    biết về codebase và những phần bên trong của một sản phẩm nào đó mà bạn đã biết và
+                                    yêu
+                                    thích. Và thú vị nhất là hiện nay bạn có thể thực hiện được điều này mà không thực
+                                    sự
+                                    cần sự cho phép. Ảnh chụp màn hình ở trên xuất phát từ trang <a
+                                            href="https://github.com/" target="_blank">Github</a>, đó là một trong những
+                                    repository dự án mã nguồn mở tốt nhất hiện nay.&nbsp;</p>
+
+                                <p>Github sử dụng <a href="http://en.wikipedia.org/wiki/Git_(software)"
+                                                     target="_blank">Git</a>, một "hệ thống kiểm soát phiên bản phân
+                                    tán".
+                                    Trong thực tế, điều này có nghĩa là bạn có thể "fork" một repository - tạo ra một
+                                    bản
+                                    sao của nó - và làm việc trên bản sao của riêng bạn. Một khi bạn đã sẵn sàng, bạn có
+                                    thể
+                                    thông báo cho những người quản lý dự án gốc rằng bạn muốn gửi một bản vá (patch).
+                                    Cách
+                                    thức ở đây là đầu tiên bạn cứ làm việc, và sau đó bạn xem họ có chấp nhận nó không.
+                                    Nếu
+                                    họ chấp nhận phần code của bạn - thì thật tuyệt vời. Nếu không, hy vọng bạn đã học
+                                    được
+                                    một điều gì đó mới, và bây giờ bạn có thể sửa lại phần code của mình và thử lại.</p>
+
+                                <h2>Làm những việc quan trọng</h2>
+
+                                <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                                  height="338"
+                                                                  src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-3.png"
+                                                                  title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                                  width="300"></p>
+
+                                <p>Ảnh chụp màn hình ở trên xuất phát từ <a
+                                        href="http://bartaz.github.com/impress.js/#/big"
+                                        target="_blank">Impress.js</a>, một framework
+                                    JavaScript ấn tượng để tạo những phần trình diễn (presentations) trong một trình
+                                    duyệt.
+                                    Hãy nghĩ nó có phần giống PowerPoint, ít nhất là về cái nhìn và cảm nhận ở sản phẩm
+                                    cuối
+                                    cùng. Impress.js là mã nguồn mở, và bạn có thể tìm thấy nó trên <a
+                                            href="https://github.com/bartaz/impress.js" target="_blank">Github.</a> Đây
+                                    là
+                                    một dự án có nhiều người tham gia, được follow bởi hơn 6.300 nhà phát triển và được
+                                    fork
+                                    gần 6000 lần. Việc đóng góp cho một cái gì đó như thế này sẽ rất có ý nghĩa, và là
+                                    một
+                                    công việc tuyệt vời.</p>
+
+                                <p>Nếu bạn đang tìm kiếm một tác vụ cụ thể, bạn có thể kiểm tra trang liệt kê các <a
+                                        href="https://github.com/bartaz/impress.js/issues" target="_blank">Issues</a>
+                                    (những
+                                    bug) của dự án này. Bạn có thể làm việc trên một vấn đề cụ thể, hoặc thậm chí tìm
+                                    một
+                                    vấn đề trong dự án này cho chính mình, sửa chữa nó, và submit phần chỉnh sửa của
+                                    bạn,
+                                    giống như bức hình ở dưới đây:</p>
+
+                                <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                                  height="285"
+                                                                  src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-4.png"
+                                                                  title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                                  width="592"></p>
+
+                                <p>Ảnh chụp màn hình ở trên có kích thước hơi nhỏ, nhưng bạn có thể thấy rằng lập trình
+                                    viên
+                                    này (<a href="https://github.com/dwiash" target="_blank">dwiash</a>) đã chia sẻ một
+                                    ý
+                                    tưởng, cùng với code để thực hiện nó. Điều này làm cho nó trở nên dễ dàng để các nhà
+                                    phát triển chấp nhận phần code đó. Nhưng mà tại sao lại chỉ dừng lại ở đó? Bạn có
+                                    thể
+                                    đóng góp trực tiếp cho các dự án lớn hơn nhiều, ví dụ như dự án <a
+                                            href="https://github.com/rails/rails" target="_blank">Ruby on Rails.</a> Nên
+                                    nhớ
+                                    rằng, chỉ có bầu trời xanh kia là giới hạn của bạn mà thôi!</p>
+
+                                <h2>Củng cố thêm hồ sơ xin việc của bạn</h2>
+
+                                <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                                  height="107"
+                                                                  src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-5.png"
+                                                                  title="Học lập trình trực tuyến cơ bản đến nâng cao"
+                                                                  width="590"></p>
+
+                                <p>Ảnh chụp màn hình này là từ một <a href="http://jobs.37signals.com/jobs/10551"
+                                                                      target="_blank">quảng cáo công việc</a> ngẫu nhiên
+                                    tôi
+                                    tìm thấy trên trang tuyển dụng 37signals. Nhiều quảng cáo cho các vị trí kỹ thuật
+                                    hiện
+                                    nay yêu cầu cho xem hồ sơ Github của bạn, và đó cũng là một lý do chính đáng. Trở
+                                    lại
+                                    năm 2010, Jeff Atwood đã viết một bài đăng trên blog Coding Horror với tiêu đề là <a
+                                            href="http://vinacode.net/2014/10/27/lap-trinh-vien-khong-biet-lap-trinh/"
+                                            target="_blank">"Lập trình viên không biết lập trình".</a> Trong đó, anh nói
+                                    với
+                                    kinh nghiệm cá nhân của mình trong việc phỏng vấn ứng viên cho các vị trí lập trình
+                                    viên... những người thực sự không biết lập trình. Tôi không nói về lập trình viên
+                                    tồi -
+                                    ý tôi là về những người chỉ đơn giản là không biết lập trình một chút nào cả.</p>
+
+                                <p>Nhưng công nghiệp phần mềm là một ngành phát triển rất nhanh, để khắc phục xu hướng
+                                    này
+                                    và làm cho quá trình sàng lọc nhanh hơn và tốt hơn, nhiều nhà tuyển dụng yêu cầu xem
+                                    những phần code thực tế và lịch sử đóng góp của bạn. Rõ ràng, nếu tất cả công việc
+                                    bạn
+                                    làm trước đây là mã nguồn đóng và bạn chỉ có thể nói rằng bạn đã làm việc tại công
+                                    ty X
+                                    trong bao nhiêu năm đó, hay một điều gì tương tự. Nhưng điều gì sẽ xảy ra nếu bạn
+                                    cho
+                                    phép nhà tuyển dụng nhìn vào profile Github của mình và xem tất cả các dự án bạn đã
+                                    đóng
+                                    góp, xem có bao nhiêu bản vá lỗi của bạn đã được chấp nhận, và họ thực sự đọc code
+                                    của
+                                    bạn?</p>
+
+                                <p>Chỉ cần tưởng tượng là họ sẽ ấn tượng về bạn như thế nào - và đó là những bằng chứng
+                                    thể
+                                    hiện năng lực thực sự của bạn.</p>
+
+                                <h2>Nhận được những món quà miễn phí tuyệt vời</h2>
+
+                                <p style="text-align:center"><img alt="Học lập trình trực tuyến xin việc làm"
+                                                                  height="289"
+                                                                  src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-6.png"
+                                                                  title="Học lập trình trực tuyến xin việc làm"
+                                                                  width="430">
+                                </p>
+
+                                <p>Ảnh chụp màn hình ở trên xuất phát từ trang bán sản phẩm <a
+                                        href="http://www.jetbrains.com/ruby/index.html" target="_blank">RubyMine</a> của
+                                    JetBrains. JetBrains là công ty làm ra rất nhiều IDE tuyệt vời cho <a
+                                            href="http://techmaster.vn/khoa-hoc/8231/lap-trinh-ruby-on-rails"
+                                            target="_blank">Ruby</a>, <a
+                                            href="http://techmaster.vn/khoa-hoc/25486/lap-trinh-php-7-co-ban-qua-vi-du"
+                                            target="_blank">PHP</a>, <a
+                                            href="http://techmaster.vn/khoa-hoc/25487/web-co-ban-html5-css3-va-javascript"
+                                            target="_blank">JavaScript</a>, và nhiều hơn nữa - và nếu bạn là một người
+                                    đứng
+                                    đầu dự án hoặc một người có nhiều đóng góp vào một dự án mã nguồn mở, thì bạn có thể
+                                    nhận được một giấy phép <em><strong>miễn phí</strong></em> để sử dụng đầy đủ sản
+                                    phẩm
+                                    này. Đây chỉ là một ví dụ khá tuyệt vời. Và JetBrains không phải là công ty duy nhất
+                                    chia sẻ các sản phẩm của mình với cộng đồng mã nguồn mở một cách hào phóng như vậy.
+                                </p>
+
+                                <h2>Làm quen những đồng nghiệp mới</h2>
+
+                                <p style="text-align:center"><img alt="Học lập trình trực tuyến tốt nhất" height="270"
+                                                                  src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-7.png"
+                                                                  title="Học lập trình trực tuyến tốt nhất" width="400">
+                                </p>
+
+                                <p>Đây chỉ là một <a href="https://github.com/josh" target="_blank">hồ sơ public</a>
+                                    trên
+                                    Github; Josh có 1600 người follow, và đã forked hơn 80 repositories. Gã này rõ ràng
+                                    là
+                                    biết anh ta đang làm gì. Được làm việc trên cùng các dự án mà anh ta làm, committing
+                                    code và đợi anh ta review phần code của bạn là một cách tuyệt vời để bắt đầu một
+                                    cuộc
+                                    trò chuyện để làm quen. Nếu bạn đang tìm cách để làm việc như một lập trình viên,
+                                    thì
+                                    việc xây dựng mối quan hệ là một phần quan trọng trong việc tìm kiếm việc làm. Hãy
+                                    biết
+                                    rõ về ngành công nghiệp này từ bên trong, và cho mọi người thấy những gì bạn thực sự
+                                    biết.</p>
+
+                                <h2>Kết luận</h2>
+
+                                <p>Lý do tôi thích mã nguồn mở rất nhiều là vì nó là một cách để cho thấy năng lực của
+                                    bạn.
+                                    Nếu bạn đóng góp vào nhiều dự án nguồn mở, thì mọi người sẽ thấy điều đó. Điều này
+                                    còn
+                                    tốt hơn so với bất kỳ bản hồ sơ xin việc màu mè nào.</p>
+
+                                <p>Bạn có đóng góp tới các dự án mã nguồn mở? Những đóng góp cho dự án mã nguồn mở đó có
+                                    giúp cho bạn kiếm được một việc làm mơ ước? Hãy chia sẻ câu chuyện của bạn trong
+                                    phần
+                                    bình luận phía dưới nhé!</p>
+
+                            </article>
                         </div>
-                    </div>
-                    <div class="main-post ">
-                        <article class="content">
-
-                            <p><em><strong>Bài viết được dịch từ trang web <a
-                                    href="http://www.makeuseof.com/tag/contribute-opensource-projects/" target="_blank">Makeuseof</a></strong></em>
-                            </p>
-
-                            <p><img alt="Học lập trình trực tuyến cơ bản đến nâng cao" height="230"
-                                    src="http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-1.png"
-                                    style="float:right" title="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                    width="230">Khái niệm về phần mềm mã nguồn mở không phải là mới, và với những dự án
-                                thành công rất lớn như Ubuntu, Android, và rất nhiều các ứng dụng khác, tôi nghĩ chúng
-                                ta có thể nói nó là một mô hình đã được chứng minh cho việc tạo ra và duy trì phần mềm
-                                chất lượng cao. Nhưng nếu bạn là một lập trình viên chỉ mới bắt đầu vào nghề và đang suy
-                                nghĩ về việc <a href="http://techmaster.vn/posts/33710/xu-huong-lap-trinh-ma-nguon-mo"
-                                                target="_blank">liệu có nên tham gia vào các dự án nguồn mở</a>, và nó
-                                sẽ mang lại giá trị gì để bù lại lượng thời gian và công sức mà bạn bỏ ra?</p>
-
-                            <p>Tôi viết bài này để cho bạn thấy lý do tại sao bạn nên nghiêm túc xem xét việc cho đi
-                                thời gian và công sức của bạn miễn phí, vì bạn sẽ nhận lại được rất nhiều.</p>
-
-                            <h2>Học bằng cách làm</h2>
-
-                            <p style="text-align:center"><img alt="Học lập trình online cơ bản đến nâng cao"
-                                                              height="314"
-                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-2.png"
-                                                              title="Học lập trình online cơ bản đến nâng cao"
-                                                              width="317"></p>
-
-                            <p>Chọn một dự án mã nguồn mở để đóng góp cho phép bạn có được cơ hội tham gia giải quyết
-                                những vấn đề cụ thể và thực tế. Việc này sẽ không hề dễ dàng lúc ban đầu, nhưng bạn sẽ
-                                biết về codebase và những phần bên trong của một sản phẩm nào đó mà bạn đã biết và yêu
-                                thích. Và thú vị nhất là hiện nay bạn có thể thực hiện được điều này mà không thực sự
-                                cần sự cho phép. Ảnh chụp màn hình ở trên xuất phát từ trang <a
-                                        href="https://github.com/" target="_blank">Github</a>, đó là một trong những
-                                repository dự án mã nguồn mở tốt nhất hiện nay.&nbsp;</p>
-
-                            <p>Github sử dụng <a href="http://en.wikipedia.org/wiki/Git_(software)"
-                                                 target="_blank">Git</a>, một "hệ thống kiểm soát phiên bản phân tán".
-                                Trong thực tế, điều này có nghĩa là bạn có thể "fork" một repository - tạo ra một bản
-                                sao của nó - và làm việc trên bản sao của riêng bạn. Một khi bạn đã sẵn sàng, bạn có thể
-                                thông báo cho những người quản lý dự án gốc rằng bạn muốn gửi một bản vá (patch). Cách
-                                thức ở đây là đầu tiên bạn cứ làm việc, và sau đó bạn xem họ có chấp nhận nó không. Nếu
-                                họ chấp nhận phần code của bạn - thì thật tuyệt vời. Nếu không, hy vọng bạn đã học được
-                                một điều gì đó mới, và bây giờ bạn có thể sửa lại phần code của mình và thử lại.</p>
-
-                            <h2>Làm những việc quan trọng</h2>
-
-                            <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                                              height="338"
-                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-3.png"
-                                                              title="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                                              width="300"></p>
-
-                            <p>Ảnh chụp màn hình ở trên xuất phát từ <a href="http://bartaz.github.com/impress.js/#/big"
-                                                                        target="_blank">Impress.js</a>, một framework
-                                JavaScript ấn tượng để tạo những phần trình diễn (presentations) trong một trình duyệt.
-                                Hãy nghĩ nó có phần giống PowerPoint, ít nhất là về cái nhìn và cảm nhận ở sản phẩm cuối
-                                cùng. Impress.js là mã nguồn mở, và bạn có thể tìm thấy nó trên <a
-                                        href="https://github.com/bartaz/impress.js" target="_blank">Github.</a> Đây là
-                                một dự án có nhiều người tham gia, được follow bởi hơn 6.300 nhà phát triển và được fork
-                                gần 6000 lần. Việc đóng góp cho một cái gì đó như thế này sẽ rất có ý nghĩa, và là một
-                                công việc tuyệt vời.</p>
-
-                            <p>Nếu bạn đang tìm kiếm một tác vụ cụ thể, bạn có thể kiểm tra trang liệt kê các <a
-                                    href="https://github.com/bartaz/impress.js/issues" target="_blank">Issues</a> (những
-                                bug) của dự án này. Bạn có thể làm việc trên một vấn đề cụ thể, hoặc thậm chí tìm một
-                                vấn đề trong dự án này cho chính mình, sửa chữa nó, và submit phần chỉnh sửa của bạn,
-                                giống như bức hình ở dưới đây:</p>
-
-                            <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                                              height="285"
-                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-4.png"
-                                                              title="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                                              width="592"></p>
-
-                            <p>Ảnh chụp màn hình ở trên có kích thước hơi nhỏ, nhưng bạn có thể thấy rằng lập trình viên
-                                này (<a href="https://github.com/dwiash" target="_blank">dwiash</a>) đã chia sẻ một ý
-                                tưởng, cùng với code để thực hiện nó. Điều này làm cho nó trở nên dễ dàng để các nhà
-                                phát triển chấp nhận phần code đó. Nhưng mà tại sao lại chỉ dừng lại ở đó? Bạn có thể
-                                đóng góp trực tiếp cho các dự án lớn hơn nhiều, ví dụ như dự án <a
-                                        href="https://github.com/rails/rails" target="_blank">Ruby on Rails.</a> Nên nhớ
-                                rằng, chỉ có bầu trời xanh kia là giới hạn của bạn mà thôi!</p>
-
-                            <h2>Củng cố thêm hồ sơ xin việc của bạn</h2>
-
-                            <p style="text-align:center"><img alt="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                                              height="107"
-                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-5.png"
-                                                              title="Học lập trình trực tuyến cơ bản đến nâng cao"
-                                                              width="590"></p>
-
-                            <p>Ảnh chụp màn hình này là từ một <a href="http://jobs.37signals.com/jobs/10551"
-                                                                  target="_blank">quảng cáo công việc</a> ngẫu nhiên tôi
-                                tìm thấy trên trang tuyển dụng 37signals. Nhiều quảng cáo cho các vị trí kỹ thuật hiện
-                                nay yêu cầu cho xem hồ sơ Github của bạn, và đó cũng là một lý do chính đáng. Trở lại
-                                năm 2010, Jeff Atwood đã viết một bài đăng trên blog Coding Horror với tiêu đề là <a
-                                        href="http://vinacode.net/2014/10/27/lap-trinh-vien-khong-biet-lap-trinh/"
-                                        target="_blank">"Lập trình viên không biết lập trình".</a> Trong đó, anh nói với
-                                kinh nghiệm cá nhân của mình trong việc phỏng vấn ứng viên cho các vị trí lập trình
-                                viên... những người thực sự không biết lập trình. Tôi không nói về lập trình viên tồi -
-                                ý tôi là về những người chỉ đơn giản là không biết lập trình một chút nào cả.</p>
-
-                            <p>Nhưng công nghiệp phần mềm là một ngành phát triển rất nhanh, để khắc phục xu hướng này
-                                và làm cho quá trình sàng lọc nhanh hơn và tốt hơn, nhiều nhà tuyển dụng yêu cầu xem
-                                những phần code thực tế và lịch sử đóng góp của bạn. Rõ ràng, nếu tất cả công việc bạn
-                                làm trước đây là mã nguồn đóng và bạn chỉ có thể nói rằng bạn đã làm việc tại công ty X
-                                trong bao nhiêu năm đó, hay một điều gì tương tự. Nhưng điều gì sẽ xảy ra nếu bạn cho
-                                phép nhà tuyển dụng nhìn vào profile Github của mình và xem tất cả các dự án bạn đã đóng
-                                góp, xem có bao nhiêu bản vá lỗi của bạn đã được chấp nhận, và họ thực sự đọc code của
-                                bạn?</p>
-
-                            <p>Chỉ cần tưởng tượng là họ sẽ ấn tượng về bạn như thế nào - và đó là những bằng chứng thể
-                                hiện năng lực thực sự của bạn.</p>
-
-                            <h2>Nhận được những món quà miễn phí tuyệt vời</h2>
-
-                            <p style="text-align:center"><img alt="Học lập trình trực tuyến xin việc làm" height="289"
-                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-6.png"
-                                                              title="Học lập trình trực tuyến xin việc làm" width="430">
-                            </p>
-
-                            <p>Ảnh chụp màn hình ở trên xuất phát từ trang bán sản phẩm <a
-                                    href="http://www.jetbrains.com/ruby/index.html" target="_blank">RubyMine</a> của
-                                JetBrains. JetBrains là công ty làm ra rất nhiều IDE tuyệt vời cho <a
-                                        href="http://techmaster.vn/khoa-hoc/8231/lap-trinh-ruby-on-rails"
-                                        target="_blank">Ruby</a>, <a
-                                        href="http://techmaster.vn/khoa-hoc/25486/lap-trinh-php-7-co-ban-qua-vi-du"
-                                        target="_blank">PHP</a>, <a
-                                        href="http://techmaster.vn/khoa-hoc/25487/web-co-ban-html5-css3-va-javascript"
-                                        target="_blank">JavaScript</a>, và nhiều hơn nữa - và nếu bạn là một người đứng
-                                đầu dự án hoặc một người có nhiều đóng góp vào một dự án mã nguồn mở, thì bạn có thể
-                                nhận được một giấy phép <em><strong>miễn phí</strong></em> để sử dụng đầy đủ sản phẩm
-                                này. Đây chỉ là một ví dụ khá tuyệt vời. Và JetBrains không phải là công ty duy nhất
-                                chia sẻ các sản phẩm của mình với cộng đồng mã nguồn mở một cách hào phóng như vậy.</p>
-
-                            <h2>Làm quen những đồng nghiệp mới</h2>
-
-                            <p style="text-align:center"><img alt="Học lập trình trực tuyến tốt nhất" height="270"
-                                                              src=" http://techmaster.vn/fileman/Uploads/ImageBlog/hoc-lap-trinh-truc-tuyen-online-bang-opensource-26122015-7.png"
-                                                              title="Học lập trình trực tuyến tốt nhất" width="400"></p>
-
-                            <p>Đây chỉ là một <a href="https://github.com/josh" target="_blank">hồ sơ public</a> trên
-                                Github; Josh có 1600 người follow, và đã forked hơn 80 repositories. Gã này rõ ràng là
-                                biết anh ta đang làm gì. Được làm việc trên cùng các dự án mà anh ta làm, committing
-                                code và đợi anh ta review phần code của bạn là một cách tuyệt vời để bắt đầu một cuộc
-                                trò chuyện để làm quen. Nếu bạn đang tìm cách để làm việc như một lập trình viên, thì
-                                việc xây dựng mối quan hệ là một phần quan trọng trong việc tìm kiếm việc làm. Hãy biết
-                                rõ về ngành công nghiệp này từ bên trong, và cho mọi người thấy những gì bạn thực sự
-                                biết.</p>
-
-                            <h2>Kết luận</h2>
-
-                            <p>Lý do tôi thích mã nguồn mở rất nhiều là vì nó là một cách để cho thấy năng lực của bạn.
-                                Nếu bạn đóng góp vào nhiều dự án nguồn mở, thì mọi người sẽ thấy điều đó. Điều này còn
-                                tốt hơn so với bất kỳ bản hồ sơ xin việc màu mè nào.</p>
-
-                            <p>Bạn có đóng góp tới các dự án mã nguồn mở? Những đóng góp cho dự án mã nguồn mở đó có
-                                giúp cho bạn kiếm được một việc làm mơ ước? Hãy chia sẻ câu chuyện của bạn trong phần
-                                bình luận phía dưới nhé!</p>
-
-                        </article>
-                    </div>
-                    <div class="post-nav row">
-                        <a href=""
-                           class="post-previous col s6">
-                            <span class="thumb hide-on-med-and-down"><img width="80" height="80"
-                                                                          src="images/mobile-design-pattern-gallery-2nd-edition.jpg"
-                                                                          class=""
-                                                                          alt=""></span>
+                        <div class="post-nav left ">
+                            <a href=""
+                               class="post-previous">
+                            <span class="thumb hide-on-med-and-down"><img
+                                    src="images/mobile-design-pattern-gallery-2nd-edition.jpg"
+                                    class=""
+                                    alt=""></span>
                              <span class="v-align">
                     <span class="caption hide-on-large-only"><i class="fa fa-2x fa-chevron-left"></i></span>
                     <!--<span class="caption hide-on-small-and-down hide-on-large-only">Bài trước</span>-->
@@ -541,15 +581,12 @@
                         <time>10.29.2015</time>
                          by Cubby Graham                    </span>
                 </span>
-                        </a>
-
-
-                        <a href="test-blog.html" class="btn home-link">Blog Home</a>
-
-                        <a href="" class="post-next col s6">
-                            <span class="thumb hide-on-med-and-down"><img width="80" height="80"
-                                                                          src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg"
-                                                                          class=" circle" alt="next"></span>
+                            </a>
+                            <a href="test-blog.html" class="btn home-link">Blog Home</a>
+                            <a href="" class="post-next">
+                            <span class="thumb hide-on-med-and-down"><img
+                                    src="images/hoc-lap-trinh-truc-tuyen-kiem-viec-lam-web-22122015.jpg"
+                                    class=" circle" alt="next"></span>
                             <span class="v-align">
                                 <!--<span class="caption hide-on-med-and-up">Bài sau</span>-->
                                 <span class="caption hide-on-large-only"><i
@@ -559,30 +596,31 @@
                                    <span class="quiet caption hide-on-med-and-down"><time>17 tháng Ba</time>
                                       by Hồ Sĩ Hùng   </span>
                                </span>
-                        </a>
+                            </a>
 
+                        </div>
+                        <div class="footer-post left ">
+
+                            <figure>
+                                <img class="responsive-img circle" src="images/hungho.png"
+                                     alt="Hung ho">
+                            </figure>
+                            <h4 class="author">
+                                Bởi <strong>HỒ SỸ HÙNG</strong>
+                            </h4>
+
+                            <p class="link"><a href="http://www.techmaster.vn" target="_blank">techmaster.vn</a></p>
+
+                            <p>Hồ Sỹ Hùng thuộc thế hệ 8x, sinh ra ở Nghệ An, học ở Hà Nội, có vài năm làm việc tại Sài
+                                Gòn,
+                                và Đồng Nai. Anh là lập trình viên có nhiều năm kinh nghiệm trong lĩnh vực: C#, VB.NET,
+                                ASP.NET, SQL Server, XML, MVC, Entity Framework… và đồng thời cũng là admin của blog
+                                http://vinacode.net/. Bạn có thể liên hệ với anh qua email hungpm2000[at]gmail.com</p>
+                        </div>
                     </div>
-                    <div class="footer-post col s12">
-
-                        <figure>
-                            <img class="responsive-img circle" src="images/hungho.png"
-                                 alt="Hung ho">
-                        </figure>
-                        <h4 class="author">
-                            Bởi <strong>HỒ SỸ HÙNG</strong>
-                        </h4>
-
-                        <p class="link"><a href="http://www.techmaster.vn" target="_blank">techmaster.vn</a></p>
-
-                        <p>Hồ Sỹ Hùng thuộc thế hệ 8x, sinh ra ở Nghệ An, học ở Hà Nội, có vài năm làm việc tại Sài Gòn,
-                            và Đồng Nai. Anh là lập trình viên có nhiều năm kinh nghiệm trong lĩnh vực: C#, VB.NET,
-                            ASP.NET, SQL Server, XML, MVC, Entity Framework… và đồng thời cũng là admin của blog
-                            http://vinacode.net/. Bạn có thể liên hệ với anh qua email hungpm2000[at]gmail.com</p>
-                    </div>
-
                 </div>
-
-
+            </div>
+        </div>
     </div>
 
 
@@ -734,7 +772,7 @@
 
         <ul class="tabs">
             <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
-            <li class="tab"><a  href="#signup">Đăng kí</a></li>
+            <li class="tab"><a href="#signup">Đăng kí</a></li>
         </ul>
 
         <div id="login" class="col s12">
@@ -750,7 +788,7 @@
                 </div>
                 <div class="row">
                     <div class="col ">
-                        <input type="checkbox" id="test5" />
+                        <input type="checkbox" id="test5"/>
                         <label for="test5">Ghi nhơ tài khoản</label>
                     </div>
                     <div class="col">
@@ -758,7 +796,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12" >
+                    <div class="col s12">
                         <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
                     </div>
                 </div>
@@ -767,7 +805,7 @@
                         <span></span>
                     </div>
                     <div class="col s6">
-                        <button class="btn waves-effect waves-light blue"  name="action"><i class="fa fa-facebook"></i>
+                        <button class="btn waves-effect waves-light blue" name="action"><i class="fa fa-facebook"></i>
                             facebook
                         </button>
                     </div>
@@ -806,7 +844,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12" >
+                    <div class="col s12">
                         <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
                     </div>
                 </div>
@@ -843,7 +881,7 @@
 
                 }
         );
-        $(".button-collapse").sideNav( {
+        $(".button-collapse").sideNav({
             menuWidth: 200, // Default is 240
             edge: 'left', // Choose the horizontal origin
             closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
