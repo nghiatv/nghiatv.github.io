@@ -13,6 +13,7 @@ body {
     background-color: #e9eaea;
     padding: 0;
     margin: 0;
+     font-family: 'Noto Sans', sans-serif;
 }
 h1, h2, h3, h4, h5, h6 {
     color: #2e353b;
@@ -1217,7 +1218,9 @@ form button {
     margin: 0;
     color: #000;
 }
-
+#breadcrumb-content{
+    padding-top: 20px;
+}
 #breadcrumb-content a.breadcrumb {
     font-size: 18px;
     color: rgba(0, 0, 0, 0.7);
@@ -1233,7 +1236,7 @@ form button {
 }
 
 .page-heading {
-    padding-top: 20px;
+    /*padding-top: 20px;*/
     /*padding-bottom: 20px;*/
 }
 
@@ -1496,7 +1499,7 @@ input#blog-search, input#blog-search:focus {
 /*CSS trang detail*/
 
 .post-content {
-    padding: 40px 0;
+    padding: 20px 0;
     margin: 0 auto;
     width: 100%;
     overflow-y: hidden;
@@ -1504,13 +1507,14 @@ input#blog-search, input#blog-search:focus {
 }
 
 .header-post {
-
     padding: 0;
     overflow: hidden;
     position: relative;
+}
+.header-post figure img{
+    max-height: 86px;
 
 }
-
 .header-post:before {
     content: '';
     position: absolute;
@@ -1531,23 +1535,12 @@ input#blog-search, input#blog-search:focus {
 
 .header-post .info {
     position: relative;
-    padding: 30px 0 10px 0;
+    padding: 20px 0 10px 0;
     line-height: 190%;
     color: #3c948b;
     overflow: hidden;
 }
 
-.header-post .info::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 150px;
-    height: 6px;
-    margin-left: -75px;
-    background: url("http://www.awwwards.com/bundles/tvweb/images/svg/hr-meandering.svg?2") no-repeat;
-    background-size: 100%;
-}
 
 .header-post .info li {
     display: inline-block;
@@ -1697,93 +1690,84 @@ input#blog-search, input#blog-search:focus {
     border-bottom: 1px solid #dcdcdc;
 
 }
-
-.post-nav .post-next:hover .heading, .post-nav .post-previous:hover .heading {
-    text-decoration: none;
-    color: #2e9df7;
-}
-
-.post-nav .heading {
-    color: black;
-}
-
-.post-nav span.quiet {
-    color: grey;
-    font-size: 0.8em;
-}
-
-.post-nav > a > .thumb {
-    float: left;
-    -moz-border-radius: 160px;
-    -webkit-border-radius: 160px;
-    border-radius: 160px;
-    overflow: hidden;
-    display: block;
-    margin: 1.5em 0.5rem;
-}
-.post-nav > a > .thumb img{
-    width: 64px;
-    height: 64px;
-}
-.post-nav > a > .v-align {
-    vertical-align: middle;
-    display: table-cell;
+.post-nav{
     width: 100%;
-    padding-right: 0;
+    overflow-y: auto;
 }
 
-.post-nav .home-link {
-    border: 1px solid #d5d5d5;
-    color: #6b6b6b;
-    background-color: #F4F4F4;
-    box-shadow: inset 0 1px 1px #fff;
-    width: 120px;
-    margin: 0 -60px;
-    position: relative;
-    top: 48px;
+
+.post-nav .post-previous,.post-nav .post-next {
     float: left;
-    padding: 0 0 .8em;
-    text-align: center;
-}
-
-.post-nav .caption, .post-nav .heading, .post-nav h1, .post-nav h2, .post-nav h3 {
-    font-weight: 600;
-    font-size: 1em;
-    line-height: 1em;
-    text-transform: none;
-}
-
-.post-nav .heading {
-    font-size: 1.25em;
-    display: block;
-    -webkit-transition: .1s linear all;
-    -moz-transition: .1s linear all;
-    transition: .1s linear all;
-}
-
-.post-nav .post-next, .post-nav .post-previous {
     width: 50%;
-    display: table;
-    float: left;
+    padding:0 20px;
     min-height: 130px;
-    background-size: 50% auto;
-    -webkit-transition: .1s linear all;
-    -moz-transition: .1s linear all;
-    transition: .1s linear all;
+    position: relative;
+    padding-left: 60px;
 }
-
-.post-nav .post-previous {
-    /*background: url(/blog/wp-content/themes/cw-2013/images/prev.png) 1% 50% no-repeat;*/
-    padding-left: 10px;
-    padding-right: 60px;
-    border-right: 1px solid #dcdcdc;
+.post-nav .post-previous:before{
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    -moz-transition: -moz-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    width: 60px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    display: block;
+    content: " ";
+    
+    background-image: url("images/back.png");
+}
+.post-nav .post-next:after{
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    -moz-transition: -moz-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+    width: 60px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 50%;
+    display: block;
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("images/forward.png");
 }
 
 .post-nav .post-next {
+    border-left: 1px solid  #cccccc;
+    padding-right: 60px;
+}
+.post-nav .post-previous{
+    border-right: 1px solid #cccccc;
+}
+.post-next img, .post-next .author-info{
     float: right;
-    /*background: url(/blog/wp-content/themes/cw-2013/images/next.png) 99% 50% no-repeat;*/
-    padding-right: 10px;
-    padding-left: 65px;
+}
+.post-nav img{
+    width: 64px;
+    height: 64px;
+}
+.author-info{
+    padding: 40px 20px;
+    float: left;
+    width: auto;
+}
+p.heading{
+    margin: 0;
+}
+.heading{
+    font-size: 1.1em;
+    display: block;
+    -webkit-transition: .1s linear all;
+    -moz-transition: .1s linear all;
+    transition: .1s linear all;
+    font-weight: bold;
 }
 .grid .card{
     border: 1px solid #ccc;
@@ -2136,7 +2120,7 @@ h3.widget-title {
 }
 
 .search-input {
-    border-bottom: 1px solid rgba(48, 73, 97, 0.9);
+    border-bottom: 1px solid rgba(48, 73, 97, 0.3);
 }
 
 #search-wrapper .path-item {
