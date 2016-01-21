@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script type="text/javascript" src="materialize/jquery.min.js"></script>
+
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+
+    <!--import Marterilize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <!--wowjs-->
+    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
+    <!--animated.css-->
+    <link rel="stylesheet" href="animate.css" type="text/css">
+
+    <!--typed.js-->
+    <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
+
+    <!--style.css-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="stylesheet" href="user-dashboard.css" type="text/css">
+
+
+    <!--Captcha-->
+    <!--<script src='https://www.google.com/recaptcha/api.js'></script>-->
+
+
+</head>
+
+
+<body>
+<!--Header-->
+
+
+
+<!--Main-->
+
+
+<main>
+<div class="container">
+    <div class="row" id="user-menu">
+        <div class="input-field col s12 hide-on-med-and-up" >
+            <select>
+                <option value="1" selected>My dashboard</option>
+                <option value="2">Hồ sơ cá nhân</option>
+                <optgroup label="Tạo CV cá nhân">
+                    <option value="3">Thông tin cá nhân</option>
+                    <option value="4">Quá trình học tập</option>
+                    <option value="5">Kinh nghiệm làm việc</option>
+                    <option value="6">Ngoại ngữ</option>
+                    <option value="7">Xem mẫu</option>
+                </optgroup>
+            </select>
+
+        </div>
+        <ul class="nav-sub hide-on-small-and-down">
+            <li class="active" >
+                <a href="/account" class="nav-item-link list-item-link">My Dashboard</a>
+            </li>
+            <li >
+                <a href="/account/subscription/transactions" class="nav-item-link list-item-link">CV của tôi</a>
+            </li>
+            <li>
+                <a class='dropdown-button' href='#' data-activates='dropdown-CV' data-beloworigin="true" data-constrainwidth="false">Tạo CV</a>
+            </li>
+        </ul>
+
+    </div>
+    <div class="row" id="user-path">
+        <h1>Khóa học gần đây</h1>
+        <div class="col s10 offset-s1 m5 offset-m1 l4 offset-l2 xl3 offset-xl3 ">
+            <div class="card">
+                <div class="card-image">
+                    <img src="images/nodejs.jpg">
+                </div>
+                <div class="card-content">
+                    <h2 class="path-title">Khóa học trực tuyến Nodejs</h2>
+                    <div class="progress">
+                        <div class="determinate" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="card-action">
+                    <a href="#" class="btn btn-teal waves-light waves-effect white-text center">Tiêp tục bài học</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row white" id="user-status">
+
+            <div class="col s12 m6">
+                <div class="info-table">
+                    <div class="info-media">
+                        <img class="responsive-img circle" alt="Anhr ddaij dien" src="images/nguyen-van-phong.jpg" width="125" height="125">
+                    </div>
+                    <div class="info-content">
+
+                    </div>
+                </div>
+            </div>
+
+    </div>
+
+</div>
+</main>
+
+<!-- Dropdown Structure -->
+<ul id='dropdown-CV' class='dropdown-content'>
+    <li><a href="#!">Thông tin cơ bản</a></li>
+    <li><a href="#!">Qúa trình học tập</a></li>
+    <li><a href="#!">Kinh nghiệm làm việc</a></li>
+    <li><a href="#!">Ngoại ngữ</a></li>
+    <li><a href="#!">Xem mẫu</a></li>
+</ul>
+<!--Footer-->
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l3">
+                <div class=" clearfix">
+                    <a href="/index.html"> <strong class="logo"><h4>Techmaster Inc. </h4></strong></a>
+                </div>
+                <div class="nav nav-pills add-nav">
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Quy định </a></p>
+
+                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Điều khoản</a></p>
+                    <!--<li><a href="">Privacy Policy</a></li>-->
+                </div>
+            </div>
+            <div class="col s12 l9">
+                <div class="row">
+                    <div class="col s12 l7 m6">
+                        <div class="row">
+                            <div class="col s12 l5 m6"><h4>Về chúng tôi</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="" class="jobs">Việc làm</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
+                                    <li><a href="http://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
+                                    <!--<li><a href="https://codemyviews.com/our-work/code"></a></li>-->
+                                </ul>
+                            </div>
+                            <div class="col s12 l7 m6"><h4>Contact</h4>
+                                <ul class="list-unstyled nav-list">
+                                    <li><a href="tel:0902209011">Mr Cường : 090.220.9011</a></li>
+                                    <li><a href="tel:0932225065">Mr. Cần: 093.222.5065</a></li>
+
+                                    <li><a href="mailto:cuong@techmaster.vn">cuong@techmaster.vn</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col s12 l5 m6">
+                        <h4>Địa chỉ
+                        </h4>
+
+                        <div class="chat-block">
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-1">
+                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-2">
+                                    <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
+                                        Xuân, Hà Nội
+                                    </address>
+                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="row">
+
+        <ul class="tabs">
+            <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
+            <li class="tab"><a  href="#signup">Đăng kí</a></li>
+        </ul>
+
+        <div id="login" class="col s12">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="Email">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col ">
+                        <input type="checkbox" id="test5" />
+                        <label for="test5">Ghi nhơ tài khoản</label>
+                    </div>
+                    <div class="col">
+                        <a id="forgot-link" href="/user/forgot-pass">Quên mật khẩu?</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12" >
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center col s12">
+                        <span></span>
+                    </div>
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light blue"  name="action"><i class="fa fa-facebook"></i>
+                            facebook
+                        </button>
+                    </div>
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light red" type="submit" name="action">
+                            <i class="fa fa-google"></i>
+                            Google
+
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div id="signup" class="col s12">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="Email">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="text" class="validate" placeholder="Tên đăng nhập">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="text" class="validate" placeholder="Số điện thoại">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col s12" id="recaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LfsghQTAAAAACsMkPBtk0-gewtKG_4waTW9_G09"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12" >
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="helper col s12">
+                        Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các
+                        <a href="/trungtam/quy-dinh" target="_blank"> Quy&nbsp;định </a> của chúng tôi.
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!--Back to top button-->
+
+<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+    <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+        <i class=" fa fa-2x fa-arrow-up"></i>
+    </a>
+</div>
+
+<script>
+
+    //Modal
+    $(document).ready(function () {
+        $('select').material_select();
+
+    });
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').removeClass('hide');
+                    } else {
+                        $('#back-to-top').addClass('hide');
+                    }
+                };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1200);
+        });
+    }
+
+</script>
+</body>
+</html>

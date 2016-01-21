@@ -1,0 +1,54 @@
+.air-card {
+    background-color: #FFF;
+    margin: 40px -40px;
+    padding: 40px;
+    -webkit-box-shadow: 0 0 0 1px #e0e0e0;
+    box-shadow: 0 0 0 1px #e0e0e0;
+}
+#user-menu{
+    margin-top: 1.25em;
+    line-height: 50px;
+    height: 50px;
+}
+
+#user-menu span{
+    line-height: normal;
+}
+#user-path .path-title:before{
+    content: "";
+    width: 0;
+    height: 0;
+}
+.nav-sub{
+    border-bottom: 1px solid rgba(45, 37, 33, 0.25);
+}
+.nav-sub li{
+    display: inline-block;
+    margin-right: 1.25em;
+    font-size: 90%;
+    position: relative;
+}
+.nav-sub li a{
+    color: rgba(57, 61, 64, 0.64);
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+.nav-sub li.active a{
+    color: #393d40;
+}
+#user-status{
+    box-shadow: none;
+    border-radius: 8px;
+    background: #e2e8e8;
+}
+#dropdown-CV li{
+    display: block;
+
+    min-height: 30px;
+}
+#dropdown-CV li a{
+    font-size: 13px;
+    padding: 10px 20px;
+}
