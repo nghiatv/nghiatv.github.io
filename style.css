@@ -643,7 +643,8 @@ form button {
 #footer {
     background: #222428;
     color: #919294;
-    padding: 61px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
     text-align: center;
 }
 

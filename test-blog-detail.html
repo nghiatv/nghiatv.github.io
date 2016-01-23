@@ -130,7 +130,6 @@
                 <li class="divider"></li>
                 <li class="bold no-padding">
                     <a class="collapsible-header  waves-effect waves-teal">Chúng tôi <i class="material-icons right">arrow_drop_down</i></a>
-
                     <div class="collapsible-body">
                         <ul class="">
                             <li><a href="">Khách hàng - đối tác</a></li>
@@ -750,14 +749,7 @@
 
 
     $(document).ready(function () {
-        $('.modal-trigger').leanModal({
-//                    dismissible: true, // Modal can be dismissed by clicking outside of the modal
-//                    opacity: .6, // Opacity of modal background
-//                    in_duration: 300, // Transition in duration
-//                    out_duration: 200, // Transition out duration
-
-                }
-        );
+        $('.modal-trigger').leanModal();
         $(".button-collapse").sideNav({
             menuWidth: 200, // Default is 240
             edge: 'left', // Choose the horizontal origin

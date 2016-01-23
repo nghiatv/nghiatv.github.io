@@ -48,146 +48,300 @@
 <!--Main-->
 
 
+<!--<main>-->
+<!--<div class="container">-->
+    <!--<div class="row" id="user-menu">-->
+        <!--<div class="input-field col s12 hide-on-med-and-up" >-->
+            <!--<select>-->
+                <!--<option value="1" selected>My dashboard</option>-->
+                <!--<option value="2">Hồ sơ cá nhân</option>-->
+                <!--<optgroup label="Tạo CV cá nhân">-->
+                    <!--<option value="3">Thông tin cá nhân</option>-->
+                    <!--<option value="4">Quá trình học tập</option>-->
+                    <!--<option value="5">Kinh nghiệm làm việc</option>-->
+                    <!--<option value="6">Ngoại ngữ</option>-->
+                    <!--<option value="7">Xem mẫu</option>-->
+                <!--</optgroup>-->
+            <!--</select>-->
+
+        <!--</div>-->
+        <!--<ul class="nav-sub hide-on-small-and-down">-->
+            <!--<li class="active" >-->
+                <!--<a href="/account" class="nav-item-link list-item-link">My Dashboard</a>-->
+            <!--</li>-->
+            <!--<li >-->
+                <!--<a href="/account/subscription/transactions" class="nav-item-link list-item-link">CV của tôi</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a class='dropdown-button' href='#' data-activates='dropdown-CV' data-beloworigin="true" data-constrainwidth="false">Tạo CV</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+    <!--</div>-->
+    <!--<div class="row" id="user-path">-->
+        <!--<h1>Khóa học gần đây</h1>-->
+        <!--<div class="col s10 offset-s1 m5 offset-m1 l4 offset-l2 xl3 offset-xl3 ">-->
+            <!--<div class="card">-->
+                <!--<div class="card-image">-->
+                    <!--<img src="images/nodejs.jpg">-->
+                <!--</div>-->
+                <!--<div class="card-content">-->
+                    <!--<h2 class="path-title">Khóa học trực tuyến Nodejs</h2>-->
+                    <!--<div class="progress">-->
+                        <!--<div class="determinate" style="width: 70%"></div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="card-action">-->
+                    <!--<a href="#" class="btn btn-teal waves-light waves-effect white-text center">Tiêp tục bài học</a>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="row white" id="user-status">-->
+
+            <!--<div class="col s12 m6">-->
+                <!--<div class="info-table">-->
+                    <!--<div class="info-media">-->
+                        <!--<img class="responsive-img circle" alt="Anhr ddaij dien" src="images/nguyen-van-phong.jpg" width="125" height="125">-->
+                    <!--</div>-->
+                    <!--<div class="info-content">-->
+
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+
+    <!--</div>-->
+
+<!--</div>-->
+<!--</main>-->
+
+<!--&lt;!&ndash; Dropdown Structure &ndash;&gt;-->
+<!--<ul id='dropdown-CV' class='dropdown-content'>-->
+    <!--<li><a href="#!">Thông tin cơ bản</a></li>-->
+    <!--<li><a href="#!">Qúa trình học tập</a></li>-->
+    <!--<li><a href="#!">Kinh nghiệm làm việc</a></li>-->
+    <!--<li><a href="#!">Ngoại ngữ</a></li>-->
+    <!--<li><a href="#!">Xem mẫu</a></li>-->
+<!--</ul>-->
+
+
+<header id="user-header" class="user-page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+        <nav class=" cyan">
+            <div class="nav-wrapper">
+                <ul class="left ">
+                    <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-2 valign-wrapper "><img class="valign" src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png" alt="Techlogo"></a> <span class="logo-text">Techmaster.vn</span></h1></li>
+                </ul>
+                <ul class="left hide">
+                    <li>
+                        <h1>
+                            <span> Techmaster</span>
+                        </h1>
+                    </li>
+                </ul>
+                <a href="#" data-activates="user-out" class="sidebar-collapse  waves-effect waves-light hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
+                <div class="header-search-wrapper hide-on-med-and-down">
+                    <i class="mdi-action-search active"></i>
+                    <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Tìm kiếm với TechMaster">
+                </div>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                    </li>
+                    <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- end header nav-->
+</header>
+
 <main>
-<div class="container">
-    <div class="row" id="user-menu">
-        <div class="input-field col s12 hide-on-med-and-up" >
-            <select>
-                <option value="1" selected>My dashboard</option>
-                <option value="2">Hồ sơ cá nhân</option>
-                <optgroup label="Tạo CV cá nhân">
-                    <option value="3">Thông tin cá nhân</option>
-                    <option value="4">Quá trình học tập</option>
-                    <option value="5">Kinh nghiệm làm việc</option>
-                    <option value="6">Ngoại ngữ</option>
-                    <option value="7">Xem mẫu</option>
-                </optgroup>
-            </select>
 
-        </div>
-        <ul class="nav-sub hide-on-small-and-down">
-            <li class="active" >
-                <a href="/account" class="nav-item-link list-item-link">My Dashboard</a>
-            </li>
-            <li >
-                <a href="/account/subscription/transactions" class="nav-item-link list-item-link">CV của tôi</a>
-            </li>
-            <li>
-                <a class='dropdown-button' href='#' data-activates='dropdown-CV' data-beloworigin="true" data-constrainwidth="false">Tạo CV</a>
-            </li>
-        </ul>
-
-    </div>
-    <div class="row" id="user-path">
-        <h1>Khóa học gần đây</h1>
-        <div class="col s10 offset-s1 m5 offset-m1 l4 offset-l2 xl3 offset-xl3 ">
-            <div class="card">
-                <div class="card-image">
-                    <img src="images/nodejs.jpg">
-                </div>
-                <div class="card-content">
-                    <h2 class="path-title">Khóa học trực tuyến Nodejs</h2>
-                    <div class="progress">
-                        <div class="determinate" style="width: 70%"></div>
-                    </div>
-                </div>
-                <div class="card-action">
-                    <a href="#" class="btn btn-teal waves-light waves-effect white-text center">Tiêp tục bài học</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row white" id="user-status">
-
-            <div class="col s12 m6">
-                <div class="info-table">
-                    <div class="info-media">
-                        <img class="responsive-img circle" alt="Anhr ddaij dien" src="images/nguyen-van-phong.jpg" width="125" height="125">
-                    </div>
-                    <div class="info-content">
-
-                    </div>
-                </div>
-            </div>
-
-    </div>
-
-</div>
 </main>
 
-<!-- Dropdown Structure -->
-<ul id='dropdown-CV' class='dropdown-content'>
-    <li><a href="#!">Thông tin cơ bản</a></li>
-    <li><a href="#!">Qúa trình học tập</a></li>
-    <li><a href="#!">Kinh nghiệm làm việc</a></li>
-    <li><a href="#!">Ngoại ngữ</a></li>
-    <li><a href="#!">Xem mẫu</a></li>
-</ul>
-<!--Footer-->
-<footer id="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col s12 l3">
-                <div class=" clearfix">
-                    <a href="/index.html"> <strong class="logo"><h4>Techmaster Inc. </h4></strong></a>
-                </div>
-                <div class="nav nav-pills add-nav">
-                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Quy định </a></p>
 
-                    <p><a href="http://techmaster.vn/trungtam/quy-dinh">Điều khoản</a></p>
-                    <!--<li><a href="">Privacy Policy</a></li>-->
-                </div>
-            </div>
-            <div class="col s12 l9">
-                <div class="row">
-                    <div class="col s12 l7 m6">
-                        <div class="row">
-                            <div class="col s12 l5 m6"><h4>Về chúng tôi</h4>
-                                <ul class="list-unstyled nav-list">
-                                    <li><a href="" class="jobs">Việc làm</a></li>
-                                    <li><a href="http://techmaster.vn/trungtam/Trung-tam">Về chúng tôi</a></li>
-                                    <li><a href="http://techmaster.vn/trungtam/giang-vien">Giảng viên</a></li>
-                                    <li><a href="http://techmaster.vn/trungtam/quy-dinh">Cơ sở vật chất</a></li>
-                                    <!--<li><a href="https://codemyviews.com/our-work/code"></a></li>-->
-                                </ul>
+<!--begin Right side nav-->
+<aside id="right-sidebar-nav">
+    <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y">
+        <li class="li-hover">
+            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+        </li>
+        <li class="li-hover">
+            <ul class="chat-collapsible" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-notification-sms"></i>Thông báo của lớp</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
-                            <div class="col s12 l7 m6"><h4>Contact</h4>
-                                <ul class="list-unstyled nav-list">
-                                    <li><a href="tel:0902209011">Mr Cường : 090.220.9011</a></li>
-                                    <li><a href="tel:0932225065">Mr. Cần: 093.222.5065</a></li>
-
-                                    <li><a href="mailto:cuong@techmaster.vn">cuong@techmaster.vn</a></li>
-                                </ul>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="col s12 l5 m6">
-                        <h4>Địa chỉ
-                        </h4>
-
-                        <div class="chat-block">
-                            <div>
-                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-1">
-                                    <address> Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội</address>
-                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
-                                </a>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
-                            <div>
-                                <a href="http://techmaster.vn/trungtam/dia-chi#co-so-2">
-                                    <address> Phòng 2304, tầng 23, toà nhà StarCity, 81 Lê Văn Lương, Nhân Chính, Thanh
-                                        Xuân, Hà Nội
-                                    </address>
-                                    <time> Mở cửa: <b>9:00</b> đến <b>18:00</b></time>
-                                </a>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
                             </div>
-
                         </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <ul class="pagination">
+                            <li class="disabled waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active waves-effect"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!" class="clearfix">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
                     </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="fa fa-comment-o"></i>Thông báo chung của lớp</div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+
+                            <div class="col s12 recent-activity-list-text">
+                                <p class="flow-text center">Không có thông báo gì nhá</p>
+                            </div>
+                        </div>
+
+                        <ul class="pagination">
+                            <li class="disabled waves-effect"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                            <li class="active waves-effect"><a href="#!">1</a></li>
+                            <li class="waves-effect"><a href="#!">2</a></li>
+                            <li class="waves-effect"><a href="#!">3</a></li>
+                            <li class="waves-effect"><a href="#!" class="clearfix">4</a></li>
+                            <li class="waves-effect"><a href="#!">5</a></li>
+                            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                        </ul>
+                    </div>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+</aside>
+<!--end right side nav-->
+
+
+<!--begin left side nav-->
+
+<aside id="left-sidebar-nav">
+    <ul id="user-out" class="side-nav fixed leftside-navigation user-collapsible " data-collapsible="expandable" >
+        <li class="user-details cyan darken-2">
+            <div class="row">
+                <div class="col col s4 m4 l4">
+                    <img src="images/cuongtm.jpg" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#" data-activates="profile-dropdown" data-beloworigin="true">Khắc Cường VTV<i class="mdi-navigation-arrow-drop-down right"></i></a><ul id="profile-dropdown" class="dropdown-content">
+                    <li><a href="#"><i class="mdi-action-face-unlock"></i> Trang cá nhân</a>
+                    </li>
+                    <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Đăng xuất</a>
+                    </li>
+                </ul>
+                    <p class="user-roal white-text">online</p>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
+        </li>
+        <li class="bold active"><a href="" class="waves-effect waves-light-blue collapsible-header"><i class="fa fa-bookmark-o"></i> Khóa học của tôi</a>
+        </li>
+        <li class="bold"><a href="" class="waves-effect waves-cyan collapsible-header"><i class="mdi-communication-email"></i> Hồ sơ cá nhân </a>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-block waves-light"><a href="javascript:void(0)" class="no-padding"><i class="fa fa-list-ul"></i>Tạo CV cá nhân Online </a> </div>
+            <div class="collapsible-body ">
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Thông tin cá nhân</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Qúa trình học tập</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Kinh nghiệm làm việc</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Ngoại ngữ</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Xem mẫu</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Thông tin cá nhân</span>
+                    </a>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+
+</aside>
+
+<!--end left side nav-->
+
 
 <!-- Modal Structure -->
 <div id="modal1" class="modal">
@@ -299,6 +453,25 @@
     $(document).ready(function () {
         $('select').material_select();
 
+            $('.chat-collapsible').collapsible({
+                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+            });
+            $('.user-collapsible').collapsible({
+                accrodion: false
+            });
+
+        $('.sidebar-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    edge: 'left', // Choose the horizontal origin
+                    closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                }
+        );
+        $('.chat-collapse').sideNav({
+            menuWidth: 300, // Default is 240
+            edge: 'right', // Choose the horizontal origin
+            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+
+        });
     });
     if ($('#back-to-top').length) {
         var scrollTrigger = 100, // px
@@ -321,6 +494,8 @@
             }, 1200);
         });
     }
+
+
 
 </script>
 </body>
