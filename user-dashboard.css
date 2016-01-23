@@ -98,7 +98,7 @@
         top: 56px;
     }
     ul.side-nav.leftside-navigation {
-        overflow: hidden;
+        overflow: auto;
     }
     ul.side-nav.leftside-navigation li.user-details {
         background: url(images/user-bg.jpg) no-repeat center center;
