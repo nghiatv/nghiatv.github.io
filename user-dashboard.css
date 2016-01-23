@@ -1,4 +1,6 @@
-
+    main{
+        min-height: 2000px;
+    }
 
     main, footer {
         padding-left: 0px;
