@@ -1,3 +1,4 @@
+<<<<<<< HEAD
     /*.air-card {*/
         /*background-color: #FFF;*/
         /*margin: 40px -40px;*/
@@ -288,3 +289,118 @@
             height: 64px;
         }
     }
+=======
+.air-card {
+    background-color: #FFF;
+    margin: 40px -40px;
+    padding: 40px;
+    -webkit-box-shadow: 0 0 0 1px #e0e0e0;
+    box-shadow: 0 0 0 1px #e0e0e0;
+}
+main{
+    background: white;
+}
+#user-menu{
+
+}
+.cell {
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 75em;
+    position: relative;
+    padding: 0 1.25em;
+}
+.progress{
+    height: 0.4em;
+}
+#user-menu span{
+    line-height: normal;
+}
+
+.nav-sub{
+    border-bottom: 1px solid rgba(45, 37, 33, 0.25);
+    margin: 0;
+    padding: 15px 0;
+}
+.nav-sub i.right{
+    margin-left: 0;
+    font-size: 21px;
+}
+.nav-sub li{
+    display: inline-block;
+    margin-right: 1.25em;
+    font-size: 90%;
+    position: relative;
+}
+.nav-sub li a{
+    color: rgba(57, 61, 64, 0.64);
+    font-weight: 600;
+    text-decoration: none;
+    -webkit-transition: 0.2s ease-in-out;
+    transition: 0.2s ease-in-out;
+}
+
+.nav-sub li.active a,.nav-sub li:hover a{
+    color: #393d40;
+}
+#user-path{
+    box-shadow: none;
+    border-radius: 8px;
+    background: #e2e8e8;
+    padding: 1.25em;
+    position: relative;
+
+}
+.info-table{
+    display: table;
+}
+.info-media{
+    float: left;
+    margin-right: 1.25em;
+}
+.info-media img{
+    width: 84px;
+    height: 84px;
+    padding: 4px;
+    border: 1px solid white;
+}
+.info-content{
+    vertical-align: middle;
+    display: table-cell;
+    width: 10000px;
+}
+.info-content h1{
+    color: #575a5b;
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 0.3125em;
+    margin-top: 0;
+    font-size: 150%;
+}
+#dropdown-CV li{
+    display: block;
+    min-height: 30px;
+}
+#dropdown-CV li a{
+    font-size: 13px;
+    padding: 10px 20px;
+}
+.mbf{
+    margin-bottom: 0;
+}
+@media (min-width: 600px) {
+    .cell{
+        padding: 0 2rem;
+    }
+}
+@media screen and (min-width: 992px){
+    .cell{
+        padding: 0 2.5em;
+    }
+    .info-media img{
+        width: 125px;
+        height: 125px;
+    }
+}
+>>>>>>> 51d296b2aaa87f7fe7d81e9671747a2103983ff8
