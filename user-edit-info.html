@@ -47,15 +47,22 @@
                     <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-2 valign-wrapper "><span
                             class="valign logo-text">Trang chủ</span></a></h1></li>
                 </ul>
-                <a href="#" data-activates="user-out" class="sidebar-collapse  waves-effect waves-light hide-on-large-only"><i class="mdi-navigation-menu"></i></a>
+                <a href="#" data-activates="user-out"
+                   class="sidebar-collapse  waves-effect waves-light hide-on-large-only"><i
+                        class="mdi-navigation-menu"></i></a>
+
                 <div class="header-search-wrapper hide-on-med-and-down">
                     <i class="mdi-action-search active"></i>
-                    <input type="text" name="Search" class="header-search-input z-depth-2" placeholder="Tìm kiếm với TechMaster">
+                    <input type="text" name="Search" class="header-search-input z-depth-2"
+                           placeholder="Tìm kiếm với TechMaster">
                 </div>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i class="mdi-action-settings-overscan"></i></a>
+                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i
+                            class="mdi-action-settings-overscan"></i></a>
                     </li>
-                    <li><a href="#" data-activates="chat-out" class="waves-effect waves-block waves-light chat-collapse"><i class="mdi-communication-chat"></i></a>
+                    <li><a href="#" data-activates="chat-out"
+                           class="waves-effect waves-block waves-light chat-collapse"><i
+                            class="mdi-communication-chat"></i></a>
                     </li>
                     <li>
                         <a href="/support">
@@ -70,80 +77,75 @@
 </header>
 
 <main>
-    <div id="user-progress">
-        <h1 id="progress-title"> In Progress</h1>
+    <div id="user-profile">
+        <h1 id="profile-title"> Profile info</h1>
 
-        <div id="progress-content" class="row">
-            <div class="col s12 m6 xl4">
-                <div class="card hoverable">
-                    <a class="" href="">
-                        <div class="card-image">
-                            <img src="images/sample-1.jpg">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <h3>Xây dựng class giao tiếp với Database</h3>
+        <div id="profile-content" class="row">
+            <div class="contained z-depth-1">
+                <dl>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent ">ảnh đại diện</dt>
+                        <dd class="col s12 m8 grid-parent avatar-upload">
+                            <div class="avatar" style="background-image: url('images/nguyen-van-phong.jpg')">
+
                             </div>
+                            <div class="uploader">
+                                <div class="file-field input-field">
+                                    <div class="btn">
+                                        <span>File</span>
+                                        <input type="file">
+                                    </div>
+                                    <div class="file-path-wrapper">
+                                        <input accept="image/png,image/gif,image/jpeg,image/jpg"
+                                               class="file-path validate " type="text">
+                                    </div>
+                                </div>
+                                <p>Bạn có thể tải anh đại diện của mình từ máy tính hoặc chọn 1 ảnh trong thư viện có
+                                    sẵn của chúng tôi.</p>
+                        </dd>
+                    </div>
 
-                            <p class="right-align">21/44</p>
-
-                            <div class="progress">
-                                <div class="determinate" style="width: 70%"></div>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent"><label>Họ tên</label></dt>
+                        <dd class="col s12 m8 grid-parent">
+                            <div class="form-item">
+                                <input class="input-text input-text placeholder-processed" type="text" value="nghia">
                             </div>
-
-
-                        </div>
-                    </a>
-
+                        </dd>
+                    </div>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent"><label>Ngày sinh</label></dt>
+                        <dd class="col s12 m8 grid-parent"><input class="datepicker  input-text" type="date"
+                                                                  value="01/11/1993"></dd>
+                    </div>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent"><label>Số điện thoại</label></dt>
+                        <dd class="col s12 m8 grid-parent"><input class="input-text  " type="text" value="0964407993">
+                        </dd>
+                    </div>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent"><label>Địa chỉ thường trú</label></dt>
+                        <dd class="col s12 m8 grid-parent"><input class="input-text  " type="text"
+                                                                  value="Quan Hoa cầu giấy hà nội"></dd>
+                    </div>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent"><label>Nghề nghiệp</label></dt>
+                        <dd class="col s12 m8 grid-parent"><input class="input-text  " type="text" value="Sinh viên">
+                        </dd>
+                    </div>
+                    <div class="data-item row">
+                        <dt class="col s12 m4 grid-parent"><label>Facebook cá nhân</label>
+                            <sub>Địa chỉ Facebook để add bạn vào nhóm của techmaster</sub></dt>
+                        <dd class="col s12 m8 grid-parent"><input class="input-text  " type="text"
+                                                                  value="fb.com/nghia.than"></dd>
+                    </div>
+                </dl>
+                <div class="form-footer">
+                    <a class="btn btn-flat waves-effect waves-block waves-teal white-text teal" href="">Chỉnh sửa thông
+                        tin</a>
+                    <a class="chip square second  white teal-text" href="">Change Password</a>
                 </div>
             </div>
-            <div class="col s12 m6 xl4">
-                <div class="card hoverable">
-                    <a class="" href="">
-                        <div class="card-image">
-                            <img src="images/sample-1.jpg">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <h3>Xây dựng class giao tiếp với Database</h3>
-                            </div>
-
-                            <p class="right-align">21/44</p>
-
-                            <div class="progress">
-                                <div class="determinate" style="width: 70%"></div>
-                            </div>
-
-
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-            <div class="col s12 m6 xl4">
-                <div class="card hoverable">
-                    <a class="" href="">
-                        <div class="card-image">
-                            <img src="images/sample-1.jpg">
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <h3>Xây dựng class giao tiếp với Database</h3>
-                            </div>
-
-                            <p class="right-align">21/44</p>
-
-                            <div class="progress">
-                                <div class="determinate" style="width: 70%"></div>
-                            </div>
-
-
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-
         </div>
     </div>
 </main>
@@ -154,10 +156,10 @@
     <ul id="user-out" class="side-nav fixed leftside-navigation user-collapsible " data-collapsible="expandable">
         <li class="user-details cyan darken-2">
             <div class="row">
-                <div class="col col s4 m4 l4">
+                <div class="col col s4">
                     <img src="images/cuongtm.jpg" alt="" class="circle responsive-img valign profile-image">
                 </div>
-                <div class="col col s8 m8 l8">
+                <div class="col col s8">
                     <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#"
                        data-activates="profile-dropdown" data-beloworigin="true">Khắc Cường VTV<i
                             class="mdi-navigation-arrow-drop-down right"></i></a>
@@ -226,14 +228,20 @@
         <li class="li-hover">
             <ul class="chat-collapsible" data-collapsible="expandable">
                 <li>
-                    <div class="collapsible-header teal white-text active"><i class="mdi-notification-sms"></i>Thông báo của lớp</div>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-notification-sms"></i>Thông báo
+                        của lớp
+                    </div>
                     <div class="collapsible-body recent-activity">
                         <div class="recent-activity-list chat-out-list row">
                             <div class="col s3 recent-activity-list-icon valign-wrapper">
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -242,7 +250,11 @@
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -251,7 +263,11 @@
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -260,7 +276,11 @@
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -269,7 +289,11 @@
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -278,7 +302,11 @@
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -287,7 +315,11 @@
                                 <img class="responsive-img circle valign" src="images/cuongtm.jpg">
                             </div>
                             <div class="col s9 recent-activity-list-text">
-                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và Javascript</strong></p>
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
                                 <p class="right">4 min ago</p>
                             </div>
                         </div>
@@ -304,7 +336,9 @@
                     </div>
                 </li>
                 <li>
-                    <div class="collapsible-header light-blue white-text active"><i class="fa fa-comment-o"></i>Thông báo chung của lớp</div>
+                    <div class="collapsible-header light-blue white-text active"><i class="fa fa-comment-o"></i>Thông
+                        báo chung của lớp
+                    </div>
                     <div class="collapsible-body recent-activity">
                         <div class="recent-activity-list chat-out-list row">
 
@@ -339,7 +373,7 @@
 
         <ul class="tabs">
             <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
-            <li class="tab"><a  href="#signup">Đăng kí</a></li>
+            <li class="tab"><a href="#signup">Đăng kí</a></li>
         </ul>
 
         <div id="login" class="col s12">
@@ -355,7 +389,7 @@
                 </div>
                 <div class="row">
                     <div class="col ">
-                        <input type="checkbox" id="test5" />
+                        <input type="checkbox" id="test5"/>
                         <label for="test5">Ghi nhơ tài khoản</label>
                     </div>
                     <div class="col">
@@ -363,7 +397,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12" >
+                    <div class="col s12">
                         <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
                     </div>
                 </div>
@@ -372,7 +406,7 @@
                         <span></span>
                     </div>
                     <div class="col s6">
-                        <button class="btn waves-effect waves-light blue"  name="action"><i class="fa fa-facebook"></i>
+                        <button class="btn waves-effect waves-light blue" name="action"><i class="fa fa-facebook"></i>
                             facebook
                         </button>
                     </div>
@@ -411,7 +445,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12" >
+                    <div class="col s12">
                         <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
                     </div>
                 </div>
@@ -443,13 +477,16 @@
     $(document).ready(function () {
         $('select').material_select();
 
-            $('.chat-collapsible').collapsible({
-                accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
-            });
-            $('.user-collapsible').collapsible({
-                accrodion: false
-            });
-
+        $('.chat-collapsible').collapsible({
+            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+        $('.user-collapsible').collapsible({
+            accrodion: false
+        });
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15 // Creates a dropdown of 15 years to control year
+        });
         $('.sidebar-collapse').sideNav({
                     menuWidth: 300, // Default is 240
                     edge: 'left', // Choose the horizontal origin
@@ -484,7 +521,6 @@
             }, 1200);
         });
     }
-
 
 
 </script>
