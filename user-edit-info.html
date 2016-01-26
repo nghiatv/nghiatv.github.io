@@ -62,7 +62,7 @@
                     </li>
                     <li><a href="#" data-activates="chat-out"
                            class="waves-effect waves-block waves-light chat-collapse"><i
-                            class="mdi-communication-chat"></i></a>
+                            class="mdi-social-notifications"></i></a>
                     </li>
                     <li>
                         <a href="/support">
@@ -78,30 +78,23 @@
 
 <main>
     <div id="user-profile">
-        <h1 id="profile-title"> Profile info</h1>
-
+        <h1 id="profile-title"> Profile info </h1>
         <div id="profile-content" class="row">
             <div class="contained z-depth-1">
                 <dl>
                     <div class="data-item row">
-                        <dt class="col s12 m4 grid-parent ">ảnh đại diện</dt>
+                        <dt class="col s12 m4 grid-parent "><label>ảnh đại diện</label></dt>
                         <dd class="col s12 m8 grid-parent avatar-upload">
                             <div class="avatar" style="background-image: url('images/nguyen-van-phong.jpg')">
 
                             </div>
                             <div class="uploader">
-                                <div class="file-field input-field">
-                                    <div class="btn">
-                                        <span>File</span>
-                                        <input type="file">
-                                    </div>
-                                    <div class="file-path-wrapper">
-                                        <input accept="image/png,image/gif,image/jpeg,image/jpg"
-                                               class="file-path validate " type="text">
-                                    </div>
-                                </div>
+                                <a class="btn white-text teal waves-effect waves-light  modal-trigger" href="#modal-avt">
+                                    <i class="fa fa-upload"></i> Chọn/ đăng ảnh đại diên
+                                </a>
                                 <p>Bạn có thể tải anh đại diện của mình từ máy tính hoặc chọn 1 ảnh trong thư viện có
                                     sẵn của chúng tôi.</p>
+                                </div>
                         </dd>
                     </div>
 
@@ -116,7 +109,7 @@
                     <div class="data-item row">
                         <dt class="col s12 m4 grid-parent"><label>Ngày sinh</label></dt>
                         <dd class="col s12 m8 grid-parent"><input class="datepicker  input-text" type="date"
-                                                                  value="01/11/1993"></dd>
+                                                                  value=""></dd>
                     </div>
                     <div class="data-item row">
                         <dt class="col s12 m4 grid-parent"><label>Số điện thoại</label></dt>
@@ -143,7 +136,7 @@
                 <div class="form-footer">
                     <a class="btn btn-flat waves-effect waves-block waves-teal white-text teal" href="">Chỉnh sửa thông
                         tin</a>
-                    <a class="chip square second  white teal-text" href="">Change Password</a>
+                    <a class="chip square second  white teal-text" href="">Thay đổi mật khẩu</a>
                 </div>
             </div>
         </div>
@@ -221,7 +214,7 @@
 
 <!--begin Right side nav-->
 <aside id="right-sidebar-nav">
-    <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y">
+    <ul id="chat-out" class="side-nav rightside-navigation right-aligned ">
         <li class="li-hover">
             <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
         </li>
@@ -366,102 +359,65 @@
 </aside>
 <!--end right side nav-->
 
-
 <!-- Modal Structure -->
-<div id="modal1" class="modal">
-    <div class="row">
+<div id="modal-avt" class="modal">
+    <div class="modal-content">
+        <h4>Thiết lập ảnh đại diện</h4>
+        <div class="row">
+            <div class="col s12">
+                <ul class="tabs">
+                    <li class="tab"><a class="active" href="#upload-avt">Đăng ảnh lên</a></li>
+                    <li class="tab "><a class="" href="#choose-avt">Chọn ảnh từ thư viện</a></li>
 
-        <ul class="tabs">
-            <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
-            <li class="tab"><a href="#signup">Đăng kí</a></li>
-        </ul>
+                </ul>
+            </div>
+            <div id="upload-avt" class="col s12">Giảng viên
 
-        <div id="login" class="col s12">
-            <form action="" method="post">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate" placeholder="Email">
+                Trịnh Minh Cường: iOS Objective-C, iOS Swift, Python, Linux, Docker
+                Đặng Đình Cần: Android, Unity3D, iOS
+                Trần Quốc Cường: Node.js, JavaScript 6, Arrowjs.io, React
+                Đặng Quang Huy: HTML5, CSS3, JavaScript, jQuery, Linux, Postgresql
+                Vũ Hoàng Chung: PHP, Phalcon, Linux
+                Nguyễn Văn Thắng: Postgresql, MongoDB, Arrowjs.io
+                Hoàng Đăng Trung - Nguyễn Văn Tú: trợ giảng iOS Objective-C, Swift
+                Nguyễn Văn Phong: trợ giảng HTML, CSSGiảng viên
 
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col ">
-                        <input type="checkbox" id="test5"/>
-                        <label for="test5">Ghi nhơ tài khoản</label>
-                    </div>
-                    <div class="col">
-                        <a id="forgot-link" href="/user/forgot-pass">Quên mật khẩu?</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="center col s12">
-                        <span></span>
-                    </div>
-                    <div class="col s6">
-                        <button class="btn waves-effect waves-light blue" name="action"><i class="fa fa-facebook"></i>
-                            facebook
-                        </button>
-                    </div>
-                    <div class="col s6">
-                        <button class="btn waves-effect waves-light red" type="submit" name="action">
-                            <i class="fa fa-google"></i>
-                            Google
+                Trịnh Minh Cường: iOS Objective-C, iOS Swift, Python, Linux, Docker
+                Đặng Đình Cần: Android, Unity3D, iOS
+                Trần Quốc Cường: Node.js, JavaScript 6, Arrowjs.io, React
+                Đặng Quang Huy: HTML5, CSS3, JavaScript, jQuery, Linux, Postgresql
+                Vũ Hoàng Chung: PHP, Phalcon, Linux
+                Nguyễn Văn Thắng: Postgresql, MongoDB, Arrowjs.io
+                Hoàng Đăng Trung - Nguyễn Văn Tú: trợ giảng iOS Objective-C, Swift
+                Nguyễn Văn Phong: trợ giảng HTML, CSSGiảng viên
 
-                        </button>
-                    </div>
-                </div>
+                Trịnh Minh Cường: iOS Objective-C, iOS Swift, Python, Linux, Docker
+                Đặng Đình Cần: Android, Unity3D, iOS
+                Trần Quốc Cường: Node.js, JavaScript 6, Arrowjs.io, React
+                Đặng Quang Huy: HTML5, CSS3, JavaScript, jQuery, Linux, Postgresql
+                Vũ Hoàng Chung: PHP, Phalcon, Linux
+                Nguyễn Văn Thắng: Postgresql, MongoDB, Arrowjs.io
+                Hoàng Đăng Trung - Nguyễn Văn Tú: trợ giảng iOS Objective-C, Swift
+                Nguyễn Văn Phong: trợ giảng HTML, CSSGiảng viên
 
-            </form>
+                Trịnh Minh Cường: iOS Objective-C, iOS Swift, Python, Linux, Docker
+                Đặng Đình Cần: Android, Unity3D, iOS
+                Trần Quốc Cường: Node.js, JavaScript 6, Arrowjs.io, React
+                Đặng Quang Huy: HTML5, CSS3, JavaScript, jQuery, Linux, Postgresql
+                Vũ Hoàng Chung: PHP, Phalcon, Linux
+                Nguyễn Văn Thắng: Postgresql, MongoDB, Arrowjs.io
+                Hoàng Đăng Trung - Nguyễn Văn Tú: trợ giảng iOS Objective-C, Swift
+                Nguyễn Văn Phong: trợ giảng HTML, CSS</div>
+            <div id="choose-avt" class="col s12">Test 2</div>
+
         </div>
-        <div id="signup" class="col s12">
-            <form action="" method="post">
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="email" type="email" class="validate" placeholder="Email">
-
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="email" type="text" class="validate" placeholder="Tên đăng nhập">
-
-                    </div>
-                    <div class="input-field col s12">
-                        <input id="password" type="text" class="validate" placeholder="Số điện thoại">
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col s12" id="recaptcha">
-                        <div class="g-recaptcha" data-sitekey="6LfsghQTAAAAACsMkPBtk0-gewtKG_4waTW9_G09"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col s12">
-                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="helper col s12">
-                        Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các
-                        <a href="/trungtam/quy-dinh" target="_blank"> Quy&nbsp;định </a> của chúng tôi.
-                    </div>
-                </div>
-
-
-            </form>
-        </div>
-
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
     </div>
 </div>
+
+
 
 <!--Back to top button-->
 
@@ -487,6 +443,8 @@
             selectMonths: true, // Creates a dropdown to control month
             selectYears: 15 // Creates a dropdown of 15 years to control year
         });
+        $('.modal-trigger').leanModal();
+
         $('.sidebar-collapse').sideNav({
                     menuWidth: 300, // Default is 240
                     edge: 'left', // Choose the horizontal origin
