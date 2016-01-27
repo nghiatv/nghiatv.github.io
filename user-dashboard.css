@@ -102,7 +102,16 @@
         height: auto;
         max-height: 100%;
     }
+    .viewAll{
+        margin: 15px auto;
+        width: 50%;
+        text-align: center;
+        /*font-size: 0.8rem !important;*/
+        height: 2rem !important;
+        line-height: 2rem !important;
+        text-transform: none;
 
+    }
     ul.side-nav.leftside-navigation {
         top: 56px;
         overflow: auto;
@@ -594,5 +603,6 @@
             margin-left: 100%;
         }
     }
+
 
 
