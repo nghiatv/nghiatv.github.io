@@ -17,88 +17,376 @@
     <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
     <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
 
-    <!--typed.js-->
-    <script type="text/javascript" src="typed.js/dist/typed.min.js"></script>
-
     <!--mixitup.js-->
+    <script src="mixitup/src/jquery.mixitup.js"></script>
+    <script src="mixitup/mixitup-debug-master/src/jquery.mixitup-debug.js"></script>
+
+
     <!--style.css-->
     <link rel="stylesheet" href="style.css" type="text/css">
 
-    <!--animated.css-->
-    <link rel="stylesheet" href="animate.css" type="text/css">
-    <script type="text/javascript" src="wowjs/dist/wow.min.js"></script>
 
-    <script src="mixitup/src/jquery.mixitup.js"></script>
 </head>
 
 <body>
 
 
 <main>
-    <div id="mix-it" >
-        <div id="mix-it-control" class="controls">
-            <label>Filter:</label>
-            <button class="filter" data-filter="all">All</button>
-            <button class="filter" data-filter=".category-1">Category 1</button>
-            <button class="filter" data-filter=".category-2">Category 2</button>
+    <div id="mix-it">
+        <div class="control-bar sandbox-control-bar">
+            <div class="group">
+                <label>Sort:</label>
+                <span class="button sort" data-sort="random">Random</span>
+                <span class="button sort" data-sort="value:asc">Ascending</span>
+                <span class="button sort active" data-sort="value:desc">Descending</span>
+            </div>
+            <div class="group">
+                <label>Filter:</label>
+                <span class="button filter active" data-filter="all">All</span>
+                <span class="button filter" data-filter=".category-1">Blue</span>
+                <span class="button filter" data-filter=".category-2">Green</span>
+                <span class="button filter" data-filter="none">None</span>
 
-            <label>Sort:</label>
-
-            <button class="sort" data-sort="myorder:asc">Asc</button>
-            <button class="sort" data-sort="myorder:desc">Desc</button>
+            </div>
         </div>
+        <div id="SandBox" class="sandbox container">
+            <div class="mix category-2" data-value="12">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
 
-        <div id="mix-it-wrapper" class="container">
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
 
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
 
-            <div class="mix">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor.</p>
-            </div>
-            <div class="mix category-1">
-                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="mix">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <p class="price">2.000.000 đ</p>
 
-                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-            <div class="mix category-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-            <div class="mix">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
-            <div class="mix category-1">
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.</p>
+                    </div>
 
-                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.</p>
+                </div>
             </div>
-            <div class="mix">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-            <div class="mix category-1">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.</p>
-            </div>
-            <div class="mix">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                    cillum dolore eu fugiat nulla pariatur.</p>
-            </div>
+            <div class="mix category-2" data-value="11">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
 
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-1" data-value="10">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-2" data-value="9">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-2" data-value="8">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-1" data-value="7">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-2" data-value="6">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href='#'><strong> Khắc cường VTV</strong></a>,
+                            <a href='#'><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-2" data-value="5">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-1" data-value="4">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-2" data-value="3">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-1" data-value="2">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mix category-1" data-value="1">
+                <div class="card hoverable">
+                    <div class="card-image">
+                        <img src="images/sample-1.jpg">
+                    </div>
+                    <div class="card-content black-text">
+                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+
+                        <p class="teacher">
+                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                        </p>
+
+                        <p class="rate">
+                            <span class="rating">
+                                <span class="rating dynamic" style="width: 100%"></span>
+                            </span>
+                            <span class="">
+                                (123)
+                            </span>
+                        </p>
+
+                        <p class="price">2.000.000 đ</p>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="gap"></div>
             <div class="gap"></div>
         </div>
     </div>
@@ -207,15 +495,19 @@
         maxHeight();
     });
     $(document).ready(function () {
-        maxHeight();
-        $(function () {
-            $('#mix-it-wrapper').mixItUp({
-                animation: {
-                    animateResizeContainer: false,
-                    effects: 'fade rotateX(-45deg) translateY(-10%)'
-                }
-            });
+
+
+        $('#SandBox').mixItUp({
+            animation: {
+                animateResizeContainer: false,
+                effects: 'fade rotateX(-45deg) translateY(-10%)'
+            },
+            debug: {
+                enable: true,
+                mode: 'verbose'
+            }
         });
+
 
         $('.modal-trigger').leanModal({
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -280,7 +572,7 @@
             }, 1200);
         });
     }
-
+    maxHeight();
     // like a type charecter
 
 </script>
