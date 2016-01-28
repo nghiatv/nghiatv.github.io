@@ -29,34 +29,146 @@
 </head>
 
 <body>
+<header class="site-nav">
+    <nav class="user-nav  ">
+        <div class="nav-wrapper container">
 
+            <ul class="right">
+                <li><a class="dropdown-button" data-activates="dropdown2">Thân Văn Nghĩa</a>
+                    <!-- Dropdown Structure log in success -->
+                    <ul id="dropdown2" class="dropdown-content">
+                        <li><a href="">Khóa học của tôi</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Hồ sơ của tôi</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">đăng xuất</a></li>
+                    </ul>
+                </li>
+                <li class="hide"><a href="#modal1" class=" modal-trigger">đăng kí</a></li>
+                <li class="hide"><a href="#modal1" class=" modal-trigger">đăng nhập</a></li>
+            </ul>
+
+        </div>
+    </nav>
+    <nav>
+        <div class="nav-wrapper container">
+            <a class="brand-logo" href="/"><img class="responsive-img"
+                                                src="http://techmaster.vn/theme_resources/frontend/tech/img/logo.png"></a>
+            <ul class="right hide-on-med-and-down">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">khóa học</a></li>
+                <li><a href="">Thực tập</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Việc làm</a></li>
+                <li><a href="">Phỏng vấn</a></li>
+                <li><a href="">EBooks</a></li>
+                <li><a class="dropdown-button" data-activates="dropdown1">Chúng tôi <i class="material-icons right">arrow_drop_down</i></a>
+                    <!-- Dropdown Structure -->
+                    <ul id="dropdown1" class="dropdown-content">
+                        <li><a href="">Khách hàng - đối tác</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thiết bị đào tạo</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Quy định chung</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Tuyển dụng giảng viên</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Chơi thể thao</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Team building - Royal City </a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Video hoạt động</a></li>
+                        <li class="divider"></li>
+                        <li><a href="">Thực tập</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+            <ul class="side-nav collapsible" id="mobile-demo" data-collapsible="accordion">
+                <li><a class="bold" href="">Trang chủ</a></li>
+                <li class="divider"></li>
+                <li><a class="bold" href="">khóa học</a></li>
+                <li class="divider"></li>
+                <li><a class="bold" href="">Thực tập</a></li>
+                <li class="divider"></li>
+                <li><a class="bold" href="">Blog</a></li>
+                <li class="divider"></li>
+                <li><a class="bold" href="">Việc làm</a></li>
+                <li class="divider"></li>
+                <li><a class="bold" href="">Phỏng vấn</a></li>
+                <li class="divider"></li>
+                <li><a class="bold" href="">EBooks</a></li>
+                <li class="divider"></li>
+                <li class="bold no-padding">
+                    <a class="collapsible-header  waves-effect waves-teal">Chúng tôi <i class="material-icons right">arrow_drop_down</i></a>
+
+                    <div class="collapsible-body">
+                        <ul class="">
+                            <li><a href="">Khách hàng - đối tác</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Giảng viên</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Thiết bị đào tạo</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Quy định chung</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Tuyển dụng giảng viên</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Chơi thể thao</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Team building - Royal City </a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Video hoạt động</a></li>
+                            <li class="divider"></li>
+                            <li><a href="">Thực tập</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+
+</header>
 
 <main>
     <div id="mix-it">
-        <div class="control-bar sandbox-control-bar">
-            <div class="group">
-                <label>Sort:</label>
-                <span class="button sort" data-sort="random">Random</span>
-                <span class="button sort" data-sort="value:asc">Ascending</span>
-                <span class="button sort active" data-sort="value:desc">Descending</span>
-            </div>
-            <div class="group">
-                <label>Filter:</label>
-                <span class="button filter active" data-filter="all">All</span>
-                <span class="button filter" data-filter=".category-1">Blue</span>
-                <span class="button filter" data-filter=".category-2">Green</span>
-                <span class="button filter" data-filter="none">None</span>
+        <div id="SandBox-control" class=" control-bar sandbox-control-bar z-depth-1-half">
+            <!--<div class="group">-->
+                <!--<label>Sort:</label>-->
+                <!--<span class="button sort" data-sort="random">Random</span>-->
+                <!--<span class="button sort" data-sort="value:asc">Ascending</span>-->
+                <!--<span class="button sort active" data-sort="value:desc">Descending</span>-->
+            <!--</div>-->
+          <div class="container">
+              <div class="group">
+                  <label>Danh mục khóa học:</label>
+                  <span class="button filter active" data-filter="all">Tất cả khóa học</span>
+                  <span class="button filter" data-filter=".category-1">Cơ bản</span>
+                  <span class="button filter" data-filter=".category-2">Mobile</span>
+                  <span class="button filter" data-filter="none">Game</span>
+                  <span class="button filter" data-filter="none">Kĩ năng</span>
+                  <span class="button filter" data-filter="none">Rôbot</span>
+                  <span class="button filter" data-filter="none">Hệ thống</span>
 
-            </div>
+
+              </div>
+          </div>
         </div>
         <div id="SandBox" class="sandbox container">
             <div class="mix category-2" data-value="12">
                 <div class="card hoverable">
+                    <div class="ribbon-wrapper-green">
+                        <div class="ribbon-red">Online</div>
+                    </div>
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/php7.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</h5>
 
                         <p class="teacher">
                             <a href=""><strong> Khắc cường VTV</strong></a>,
@@ -84,7 +196,7 @@
                         <img src="images/sample-1.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</h5>
 
                         <p class="teacher">
                             <a href=""><strong> Khắc cường VTV</strong></a>,
@@ -109,14 +221,14 @@
             <div class="mix category-1" data-value="10">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/HTMLCSSJS.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Node.js xây dựng web site tốc độ cao.</h5>
 
                         <p class="teacher">
                             <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+
                         </p>
 
                         <p class="rate">
@@ -137,14 +249,14 @@
             <div class="mix category-2" data-value="9">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/nodejs.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Lập trình Android</h5>
 
                         <p class="teacher">
                             <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href=""><strong>Tuấn Phệt</strong></a>
                         </p>
 
                         <p class="rate">
@@ -165,14 +277,14 @@
             <div class="mix category-2" data-value="8">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/HTMLCSSJS.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">C++ cơ bản qua ví dụ</h5>
 
                         <p class="teacher">
                             <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href=""><strong>Trịnh Cường Quốc</strong></a>
                         </p>
 
                         <p class="rate">
@@ -196,11 +308,11 @@
                         <img src="images/sample-1.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Lập trình Python ứng dụng thực tế</h5>
 
                         <p class="teacher">
-                            <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href=""><strong> Trần Như Cường</strong></a>,
+                            <a href=""><strong>Trịnh Cường Quốc</strong></a>
                         </p>
 
                         <p class="rate">
@@ -221,14 +333,14 @@
             <div class="mix category-2" data-value="6">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/iOSObjectiveC.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Web cơ bản HTML5, CSS3 và Javascript</h5>
 
                         <p class="teacher">
-                            <a href='#'><strong> Khắc cường VTV</strong></a>,
-                            <a href='#'><strong>Long Vũ VCTV</strong></a>
+                            <a href='#'><strong> Đăng Quang Huy</strong></a>,
+                            <a href='#'><strong>Trịnh Cường Quốc</strong></a>
                         </p>
 
                         <p class="rate">
@@ -249,14 +361,13 @@
             <div class="mix category-2" data-value="5">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/nodejs.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</h5>
 
                         <p class="teacher">
-                            <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href=""><strong> Trần Như Cường</strong></a>
                         </p>
 
                         <p class="rate">
@@ -277,14 +388,14 @@
             <div class="mix category-1" data-value="4">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/iOSObjectiveC.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng website với ArrowJs CMS</h5>
 
                         <p class="teacher">
-                            <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href="">Trần Như Cường</a>,
+                            <a href="">Trần Như Cường</a>
                         </p>
 
                         <p class="rate">
@@ -305,14 +416,16 @@
             <div class="mix category-2" data-value="3">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/HTMLCSSJS.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Xây dựng mạng xã hội chia sẻ ảnh với ASP.NET MVC
+
+                        </h5>
 
                         <p class="teacher">
-                            <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href=""><strong> Đăng Quang Huy</strong></a>,
+                            <a href=""><strong>Tuấn Phệt</strong></a>
                         </p>
 
                         <p class="rate">
@@ -333,13 +446,13 @@
             <div class="mix category-1" data-value="2">
                 <div class="card hoverable">
                     <div class="card-image">
-                        <img src="images/sample-1.jpg">
+                        <img src="images/php7.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Lập trình iOS Objective-C</h5>
 
                         <p class="teacher">
-                            <a href=""><strong> Khắc cường VTV</strong></a>,
+                            <a href=""><strong> Đăng Quang Huy</strong></a>,
                             <a href=""><strong>Long Vũ VCTV</strong></a>
                         </p>
 
@@ -364,11 +477,11 @@
                         <img src="images/sample-1.jpg">
                     </div>
                     <div class="card-content black-text">
-                        <span class="card-title truncate" title=" Xây dựng class giao tiếp với Database ">Xây dựng class giao tiếp với Database.</span>
+                        <h5 class="card-title" title=" Xây dựng class giao tiếp với Database ">Ngôn ngữ lập trình Swift 2.x</h5>
 
                         <p class="teacher">
-                            <a href=""><strong> Khắc cường VTV</strong></a>,
-                            <a href=""><strong>Long Vũ VCTV</strong></a>
+                            <a href=""><strong> Đăng Quang Huy</strong></a>,
+                            <a href=""><strong>Tuấn Phệt</strong></a>
                         </p>
 
                         <p class="rate">
@@ -467,7 +580,44 @@
         <i class=" fa fa-2x fa-arrow-up"></i>
     </a>
 </div>
+<script>
+    var $checkscreen = $('#checkscreen');
+    var $control = $('#SandBox-control');
+    if($checkscreen.css('font-size') != '1px'){
+        $(window).bind("scroll", function() {
+            //alert("nghia");
+            if ($(window).scrollTop() > 128) {
+                $control.addClass("fixed-controls");
+            } else {
+                $control.removeClass("fixed-controls");
+            }
 
+        });
+        $('.button.filter').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 128
+            }, 600);
+        });
+    } else{
+        $(window).bind("scroll", function() {
+            //alert("nghia");
+            if ($(window).scrollTop() > 112) {
+                $control.addClass("fixed-controls");
+            } else {
+                $control.removeClass("fixed-controls");
+            }
+
+        });
+        $('.button.filter').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 112
+            }, 600);
+        });
+    }
+
+</script>
 <script>
     function maxHeight() {
 
@@ -574,6 +724,10 @@
     }
     maxHeight();
     // like a type charecter
+
+
+
+
 
 </script>
 </body>
