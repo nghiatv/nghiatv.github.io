@@ -169,104 +169,50 @@
 <main>
 
     <!--Parallax-->
-    <div id="home-parallax" class="parallax-container parallax-top teal lighten-2">
-        <div class="parallax">
-            <!--<img src="slider1.jpg"> -->
-        </div>
-        <div class="parallax-content white-text">
-            <div class="row center-align">
-                <div class="col s12 m6 parallax-text">
-                    <div class="parallax-title">
+    <div id="mid-panel" class="row teal lighten-2">
+            <div class=" col s12 m6 mid-panel-left valign-wrapper ">
+                <div id="typed-strings">
+                    <p> echo "Hello World";</p>
 
-                        <div id="typed-strings">
-                            <p> echo "Hello World";</p>
+                    <p> System.out.print( "Hello World");</p>
 
-                            <p> System.out.print( "Hello World");</p>
+                    <p> Console.log("Hello World" );</p>
 
-                            <p> Console.log("Hello World" );</p>
+                    <p> print "Hello World";</p>
 
-                            <p> print "Hello World";</p>
-
-                            <p> NSLog (@"Hello World!");</p>
-                        </div>
-                        <div id="parallax-title-top">
-                            <span id="typed"></span>
-                        </div>
-                        <br>
-
-                        <h3>
-                            Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
-                        </h3>
-                        <!--<div id="typed"></div>-->
-                    </div>
-
-
-                    <!--<div class="parallax-button">-->
-                    <!--<button class="btn waves-effect waves-teal  ">Đăng kí ngay</button>-->
-                    <!--</div>-->
+                    <p> NSLog (@"Hello World!");</p>
                 </div>
-                <div class="col s12 m6" id="parallax-sigh-up">
-                    <h5 class="center-align teal lighten-2 parallax-form-title">Đăng kí</h5>
-
-                    <div class="row ">
-                        <form class="col s12 white parallax-form black-text ">
-                            <div class="row">
-                                <div class="input-field col s12 m6">
-                                    <input id="email" type="email" class="validate">
-                                    <label for="email">Email</label>
-                                </div>
-                                <div class="input-field col s12 m6">
-                                    <input id="name" type="text" class="validate">
-                                    <label for="name">Name</label>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <input id="pass" type="password" class="validate">
-                                    <label for="pass">Password</label>
-                                </div>
-                            </div>
-
-                            <!--<div class="divider"></div>-->
-                            <div class="row btn-field">
-                                <div class="col s12">
-                                    <p class="center-align">
-                                        <button class="btn teal white-text waves-effect waves-light" id="sign-up"
-                                                type="button"
-                                                name="action">Đăng kí
-                                        </button>
-                                    </p>
-
-                                </div>
-                            </div>
-
-                            <div id="social-button" class="row">
-                                <p class=" hide social-registration-buttons">
-                                    <a class="btn white teal-text  social-btn" id="gplus-sign-up" type="button"><img
-                                            src="images/google.svg"><span> Google</span> </a>
-                                    <a class="btn white teal-text  social-btn" id="facebook-sign-up"
-                                       type="button"><img src="images/facebook.svg"><span> Facebook</span> </a>
-
-                                </p>
-
-                                <p class="social-registration-buttons center hide  ">
-                                    <span>Log in with</span>
-                                    <a href="#">Facebook</a>
-                                    <span>,</span>
-                                    <a href="#">Google</a>
-                                </p>
-
-                                <p class="social-registration-buttons center hide">
-                                    <a href="#">Quên mật khẩu?</a>
-                                </p>
-                            </div>
-                        </form>
-
-                    </div>
-
+                <div class="mid-panel-typed valign">
+                    <span id="typed"></span>
+                    <br>
+                    <h3 class="white-text">
+                        Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
+                    </h3>
+                    <!--<div id="typed"></div>-->
                 </div>
             </div>
-        </div>
+            <!--<div class="col s12 m6 mid-panel-right has-video valign-wrapper">-->
+                <!--<video id="mini-video" class="responsive-video valign" onclick="playPause(this)">-->
+                    <!--<source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">-->
+                    <!--Trình duyệt của bạn không hỗ trợ HTML5.-->
+                <!--</video>-->
+            <!--</div>-->
+
+            <div class="col s12 m6 mid-panel-right">
+                <div class="video-container ">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PVAANfPR3Mk" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <script>
+                //var miniVideo = document.getElementById("mini-video");
+                function playPause(target){
+                    if(target.paused)
+                    target.play();
+                    else
+                        target.pause();
+                }
+
+            </script>
     </div>
     <div class="triangle col s12"></div>
     <div id="main_row_2" class="col s12">
@@ -275,152 +221,158 @@
                 <h2>Học gì ở Techmaster?</h2>
             </div>
         </div>
-        <div class="row" id="list-course-content">
-            <div class="col s12 m6 l4 xl3 ">
-                <a href="course.html">
-                    <div class="path-item card white  black-text hoverable">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6 l4 xl3 ">
+                    <a href="course.html">
+                        <div class="path-item card white  black-text hoverable">
 
-                        <div class="card-image ">
-                            <img src="images/iOSObjectiveC.jpg" class="responsive-img"
-                                 alt="ios" title="ios">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="path-title   left-align">Lập trình iOS Objective-C</h2>
-                            <p class="left-align  ">
-                                iOS Objective-C: cập nhật công nghệ mới, nhiều
-                                mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col s12 m6 l4 xl3 ">
-                <a href="course.html">
-                    <div class="path-item card white  black-text hoverable">
-                        <div class="card-image ">
-                            <img src="images/nodejs.jpg" class="responsive-img"
-                                 alt="Ruby" title="Ruby">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="path-title   left-align">Node.js xây dựng web site tốc độ cao</h2>
-
-                            <div class="path-button  left-align">
-
+                            <div class="card-image ">
+                                <img src="images/iOSObjectiveC.jpg" class="responsive-img"
+                                     alt="ios" title="ios">
                             </div>
-                            <p class="left-align  ">
-                                Lập trình web site tốc độ cao sử dụng Node.js (4.x), JavaScript 6, Arrowjs.io</p>
-                        </div>
+                            <div class="card-content">
+                                <h2 class="path-title   left-align">Lập trình iOS Objective-C</h2>
 
-
-                    </div>
-                </a>
-            </div>
-            <div class="col s12 m6 l4 xl3 ">
-                <a href="course.html">
-                    <div class="path-item card white  black-text hoverable">
-                        <div class="card-image valign-wrapper">
-                            <img src="images/JavaThucHanh.jpg" class="responsive-img"
-                                 alt="Ruby" title="Ruby">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="path-title   left-align">Java căn bản thực hành</h2>
-
-                            <div class="path-button  left-align">
-
+                                <p class="left-align  ">
+                                    iOS Objective-C: cập nhật công nghệ mới, nhiều
+                                    mã nguồn nhiều dự án app thật đã phát hành trên AppStore</p>
                             </div>
-                            <p class="left-align  ">
-                                Khóa học Java căn bản cho người mới bắt đầu. Nhiều ví dụ thực hành trực quan. Mô hình
-                                đào tạo chia nhóm nhỏ để giảng viên kèm cặp, điều chỉnh.</p>
                         </div>
-
-
-                    </div>
-                </a>
-            </div>
-            <div class="col s12 m6 l4 xl3">
-                <a href="course.html">
-                    <div class="path-item card white  black-text hoverable">
-                        <div class="card-image ">
-                            <img src="images/python_course.jpg" class="responsive-img"
-                                 alt="Ruby" title="Ruby">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="path-title   left-align">Lập trình Python ứng dụng thực tế</h2>
-
-                            <div class="path-button  left-align">
-
+                    </a>
+                </div>
+                <div class="col s12 m6 l4 xl3 ">
+                    <a href="course.html">
+                        <div class="path-item card white  black-text hoverable">
+                            <div class="card-image ">
+                                <img src="images/nodejs.jpg" class="responsive-img"
+                                     alt="Ruby" title="Ruby">
                             </div>
-                            <p class="left-align  ">
-                                Python được chọn làm ngôn ngữ lập trình đầu tiên để dạy cho những người chưa biết lập
-                                trình, thanh thiếu niên. Dễ hiểu, uyển chuyển, hiệu quả, áp dụng thực tế, nhu cầu tuyển
-                                dụng tăng là tiêu chí để mở khóa học này.</p>
-                        </div>
+                            <div class="card-content">
+                                <h2 class="path-title   left-align">Node.js xây dựng web site tốc độ cao</h2>
 
+                                <div class="path-button  left-align">
 
-                    </div>
-                </a>
-            </div>
-            <div class="col s12 m6 l4 xl3 ">
-                <a href="course.html">
-                    <div class="path-item card white  black-text hoverable">
-                        <div class="card-image ">
-                            <img src="images/php7.jpg" class="responsive-img"
-                                 alt="Ruby" title="Ruby">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="path-title   left-align">Lập trình PHP 7 cơ bản qua ví dụ</h2>
-
-                            <div class="path-button  left-align">
-
+                                </div>
+                                <p class="left-align  ">
+                                    Lập trình web site tốc độ cao sử dụng Node.js (4.x), JavaScript 6, Arrowjs.io</p>
                             </div>
-                            <p class="left-align  ">
-                                Khóa học lập trình PHP 7 cơ bản.<br>
 
-                                Yêu cầu: có sẵn kiến thức cơ bản về HTML, CSS, Javascript.<br>
 
-                                Mục tiêu: viết được web bằng PHP cơ bản, không sử dụng framework. Có thể...<br>
-
-                                Học FlipLearning mọi lúc mọi nơi. Ví dụ nhiều. Giảng viên chấm bài, phản hồi và trả lời
-                                hỏi đáp</p>
                         </div>
-
-
-                    </div>
-                </a>
-            </div>
-            <div class="col s12 m6 l4 xl3 ">
-                <a href="course.html">
-                    <div class="path-item card white  black-text hoverable">
-                        <div class="card-image">
-                            <img src="images/HTMLCSSJS.jpg" class="responsive-img"
-                                 alt="Ruby" title="Ruby">
-                        </div>
-                        <div class="card-content">
-                            <h2 class="path-title   left-align">Web cơ bản HTML5, CSS3 và Javascript</h2>
-
-                            <div class="path-button  left-align">
-
+                    </a>
+                </div>
+                <div class="col s12 m6 l4 xl3 ">
+                    <a href="course.html">
+                        <div class="path-item card white  black-text hoverable">
+                            <div class="card-image valign-wrapper">
+                                <img src="images/JavaThucHanh.jpg" class="responsive-img"
+                                     alt="Ruby" title="Ruby">
                             </div>
-                            <p class="left-align  ">
-                                Khóa học lập trình web front-end cơ bản.<br>
+                            <div class="card-content">
+                                <h2 class="path-title   left-align">Java căn bản thực hành</h2>
 
-                                Yêu cầu: có đam mê lập trình.<br>
+                                <div class="path-button  left-align">
 
-                                Mục tiêu: tạo được giao diện website, thiết kế website tĩnh.<br>
+                                </div>
+                                <p class="left-align  ">
+                                    Khóa học Java căn bản cho người mới bắt đầu. Nhiều ví dụ thực hành trực quan. Mô
+                                    hình
+                                    đào tạo chia nhóm nhỏ để giảng viên kèm cặp, điều chỉnh.</p>
+                            </div>
 
-                                Nhiều ví dụ đẹp, trực quan, bài giảng được soạn công phu</p>
+
                         </div>
+                    </a>
+                </div>
+                <div class="col s12 m6 l4 xl3">
+                    <a href="course.html">
+                        <div class="path-item card white  black-text hoverable">
+                            <div class="card-image ">
+                                <img src="images/python_course.jpg" class="responsive-img"
+                                     alt="Ruby" title="Ruby">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="path-title   left-align">Lập trình Python ứng dụng thực tế</h2>
+
+                                <div class="path-button  left-align">
+
+                                </div>
+                                <p class="left-align  ">
+                                    Python được chọn làm ngôn ngữ lập trình đầu tiên để dạy cho những người chưa biết
+                                    lập
+                                    trình, thanh thiếu niên. Dễ hiểu, uyển chuyển, hiệu quả, áp dụng thực tế, nhu cầu
+                                    tuyển
+                                    dụng tăng là tiêu chí để mở khóa học này.</p>
+                            </div>
 
 
-                    </div>
-                </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6 l4 xl3 ">
+                    <a href="course.html">
+                        <div class="path-item card white  black-text hoverable">
+                            <div class="card-image ">
+                                <img src="images/php7.jpg" class="responsive-img"
+                                     alt="Ruby" title="Ruby">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="path-title   left-align">Lập trình PHP 7 cơ bản qua ví dụ</h2>
+
+                                <div class="path-button  left-align">
+
+                                </div>
+                                <p class="left-align  ">
+                                    Khóa học lập trình PHP 7 cơ bản.<br>
+
+                                    Yêu cầu: có sẵn kiến thức cơ bản về HTML, CSS, Javascript.<br>
+
+                                    Mục tiêu: viết được web bằng PHP cơ bản, không sử dụng framework. Có thể...<br>
+
+                                    Học FlipLearning mọi lúc mọi nơi. Ví dụ nhiều. Giảng viên chấm bài, phản hồi và trả
+                                    lời
+                                    hỏi đáp</p>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </div>
+                <div class="col s12 m6 l4 xl3 ">
+                    <a href="course.html">
+                        <div class="path-item card white  black-text hoverable">
+                            <div class="card-image">
+                                <img src="images/HTMLCSSJS.jpg" class="responsive-img"
+                                     alt="Ruby" title="Ruby">
+                            </div>
+                            <div class="card-content">
+                                <h2 class="path-title   left-align">Web cơ bản HTML5, CSS3 và Javascript</h2>
+
+                                <div class="path-button  left-align">
+
+                                </div>
+                                <p class="left-align  ">
+                                    Khóa học lập trình web front-end cơ bản.<br>
+
+                                    Yêu cầu: có đam mê lập trình.<br>
+
+                                    Mục tiêu: tạo được giao diện website, thiết kế website tĩnh.<br>
+
+                                    Nhiều ví dụ đẹp, trực quan, bài giảng được soạn công phu</p>
+                            </div>
+
+
+                        </div>
+                    </a>
+                </div>
+
             </div>
-
         </div>
 
 
     </div>
     <div id="how-learning" class=" col s12  white">
-
         <div class="row">
             <div class="center-align" id="how-learn-title">
 
@@ -429,63 +381,67 @@
             </div>
         </div>
         <!--   Icon Section   -->
-        <div class="row" id="how-learn-content">
-            <div class="col s12 m4">
-                <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <h2 class="center brown-text"><i class="fa fa-video-camera"></i></h2>
-                    <h5 class="center">Xem Video</h5>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2 class="center brown-text"><i class="fa fa-video-camera"></i></h2>
+                        <h5 class="center">Xem Video</h5>
 
-                    <p class="light">Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất</p>
+                        <p class="light">Luôn luôn phát triển, luôn cập nhật những công nghệ mới nhất</p>
+                    </div>
+
                 </div>
 
-            </div>
+                <div class="col s12 m4">
+                    <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
+                        <h2 class="center brown-text"><i class="fa fa-code"></i></h2>
+                        <h5 class="center">Code Code Code</h5>
 
-            <div class="col s12 m4">
-                <div class="icon-block wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1.5s">
-                    <h2 class="center brown-text"><i class="fa fa-code"></i></h2>
-                    <h5 class="center">Code Code Code</h5>
-
-                    <p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho
-                        bạn
-                        trong quá trình lập trình</p>
+                        <p class="light">Đầy đủ thông tin, hài hước. Rất nhiều mẹo trong video sẽ hữu ích cho
+                            bạn
+                            trong quá trình lập trình</p>
+                    </div>
                 </div>
-            </div>
 
-            <div class="col s12 m4">
-                <div class="icon-block ib-last wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2.5s">
-                    <h2 class="center brown-text"><i class="fa fa-briefcase"></i></h2>
-                    <h5 class="center">Làm Project thật</h5>
+                <div class="col s12 m4">
+                    <div class="icon-block ib-last wow fadeInLeft" data-wow-duration="1s" data-wow-delay="2.5s">
+                        <h2 class="center brown-text"><i class="fa fa-briefcase"></i></h2>
+                        <h5 class="center">Làm Project thật</h5>
 
-                    <p class="light">We have provided detailed documentation as well as specific code
-                        examples
-                        to help new users get started.</p>
+                        <p class="light">We have provided detailed documentation as well as specific code
+                            examples
+                            to help new users get started.</p>
+                    </div>
                 </div>
             </div>
         </div>
 
-
     </div>
     <div id="video-promotion" class="col s12 ">
 
-        <div class="row" id="video-promotion-content">
-            <div class="col s12 m6" id="video-promotion-text">
-                <h2 class="center wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">Tại sao lại là
-                    Techmaster ?</h2>
+        <div class="container">
+            <div class="row" id="video-promotion-content">
+                <div class="col s12 m6" id="video-promotion-text">
+                    <h2 class="center wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="0.5s">Tại sao lại là
+                        Techmaster ?</h2>
 
-                <p class="center wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="1.5s">Hãy nghe câu trả lời từ
-                    những học viên đã và đang tham gia Techmaster nhé !</p>
-            </div>
+                    <p class="center wow fadeInDownBig" data-wow-duration="1s" data-wow-delay="1.5s">Hãy nghe câu trả
+                        lời từ
+                        những học viên đã và đang tham gia Techmaster nhé !</p>
+                </div>
 
-            <div class="col s12 m6 ">
-                <div class="row" id="video-promotion-youtube">
-                    <div class="video-container">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/czltl9isRdM"
-                                frameborder="0" allowfullscreen></iframe>
+                <div class="col s12 m6 ">
+                    <div class="row" id="video-promotion-youtube">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/czltl9isRdM"
+                                    frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
+
+
             </div>
-
-
         </div>
 
 
@@ -748,28 +704,28 @@
         $content.css('height', 'auto');
 
 //        Max height
-       if($checkscreen.css('font-size') != '1px'){
-           $content.each(function () {
-               var value = $(this).height();
+        if ($checkscreen.css('font-size') != '1px') {
+            $content.each(function () {
+                var value = $(this).height();
 
-               if (value > h) {
-                   h = value;
-               }
-           });
-           $content.height(h);
-       }
-        else{
-           $content.css('height', 'auto');
-       }
+                if (value > h) {
+                    h = value;
+                }
+            });
+            $content.height(h);
+        }
+        else {
+            $content.css('height', 'auto');
+        }
     }
     $(window).on("resize", function () {
-            maxHeight();
+        maxHeight();
     });
 
 
     //Modal
     $(document).ready(function () {
-            maxHeight();
+        maxHeight();
         $('.modal-trigger').leanModal({
             dismissible: true, // Modal can be dismissed by clicking outside of the modal
             opacity: .6, // Opacity of modal background

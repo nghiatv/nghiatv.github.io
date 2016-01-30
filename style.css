@@ -259,7 +259,6 @@ form.col.s12.white.parallax-form {
     margin: 30px auto 20px auto;
     font-size: 1.5em;
     font-weight: 400;
-    /*text-align: center;*/
     padding-left: 5px;
     line-height: 1.5em;
 }
@@ -2630,3 +2629,95 @@ h3.widget-title {
     }
 }
 
+
+
+/*Edit top mid panel*/
+
+
+#mid-panel{
+    background: linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -o-linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -webkit-linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -moz-linear-gradient(to bottom left, #34b3a0, #204056);
+    background: -ms-linear-gradient(to bottom left, #34b3a0, #204056);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-bottom: 0;
+}
+
+.mid-panel-left{
+    text-align: center;
+}
+
+.mid-panel-left h3{
+    display: inline-block;
+    margin: 30px auto 20px auto;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding-left: 5px;
+    line-height: 1.5em;
+}
+.mid-panel-typed{
+    margin-left: auto;
+    margin-right: auto;
+}
+#mid-panel .col video{
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.25);
+}
+.mid-panel-left.has-video video, .mid-panel-right.has-video video,.mid-panel-left.has-video iframe,.mid-panel-right.has-video iframe{
+    width: 95%;
+    background: #eceff2;
+    border-radius: 5px;
+    padding: 10px;
+    position: relative;
+}
+.mid-panel-left.has-video iframe, .mid-panel-right.has-video iframe{
+    height: 100% ;
+}
+.playBtn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    margin: -50px 0 0 -50px;
+    background: url(https://static.teamtreehouse.com/assets/mediaelement/build/bigplay-d8bd8b163389f3470531a7ecc981e2ab.svg) no-repeat;
+
+}
+.mid-panel-left h3, .mid-panel-left span{
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 600px) {
+    .mid-panel-left.has-video video, .mid-panel-right.has-video video,.mid-panel-left.has-video iframe,.mid-panel-right.has-video iframe{
+        width: 85%;
+        background: #eceff2;
+        border-radius: 7.5px;
+        padding: 15px;
+    }
+}
+@media (min-width: 992px) {
+    #mid-panel{
+        min-height: 540px;
+    }
+    .mid-panel-left,.mid-panel-right{
+        min-height: calc(540px - 5rem);
+    }
+    .mid-panel-left.has-video video, .mid-panel-right.has-video video,.mid-panel-left.has-video iframe,.mid-panel-right.has-video iframe{
+        width: 75%;
+        background: #eceff2;
+        border-radius: 10px;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .mid-panel-left.has-video video, .mid-panel-right.has-video video,.mid-panel-left.has-video iframe,.mid-panel-right.has-video iframe{
+        width: 70%;
+        max-width: 500px;
+
+    }
+}
