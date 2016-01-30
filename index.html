@@ -169,40 +169,45 @@
 <main>
 
     <!--Parallax-->
-    <div id="mid-panel" class="row teal lighten-2">
-            <div class=" col s12 m6 mid-panel-left valign-wrapper ">
-                <div id="typed-strings">
-                    <p> echo "Hello World";</p>
-
-                    <p> System.out.print( "Hello World");</p>
-
-                    <p> Console.log("Hello World" );</p>
-
-                    <p> print "Hello World";</p>
-
-                    <p> NSLog (@"Hello World!");</p>
-                </div>
-                <div class="mid-panel-typed valign">
-                    <span id="typed"></span>
-                    <br>
-                    <h3 class="white-text">
-                        Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
-                    </h3>
-                    <!--<div id="typed"></div>-->
-                </div>
-            </div>
-            <!--<div class="col s12 m6 mid-panel-right has-video valign-wrapper">-->
+    <div id="mid-panel" class="row">
+        <div class="container">
+            <div class="row">
+                <!--<div class="col s12 m6 mid-panel-right has-video valign-wrapper">-->
                 <!--<video id="mini-video" class="responsive-video valign" onclick="playPause(this)">-->
-                    <!--<source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">-->
-                    <!--Trình duyệt của bạn không hỗ trợ HTML5.-->
+                <!--<source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">-->
+                <!--Trình duyệt của bạn không hỗ trợ HTML5.-->
                 <!--</video>-->
-            <!--</div>-->
+                <!--</div>-->
 
-            <div class="col s12 m6 mid-panel-right">
-                <div class="video-container ">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/PVAANfPR3Mk" frameborder="0" allowfullscreen></iframe>
+                <div class="col s12 m6 mid-panel-right has-video valign-wrapper">
+                    <div class="video-container valign">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PVAANfPR3Mk" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class=" col s12 m6 mid-panel-left valign-wrapper ">
+                    <div id="typed-strings">
+                        <p> echo "Hello World";</p>
+
+                        <p> System.out.print( "Hello World");</p>
+
+                        <p> Console.log("Hello World" );</p>
+
+                        <p> print "Hello World";</p>
+
+                        <p> NSLog (@"Hello World!");</p>
+                    </div>
+                    <div class="mid-panel-typed valign">
+                        <span id="typed"></span>
+                        <br>
+                        <h3 class="white-text">
+                            Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
+                        </h3>
+                        <!--<div id="typed"></div>-->
+                    </div>
                 </div>
             </div>
+        </div>
+
             <script>
                 //var miniVideo = document.getElementById("mini-video");
                 function playPause(target){
