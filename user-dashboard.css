@@ -33,8 +33,7 @@
 
     }
     .header-search-wrapper {
-        max-width: 824px;
-        width: 100%;
+        max-width: 624px;
         margin: 0 auto;
         width: calc(100% - 45%);
         height: 40px;
@@ -103,7 +102,16 @@
         height: auto;
         max-height: 100%;
     }
+    .viewAll{
+        margin: 15px auto;
+        width: 50%;
+        text-align: center;
+        /*font-size: 0.8rem !important;*/
+        height: 2rem !important;
+        line-height: 2rem !important;
+        text-transform: none;
 
+    }
     ul.side-nav.leftside-navigation {
         top: 56px;
         overflow: auto;
@@ -218,6 +226,11 @@
         line-height: inherit;
         font-size: 18px;
     }
+    /*css trang user dashboard*/
+    #user-last-lesson, #user-progress{
+        max-width: 1170px;
+    }
+
 
     #progress-title, #profile-title {
         font-size: 18px;
@@ -305,14 +318,14 @@
     /*css trang edit */
 
     #profile-content .avatar-upload {
-        padding-left: 110px;
+        padding-left: 158px;
     }
 
     #profile-content .avatar-upload .avatar {
-        width: 80px;
-        height: 80px;
+        width: 128px;
+        height: 128px;
         float: left;
-        margin: 0 0 10px -110px;
+        margin: 0 0 10px -158px;
         background-size: cover;
     }
 
@@ -330,7 +343,6 @@
         font-size: 14px;
         color: #576366;
         width: 100%;
-        font-family: "Gotham Rounded A", "Gotham Rounded B", "Gotham Rounded", "Helvetica Neue", Helvetica, Arial, sans-serif;
         padding: 12px 15px;
         outline: 0;
         border: 2px solid #e8ebed;
@@ -347,10 +359,112 @@
         background: #fff;
         border-color: #d4d9dd;
     }
-    @media only screen and (min-width: 600px) {
+    #user-last-lesson{
+        padding: 1.5rem 1.5rem 0;
+    }
+    .mixed-box {
+        position: relative;
+        margin-bottom: 30px;
+        -webkit-animation: panel-fade-up 0.4s ease;
+        animation: panel-fade-up 0.4s ease;
+        padding: 0;
+    }
+
+    .mixed-box .box-header, .mixed-box .box-content, .mixed-box .box-footer {
+        position: relative;
+        background: #fff;
+        box-sizing: border-box;
+    }
+
+    .mixed-box .box-header, .mixed-box .box-content, .mixed-box .box-footer {
+        padding: 20px;
+    }
+    .mixed-box:before, .mixed-box:after{
+        content: "";
+        display: table;
+    }
+    .mixed-box .box-header {
+        border-radius: 4px 4px 0 0;
+        z-index: 2;
+    }
+    .box-header h3 {
+        font-size: 22px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #384047;
+        display: block;
+        font-weight: 500;
+
+    }
+    .box-header p{
+        margin-bottom: 0;
+    }
+     .mixed-box .box-content {
+        padding-top: 0;
+    }
+
+    ul.achievement-steps {
+        background: #f9fafa;
+        margin: 0 -20px -20px;
+        border-top: 1px solid #e8ebed;
+        border-radius: 0 0 5px 5px;
+    }
+
+    ul.achievement-steps li>a.completed {
+        position: relative;
+        display: block;
+        padding: 20px 30px 20px 110px;
+        padding-left: 70px;
+        border-bottom: 1px solid #edeff0;
+        overflow: hidden;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+    ul.achievement-steps li p{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .achievement-steps li > a.completed i {
+
+
+        height: 22px;
+        left: 30px;
+        top: 13px;
+        width: 22px;
+        position: absolute;
+    }
+    ul.achievement-steps li>a.completed strong {
+        color: #7b8b8e;
+        font-weight: 600;
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        display: block;
+        line-height: 1.2;
+    }
+    ul.achievement-steps li>a.completed p {
+        float: right;
+        font-size: 14px;
+        margin-left: 10px;
+        margin-bottom: 0;
+        line-height: 1.2;
+        color: #7b8b8e;
+    }
+    @media (min-width: 600px){
+        .mixed-box .box-header, .mixed-box .box-content, .mixed-box .box-footer {
+            padding: 30px;
+        }
+        .mixed-box .box-content {
+            padding-top: 0;
+        }
+        ul.achievement-steps {
+            margin: 0 -30px -30px;
+        }
+    }
+    @media (min-width: 600px) {
         ul.side-nav.leftside-navigation {
             top: 64px;
-
         }
         ul.side-nav.leftside-navigation .profile-image {
             height: 64px;
@@ -378,3 +492,117 @@
             line-height: 64px;
         }
     }
+
+    /* Implement xl screen size */
+    @media only screen and (min-width: 1280px) {
+        .row .col.xl1 {
+            width: 8.33333%;
+            margin-left: 0;
+        }
+
+        .row .col.xl2 {
+            width: 16.66667%;
+            margin-left: 0;
+        }
+
+        .row .col.xl3 {
+            width: 25%;
+            margin-left: 0;
+        }
+
+        .row .col.xl4 {
+            width: 33.33333%;
+            margin-left: 0;
+        }
+
+        .row .col.xl5 {
+            width: 41.66667%;
+            margin-left: 0;
+        }
+
+        .row .col.xl6 {
+            width: 50%;
+            margin-left: 0;
+        }
+
+        .row .col.xl7 {
+            width: 58.33333%;
+            margin-left: 0;
+        }
+
+        .row .col.xl8 {
+            width: 66.66667%;
+            margin-left: 0;
+        }
+
+        .row .col.xl9 {
+            width: 75%;
+            margin-left: 0;
+        }
+
+        .row .col.xl10 {
+            width: 83.33333%;
+            margin-left: 0;
+        }
+
+        .row .col.xl11 {
+            width: 91.66667%;
+            margin-left: 0;
+        }
+
+        .row .col.xl12 {
+            width: 100%;
+            margin-left: 0;
+        }
+
+        .row .col.offset-xl1 {
+            margin-left: 8.33333%;
+        }
+
+        .row .col.offset-xl2 {
+            margin-left: 16.66667%;
+        }
+
+        .row .col.offset-xl3 {
+            margin-left: 25%;
+        }
+
+        .row .col.offset-xl4 {
+            margin-left: 33.33333%;
+        }
+
+        .row .col.offset-xl5 {
+            margin-left: 41.66667%;
+        }
+
+        .row .col.offset-xl6 {
+            margin-left: 50%;
+        }
+
+        .row .col.offset-xl7 {
+            margin-left: 58.33333%;
+        }
+
+        .row .col.offset-xl8 {
+            margin-left: 66.66667%;
+        }
+
+        .row .col.offset-xl9 {
+            margin-left: 75%;
+        }
+
+        .row .col.offset-xl10 {
+            margin-left: 83.33333%;
+        }
+
+        .row .col.offset-xl11 {
+            margin-left: 91.66667%;
+        }
+
+        .row .col.offset-xl12 {
+            margin-left: 100%;
+        }
+    }
+
+
+
