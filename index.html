@@ -167,59 +167,89 @@
 
 </script>
 <main>
-
     <!--Parallax-->
-    <div id="mid-panel" class="row">
-        <div class="container">
-            <div class="row">
+    <div id="mid-panel" class="row fullscreen-video ">
+        <!-- begin fullscreen video-->
+        <video loop muted autoplay onclick="playPause(this)" class="hide-on-small-and-down">
+        <source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+        </video>
+        <div class="videotext-content">
+        <h1 class="videoRow-text ">Techmaster.Vn Know U, Know IT</h1>
+        <p class="videoRow-text ">
+        Xem toàn bộ khóa học của chúng tôi.
+        </p>
+        <a href="all-course.html" class="chip white large ">Xem toàn bộ khóa học</a>
+        </div>
+        <!--end full screen vide-->
+        <!--<div class="container">-->
+            <!--<div class="row">-->
+
+                <!--&lt;!&ndash;begin embed video&ndash;&gt;-->
+
                 <!--<div class="col s12 m6 mid-panel-right has-video valign-wrapper">-->
-                <!--<video id="mini-video" class="responsive-video valign" onclick="playPause(this)">-->
+                <!--<video width="500" height="auto" controls id="mini-video" class="responsive-video valign" onclick="playPause(this)">-->
                 <!--<source src="http://www.w3schools.com/tags/movie.mp4" type="video/mp4">-->
                 <!--Trình duyệt của bạn không hỗ trợ HTML5.-->
                 <!--</video>-->
                 <!--</div>-->
 
-                <div class="col s12 m6 mid-panel-right has-video valign-wrapper">
-                    <div class="video-container valign">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/PVAANfPR3Mk" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-                <div class=" col s12 m6 mid-panel-left valign-wrapper ">
-                    <div id="typed-strings">
-                        <p> echo "Hello World";</p>
+                <!--&lt;!&ndash;end embed video&ndash;&gt;-->
 
-                        <p> System.out.print( "Hello World");</p>
+                <!--&lt;!&ndash;begin embed iframe&ndash;&gt;-->
 
-                        <p> Console.log("Hello World" );</p>
+                <!--<div class="col s12 m6 mid-panel-right has-video valign-wrapper">-->
+                    <!--<div class="video-container valign">-->
+                        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/PVAANfPR3Mk" frameborder="0"-->
+                                <!--allowfullscreen></iframe>-->
+                    <!--</div>-->
+                <!--</div>-->
 
-                        <p> print "Hello World";</p>
+                <!--&lt;!&ndash;end embed iframe&ndash;&gt;-->
 
-                        <p> NSLog (@"Hello World!");</p>
-                    </div>
-                    <div class="mid-panel-typed valign">
-                        <span id="typed"></span>
-                        <br>
-                        <h3 class="white-text">
-                            Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!
-                        </h3>
-                        <!--<div id="typed"></div>-->
-                    </div>
-                </div>
-            </div>
-        </div>
+                <!--&lt;!&ndash;begin text typed&ndash;&gt;-->
 
-            <script>
-                //var miniVideo = document.getElementById("mini-video");
-                function playPause(target){
-                    if(target.paused)
+                <!--<div class=" col s12 m6 mid-panel-left valign-wrapper ">-->
+                    <!--<div id="typed-strings">-->
+                        <!--<p> echo "Hello World";</p>-->
+
+                        <!--<p> System.out.print( "Hello World");</p>-->
+
+                        <!--<p> Console.log("Hello World" );</p>-->
+
+                        <!--<p> print "Hello World";</p>-->
+
+                        <!--<p> NSLog (@"Hello World!");</p>-->
+                    <!--</div>-->
+                    <!--<div class="mid-panel-typed valign">-->
+                        <!--<span id="typed"></span>-->
+                        <!--<br>-->
+
+                        <!--<h3 class="white-text">-->
+                            <!--Bắt đầu lập trình với <strong>Techmaster</strong> ngay hôm nay!-->
+                        <!--</h3>-->
+               <!-- -->
+                    <!--</div>-->
+                <!--</div>-->
+
+                <!--&lt;!&ndash;end text typed&ndash;&gt;-->
+
+
+            <!--</div>-->
+        <!--</div>-->
+
+        <script>
+            //var miniVideo = document.getElementById("mini-video");
+            function playPause(target) {
+                if (target.paused)
                     target.play();
-                    else
-                        target.pause();
-                }
-
-            </script>
+                else
+                    target.pause();
+            }
+        </script>
+        <div class="mouse-icon">
+            <div class="wheel"></div>
+        </div>
     </div>
-    <div class="triangle col s12"></div>
     <div id="main_row_2" class="col s12">
         <div class="row">
             <div class=" center-align" id="list-course-title">
