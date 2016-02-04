@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Techmaster</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified JavaScript -->
+
+    <script type="text/javascript" src="materialize/jquery.min.js"></script>
+
+    <!--<script src="bootstrap/js/bootstrap.min.js"></script>-->
+
+
+    <!--link font awesome-->
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+
+
+    <!--import Marterilize-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection"/>
+    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+
+    <!--import jscroll -->
+    <script type="text/javascript" src="jscroll-master/jquery.jscroll.min.js"></script>
+    <!--style.css-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+
+
+    <link rel="stylesheet" href="user-dashboard.css" type="text/css">
+
+</head>
+
+
+<body>
+
+<header id="user-header" class="user-page-topbar">
+    <!-- start header nav-->
+    <div class="navbar-fixed">
+        <nav class=" cyan">
+            <div class="nav-wrapper">
+                <ul class="left ">
+                    <li><h1 class="logo-wrapper"><a href="index.html" class="brand-logo darken-2 valign-wrapper "><span
+                            class="valign logo-text">Trang chủ</span></a></h1></li>
+                </ul>
+                <a href="#" data-activates="user-out"
+                   class="sidebar-collapse  waves-effect waves-light hide-on-large-only"><i
+                        class="mdi-navigation-menu"></i></a>
+
+                <div class="header-search-wrapper hide-on-med-and-down">
+                    <i class="mdi-action-search active"></i>
+                    <input type="text" name="Search" class="header-search-input z-depth-2"
+                           placeholder="Tìm kiếm với TechMaster">
+                </div>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="javascript:void(0);" class="waves-effect waves-block waves-light toggle-fullscreen"><i
+                            class="mdi-action-settings-overscan"></i></a>
+                    </li>
+                    <li><a href="#" data-activates="chat-out"
+                           class="waves-effect waves-block waves-light chat-collapse"><i
+                            class="mdi-social-notifications"></i></a>
+                    </li>
+                    <li>
+                        <a href="/support">
+                            <i class="mdi-action-info"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- end header nav-->
+</header>
+
+<main>
+    <div id="notification" >
+        <h1 id="profile-title">
+            Tùy chọn bình luận
+        </h1>
+        <div id="notification-content" class="z-depth-1">
+            <form action="#">
+
+                <p>
+                    <input type="checkbox" class="filled-in" id="option1" checked="checked" />
+                    <label for="option1">Có bình luận mới trong các bài học</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="filled-in" id="option2" />
+                    <label for="option2">Giảng viên chấm điểm bài tập</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="filled-in" id="option3"  />
+                    <label for="option3">Có bài học mới trong khóa học</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="filled-in" id="option4" checked="checked" />
+                    <label for="option4">Thành viên trong lớp hoàn thành một bài tập</label>
+                </p>
+                <p>
+                    <input type="checkbox" class="filled-in" id="option5" checked="checked" />
+                    <label for="option5">Thành viên trong lớp hoàn thành một bài học</label>
+                </p>
+                <p>
+                  <button class="btn large " style="max-width: 200px" type="submit">Submit</button>
+                </p>
+            </form>
+        </div>
+    </div>
+</main>
+<!--begin left side nav-->
+<aside id="left-sidebar-nav">
+    <ul id="user-out" class="side-nav fixed leftside-navigation user-collapsible " data-collapsible="expandable">
+        <li class="user-details cyan darken-2">
+            <div class="row">
+                <div class="col col s4 m4 l4">
+                    <img src="images/cuongtm.jpg" alt="" class="circle responsive-img valign profile-image">
+                </div>
+                <div class="col col s8 m8 l8">
+                    <a class="btn-flat dropdown-button waves-effect waves-light white-text profile-btn" href="#"
+                       data-activates="profile-dropdown" data-beloworigin="true">Khắc Cường VTV<i
+                            class="mdi-navigation-arrow-drop-down right"></i></a>
+                    <ul id="profile-dropdown" class="dropdown-content">
+                        <li><a href="#"><i class="mdi-action-face-unlock"></i> Trang cá nhân</a>
+                        </li>
+                        <li><a href="#"><i class="mdi-hardware-keyboard-tab"></i> Đăng xuất</a>
+                        </li>
+                    </ul>
+                    <p class="user-roal white-text">online</p>
+                </div>
+            </div>
+        </li>
+        <li class="bold active"><a href="" class="waves-effect waves-light-blue collapsible-header"><i
+                class="fa fa-bookmark-o"></i> Khóa học của tôi</a>
+        </li>
+        <li class="bold"><a href="user-profile-info.html" class="waves-effect waves-cyan collapsible-header"><i
+                class="mdi-communication-email"></i> Hồ sơ cá nhân </a>
+        </li>
+        <li class="bold"><a href="" class="waves-effect waves-cyan collapsible-header"><i
+                class="mdi-social-notifications"></i> Thông báo của tôi </a>
+        </li>
+        <li>
+            <div class="collapsible-header waves-effect waves-block waves-light"><a href="javascript:void(0)"
+                                                                                    class="no-padding"><i
+                    class="fa fa-list-ul"></i>Tạo CV cá nhân Online </a></div>
+            <div class="collapsible-body ">
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Thông tin cá nhân</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Qúa trình học tập</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Kinh nghiệm làm việc</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Ngoại ngữ</span>
+                    </a>
+                </div>
+                <div class=" chat-out-list row">
+                    <a href="/resumes">
+                        <i class="fa fa-circle-o"></i> <span>Xem mẫu</span>
+                    </a>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+
+</aside>
+
+<!--end left side nav-->
+
+
+<!--begin Right side nav-->
+<aside id="right-sidebar-nav">
+    <ul id="chat-out" class="side-nav rightside-navigation right-aligned ps-container ps-active-y">
+        <li class="li-hover">
+            <a href="#" data-activates="chat-out" class="chat-close-collapse right"><i class="mdi-navigation-close"></i></a>
+        </li>
+        <li class="li-hover">
+            <ul class="chat-collapsible white" data-collapsible="expandable">
+                <li>
+                    <div class="collapsible-header teal white-text active"><i class="mdi-notification-sms"></i>Thông báo
+                        của lớp
+                    </div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s3 recent-activity-list-icon valign-wrapper">
+                                <img class="responsive-img circle valign" src="images/cuongtm.jpg">
+                            </div>
+                            <div class="col s9 recent-activity-list-text">
+                                <p><strong>Đặng Quang Huy</strong> vừa cập nhật bài học <strong><a
+                                        href="/khoa-hoc-online/25487/web-co-ban-html5-css3-va-javascript/2175/Web-fonts">Web
+                                    fonts</a></strong> của khóa học <strong>Web cơ bản HTML5, CSS3 và
+                                    Javascript</strong></p>
+
+                                <p class="right">4 min ago</p>
+                            </div>
+                        </div>
+                        <a class="btn white-text viewAll" >Xem tất cả</a>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header light-blue white-text active"><i class="fa fa-comment-o"></i>Thông
+                        báo chung của lớp
+                    </div>
+                    <div class="collapsible-body recent-activity">
+                        <div class="recent-activity-list chat-out-list row">
+                            <div class="col s12 recent-activity-list-text">
+                                <p class="flow-text center">Không có thông báo gì nhá</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </li>
+
+            </ul>
+        </li>
+    </ul>
+</aside>
+<!--end right side nav-->
+
+
+<!-- Modal Structure -->
+<div id="modal1" class="modal">
+    <div class="row">
+
+        <ul class="tabs">
+            <li class="tab"><a class="s" href="#login">Đăng nhập</a></li>
+            <li class="tab"><a href="#signup">Đăng kí</a></li>
+        </ul>
+
+        <div id="login" class="col s12">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="Email">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col ">
+                        <input type="checkbox" id="test5"/>
+                        <label for="test5">Ghi nhơ tài khoản</label>
+                    </div>
+                    <div class="col">
+                        <a id="forgot-link" href="/user/forgot-pass">Quên mật khẩu?</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="center col s12">
+                        <span></span>
+                    </div>
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light blue" name="action"><i class="fa fa-facebook"></i>
+                            facebook
+                        </button>
+                    </div>
+                    <div class="col s6">
+                        <button class="btn waves-effect waves-light red" type="submit" name="action">
+                            <i class="fa fa-google"></i>
+                            Google
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div id="signup" class="col s12">
+            <form action="" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate" placeholder="Email">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate" placeholder="Mật khẩu">
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="email" type="text" class="validate" placeholder="Tên đăng nhập">
+
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="password" type="text" class="validate" placeholder="Số điện thoại">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col s12" id="recaptcha">
+                        <div class="g-recaptcha" data-sitekey="6LfsghQTAAAAACsMkPBtk0-gewtKG_4waTW9_G09"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <button type="submit" class="btn blue waves-effect waves-light darken-3">Đăng nhập</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="helper col s12">
+                        Bằng cách nhấp vào Đăng ký, bạn đã đồng ý với các
+                        <a href="/trungtam/quy-dinh" target="_blank"> Quy&nbsp;định </a> của chúng tôi.
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<!--Back to top button-->
+
+<div class="fixed-action-btn vertical click-to-toggle" style="bottom: 15px; right: 25px;">
+    <a class="btn-floating btn-large waves-effect waves-light btn hide" id="back-to-top" href="">
+        <i class=" fa fa-2x fa-arrow-up"></i>
+    </a>
+</div>
+
+<script>
+
+    //Modal
+    $(document).ready(function () {
+        $('.chat-collapsible').collapsible({
+            accordion: false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+        });
+        $('.user-collapsible').collapsible({
+            accrodion: false
+        });
+
+        $('.sidebar-collapse').sideNav({
+                    menuWidth: 300, // Default is 240
+                    edge: 'left', // Choose the horizontal origin
+                    closeOnClick: false // Closes side-nav on <a> clicks, useful for Angular/Meteor
+                }
+        );
+        $('.chat-collapse').sideNav({
+            menuWidth: 300, // Default is 240
+            edge: 'right', // Choose the horizontal origin
+            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+
+        });
+
+        //jscroll configure
+
+    });
+
+
+
+
+    if ($('#back-to-top').length) {
+        var scrollTrigger = 100, // px
+                backToTop = function () {
+                    var scrollTop = $(window).scrollTop();
+                    if (scrollTop > scrollTrigger) {
+                        $('#back-to-top').removeClass('hide');
+                    } else {
+                        $('#back-to-top').addClass('hide');
+                    }
+                };
+        backToTop();
+        $(window).on('scroll', function () {
+            backToTop();
+        });
+        $('#back-to-top').on('click', function (e) {
+            e.preventDefault();
+            $('html,body').animate({
+                scrollTop: 0
+            }, 1200);
+        });
+    }
+
+
+</script>
+</body>
+</html>
