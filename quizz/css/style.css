@@ -547,6 +547,9 @@ html, body {
     padding: 10px;
 }
 
+.course-count:last-child {
+    margin-bottom: 20px;
+}
 .lesson-number, .course-lesson-title {
     font-weight: 500;
     font-size: 15px;
@@ -580,4 +583,9 @@ html, body {
     overflow: hidden;
     margin-left: 10px;
     margin-bottom: 0;
+}
+
+#demo1, #demo2 {
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
 }
