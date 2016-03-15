@@ -132,6 +132,7 @@ html, body {
 
 #top-menu ul ul {
     position: absolute;
+    z-index: 1;
     left: -9999px;
 }
 
@@ -322,7 +323,7 @@ html, body {
 
     #top-menu .submenu-button {
         position: absolute;
-        z-index: 10;
+        z-index: 10000;
         right: 0;
         top: 0;
         display: block;
@@ -341,7 +342,7 @@ html, body {
         width: 1px;
         height: 11px;
         background: #000000;
-        z-index: 99;
+        z-index: 9999;
     }
 
     #top-menu .submenu-button::before {
@@ -353,7 +354,7 @@ html, body {
         width: 11px;
         height: 1px;
         background: #000000;
-        z-index: 99;
+        z-index: 9999;
     }
 
     #top-menu .submenu-button.submenu-opened:after {
@@ -362,6 +363,148 @@ html, body {
 }
 
 /*end css menu top*/
+
+/*css footer*/
+
+footer {
+    width: 100%;
+    background-color: #eaedf1;
+    overflow: hidden;
+}
+
+.footer-title {
+    width: 100%;
+    background-color: teal;
+    overflow: hidden;
+}
+
+.footer-title p {
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.8em;
+    padding: 20px;
+}
+
+.socical-counts {
+    float: left;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.footer-social {
+    overflow: hidden;
+    background-color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /*width: 300px;*/
+}
+
+.footer-social i {
+    color: white;
+    margin-top: 16px;
+}
+
+.footer-facebook, .footer-web, .footer-youtube {
+    float: left;
+    overflow: hidden;
+    /*background: url(../Images/sprite.png) no-repeat;*/
+    width: 60px;
+    height: 60px;
+
+}
+
+.footer-youtube {
+    background-color: #29c0ac;
+    background-position: 20px -360px !important;
+}
+
+.footer-facebook {
+    background-color: #24aa98;
+    background-position: -37px -360px !important;
+}
+
+.footer-web {
+    background-color: #219c8b;
+    background-position: -90px -360px !important;
+}
+
+.footer-menu {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    /*width: 115px;*/
+}
+
+.footer-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-menu ul li {
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.footer-menu ul li.active a {
+    color: black;
+}
+
+.footer-menu ul li a {
+    font-weight: bold;
+    color: #b4bbc2;
+    font-size: 1.35em;
+    text-decoration: none;
+}
+
+.footer-social span {
+    color: #b4bbc2;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 1.5em;
+    margin-top: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+footer .about {
+    overflow: hidden;
+    /*margin-right: 20px;*/
+
+}
+
+footer .about div {
+    margin-bottom: 15px;
+}
+
+footer .about address {
+    font-weight: 500;
+    color: #b4bbc2;
+    font-size: 1em;
+}
+
+footer .about p {
+    font-weight: bold;
+    color: #383737;
+    font-size: 1.35em;
+}
+
+footer .about button {
+    color: #fff;
+    display: block;
+    border: none;
+    text-decoration: none;
+    width: 80px;
+    height: 36px;
+    border-radius: 6px;
+    background-color: #1abc9c;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/*end css footer*/
+
 
 #header {
     background-color: white;
@@ -433,7 +576,7 @@ html, body {
     font-size: 10px;
 }
 
-.course-description h2, .lesson-count, .lesson-overview {
+.course-description h2, .lesson-count, .lesson-overview, .course-price p {
     margin-top: 0;
     font-weight: 500;
     font-size: 20px;
@@ -494,6 +637,10 @@ html, body {
     float: none;
 }
 
+.summary-title {
+    overflow-y: auto;
+}
+
 .course-summary .course-count ul li {
     float: none;
     margin-left: 0;
@@ -509,6 +656,10 @@ html, body {
     overflow: hidden;
 }
 
+.course-price {
+    display: block;
+    width: 100%;
+}
 .take-course a {
     display: block;
     margin-top: 15px;
@@ -527,6 +678,8 @@ html, body {
 }
 
 .course-module {
+    float: left;
+    width: 100%;
     padding: 10px;
     background-color: #f0f0f0;
     border-radius: 5px;
@@ -545,8 +698,12 @@ html, body {
     width: 100%;
     float: left;
     padding: 10px;
+
 }
 
+.course-lesson .lesson-right {
+    font-size: larger;
+}
 .course-count:last-child {
     margin-bottom: 20px;
 }
@@ -572,7 +729,7 @@ html, body {
 }
 
 .lesson-checks p {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 5px;
     margin-right: 5px;
     padding-top: 3px;
@@ -585,7 +742,18 @@ html, body {
     margin-bottom: 0;
 }
 
+.course-price p {
+    border-top: 1px solid #f0f0f0;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.course-price span {
+    font-size: 3rem;
+}
 #demo1, #demo2 {
+    float: left;
     /*margin-top: 20px;*/
-    /*margin-bottom: 20px;*/
+    margin-bottom: 15px;
 }

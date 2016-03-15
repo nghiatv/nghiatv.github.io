@@ -27,8 +27,8 @@
         <div id='top-menu'>
             <ul>
                 <li><a href='#'>Trang chủ</a></li>
-                <li><a href='#'>Course</a></li>
-                <li class="active"><a href='#'>Hướng dẫn thi</a></li>
+                <li class="active"><a href='#'>Course</a></li>
+                <li><a href='#'>Hướng dẫn thi</a></li>
                 <li><a href='#'>Profile</a>
                     <ul>
                         <li><a href='#'>Hồ sơ cá nhân</a>
@@ -59,7 +59,7 @@
     <!--</div>-->
     <div class="container course-wrapper">
         <div class="row">
-            <div class="col-xs-12 col-md-4 col-md-push-8 course-item">
+            <div class="col-xs-12 col-md-4 col-md-push-8">
                 <div class="course-block course-summary">
                     <div class="summary-title">
                         <div class="lesson-count">
@@ -71,6 +71,9 @@
                                 <span>139 Quizzes</span>
                             </div>
                         </div>
+                    </div>
+                    <div class="course-price text-center">
+                        <p>Giá: <span> 100.000 đ </span> /lượt</p>
                     </div>
                     <div class="take-course">
                         <a href="#">
@@ -89,9 +92,9 @@
                 </div>
 
             </div>
-            <div class="col-xs-12 col-md-8 col-md-pull-4 course-item">
+            <div class="col-xs-12 col-md-8 col-md-pull-4 ">
                 <div class="course-block course-intro">
-                    <img src="img/1024.png " alt="C++ Tutorial" class="img-circle">
+                    <img src="img/1024.png" alt="C++ Tutorial" class="img-circle">
 
                     <div class=" course-description">
                         <h2>C++ Tutorial</h2>
@@ -112,15 +115,50 @@
                     </div>
 
                 </div>
-                <div class="course-block course-detail">
+                <div class="course-block course-detail" id="course-detail">
                     <div class="course-module">
                         <p>
-                            <a href="#demo1" data-toggle="collapse">
+                            <a href="#demo1" data-toggle="collapse" data-parent="#course-detail">
                                 <span>Chương 1:</span> Tổng quan về PHP
                             </a>
                         </p>
                     </div>
-                    <div id="demo1" class="collapse in">
+                    <div id="demo1" class="collapse">
+                        <div class="course-lesson">
+                            <a href="">
+                                <div class="lesson-left">
+                                    <span class="lesson-number"> 1 </span>
+                                    <span class="course-lesson-title"> Introduction to JavaScript </span>
+                                </div>
+                                <div class="lesson-right">
+                                    <div class="lesson-checks">
+                                        <i class="fa fa-question"></i>
+
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-lesson">
+                            <a href="">
+                                <div class="lesson-left">
+                                    <span class="lesson-number"> 2 </span>
+                                    <span class="course-lesson-title"> Biến và các kiểu dữ liệu nhé </span>
+                                </div>
+                                <div class="lesson-right">
+                                    <div class="lesson-checks lesson-time">
+                                        <i class="fa fa-clock-o"></i>
+
+                                        <p>5:15</p>
+                                    </div>
+                                    <div class="lesson-checks">
+                                        <i class="fa fa-question"></i>
+
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                         <div class="course-lesson">
                             <a href="">
                                 <div class="lesson-left">
@@ -143,6 +181,80 @@
                                     <span class="course-lesson-title"> Introduction to JavaScript </span>
                                 </div>
                                 <div class="lesson-right">
+                                    <div class="lesson-checks">
+                                        <i class="fa fa-question"></i>
+
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-lesson">
+                            <a href="">
+                                <div class="lesson-left">
+                                    <span class="lesson-number"> 1 </span>
+                                    <span class="course-lesson-title"> Introduction to JavaScript </span>
+                                </div>
+                                <div class="lesson-right">
+                                    <div class="lesson-checks">
+                                        <i class="fa fa-question"></i>
+
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-lesson">
+                            <a href="">
+                                <div class="lesson-left">
+                                    <span class="lesson-number"> 1 </span>
+                                    <span class="course-lesson-title"> Introduction to JavaScript </span>
+                                </div>
+                                <div class="lesson-right">
+                                    <div class="lesson-checks">
+                                        <i class="fa fa-question"></i>
+
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="course-module">
+                        <p>
+                            <a href="#demo2" data-toggle="collapse" data-parent="#course-detail">
+                                <span>Chương 2:</span> Tổng quan về người lào
+                            </a>
+                        </p>
+                    </div>
+                    <div id="demo2" class="collapse">
+                        <div class="course-lesson">
+                            <a href="">
+                                <div class="lesson-left">
+                                    <span class="lesson-number"> 1 </span>
+                                    <span class="course-lesson-title"> Introduction to JavaScript </span>
+                                </div>
+                                <div class="lesson-right">
+                                    <div class="lesson-checks">
+                                        <i class="fa fa-question"></i>
+
+                                        <p>5</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="course-lesson">
+                            <a href="">
+                                <div class="lesson-left">
+                                    <span class="lesson-number"> 2 </span>
+                                    <span class="course-lesson-title"> Biến và các kiểu dữ liệu nhé </span>
+                                </div>
+                                <div class="lesson-right">
+                                    <div class="lesson-checks lesson-time">
+                                        <i class="fa fa-clock-o"></i>
+
+                                        <p>5:15</p>
+                                    </div>
                                     <div class="lesson-checks">
                                         <i class="fa fa-question"></i>
 
@@ -222,5 +334,75 @@
 
     </div>
 </main>
+<footer>
+    <div class="footer-title">
+        <p>Hệ thống thi trắc nghiệm mới của Techmaster YI</p>
+    </div>
+    <div class="footer-content container course-wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 social-count">
+                <a class="footer-social" href="#" target="_blank">
+                    <div class="footer-youtube">
+                        <i class="fa fa-2x fa-youtube"></i>
+                    </div>
+                    <span>Techmaster</span>
+                </a>
+                <a class="footer-social" href="http://www.facebook.com/" target="_blank">
+                    <div class="footer-facebook"><i class="fa fa-2x fa-facebook"></i></div>
+                    <span>Techmaster.vn</span>
+                </a>
+                <a class="footer-social" href="" target="_blank">
+                    <div class="footer-web"><i class="fa fa-2x fa-internet-explorer"></i></div>
+                    <span>Techmaster.vn</span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="footer-menu col-xs-12 col-sm-4">
+
+
+                    <ul>
+                        <li class="active">
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">Courses</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about col-xs-12 col-sm-8 ">
+                    <!--<div class="logoFooter"></div>-->
+                    <div>
+                        <p>Techmaster Inc.</p>
+                        <address>
+                            Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt nam.
+                            <br>
+                            <br>
+                            Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh
+                            Xuân, Hà Nội
+                        </address>
+                    </div>
+                    <button>Email Us</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class=" copyright">
+        © 2016 Techmaster, Inc. All rights reserved.
+    </div>
+</footer>
 </body>
 </html>
