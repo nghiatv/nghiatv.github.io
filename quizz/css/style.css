@@ -2,6 +2,103 @@ html, body {
     background-color: #f2f2f2
 }
 
+.nopad-left {
+    padding-left: 0 !important;
+}
+
+.nopad-right {
+    padding-right: 0 !important;
+}
+
+.nopad-top {
+    padding-right: 0 !important;
+}
+
+.nopad-bottom {
+    padding-right: 0 !important;
+}
+
+.nopad {
+    padding: 0 !important;
+}
+
+.hoverable:hover {
+    transition: box-shadow .25s;
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hoverable {
+    transition: box-shadow .25s;
+    box-shadow: 0;
+}
+
+.ripple-wrapper {
+    position: relative;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    /*color: white;*/
+
+    font-size: 22px;
+}
+
+.fab {
+    border-radius: 50%;
+    margin: 0;
+    padding: 20px;
+}
+
+.material {
+    position: relative;
+    color: white;
+    margin: 20px auto;
+    height: 400px;
+    width: 500px;
+    background: #f45673;
+
+}
+
+.ripple {
+    overflow: hidden;
+}
+
+.ripple-effect {
+    position: absolute;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background: white;
+
+    animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+    from {
+        transform: scale(1);
+        opacity: 0.4;
+    }
+    to {
+        transform: scale(100);
+        opacity: 0;
+    }
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    vertical-align: middle;
+    z-index: 1;
+    will-change: opacity, transform;
+    transition: all .3s ease-out;
+}
 /*CSS của menu top*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -85,7 +182,6 @@ html, body {
 
 #top-menu > ul > li > a {
     padding: 20px;
-    font-size: 13px;
     text-decoration: none;
     text-transform: uppercase;
     color: #000000;
@@ -94,6 +190,9 @@ html, body {
     -ms-transition: color .2s ease;
     -o-transition: color .2s ease;
     transition: color .2s ease;
+    margin-top: 0;
+    font-weight: 700;
+    font-size: 13px;
 }
 
 #top-menu > ul > li:hover > a,
@@ -382,8 +481,9 @@ footer {
     text-align: center;
     color: #fff;
     font-weight: bold;
-    font-size: 1.8em;
+    font-size: 18px;
     padding: 20px;
+    margin-bottom: 0;
 }
 
 .socical-counts {
@@ -503,8 +603,15 @@ footer .about button {
     margin-top: 20px;
 }
 
+footer .copyright {
+    text-align: center;
+    color: #555;
+    font-size: 12px;
+    padding: 20px 0;
+}
 /*end css footer*/
 
+/*css trang detail*/
 
 #header {
     background-color: white;
@@ -550,7 +657,8 @@ footer .about button {
 }
 
 .course-wrapper {
-    margin: 30px auto;
+    margin: 0 auto;
+    padding: 30px 0;
     /*width: 1000px;*/
 }
 
@@ -757,3 +865,95 @@ footer .about button {
     /*margin-top: 20px;*/
     margin-bottom: 15px;
 }
+
+/*end css trang detail*/
+
+/*begin css trang in game*/
+
+.count-down {
+    vertical-align: middle;
+}
+
+.count-down p, .count-down span {
+    color: white;
+    /*display: inline-block;*/
+    font-size: 30px;
+    vertical-align: middle;
+    float: none;
+    /*height: 70px;*/
+    line-height: 0.5;
+    margin: 0;
+    text-align: center;
+}
+
+.count-down span {
+    line-height: 3;
+    display: block;
+    font-size: 12px;
+}
+
+.exam-nav, .count-down {
+    margin-bottom: 0 !important;
+    height: 70px;
+}
+
+nav.navbar-inverse {
+    background-color: teal;
+    border-radius: 0;
+}
+
+/*ul.navbar-nav {*/
+/*float: left;*/
+/*/!*height: 70px;*!/*/
+/*}*/
+.user-info-nav {
+    /*padding: 10px 0;*/
+}
+
+.user-info-nav .dropdown.pull-right {
+    padding: 10px;
+}
+
+.user-info-nav .dropdown.pull-right.open {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#menu1 img {
+    height: 50px;
+
+}
+
+#main-app {
+    background-color: #3b3b3b;
+    min-height: 699px;
+}
+
+#app {
+    /*background: #e9e9e9;*/
+    margin: auto;
+    /*padding-left: 15px;*/
+    /*padding-right: 15px;*/
+    overflow: hidden;
+    position: relative;
+    font-size: 16px;
+}
+
+.question-title span {
+    /*border-radius: 50%;*/
+}
+
+.question-title span img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*border-radius: 50%;*/
+}
+
+.question-number {
+    line-height: 100px;
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+/*end css trang ingame*/
