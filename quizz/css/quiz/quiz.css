@@ -1,0 +1,207 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 0;
+}
+
+/*
+ * Global add-ons
+ */
+.sub-header {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1000;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-left: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a {
+    color: #fff;
+    background-color: #428bca;
+}
+
+/*
+ * Main content
+ */
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+/*
+ * Content
+ */
+#content-scrollable{
+    padding: 20px;
+    height: 600px;
+    line-height: 2em;
+    border-bottom: 1px solid #eee;
+    overflow-y: auto;
+}
+#content-scrollable #quiz-extra-content, #content-scrollable #quiz-answer-content{
+    padding: 20px;
+}
+@media (max-width: 1024px) {
+    #content-scrollable{
+        padding: 10px;
+        height: 440px;
+    }
+    #content-scrollable #quiz-extra-content, #content-scrollable #quiz-answer-content{
+        padding: 10px;
+    }
+}
+#content-scrollable input[type=checkbox]{
+    margin: 7px 7px 0;
+}
+#content-scrollable input[type=radio]{
+    margin: 7px 7px 0;
+}
+#content-scrollable select{
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #1c94c6;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    -webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+
+}
+.progress{
+    margin-bottom: 0;
+}
+.col-lg-6 .btn-group-justified .btn-group{
+    padding: 5px;
+}
+.col-lg-6 .btn-group-justified .btn-group .btn{
+    text-transform: uppercase;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/*
+ * Question List
+ */
+#question-list-wrapper {
+    margin-top: 20px;
+}
+#question-list {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    min-height: 300px;
+    overflow: auto;
+}
+#question-list li {
+    float: left;
+    margin: 3px;
+}
+#question-list li button {
+    width: 40px;
+}
+
+/*
+ * Portrait
+ */
+#portrait {
+    text-align: center;
+}
+#portrait img {
+    width: 110px;
+    margin: 0 auto 5px auto;
+}
+
+/*
+ * Question Description
+ */
+#side-bar-question-des ul {
+    padding: 0;
+    margin: auto;
+    list-style: none;
+    white-space: nowrap;
+    min-height: 100px;
+}
+#side-bar-question-des li {
+    float: left;
+}
+#side-bar-question-des li button {
+    width: 25px;
+    height: 25px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    cursor: auto;
+}
+
+/* Selectbox */
+/*#quiz-answer-content > #answer_1 {*/
+    /*margin-top: 2em;*/
+    /*border: 1px solid black;*/
+    /*padding: 1em;*/
+    /*height: 3.5em;*/
+    /*font-weight: bold;*/
+/*}*/
+/*select.select_box_question option {*/
+    /*font-weight: bold;*/
+/*}*/

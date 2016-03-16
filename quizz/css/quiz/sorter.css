@@ -1,0 +1,39 @@
+#list ul li p{
+    padding: 0 10px;
+    text-align: center;
+    text-transform: capitalize;
+    background-image: none;
+    white-space: nowrap;
+}
+#list ul li p.sorter-item-left{
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+}
+#list ul li p.sorter-item-center{
+    width: 100px;
+}
+#list ul li p.sorter-item-right{
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    cursor: pointer;
+}
+#group1, #group2, #arrow {
+    float: left;
+    list-style-type: none;
+    margin: 0 10px 0 0;
+    padding: 0 0 2.5em;
+}
+#group1 li, #group2 li{
+    margin: 0 5px 5px 5px;
+    font-size: 1.2em;
+    min-width: 150px;
+}
+.group-state-highlight {
+    border: 1px solid #fcefa1;
+    background-color: #fbf9ee;
+    color: #363636;
+    height: 1.5em;
+    line-height: 1.2em;
+}

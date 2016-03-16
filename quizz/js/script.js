@@ -61,52 +61,48 @@
 })(jQuery);
 
 (function ($) {
-    $(document).ready(function () {
 
-        $(document).ready(function () {
-            $("#top-menu").menumaker({
-                title: "Menu",
-                format: "multitoggle"
-            });
 
-            $("#top-menu").prepend("<div id='menu-line'></div>");
+    $("#top-menu").menumaker({
+        title: "Menu",
+        format: "multitoggle"
+    });
 
-            var foundActive = false, activeElement, linePosition = 0, menuLine = $("#top-menu #menu-line"), lineWidth, defaultPosition, defaultWidth;
+    $("#top-menu").prepend("<div id='menu-line'></div>");
 
-            $("#top-menu > ul > li").each(function () {
-                if ($(this).hasClass('active')) {
-                    activeElement = $(this);
-                    foundActive = true;
-                }
-            });
+    var foundActive = false, activeElement, linePosition = 0, menuLine = $("#top-menu #menu-line"), lineWidth, defaultPosition, defaultWidth;
 
-            if (foundActive === false) {
-                activeElement = $("#top-menu > ul > li").first();
-            }
+    $("#top-menu > ul > li").each(function () {
+        if ($(this).hasClass('active')) {
+            activeElement = $(this);
+            foundActive = true;
+        }
+    });
 
-            defaultWidth = lineWidth = activeElement.width();
+    if (foundActive === false) {
+        activeElement = $("#top-menu > ul > li").first();
+    }
 
-            defaultPosition = linePosition = activeElement.position().left;
+    defaultWidth = lineWidth = activeElement.width();
 
+    defaultPosition = linePosition = activeElement.position().left;
+
+    menuLine.css("width", lineWidth);
+    menuLine.css("left", linePosition);
+
+    $("#top-menu > ul > li").hover(function () {
+            activeElement = $(this);
+            lineWidth = activeElement.width();
+            linePosition = activeElement.position().left;
             menuLine.css("width", lineWidth);
             menuLine.css("left", linePosition);
-
-            $("#top-menu > ul > li").hover(function () {
-                    activeElement = $(this);
-                    lineWidth = activeElement.width();
-                    linePosition = activeElement.position().left;
-                    menuLine.css("width", lineWidth);
-                    menuLine.css("left", linePosition);
-                },
-                function () {
-                    menuLine.css("left", defaultPosition);
-                    menuLine.css("width", defaultWidth);
-                });
-
+        },
+        function () {
+            menuLine.css("left", defaultPosition);
+            menuLine.css("width", defaultWidth);
         });
 
 
-    });
 })(jQuery);
 /**
  * Created by nghia on 3/14/16.

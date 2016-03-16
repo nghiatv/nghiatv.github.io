@@ -1,5 +1,6 @@
 html, body {
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    font-size: 16px;
 }
 
 .nopad-left {
@@ -99,6 +100,7 @@ html, body {
     will-change: opacity, transform;
     transition: all .3s ease-out;
 }
+
 /*CSS của menu top*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -609,6 +611,7 @@ footer .copyright {
     font-size: 12px;
     padding: 20px 0;
 }
+
 /*end css footer*/
 
 /*css trang detail*/
@@ -768,6 +771,7 @@ footer .copyright {
     display: block;
     width: 100%;
 }
+
 .take-course a {
     display: block;
     margin-top: 15px;
@@ -812,9 +816,11 @@ footer .copyright {
 .course-lesson .lesson-right {
     font-size: larger;
 }
+
 .course-count:last-child {
     margin-bottom: 20px;
 }
+
 .lesson-number, .course-lesson-title {
     font-weight: 500;
     font-size: 15px;
@@ -858,8 +864,9 @@ footer .copyright {
 }
 
 .course-price span {
-    font-size: 3rem;
+    font-size: 2rem;
 }
+
 #demo1, #demo2 {
     float: left;
     /*margin-top: 20px;*/
@@ -902,6 +909,34 @@ nav.navbar-inverse {
     border-radius: 0;
 }
 
+.user-info-nav .pull-left {
+    padding: 10px;
+
+}
+
+#submit-quiz {
+    /*height: 100%;*/
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    outline: 0;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    text-decoration: none;
+    color: #fff;
+    /*background-color: #cc4400;*/
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+
+}
+
 /*ul.navbar-nav {*/
 /*float: left;*/
 /*/!*height: 70px;*!/*/
@@ -936,6 +971,12 @@ nav.navbar-inverse {
     overflow: hidden;
     position: relative;
     font-size: 16px;
+    padding-top: 100px;
+
+}
+
+#app .course-block {
+    background-color: #e9e9e9;
 }
 
 .question-title span {
@@ -950,10 +991,153 @@ nav.navbar-inverse {
 }
 
 .question-number {
+    text-transform: uppercase;
     line-height: 100px;
-    font-size: 3rem;
+    font-size: 1.5rem;
     font-weight: bold;
+}
+
+.question-content {
+    width: 100%;
+    /*min-height: 600px;*/
+}
+
+.quiz-question, .list-question-content {
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #444;
+}
+
+.quiz-answer {
+    padding: 0 20px;
+    text-align: center;
+}
+
+@media all and (min-width: 768px) {
+    .question-number {
+        font-size: 2rem;
+    }
+
+    .quiz-question, .list-question-content {
+        padding: 20px 40px;
+        font-size: 20px;
+        color: #444;
+    }
+
+    .quiz-answer {
+        padding: 0 40px;
+        text-align: center;
+    }
+}
+
+.multiple-choice-quiz {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    border-radius: 3px;
+    background: #fff;
+    text-align: left;
+}
+
+.multiple-choice-quiz .answer {
+    border-top: solid 1px #eee;
+    border-radius: 3px;
+    background: #fff;
+    padding: 20px;
+    position: relative;
+    transition: box-shadow ease-in 100ms;
+    cursor: pointer;
+}
+
+.multiple-choice-quiz .answer.selected {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .16), 0 4px 4px rgba(0, 0, 0, .23);
+    z-index: 1;
+}
+
+.answer.material-radio .icon {
+    float: left;
+    width: 36px;
+    position: relative;
+    height: 18px;
 
 }
 
+.answer.material-radio .outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: solid 2px;
+    border-color: #5a5a5a;
+    box-sizing: content-box;
+}
+
+.material-radio.selected .fill {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.material-radio .fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #0f9d58;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: -webkit-transform ease .28s;
+    transition: transform ease .28s;
+}
+
+ul.list-group-horizontal {
+    width: 100%;
+    float: left;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+}
+
+.list-group-horizontal li {
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+ul.list-group-horizontal .btn {
+    text-decoration: none;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    outline: 0;
+    padding: 0 1rem;
+    font-size: 1rem !important;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.btn.done {
+    background-color: #1a75ff;
+    color: #fff;
+}
+.btn.reject{
+    background-color: lightblue;
+    color: #fff;
+}
+.btn.reading{
+    background-color: green;
+    color: #fff;
+}
+.btn.unread{
+    background-color: #cccccc;
+    color: #fff;
+}
 /*end css trang ingame*/
