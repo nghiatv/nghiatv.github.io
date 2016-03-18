@@ -26,7 +26,7 @@ quiz.select_box =function(question) {
     function selectbox_render (question) {
 
         $("#quiz-answer-content").html("");
-        $("#quiz-answer-content").append('<div id="content"></div>');
+        $("#quiz-answer-content").append('<div id="content" class=""></div>');
         $("#quiz-answer-content>#content").html(question.answer_description.paragraph);
 
         resetContent();

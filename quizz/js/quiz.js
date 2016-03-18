@@ -35,7 +35,7 @@ quiz.load = function () {
             "extra": ""
         },
         {
-            "id": 111,
+            "id": 1,
             "question": "Insert in to empty blank",
             "type": "fill_to_input",
             "session": "Advance",
@@ -263,7 +263,7 @@ quiz.setQuestion = function (index) {
     //}
     // Đoạn này là extra text hiện tại chưa có nên comment lại nhé.
 
-    if (q.type == "writing") {
+    if (q.type == "writting") {
         quiz.writting(q);
     } else if (q.type == "record") {
         quiz.record(q);
@@ -273,14 +273,13 @@ quiz.setQuestion = function (index) {
         quiz.dragDropDialog(q);
     } else if (q.type == " drag-drop-image") {
         quiz.dragDropImage(q);
-    } else if (q.type == "sm-choice") {
-        quiz.sMChoice(q);
-    } else if (q.type == " select_box") {
+    } else if (q.type == "sm_choice") {
+        quiz.smChoice(q);
+    } else if (q.type == "select_box") {
         quiz.select_box(q);
     } else if (q.type == "sorter") {
         quiz.sorter(q);
-    } else if (q.type == "fill-to-input") {
-        alert("nghia");
+    } else if (q.type == "fill_to_input") {
         quiz.fillToInput(q);
     }
 
