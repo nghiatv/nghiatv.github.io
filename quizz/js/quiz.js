@@ -22,9 +22,33 @@ quiz.load = function () {
 
     questionList = [
         {
+            "id": 19,
+            "title": "Tìm lỗi cho đoạn code sau:",
+            "question": "Choose one correct answer. <br />I was ......... after my mom's best friend.",
+            "type": "select_box",
+            "session": "cai gi day",
+            "multi_choice": false,
+            "answer_description": {
+                "paragraph": '<pre><code>grade = (student, period=(if b? then 7 else 6)) ' +
+                '->if student.excellentWork' +
+                '"A+"' +
+                'else if student.okayStuff' +
+                ' if student.triedHard then "B" else "B-"' +
+                'else' +
+                '"C"' +
+                'class Animal extends Being' +
+                'constructor: (@name) ->' +
+                'move: (meters) ->' +
+                'alert @name + " moved #{meters}m." </code> </pre>',
+            },
+            "mark": false
+
+
+        },
+        {
             "id": 7,
-            "title": "Choose the correct answer",
-            "question": "Choose the correct answer",
+            "title": "Tìm lỗi cho đoạn code sau:",
+            "question": "Chọn đáp án sai nhé",
             "type": "select_box",
             "session": "ngu phap",
             "answer_description": {
@@ -81,27 +105,6 @@ quiz.load = function () {
                 }
             ],
             "answer": [],
-            "mark": false
-        },
-        {
-            "id": 3,
-            "question": "Write an essay with image",
-            "type": "writting",
-            "session": "Viet",
-            "answer_description": {
-                "min_word": 30,
-                "max_word": 150
-            },
-            "answer": "",
-            "mark": false,
-            "extra": '<img class="img326" alt="Trung Quốc có 16 giàn khoan dầu ở Biển Đông" src="http://dantri21.vcmedia.vn/zoom/327_245/6DQQJ7yW5QPfG6EzuGal/Image/2014/06/jellyfish2-19716.jpg">'
-        },
-        {
-            "id": 4,
-            "question": "Talk about your favourites",
-            "type": "record",
-            "session": "noi",
-            "answer": "",
             "mark": false
         },
         {
@@ -170,35 +173,9 @@ quiz.load = function () {
             "answer": "",
             "mark": false,
             "extra": ""
-        },
-        {
-            "id": 10,
-            "title": "Combine the same type of word",
-            "question": "Combine the same type of word",
-            "type": "sorter",
-            "session": "ngu phap",
-            "answer_description": {
-                "g1": ["black", "apple", "tiger", "flower"],
-                "g2": ["banana", "blue", "elephant", "tree"]
-            },
-            "answer": "",
-            "mark": false,
-            "extra": ""
-        },
-        {
-            "id": 11,
-            "question": "Listening and answer the question. Drag and drop the answer to the image",
-            "type": "drag-drop-image",
-            "session": "Nghe",
-            "answer_description": {
-                "paragraph": ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg"],
-                "recommend": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
-            },
-            "answer": [],
-            "mark": false,
-            "extra": '<audio controls><source src="audio/listen.mp3" type="audio/mpeg"></audio>'
         }
-    ];
+    ]
+    ;
     var index = 1;
     questionList.forEach(function (q) {
         var cls = "unread";
@@ -208,13 +185,14 @@ quiz.load = function () {
         if (q.mark === true) {
             cls = "reject";
         }
-        quiz.opt.question_list.append('<li><a onclick="quiz.setQuestion(' + (index - 1) + ')" class="btn btn-default ' + cls + '" id="button' + index + '" > Câu ' + index + ' </a></li>')
+        quiz.opt.question_list.append('<li><a onclick="quiz.setQuestion(' + (index - 1) + ')" class=" hoverable btn btn-default  ' + cls + '" id="button' + index + '" > Câu ' + index + ' </a></li>')
         index++;
     });
     currentQuestionIndex = 0;
     quiz.setQuestion(currentQuestionIndex);
 
-};
+}
+;
 
 //Nut next nhe
 quiz.next = function () {
@@ -242,8 +220,9 @@ quiz.previous = function () {
 //Set cau hoi cho cau hien tai
 
 quiz.setQuestion = function (index) {
+    //hljs.initHighlightingOnLoad();
     currentQuestionIndex = index;
-    //alert(previousQuestionIndex)
+
     quiz.updateButtonStatus(previousQuestionIndex);
     quiz.updateButtonStatus(index);
     currentQuestion = questionList[index];
@@ -263,16 +242,10 @@ quiz.setQuestion = function (index) {
     //}
     // Đoạn này là extra text hiện tại chưa có nên comment lại nhé.
 
-    if (q.type == "writting") {
-        quiz.writting(q);
-    } else if (q.type == "record") {
-        quiz.record(q);
-    } else if (q.type == "drag-drop") {
+    if (q.type == "drag-drop") {
         quiz.dragDrop(q);
     } else if (q.type == "drag-drop-dialog") {
         quiz.dragDropDialog(q);
-    } else if (q.type == " drag-drop-image") {
-        quiz.dragDropImage(q);
     } else if (q.type == "sm_choice") {
         quiz.smChoice(q);
     } else if (q.type == "select_box") {
@@ -290,52 +263,66 @@ quiz.setQuestion = function (index) {
 quiz.toggleButton = function (q) {
     //Them chuc nang cho nut next va previous
     if (currentQuestionIndex <= 0) {
-        $("#previous-quiz").attr("onclick", "").addClass("disabled").removeClass("ripple");
-        $("#next-quiz").attr("onclick", "quiz.next()").removeClass("disabled").addClass('ripple');
+        setTimeout(function(){
+            $("#previous-quiz").attr("onclick", "").removeClass("waves-effect");
+        },1000);
+        $("#next-quiz").attr("onclick", "quiz.next()").addClass('waves-effect');
     } else if (currentQuestionIndex >= (questionList.length - 1 )) {
-        $("next-quiz").attr("onclick", "").addClass("disabled").removeClass('ripple');
-        $("previous-quiz").attr("onclick", "quiz.previous()").removeClass("disabled").addClass("ripple");
+       setTimeout(function () {
+           $("next-quiz").attr("onclick", "").removeClass('waves-effect');
+       }, 1000);
+        $("previous-quiz").attr("onclick", "quiz.previous()").addClass("waves-effect");
     } else {
-        $("#next-quiz").attr("onclick", "quiz.next()").removeClass("disabled").addClass("ripple");
-        $("#previous-quiz").attr("onclick", "quiz.previous()").removeClass("disabled").addClass("ripple");
+        $("#next-quiz").attr("onclick", "quiz.next()").addClass("waves-effect");
+        $("#previous-quiz").attr("onclick", "quiz.previous()").addClass("waves-effect");
     }
     // thay đổi màu sắc cho cờ
 
-
     if (q.mark) {
-        $("#btn-mark").removeClass("btn-warning").addClass("btn-dangger");
-
+        $("#btn-mark").removeClass("btn-warning").addClass("btn-danger");
     } else {
-        $("#btn-mark").removeClass("btn-dagger").addClass("warning");
+        $("#btn-mark").removeClass("btn-danger").addClass("btn-warning")
     }
-
 };
 
 //kiem tra trạng thái của cờ
 quiz.checkMark = function () {
     currentQuestion.mark = !currentQuestion.mark;
+    console.log(currentQuestion.mark);
     quiz.updateButtonStatus(currentQuestionIndex);
 
     var btn_mark = $("#btn-mark");
-    if (btn_mark.className = "btn btn-info pull-left") {
-        btn_mark.toggleClass("btn-warning btn-danger");
+    if (currentQuestion.mark) {
+        btn_mark.removeClass('btn-warning');
+        btn_mark.addClass('btn-danger');
     } else {
-        btn_mark.toggleClass("btn-danger btn-warning");
+        btn_mark.removeClass('btn-danger');
+        btn_mark.addClass('btn-warning');
     }
+
+
 };
+
+
 //Cập nhật trạng thái nút
 quiz.updateButtonStatus = function (index) {
     var cls = "reading";
     var q = questionList[index];
-        //console.log(q);
     if (q == undefined) {
         return;
     }
+
     if (q.answer != undefined && quiz.answer != "") {
-        cls = "reading";
+        cls = "done";
+    }
+    if (q.answer == "") {
+        cls = "unread";
     }
     if (q.mark === true) {
         cls = "reject";
+    }
+    if (currentQuestionIndex == index) {
+        cls = "reading hoverable";
     }
     $("#button" + (index + 1)).removeClass();
     $("#button" + (index + 1)).addClass("btn btn-default");
@@ -344,7 +331,7 @@ quiz.updateButtonStatus = function (index) {
 };
 
 quiz.save = function () {
-    //chỗ này để anh Huy xử lý em chắc chăcs không thể làm được nehs
+    //chỗ này để anh Huy xử lý em chắc chắc không thể làm được nhé!
 }
 
 quiz.submitQuiz = function (g) {

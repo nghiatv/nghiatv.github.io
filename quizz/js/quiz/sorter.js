@@ -1,5 +1,5 @@
 /**
- * Created by thanhnv on 6/25/14.
+ * Created by huydq on 6/25/14.
  */
 var quiz = quiz || {};
 var questionList = questionList || [];

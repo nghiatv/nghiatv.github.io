@@ -1,38 +1,45 @@
-.drag-drop-dialog-item{
+.drag-drop-dialog-item {
     display: inline-block;
     color: #fff;
-    background-color: #5cb85c;
     border-color: #4cae4c;
-    text-align: left;
     vertical-align: middle;
-    background-image: none;
     white-space: nowrap;
-    font-size: 14px;
     line-height: 1.42857143;
-    border-radius: 4px;
     min-width: 200px;
     cursor: pointer;
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: #5daa05;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+
 }
-.drag-drop-dialog-recommend-wrapper{
+
+.drag-drop-dialog-recommend-wrapper {
     padding: 20px;
-    background-color: #d9edf7;
-    border-color: #bce8f1;
+    background-color: #fff;
     width: 50%;
     min-height: 54px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
 }
-.drag-drop-dialog-recommend-wrapper .drag-drop-dialog-item{
+
+.drag-drop-dialog-recommend-wrapper .drag-drop-dialog-item {
     float: left;
     clear: both;
     margin: 5px;
-    padding: 3px 8px;
+    padding: 5px 10px;
 }
-.drag-drop-dialog-paragraph-wrapper{
+
+.drag-drop-dialog-paragraph-wrapper {
     padding: 20px;
     line-height: 2em;
     width: 50%;
     min-height: 200px;
 }
-.drag-drop-dialog-paragraph-wrapper .drag-drop-dialog-droppable{
+
+.drag-drop-dialog-paragraph-wrapper .drag-drop-dialog-droppable {
     display: inline-block;
     text-align: left;
     line-height: 1.2em;
@@ -41,9 +48,11 @@
     height: 1.2em;
     border-bottom: 1px solid #333333;
 }
-.drag-drop-dialog-paragraph-wrapper .drag-drop-dialog-item{
-    padding: 0 5px;
+
+.drag-drop-dialog-paragraph-wrapper .drag-drop-dialog-item {
+    padding: 2px 5px;
 }
-.drag-drop-dialog-placeholder{
+
+.drag-drop-dialog-placeholder {
 
 }

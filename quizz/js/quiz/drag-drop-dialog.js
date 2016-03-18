@@ -16,18 +16,18 @@ quiz.dragDropDialog = function (q) {
 
     function loadQuestion() {
         // Load answer description
-        var recommend_wrapper = '<div class="col-md-6 drag-drop-dialog-recommend-wrapper">';
+        var recommend_wrapper = '<div class="col-sm-6 drag-drop-dialog-recommend-wrapper">';
         var recommend = q.answer_description.recommend;
         var answer = q.answer;
         $.each(recommend, function (key, value) {
             // Check recommend not in answer
             if (jQuery.inArray(value, answer) == -1) {
-                recommend_wrapper += '<span class="drag-drop-dialog-item" answer="' + value + '">' + value + '</span>';
+                recommend_wrapper += '<span class="drag-drop-dialog-item hoverable" answer="' + value + '">' + value + '</span>';
             }
         });
         recommend_wrapper += "</div>";
 
-        var paragraph_wrapper = '<div class="col-md-6 drag-drop-dialog-paragraph-wrapper">';
+        var paragraph_wrapper = '<div class="col-sm-6 drag-drop-dialog-paragraph-wrapper">';
         paragraph_wrapper += q.answer_description.paragraph;
         paragraph_wrapper += "</div>";
 
@@ -35,10 +35,10 @@ quiz.dragDropDialog = function (q) {
 
         // Load answer
         var i = 0;
-        $(".drag-drop-dialog-droppable").each(function () {
+        $(".drag-drop-dialog-droppable ").each(function () {
             // Check answer in recommend
             if (jQuery.inArray(answer[i], recommend) > -1) {
-                var html = '<span class="drag-drop-dialog-item" answer="' + answer[i] + '">' + answer[i] + '</span>';
+                var html = '<span class="drag-drop-dialog-item hoverable" answer="' + answer[i] + '">' + answer[i] + '</span>';
                 $(this).html(html);
                 $(this).css("border-bottom", "none");
                 $(this).css("margin", "0");
