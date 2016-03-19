@@ -41,8 +41,9 @@ quiz.load = function () {
                 'move: (meters) ->' +
                 'alert @name + " moved #{meters}m." </code> </pre>',
             },
-            "mark": false
-
+            "mark": false,
+            "answer": "",
+            "extra": "",
 
         },
         {
@@ -185,7 +186,7 @@ quiz.load = function () {
         if (q.mark === true) {
             cls = "reject";
         }
-        quiz.opt.question_list.append('<li><a onclick="quiz.setQuestion(' + (index - 1) + ')" class=" hoverable btn btn-default  ' + cls + '" id="button' + index + '" > Câu ' + index + ' </a></li>')
+        quiz.opt.question_list.append('<li><a onclick="quiz.setQuestion(' + (index - 1) + ')" class=" z-depth-1 hoverable btn btn-default  ' + cls + '" id="button' + index + '" > Câu ' + index + ' </a></li>')
         index++;
     });
     currentQuestionIndex = 0;
@@ -322,7 +323,7 @@ quiz.updateButtonStatus = function (index) {
         cls = "reject";
     }
     if (currentQuestionIndex == index) {
-        cls = "reading hoverable";
+        cls = "reading hoverable z-depth-1";
     }
     $("#button" + (index + 1)).removeClass();
     $("#button" + (index + 1)).addClass("btn btn-default");
@@ -335,5 +336,5 @@ quiz.save = function () {
 }
 
 quiz.submitQuiz = function (g) {
-    alert("Chạy rồi nhé. Bấm hủy để quit")
+    confirm("Chạy rồi nhé. Bấm hủy để quit");
 };

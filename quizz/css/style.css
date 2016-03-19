@@ -33,7 +33,19 @@ html, body {
     box-shadow: 0;
 }
 
+.hide{
+    display: none;
+}
+.z-depth-1 {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.z-depth-2 {
+    box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 
+.z-depth-3 {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
 
 .fab {
     border-radius: 50%;
@@ -425,7 +437,7 @@ footer {
 
 .footer-title {
     width: 100%;
-    background-color: teal;
+    background-color: #009688;
     overflow: hidden;
 }
 
@@ -829,58 +841,39 @@ footer .copyright {
 /*begin css trang in game*/
 
 .count-down {
+    padding: 17px 0;
     vertical-align: middle;
 }
 
-.count-down p, .count-down span {
-    color: white;
-    /*display: inline-block;*/
-    font-size: 30px;
-    vertical-align: middle;
-    float: none;
-    /*height: 70px;*/
-    line-height: 0.5;
-    margin: 0;
-    text-align: center;
-}
-
-.count-down span {
-    line-height: 3;
-    display: block;
-    font-size: 12px;
-}
-
-.exam-nav, .count-down {
+.exam-nav, .count-down, .user-info-nav {
     margin-bottom: 0 !important;
-    height: 70px;
+    height: 85px;
 }
 
 nav.navbar-inverse {
-    background-color: teal;
+    background-color: #009688;
     border-radius: 0;
 }
 
 .user-info-nav .pull-left {
-    padding: 10px;
+    padding: 15px;
 
 }
 
 #submit-quiz {
-    /*height: 100%;*/
-    font-size: 18px;
+    font-size: 14px;
     border: none;
     border-radius: 2px;
     display: inline-block;
-    height: 50px;
-    line-height: 50px;
+    height: 55px;
+    line-height: 55px;
     outline: 0;
-    padding: 0 2rem;
+    padding: 0 10px;
     text-transform: uppercase;
     vertical-align: middle;
     -webkit-tap-highlight-color: transparent;
     text-decoration: none;
     color: #fff;
-    /*background-color: #cc4400;*/
     text-align: center;
     letter-spacing: 0.5px;
     transition: .2s ease-out;
@@ -893,7 +886,7 @@ nav.navbar-inverse {
 }
 
 .user-info-nav .dropdown.pull-right {
-    padding: 10px;
+    padding: 15px;
 }
 
 .user-info-nav .dropdown.pull-right.open {
@@ -901,7 +894,7 @@ nav.navbar-inverse {
 }
 
 #menu1 img {
-    height: 50px;
+    height: 55px;
 
 }
 
@@ -1340,6 +1333,125 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 
 /*end phan css cho giong material*/
 
+/*CSS flipclock*/
+.clock {
+    width: 225px;
+    float: left;
+    /*margin-top: 12px;*/
+    /*margin-bottom: 12px;*/
+    /*margin-left: 12px;*/
+    /*margin-right: 45px;*/
+    margin: 12px 45px 12px 12px;
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+    -moz-transform-origin: 0 0;
+}
+
+.flip-clock-divider .flip-clock-label {
+    font-size: 16px;
+    display: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@media screen {
+
+    .flipclock-content {
+        padding: 0 0 25px 0;
+    }
+
+    .flipclock-content .clock {
+        margin: 0 auto;
+        display: block;
+        width: 444px;
+        height: auto;
+    }
+
+    .flip-clock-wrapper ul, .flip-clock-wrapper ul li {
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .flip-clock-wrapper ul li a .up:after {
+        top: 24px;
+    }
+
+    .flip-clock-divider {
+        height: 50px;
+    }
+
+    .flip-clock-dot {
+        height: 6px;
+        width: 6px;
+        left: 7px;
+    }
+
+    .flip-clock-dot.top {
+        top: 17px;
+    }
+
+    .flip-clock-dot.bottom {
+        bottom: 8px;
+    }
+
+    .flipclock-content .flip-clock-divider .flip-clock-label {
+        font-size: 12px;
+    }
+
+    .flipclock-content .flip-clock-divider.days .flip-clock-label {
+        right: -69px;
+    }
+
+    .flipclock-content .flip-clock-divider.hours .flip-clock-label {
+        right: -61px;
+    }
+
+    .flipclock-content .flip-clock-divider.minutes .flip-clock-label {
+        right: -65px;
+    }
+
+    .flipclock-content .flip-clock-divider.seconds .flip-clock-label {
+        right: -62px;
+    }
+
+    .flip-clock-wrapper ul {
+        width: 37px;
+    }
+
+    .flip-clock-wrapper ul li a div div.inn {
+        font-size: 30px;
+    }
+}
+
+/*css phan promotion content*/
+
+.clock-icon {
+    color: #dddddd;
+    vertical-align: middle;
+    /*margin-right: 10px;*/
+    margin-top: 10px;
+}
+
+a.back-link-menu {
+    padding: 10px;
+    color: #dddddd;
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
+    height: 45px;
+    line-height: 25px;
+    margin: 10px 0;
+    display: block;
+}
+
+a.back-link-menu:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.back-link-menu i {
+    margin-right: 10px;
+}
+
 @media all and (min-width: 768px) {
     .question-number {
         font-size: 2rem;
@@ -1371,4 +1483,59 @@ input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]),
 
     }
 
+    .user-info-nav .pull-left {
+        padding: 10px;
+
+    }
+
+    #submit-quiz {
+        font-size: 1rem;
+        padding: 0 2rem;
+        height: 65px;
+        line-height: 65px;
+
+    }
+    .hide-sm-and-up{
+        display: none;
+    }
+
+}
+@media screen and (max-width: 767px) {
+    .hide-on-xs-only{
+        display: none;
+    }
+}
+@media screen and (min-width: 768px) {
+    .hide-on-sm-and-up{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    .hide-on-md-and-up{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 992px) {
+    .hide-on-sm-only{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) and (max-width: 1366px) {
+    .hide-on-md-only{
+        display: none;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .hide-on-lg-only{
+        display: none;
+    }
+}
+@media (max-width: 400px){
+    .clock{
+        zoom: 0.37;
+        margin-top: 10%;
+        -moz-transform-origin: 0 0;
+        -moz-transform: scale(0.3);
+    }
 }

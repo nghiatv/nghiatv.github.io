@@ -13,29 +13,28 @@
     <link href="css/quiz/drag-drop-image.css" rel="stylesheet">
     <link href="css/quiz/drag-drop.css" rel="stylesheet">
     <link href="css/hljs/tomorrow-night.css" rel="stylesheet">
+    <link href="lib/FlipClock/compiled/flipclock.css" rel="stylesheet">
     <link href="css/lib/wave.css" rel="stylesheet">
     <!--Jquery-->
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/jquery-ui-1.10.4.min.js"></script>
     <script src="js/highlight.pack.js"></script>
+    <script src="lib/FlipClock/compiled/flipclock.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 
     <link href="css/style.css" rel="stylesheet">
     <script>hljs.initHighlightingOnLoad();</script>
+
+
     <!--Đoạn này lấy từ của anh Huy sang-->
-
-
     <script src="js/script.js" type="text/javascript"></script>
     <script src="js/quiz.js" type="text/javascript"></script>
     <script src="js/quiz/selectbox.js" type="text/javascript"></script>
     <script src="js/quiz/drag-drop.js" type="text/javascript"></script>
     <script src="js/quiz/fill-to-input.js" type="text/javascript"></script>
-    <!--<script src="js/quiz/writting.js" type="text/javascript"></script>-->
-    <!--<script src="js/quiz/sorter.js" type="text/javascript"></script>-->
     <script src="js/quiz/drag-drop-dialog.js" type="text/javascript"></script>
-    <!--<script src="js/quiz/drag-drop-image.js" type="text/javascript"></script>-->
     <script src="js/quiz/sm-choice.js"></script>
     <script src="js/lib/waves.js" type="text/javascript"></script>
     <!--Hết nhé-->
@@ -50,39 +49,35 @@
 </head>
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top exam-nav">
-    <div class="container">
-
+<nav class="navbar navbar-inverse navbar-fixed-top exam-nav z-depth-2">
+    <div class="container-fluid">
         <div class="row">
-            <!--<div class="col-sm-5 course-name" >-->
-            <!--<div class="pull-left">-->
-            <!--<h3 style="color: #fff;"> English grammar Test</h3>-->
-            <!--</div>-->
-            <!--</div>-->
-            <div class="col-xs-6 col-sm-offset-5 col-sm-2 count-down">
-                <span>Thời gian còn lại</span>
-
-                <p style="color: white"> 20:00</p>
+            <div class="col-xs-3 col-sm-4 col-md-3 col-lg-2 user-info-nav">
+                <div class="pull-left ">
+                    <a class="back-link-menu waves-effect waves-light" href="javascript:history.back()">
+                        <i class="fa fa-angle-left"></i><span class="hide-on-xs-only">Danh sách bài thi</span></a>
+                </div>
             </div>
-            <div class="col-xs-6 col-sm-5 nopad-right user-info-nav">
+
+            <div class="col-xs-4 col-md-5 col-lg-6 user-info-nav">
                 <div class="pull-left">
-                    <a id="submit-quiz" onclick='quiz.submitQuiz()' class=" btn btn-lg btn-danger waves-effect waves-light"
-                       data-ripple-color="white">Nộp
-                        bài thi</a>
-                </div>
-                <div class=" pull-right dropdown">
-                    <a class="dropdown-toggle" id="menu1" data-toggle="dropdown">
-                        <img class="img-circle" src="img/1024.png">
+                    <a id="submit-quiz" onclick='quiz.submitQuiz()'
+                       class=" btn btn-lg btn-danger waves-effect waves-light"
+                       data-ripple-color="white">
+                        Nộp bài thi
                     </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">JavaScript</a></li>
-                    </ul>
                 </div>
-
-
             </div>
+            <div class="col-xs-5 col-sm-4  count-down">
+
+                <div class="center-block">
+
+
+                    <div class="clock pull-right"></div>
+                    <i class="fa fa-clock-o fa-2x pull-right clock-icon hide-on-xs-only pull-right "> :</i>
+                </div>
+            </div>
+
         </div>
     </div>
 </nav>
@@ -91,7 +86,7 @@
         <div class="course-block course-item">
             <div class="question-title">
                 <span id="previous-quiz" onclick="quiz.previous()"
-                      class="pull-left  waves-light waves-teal waves-effect" >
+                      class="pull-left  waves-light waves-teal waves-effect">
                       <img src="img/arr-left.png"></span>
                 <span id="next-quiz" onclick="quiz.next()" class="pull-right waves-effect waves-light waves-teal">
                     <img src="img/arr-right.png">
@@ -103,7 +98,7 @@
                 <div class="row">
                     <div class="col-xs-12 question-text">
                         <div class="quiz-question">
-                            <p id="quiz-question-content"> Khi soạn thảo văn bản bạn cần bấm vào đâu: </p>
+                            <p id="quiz-question-content"></p>
                         </div>
                     </div>
                     <div class="col-xs-12 answer-text" id="quiz-answer-content"></div>
@@ -196,9 +191,28 @@
     </div>
 </footer>
 <script>
-    $(function(){
-        hljs.initHighlightingOnLoad();
-    })
+    $(function () {
+        var clock;
+
+        clock = $('.clock').FlipClock({
+            countdown: true,
+            clockFace: 'MinuteCounter',
+            autoStart: true,
+            callbacks: {
+                stop: function () {
+                    setTimeout(function () {
+                        alert("Hết giờ rồi nhé!!")
+                    }, 100)
+                }
+            }
+        });
+
+        clock.setTime(1000);
+        clock.setCountdown(true);
+        clock.start();
+
+
+    });
 </script>
 </body>
 </html>
