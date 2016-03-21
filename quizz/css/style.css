@@ -33,12 +33,14 @@ html, body {
     box-shadow: 0;
 }
 
-.hide{
+.hide {
     display: none;
 }
+
 .z-depth-1 {
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
+
 .z-depth-2 {
     box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -426,6 +428,42 @@ html, body {
 }
 
 /*end css menu top*/
+
+/*CSS trang index*/
+
+.landing-top {
+    padding: 5px 16px;
+    background-color: white;
+}
+
+.landing-message {
+    padding: 200px 0 100px;
+    color: teal;
+    text-align: center;
+
+}
+
+.landing-message h1 {
+    margin-bottom: 60px;
+    color: teal;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.landing-message p {
+    max-width: 600px;
+    margin: 0 auto 60px;
+    line-height: 1.6em;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.landing-message a.top-button {
+    background-color: #2196F3;
+}
+
+/*end css trang index*/
+
 
 /*css footer*/
 
@@ -840,9 +878,9 @@ footer .copyright {
 
 /*begin css trang in game*/
 
-.count-down {
-    padding: 17px 0;
-    vertical-align: middle;
+.count-down .center-block, .count-down .clock-wrapper {
+    margin: 7px 0;
+    overflow-y: auto;
 }
 
 .exam-nav, .count-down, .user-info-nav {
@@ -855,18 +893,19 @@ nav.navbar-inverse {
     border-radius: 0;
 }
 
-.user-info-nav .pull-left {
-    padding: 15px;
+.user-info-nav .pull-left, .count-down .pull-left, .count-down > .pull-right {
+    padding: 10px;
 
 }
 
-#submit-quiz {
-    font-size: 14px;
+#submit-quiz, .landing-message a.top-button {
+    font-size: 12px;
     border: none;
     border-radius: 2px;
     display: inline-block;
-    height: 55px;
-    line-height: 55px;
+    height: 45px;
+    margin: 10px 0;
+    line-height: 45px;
     outline: 0;
     padding: 0 10px;
     text-transform: uppercase;
@@ -1483,56 +1522,82 @@ a.back-link-menu:hover {
 
     }
 
-    .user-info-nav .pull-left {
+    .user-info-nav .pull-left, .count-down .pull-left, .count-down > .pull-right {
         padding: 10px;
 
     }
 
-    #submit-quiz {
+    #submit-quiz, .landing-message a.top-button {
         font-size: 1rem;
         padding: 0 2rem;
+        margin: 0;
         height: 65px;
         line-height: 65px;
 
     }
-    .hide-sm-and-up{
+
+    .hide-sm-and-up {
         display: none;
     }
 
 }
+
 @media screen and (max-width: 767px) {
-    .hide-on-xs-only{
+    .hide-on-xs-only {
         display: none;
     }
 }
+
 @media screen and (min-width: 768px) {
-    .hide-on-sm-and-up{
+    .hide-on-sm-and-up {
         display: none;
     }
 }
+
 @media screen and (min-width: 992px) {
-    .hide-on-md-and-up{
+    .hide-on-md-and-up {
         display: none;
     }
 }
 
 @media screen and (min-width: 767px) and (max-width: 992px) {
-    .hide-on-sm-only{
+    .hide-on-sm-only {
         display: none;
     }
 }
+
 @media screen and (min-width: 992px) and (max-width: 1366px) {
-    .hide-on-md-only{
+    .hide-on-md-only {
         display: none;
     }
 }
+
 @media screen and (min-width: 1366px) {
-    .hide-on-lg-only{
+    .hide-on-lg-only {
         display: none;
     }
 }
-@media (max-width: 400px){
-    .clock{
+
+@media (max-width: 767px) {
+    .hide-on-xs-and-down {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .hide-on-sm-and-down {
+        display: none;
+    }
+}
+
+@media (max-width: 1365px) {
+    .hide-on-md-and-down {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    .clock {
         zoom: 0.37;
         margin-top: 10%;
         -moz-transform-origin: 0 0;

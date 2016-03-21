@@ -264,19 +264,20 @@ quiz.setQuestion = function (index) {
 quiz.toggleButton = function (q) {
     //Them chuc nang cho nut next va previous
     if (currentQuestionIndex <= 0) {
-        setTimeout(function(){
+        setTimeout(function () {
             $("#previous-quiz").attr("onclick", "").removeClass("waves-effect");
-        },1000);
+        }, 500);
         $("#next-quiz").attr("onclick", "quiz.next()").addClass('waves-effect');
     } else if (currentQuestionIndex >= (questionList.length - 1 )) {
-       setTimeout(function () {
-           $("next-quiz").attr("onclick", "").removeClass('waves-effect');
-       }, 1000);
+        setTimeout(function () {
+            $("#next-quiz").attr("onclick", "").removeClass('waves-effect');
+        }, 500);
         $("previous-quiz").attr("onclick", "quiz.previous()").addClass("waves-effect");
     } else {
         $("#next-quiz").attr("onclick", "quiz.next()").addClass("waves-effect");
         $("#previous-quiz").attr("onclick", "quiz.previous()").addClass("waves-effect");
     }
+
     // thay đổi màu sắc cho cờ
 
     if (q.mark) {
