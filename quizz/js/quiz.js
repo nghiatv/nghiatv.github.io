@@ -338,4 +338,5 @@ quiz.save = function () {
 
 quiz.submitQuiz = function (g) {
     confirm("Chạy rồi nhé. Bấm hủy để quit");
+    window.location.href = "result.html";
 };

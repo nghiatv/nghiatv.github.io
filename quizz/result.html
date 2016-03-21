@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Ingame nhé</title>
+    <title>Kết quả</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-
-    <link href="css/quiz/drag-drop-dialog.css" rel="stylesheet">
-    <link href="css/quiz/drag-drop-image.css" rel="stylesheet">
-    <link href="css/quiz/drag-drop.css" rel="stylesheet">
-    <link href="css/hljs/tomorrow-night.css" rel="stylesheet">
-    <link href="lib/FlipClock/compiled/flipclock.css" rel="stylesheet">
     <link href="css/lib/wave.css" rel="stylesheet">
+    <!--Jquery-->
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
 
+    <!--Đoạn này lấy từ của anh Huy sang-->
+    <script src="js/quiz.js" type="text/javascript"></script>
+    <script src="js/lib/waves.js" type="text/javascript"></script>
+    <!--Hết nhé-->
 
 </head>
 <body>
@@ -35,18 +37,6 @@
 
             </div>
             <div class="col-xs-9 col-sm-8 col-md-6 col-lg-5 count-down">
-                <div class=" pull-right clock-wrapper">
-                    <div class="clock pull-right"></div>
-                    <i class="fa fa-clock-o fa-2x pull-right clock-icon hide-on-xs-only pull-right "> :</i>
-                </div>
-                <div class="pull-right">
-                    <a id="submit-quiz" onclick='quiz.submitQuiz()'
-                       class=" btn btn-lg btn-danger waves-effect waves-light"
-                       data-ripple-color="white">
-                        Nộp bài thi
-                    </a>
-                </div>
-
             </div>
 
         </div>
@@ -54,34 +44,82 @@
 </nav>
 <main id="main-app">
     <div class="container course-wrapper" id="app">
-        <div class="course-block course-item">
-            <div class="question-title">
-                <span id="previous-quiz" onclick="quiz.previous()"
-                      class="pull-left  waves-light waves-teal waves-effect">
-                      <img src="img/arr-left.png"></span>
-                <span id="next-quiz" onclick="quiz.next()" class="pull-right waves-effect waves-light waves-teal">
-                    <img src="img/arr-right.png">
-                       </span>
+        <div class="course-block result-wrapper">
+            <div class="result-content row">
+                <div class="result-left col-xs-12 col-sm-8">
+                    <div class="row">
+                        <div class="result-icon col-xs-12 col-sm-4">
+                            <img class="img-responsive" src="img/hoanthanh.png">
+                        </div>
+                        <div class="result-text  col-xs-12 col-sm-8">
+                            <h3>Bạn đã hoàn thành bài thi</h3>
 
-                <p class="text-center question-number" id="quiz-question-title"></p>
+                            <h1>Bạn đã trả lời đúng 1/56 câu</h1>
+
+                            <p>Một cái gì đấy để ở đáy nhưng chưa nghĩ ra nhé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-right col-xs-12 col-sm-4">
+                    <div class="result-separator hide-on-xs-only"></div>
+                    <div class="result-button">
+                        <a class="btn waves-effect waves-light hoverable">Về trang chủ</a>
+                    </div>
+                </div>
             </div>
-            <div class="question-content container">
-                <div class="row">
-                    <div class="col-xs-12 question-text">
-                        <div class="quiz-question">
-                            <p id="quiz-question-content"></p>
-                        </div>
+            <h4 class="result-promo">Có thể bạn quan tâm</h4>
+
+            <div class="result-bot">
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/1024.png">
                     </div>
-                    <div class="col-xs-12 answer-text" id="quiz-answer-content"></div>
-                    <div class="col-xs-12 course-item">
-                        <button id="btn-mark" class="btn btn-warning pull-right hoverable" onclick="quiz.checkMark()"><i
-                                class="glyphicon glyphicon-flag"></i>
-                        </button>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>C# qua ví dụ thực tế</p>
                     </div>
-                    <div class="col-xs-12 list-question">
-                        <div class="list-question-content">
-                            <ul class="list-group list-group-horizontal" id="question-list"></ul>
-                        </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/1024.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>Quy trình Scrum và tích hợp liên tục</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/hoanthanh.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>PHP qua ví dụ thực tế</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/1024.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>C# qua ví dụ thực tế</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
                     </div>
                 </div>
             </div>
@@ -158,62 +196,5 @@
         © 2016 Techmaster, Inc. All rights reserved.
     </div>
 </footer>
-<!--Jquery-->
-<script src="js/jquery-2.2.1.min.js"></script>
-<script src="js/jquery-ui-1.10.4.min.js"></script>
-<script src="js/highlight.pack.js"></script>
-<script src="lib/FlipClock/compiled/flipclock.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-
-<script src="lib/bootstrap/js/bootstrap.min.js"></script>
-
-<link href="css/style.css" rel="stylesheet">
-<script>hljs.initHighlightingOnLoad();</script>
-
-
-<!--Đoạn này lấy từ của anh Huy sang-->
-<script src="js/quiz.js" type="text/javascript"></script>
-<script src="js/quiz/selectbox.js" type="text/javascript"></script>
-<script src="js/quiz/drag-drop.js" type="text/javascript"></script>
-<script src="js/quiz/fill-to-input.js" type="text/javascript"></script>
-<script src="js/quiz/drag-drop-dialog.js" type="text/javascript"></script>
-<script src="js/quiz/sm-choice.js"></script>
-<script src="js/lib/waves.js" type="text/javascript"></script>
-<!--Hết nhé-->
-
-
-<script>
-    $(function () {
-        quiz.load();
-    });
-</script>
-<script>
-    $(function () {
-        var clock;
-
-        clock = $('.clock').FlipClock({
-            countdown: true,
-            clockFace: 'MinuteCounter',
-            autoStart: true,
-            callbacks: {
-                stop: function () {
-                    setTimeout(function () {
-                        alert("Hết giờ rồi nhé!!")
-                    }, 100)
-                }
-            }
-        });
-
-        clock.setTime(1000);
-        clock.setCountdown(true);
-        clock.start();
-
-        $(document).keypress(function(e) {
-            if(e.which == 13)  {
-              quiz.next();
-            }
-        });
-    });
-</script>
 </body>
 </html>
