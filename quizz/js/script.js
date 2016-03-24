@@ -108,3 +108,7 @@
 
 
 })(jQuery);
+
+(function($){
+
+})(jQuery);

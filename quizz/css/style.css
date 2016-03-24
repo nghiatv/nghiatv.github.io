@@ -1,7 +1,7 @@
 html, body {
     background-color: #f2f2f2;
     font-size: 16px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 .nopad-left {
@@ -69,7 +69,10 @@ html, body {
 .img-responsive {
     width: 100%;
 }
-
+main{
+    margin: 0;
+    position: relative;
+}
 /*CSS của menu top*/
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
@@ -532,7 +535,8 @@ footer {
     text-align: center;
     /*width: 300px;*/
 }
-.footer-social:last-child{
+
+.footer-social:last-child {
     margin-bottom: 20px;
 }
 
@@ -708,7 +712,7 @@ footer .copyright {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     /*margin-bottom: 20px;*/
 }
 
@@ -852,7 +856,7 @@ footer .copyright {
 }
 
 .course-count:last-child {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 .lesson-number, .course-lesson-title {
@@ -1383,7 +1387,7 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     border-radius: 0;
     outline: none;
     font-size: 1rem;
-    color: #5daa05;
+
     font-weight: bold;
     margin: 0 0 15px 0;
     padding: 0;
@@ -1392,7 +1396,11 @@ input:not([type]), input[type=text], input[type=password], input[type=email], in
     transition: all .3s;
 }
 
-input[type=text] {
+#app input[type=text] {
+    color: #37ff45;
+}
+
+#app input[type=text] {
     font-size: larger;
     text-align: center;
 }
@@ -1518,6 +1526,7 @@ a.back-link-menu:hover {
 .back-link-menu i {
     margin-right: 10px;
 }
+
 /*end css promotion content*/
 
 /*css trang result*/
@@ -1545,7 +1554,8 @@ a.back-link-menu:hover {
     padding: 28px;
 
 }
-.result-icon{
+
+.result-icon {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -1554,6 +1564,7 @@ a.back-link-menu:hover {
     align-items: center;
     height: 100px;
 }
+
 #app .result-icon img {
 
     width: 120px;
@@ -1574,9 +1585,11 @@ a.back-link-menu:hover {
     font-size: 24px;
     font-weight: 700;
 }
-.result-right{
+
+.result-right {
 
 }
+
 .result-button {
     height: 100px;
     display: -webkit-flex;
@@ -1634,11 +1647,11 @@ a.back-link-menu:hover {
     background-color: white;
     height: auto;
     overflow-y: auto;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .promo-item-img img {
-    margin: 10px auto   ;
+    margin: 10px auto;
     border-radius: 50%;
     max-width: 50px;
     float: none;
@@ -1687,14 +1700,84 @@ a.back-link-menu:hover {
     color: #ffffff;
     font-weight: 400;
 
-
 }
 
 /*end css trang result*/
 
+/*css trang check out nhe*/
+.payment-wrapper {
+    margin: 0 auto;
+    padding:80px 30px;
+
+}
+.payment-wrapper .course-block{
+    border-radius: 0!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+}
+.submit-button {
+    margin-top: 10px;
+}
+
+select.materialize {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    border-radius: 0 !important;
+    outline: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all .3s;
+
+}
+
+select.materialize:focus {
+    /*outline: 1px solid #c9f3ef;*/
+    border-bottom: 1px solid #26a69a;
+    box-shadow: 0 1px 0 0 #26a69a;
+}
+
+#payment-banner {
+    background: url("../img/payment-logo.png") left 0px no-repeat;
+    min-height: 75px;
+    padding: 0px 0 0 85px;
+}
+
+#payment-banner span {
+    font-size: 1rem;
+    color: #24afe9;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 22px;
+}
+
+#payment-banner p {
+    font-size: 2rem;
+    color: #000;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 36px;
+}
+
+
+
+
+
+/*end css trang checkout nhe*/
 
 @media all and (min-width: 768px) {
-
+    .content-background {
+        background-color:teal;
+        height: 398px;
+        position: absolute;
+        width: 100%;
+    }
     .question-number {
         font-size: 2rem;
     }
@@ -1742,13 +1825,16 @@ a.back-link-menu:hover {
     .hide-sm-and-up {
         display: none;
     }
-    .result-wrapper{
+
+    .result-wrapper {
         padding: 50px;
     }
-    .result-icon,.result-button{
+
+    .result-icon, .result-button {
         height: 200px;
     }
-    .promo-item-link{
+
+    .promo-item-link {
         padding-left: 56px;
     }
 }
@@ -1789,7 +1875,8 @@ a.back-link-menu:hover {
         height: 200px;
         padding-left: 28px;
     }
-    .promo-item-title p{
+
+    .promo-item-title p {
         margin: 0;
     }
 }
@@ -1857,7 +1944,7 @@ a.back-link-menu:hover {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 426px) {
     .clock {
         zoom: 0.37;
         margin-top: 10%;
@@ -1865,6 +1952,7 @@ a.back-link-menu:hover {
         -moz-transform: scale(0.3);
     }
 }
+
 
 
 

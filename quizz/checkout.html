@@ -2,20 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Trang chủ nhé các chư vị</title>
+    <title>Thanh toán nhé</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Latest compiled and minified CSS -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
-    <link href="css/lib/wave.css" rel="stylesheet">
     <!--Jquery-->
     <script src="js/jquery-2.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
-    <script src="js/lib/waves.js" type="text/javascript"></script>
 </head>
 <body>
 <nav id="header">
@@ -51,85 +49,75 @@
     </div>
 </nav>
 <main>
-    <section class="landing-top">
-        <div class="container">
-            <div class="landing-message">
-                <h1>Hệ thống thi trực tuyến hàng đầu Lào</h1>
+    <div class="content-background"></div>
+    <div class="container payment-wrapper">
+        <div class="row">
+            <div class="col-xs-12 course-block course-item ">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12 col-md-offset-">
+                        <div id="payment-banner" class="">
+                            <div class="payment-title">
+                                <span>Thanh toán</span>
+                                <p>Từ thẻ cào trả trước</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="panel panel-default">
+                            <div class="panel-body form-horizontal payment-form">
+                                <div class="form-group">
+                                    <label for="status" class="col-sm-3 control-label">Chọn loại thẻ</label>
+                                    <div class="col-sm-9">
+                                        <select class="form-control" id="status" name="status">
+                                            <option>VIna</option>
+                                            <option>Mobi</option>
+                                            <option>VTC</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="concept" class="col-sm-3 control-label">Mã số thẻ</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="card-num" name="card-num">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="description" class="col-sm-3 control-label">Số serial</label>
+                                    <div class="col-sm-9">
+                                        <input type="text" class="form-control" id="serial" name="serial">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="amount" class="col-sm-3 control-label">Mã xác thực</label>
+                                    <div class="col-sm-3">
+                                        <input type="text" class="form-control" id="amount" name="amount">
+                                    </div>
+                                    <div class="col-sm-6">Mã nhé</div>
+                                </div>
 
-                <p>Một sản phẩm của Techmaster.vn</p>
-                <a class="top-button waves-effect wave-light hoverable" href="list.html">Danh sách bài thi</a>
+
+                                <div class="form-group">
+                                    <div class="col-sm-12 text-right">
+                                        <button type="button" class="btn btn-default preview-add-button">
+                                            <span class="fa fa-checkout"></span> Thanh toán
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
             </div>
+
         </div>
-    </section>
-    <section class="landing-section highlight-course">
-        <div class="container">
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 highlight-course-item">
-                <div class="card-course-item">
-                    <a class="item-description" href="detail.html">
-                        <img class="img-responsive" src="img/testnhe.png" alt="testNhe">
-
-                        <div class=" course-description">
-                            <h2>C++ Tutorial</h2>
-
-                            <p>No prior programming experience is necessary! Our C++ app will supply you with everything
-                                you
-                                need to create and compile your own programs.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 highlight-course-item">
-                <div class="card-course-item">
-                    <a class="item-description" href="detail.html">
-                        <img class="img-responsive" src="img/testnhe.png" alt="testNhe">
-
-                        <div class=" course-description">
-                            <h2>C++ Tutorial</h2>
-
-                            <p>No prior programming experience is necessary! Our C++ app will supply you with everything
-                                you
-                                need to create and compile your own programs.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 highlight-course-item">
-                <div class="card-course-item">
-                    <a class="item-description" href="detail.html">
-                        <img class="img-responsive" src="img/testnhe.png" alt="testNhe">
-
-                        <div class=" course-description">
-                            <h2>C++ Tutorial</h2>
-
-                            <p>No prior programming experience is necessary! Our C++ app will supply you with everything
-                                you
-                                need to create and compile your own programs.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 highlight-course-item">
-                <div class="card-course-item">
-                    <a class="item-description" href="detail.html">
-                        <img class="img-responsive" src="img/testnhe.png" alt="testNhe">
-
-                        <div class=" course-description">
-                            <h2>C++ Tutorial</h2>
-
-                            <p>No prior programming experience is necessary! Our C++ app will supply you with everything
-                                you
-                                need to create and compile your own programs.</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="landing-section"></section>
-    <section class="landing-section"></section>
-    <section class="landing-section"></section>
-    <section class="landing-section"></section>
-    <section class="landing-section"></section>
+    </div>
 </main>
 <footer>
     <div class="footer-title">
@@ -155,8 +143,6 @@
             </div>
             <div class="col-xs-12 col-md-8">
                 <div class="footer-menu col-xs-12 col-sm-4">
-
-
                     <ul>
                         <li class="active">
                             <a href="/">Home</a>
