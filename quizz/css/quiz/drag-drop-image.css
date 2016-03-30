@@ -1,0 +1,51 @@
+.drag-drop-image-item{
+    display: inline-block;
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    text-align: center;
+    vertical-align: middle;
+    background-image: none;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 1.42857143;
+    min-width: 200px;
+    cursor: pointer;
+}
+.drag-drop-image-recommend-wrapper{
+    float: left;
+    padding: 20px;
+    min-height: 54px;
+}
+.drag-drop-image-recommend-wrapper .middle-block{
+    padding: 10px;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+    text-align: left;
+}
+.drag-drop-image-recommend-wrapper .drag-drop-image-item{
+    margin: 5px;
+    padding: 4px;
+}
+.drag-drop-image-paragraph-wrapper{
+    text-align: center;
+    line-height: 2em;
+    min-height: 200px;
+}
+.drag-drop-image-paragraph-wrapper .drag-drop-image-droppable{
+    position: relative;
+    float: left;
+    margin: 8px;
+    height: 206px;
+    width: 206px;
+    border: 3px solid lightgray;
+}
+.drag-drop-image-paragraph-wrapper .drag-drop-image-droppable .drag-drop-image-item{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px;
+}
+.drag-drop-image-placeholder{
+
+}

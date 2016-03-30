@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ingame nhé</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <link href="css/quiz/drag-drop-dialog.css" rel="stylesheet">
+    <link href="css/quiz/drag-drop-image.css" rel="stylesheet">
+    <link href="css/quiz/drag-drop.css" rel="stylesheet">
+    <link href="css/hljs/tomorrow-night.css" rel="stylesheet">
+    <link href="lib/FlipClock/compiled/flipclock.css" rel="stylesheet">
+    <link href="css/lib/wave.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top exam-nav z-depth-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3 user-info-nav">
+                <div class="pull-left ">
+                    <a class="back-link-menu waves-effect waves-light" href="javascript:history.back()">
+                        <i class="fa fa-angle-left"></i><span
+                            class="hide-on-xs-only">Danh sách bài thi</span><span> </span></a>
+                </div>
+            </div>
+
+            <div class="hide-on-sm-and-down col-md-3 col-lg-4 user-info-nav">
+
+            </div>
+            <div class="col-xs-9 col-sm-8 col-md-6 col-lg-5 count-down">
+                <div class=" pull-right clock-wrapper">
+                    <div class="clock pull-right"></div>
+                    <i class="fa fa-clock-o fa-2x pull-right clock-icon hide-on-xs-only pull-right "> :</i>
+                </div>
+                <div class="pull-right">
+                    <a id="submit-quiz" onclick='quiz.submitQuiz()'
+                       class=" btn btn-lg btn-danger waves-effect waves-light"
+                       data-ripple-color="white">
+                        Nộp bài thi
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</nav>
+<main id="main-app">
+    <div class="container course-wrapper" id="app">
+        <div class="course-block course-item">
+            <div class="question-title">
+                <span id="previous-quiz" onclick="quiz.previous()"
+                      class="pull-left  waves-light waves-teal waves-effect">
+                      <img src="img/arr-left.png"></span>
+                <span id="next-quiz" onclick="quiz.next()" class="pull-right waves-effect waves-light waves-teal">
+                    <img src="img/arr-right.png">
+                       </span>
+
+                <p class="text-center question-number" id="quiz-question-title"></p>
+            </div>
+            <div class="question-content container">
+                <div class="row">
+                    <div class="col-xs-12 question-text">
+                        <div class="quiz-question">
+                            <p id="quiz-question-content"></p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 answer-text" id="quiz-answer-content"></div>
+                    <div class="col-xs-12 course-item">
+                        <button id="btn-mark" class="btn btn-warning pull-right hoverable" onclick="quiz.checkMark()"><i
+                                class="glyphicon glyphicon-flag"></i>
+                        </button>
+                    </div>
+                    <div class="col-xs-12 list-question">
+                        <div class="list-question-content">
+                            <ul class="list-group list-group-horizontal" id="question-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-title">
+        <p>Hệ thống thi trắc nghiệm mới của Techmaster YI</p>
+    </div>
+    <div class="footer-content container course-wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 social-count">
+                <a class="footer-social" href="#" target="_blank">
+                    <div class="footer-youtube">
+                        <i class="fa fa-2x fa-youtube"></i>
+                    </div>
+                    <span>Techmaster</span>
+                </a>
+                <a class="footer-social" href="http://www.facebook.com/" target="_blank">
+                    <div class="footer-facebook"><i class="fa fa-2x fa-facebook"></i></div>
+                    <span>TechMaster</span>
+                </a>
+                <a class="footer-social" href="" target="_blank">
+                    <div class="footer-web"><i class="fa fa-2x fa-internet-explorer"></i></div>
+                    <span>Techmaster.vn</span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="footer-menu col-xs-12 col-sm-4">
+
+
+                    <ul>
+                        <li class="active">
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">Courses</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about col-xs-12 col-sm-8 ">
+                    <!--<div class="logoFooter"></div>-->
+                    <div>
+                        <p>Techmaster Inc.</p>
+                        <address>
+                            Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt nam.
+                            <br>
+                            <br>
+                            Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh
+                            Xuân, Hà Nội
+                        </address>
+                    </div>
+                    <button>Email Us</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class=" copyright">
+        © 2016 Techmaster, Inc. All rights reserved.
+    </div>
+</footer>
+<!--Jquery-->
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/jquery-ui-1.10.4.min.js"></script>
+<script src="js/highlight.pack.js"></script>
+<script src="lib/FlipClock/compiled/flipclock.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<link href="css/style.css" rel="stylesheet">
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<!--Đoạn này lấy từ của anh Huy sang-->
+<script src="js/quiz.js" type="text/javascript"></script>
+<script src="js/quiz/selectbox.js" type="text/javascript"></script>
+<script src="js/quiz/drag-drop.js" type="text/javascript"></script>
+<script src="js/quiz/fill-to-input.js" type="text/javascript"></script>
+<script src="js/quiz/drag-drop-dialog.js" type="text/javascript"></script>
+<script src="js/quiz/sm-choice.js"></script>
+<script src="js/lib/waves.js" type="text/javascript"></script>
+<!--Hết nhé-->
+
+
+<script>
+    $(function () {
+        quiz.load();
+    });
+</script>
+<script>
+    $(function () {
+        var clock;
+
+        clock = $('.clock').FlipClock({
+            countdown: true,
+            clockFace: 'MinuteCounter',
+            autoStart: true,
+            callbacks: {
+                stop: function () {
+                    setTimeout(function () {
+                        alert("Hết giờ rồi nhé!!")
+                    }, 100)
+                }
+            }
+        });
+
+        clock.setTime(1000);
+        clock.setCountdown(true);
+        clock.start();
+
+        $(document).keypress(function(e) {
+            if(e.which == 13)  {
+              quiz.next();
+            }
+        });
+    });
+</script>
+</body>
+</html>

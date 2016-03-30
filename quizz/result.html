@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kết quả</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/lib/wave.css" rel="stylesheet">
+    <!--Jquery-->
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <!--Đoạn này lấy từ của anh Huy sang-->
+    <script src="js/quiz.js" type="text/javascript"></script>
+    <script src="js/lib/waves.js" type="text/javascript"></script>
+    <!--Hết nhé-->
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top exam-nav z-depth-2">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3 col-sm-4 col-md-3 col-lg-3 user-info-nav">
+                <div class="pull-left ">
+                    <a class="back-link-menu waves-effect waves-light" href="javascript:history.back()">
+                        <i class="fa fa-angle-left"></i><span
+                            class="hide-on-xs-only">Danh sách bài thi</span><span> </span></a>
+                </div>
+            </div>
+
+            <div class="hide-on-sm-and-down col-md-3 col-lg-4 user-info-nav">
+
+            </div>
+            <div class="col-xs-9 col-sm-8 col-md-6 col-lg-5 count-down">
+            </div>
+
+        </div>
+    </div>
+</nav>
+<main id="main-app">
+    <div class="container course-wrapper" id="app">
+        <div class="course-block result-wrapper">
+            <div class="result-content row">
+                <div class="result-left col-xs-12 col-sm-8">
+                    <div class="row">
+                        <div class="result-icon col-xs-12 col-sm-4">
+                            <img class="img-responsive" src="img/hoanthanh.png">
+                        </div>
+                        <div class="result-text  col-xs-12 col-sm-8">
+                            <h3>Bạn đã hoàn thành bài thi</h3>
+
+                            <h1>Bạn đã trả lời đúng 1/56 câu</h1>
+
+                            <p>Một cái gì đấy để ở đáy nhưng chưa nghĩ ra nhé.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="result-right col-xs-12 col-sm-4">
+                    <div class="result-separator hide-on-xs-only"></div>
+                    <div class="result-button">
+                        <a class="btn waves-effect waves-light hoverable">Về trang chủ</a>
+                    </div>
+                </div>
+            </div>
+            <h4 class="result-promo">Có thể bạn quan tâm</h4>
+
+            <div class="result-bot">
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/1024.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>C# qua ví dụ thực tế</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/1024.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>Quy trình Scrum và tích hợp liên tục</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/hoanthanh.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>PHP qua ví dụ thực tế</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+                <div class="promo-item">
+                    <div class="promo-item-img col-xs-12 col-sm-3">
+                        <img class="img-responsive" src="img/1024.png">
+                    </div>
+                    <div class="promo-item-title col-xs-12 col-sm-5">
+                        <p>C# qua ví dụ thực tế</p>
+                    </div>
+                    <div class="promo-item-link col-xs-12 col-sm-4">
+                        <a class="waves-effect waves-light hoverable">
+                            Xem khóa học
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="footer-title">
+        <p>Hệ thống thi trắc nghiệm mới của Techmaster YI</p>
+    </div>
+    <div class="footer-content container course-wrapper">
+        <div class="row">
+            <div class="col-xs-12 col-md-4 social-count">
+                <a class="footer-social" href="#" target="_blank">
+                    <div class="footer-youtube">
+                        <i class="fa fa-2x fa-youtube"></i>
+                    </div>
+                    <span>Techmaster</span>
+                </a>
+                <a class="footer-social" href="http://www.facebook.com/" target="_blank">
+                    <div class="footer-facebook"><i class="fa fa-2x fa-facebook"></i></div>
+                    <span>TechMaster</span>
+                </a>
+                <a class="footer-social" href="" target="_blank">
+                    <div class="footer-web"><i class="fa fa-2x fa-internet-explorer"></i></div>
+                    <span>Techmaster.vn</span>
+                </a>
+            </div>
+            <div class="col-xs-12 col-md-8">
+                <div class="footer-menu col-xs-12 col-sm-4">
+
+
+                    <ul>
+                        <li class="active">
+                            <a href="/">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Features</a>
+                        </li>
+                        <li>
+                            <a href="">Courses</a>
+                        </li>
+                        <li>
+                            <a href="">Blog</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                        <li>
+                            <a href="">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about col-xs-12 col-sm-8 ">
+                    <!--<div class="logoFooter"></div>-->
+                    <div>
+                        <p>Techmaster Inc.</p>
+                        <address>
+                            Số 14, ngõ 4, Nguyễn Đình Chiểu, quận Hai Bà Trưng, Hà nội, Việt nam.
+                            <br>
+                            <br>
+                            Phòng 2304, tầng 23, toà nhà Ocean Bank (StarCity), 81 Lê Văn Lương, Nhân Chính, Thanh
+                            Xuân, Hà Nội
+                        </address>
+                    </div>
+                    <button>Email Us</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class=" copyright">
+        © 2016 Techmaster, Inc. All rights reserved.
+    </div>
+</footer>
+</body>
+</html>
