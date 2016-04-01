@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link href="lib/animateCss/animate.css" rel="stylesheet">
     <!--Jquery-->
     <script src="js/jquery-2.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
@@ -48,119 +49,273 @@
         <div class="pull-right"><span style="font-size: small">Danh sách bài thi <i class="fa fa-sign-in"></i></span>
         </div>
     </div>
-    <div class="container profile-wrapper">
-        <div class="row">
-            <div class="col-xs-12 course-block">
+    <div class="header-profile">
+        <div class="user-profile-avt">
 
-                <section>
-                    <ul class="list-menu nav nav-tabs" role="tablist">
-                        <li role="presentation" class="active">
-                            <a href="#profile-page" aria-controls="profile-page" role="tab" data-toggle="tab"><img
-                                    src="img/profile.png">
+            <div class="main-avt">
+                <a class="animated fadeIn " href="">
+                    <img class="img-circle img-responsive" src="img/profile.png">
+                </a>
+                <span class="change-avatar">
+                <i class="fa fa-pencil"></i>
+            </span>
+            </div>
 
-                                <h3>Thông tin cá nhân</h3></a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#hs-exam-page" aria-controls="hs-exam-page" role="tab" data-toggle="tab"><img
-                                    src="img/history-exam.png">
-
-                                <h3>Lịch sử thi</h3></a>
-                        </li>
-                        <li role="presentation">
-                            <a href="#hs-payment-page" aria-controls="hs-payment-page" role="tab" data-toggle="tab"><img
-                                    src="img/payment-logo.png">
-
-                                <h3>Lịch sử nạp</h3></a>
-                        </li>
-                    </ul>
-                    <div class="tab-content">
-                        <div class="tab-pane fade in active" role="tabpanel" id="profile-page">
-
-                            <div class="row">
-
-                                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 toppad">
-
-
-                                    <div class="panel panel-info">
-                                        <div class="panel-heading">
-                                            <h3 class="panel-title">Đặng Quang Khắc Huy</h3>
-                                        </div>
-                                        <div class="panel-body">
-                                            <div class="row">
-                                                <div class="col-md-3 col-lg-3 " align="center">
-                                                    <img alt="User Pic" src="http://techmaster.vn/img/users/2005.png" width="300" height="300"
-                                                                                                    class="img-circle img-responsive">
-                                                </div>
-
-                                                <div class=" col-md-9 col-lg-9 ">
-                                                    <table class="table table-user-information">
-                                                        <tbody>
-                                                        <tr>
-                                                            <td>Họ và tên:</td>
-                                                            <td>Đặng Quang Khắc Huy</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Ngày tham gia:</td>
-                                                            <td>06/23/2013</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Ngày sinh:</td>
-                                                            <td>01/24/1988</td>
-                                                        </tr>
-
-                                                        <tr>
-                                                        <tr>
-                                                            <td>Giới tính:</td>
-                                                            <td>Nữ</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Địa chỉ</td>
-                                                            <td>Tô Lich, Hoàng Cầu, Hà Nội</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Email</td>
-                                                            <td><a href="mailto:robin@techmaster.vn">robin@techmaster.vn</a>
-                                                            </td>
-                                                        </tr>
-                                                        <td>Số điện thoại</td>
-                                                        <td>123-456-789-0<br>
-                                                        </td>
-
-                                                        </tr>
-
-                                                        </tbody>
-                                                    </table>
-
-                                                    <a href="#" class="btn btn-primary">Chỉnh sửa thông tin cá nhân</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="panel-footer">
-                                            <a data-original-title="Broadcast Message" data-toggle="tooltip"
-                                               type="button" class="btn btn-sm btn-primary"><i
-                                                    class="glyphicon glyphicon-envelope"></i></a>
-                        <span class="pull-right">
-                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button"
-                               class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
-                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button"
-                               class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
-                        </span>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </div>
-
-                        </div>
-                        <div class="tab-pane fade " role="tabpanel" id="hs-exam-page">2 nhé</div>
-                        <div class="tab-pane fade " role="tabpanel" id="hs-payment-page">3 nhé</div>
+        </div>
+        <div class="user-profile-name text-center">
+            <span>Than Van Nghia</span>
+        </div>
+        <div class="user-profile-menu">
+            <span class="icon-menu">
+                <a href="">
+                    <div class="icon ">
+                        <img class="img-responsive img-circle animated zoomIn" src="img/icon-menu-user.png"
+                             data-toggle="tooltip" data-placement="bottom" title="Thông tin người dùng">
                     </div>
-                </section>
+                </a>
+            </span>
+            <span class="icon-menu ">
+                 <a href="">
+                     <div class="icon">
+                         <img class="img-responsive img-circle animated zoomIn" src="img/history-exam.png"
+                              data-toggle="tooltip" data-placement="bottom" title="Lịch sử thi">
+                     </div>
+                 </a>
+            </span>
+            <span class="icon-menu ">
+                 <a href="">
+                     <div class="icon">
+                         <img class="img-responsive img-circle animated zoomIn" src="img/payment-logo.png"
+                              data-toggle="tooltip" data-placement="bottom" title="Lịch sử thanh toán">
+                     </div>
+                 </a>
+            </span>
+        </div>
+    </div>
+    <div class="main-profile">
+        <div class="container profile-wrapper">
+            <div class="row">
+                <div class="col-xs-12 course-block user-info-wrapper ">
+                    <h2 class="user-info-title">Thông tin người dùng</h2>
 
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-3">
+                            <img class="img-responsive" src="img/profile.png">
+                        </div>
+                        <div class="col-xs-12 col-sm-9"></div>
+                    </div>
+                </div>
+                <div class="course-block col-xs-12 certificates-wrapper">
+                    <h2 class="certificates-title">Chứng chỉ của tôi</h2>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <!--<span class="certificate-item">-->
+                            <!--<a class="certificate" href="index.html">-->
+                            <!--<img class="img-responsive" src="img/hoanthanh.png" data-toggle="tooltip" data-placement="bottom" title="Lần đầu làm chuyện ấy (thi ý)">-->
+                            <!--</a>-->
+                            <!--</span>-->
+                            <!--<span class="certificate-item">-->
+                            <!--<a class="certificate" href="index.html">-->
+                            <!--<img class="img-responsive" src="img/hoanthanh.png" data-toggle="tooltip" data-placement="bottom" title="Lần đầu làm chuyện ấy (thi ý)">-->
+                            <!--</a>-->
+                            <!--</span>-->
+                        </div>
+                        <div class="col-xs-12">
+                            <p class="empty-block">Rất tiếc bạn chưa có chứng chỉ nào hêts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="course-block col-xs-12 leaderboard-wrapper">
+                    <h2> Bảng xếp hạng</h2>
+
+                    <!--<div class="row">-->
+                    <!--<div class="col-xs-12 col-sm-7 leaderboard-left">-->
+                    <!--<span class="leaderboard-item">-->
+                    <!--<a class="leaderboard" href="index.html">-->
+                    <!--<img class="img-responsive" src="img/profile.png" data-toggle="tooltip"-->
+                    <!--data-placement="bottom" title="Nguyễn Như Thế">-->
+                    <!--</a>-->
+                    <!--</span>-->
+                    <!--<span class="leaderboard-item">-->
+                    <!--<a class="leaderboard" href="index.html">-->
+                    <!--<img class="img-responsive" src="img/hoanthanh.png" data-toggle="tooltip"-->
+                    <!--data-placement="bottom" title="Sao bá Thế">-->
+                    <!--</a>-->
+                    <!--</span>-->
+                    <!--</div>-->
+                    <!--<div class="col-xs-12 col-sm-5 leaderboard-right">-->
+                    <!--<a class="b"-->
+                    <!--</div>-->
+
+
+                    <!--</div>-->
+
+
+                    <div class="leaderboard-content row">
+
+                        <div class="leaderboard-left col-xs-12 col-sm-8">
+                            <h2 class="text-center"></h2>
+
+                            <div class="list-leader">
+                                  <span class="leaderboard-item">
+                            <a class="leaderboard" href="index.html">
+                                <img class="img-responsive" src="img/profile.png" data-toggle="tooltip"
+                                     data-placement="bottom" title="Nguyễn Như Thế">
+                            </a>
+                            </span>
+                                 <span class="leaderboard-item">
+                            <a class="leaderboard" href="index.html">
+                                <img class="img-responsive" src="img/hoanthanh.png" data-toggle="tooltip"
+                                     data-placement="bottom" title="Nguyễn Như Thế">
+                            </a>
+                            </span>
+                             <span class="leaderboard-item">
+                            <a class="leaderboard" href="index.html">
+                                <img class="img-responsive" src="img/history-exam.png" data-toggle="tooltip"
+                                     data-placement="bottom" title="Nguyễn Như Thế">
+                            </a>
+                            </span>
+                             <span class="leaderboard-item">
+                            <a class="leaderboard" href="index.html">
+                                <img class="img-responsive" src="img/profile.png" data-toggle="tooltip"
+                                     data-placement="bottom" title="Nguyễn Như Thế">
+                            </a>
+                            </span>
+                             <span class="leaderboard-item">
+                            <a class="leaderboard" href="index.html">
+                                <img class="img-responsive" src="img/profile.png" data-toggle="tooltip"
+                                     data-placement="bottom" title="Nguyễn Như Thế">
+                            </a>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="leaderboard-right col-xs-12 col-sm-4">
+                            <div class="result-separator hide-on-xs-only"></div>
+                            <div class="result-button">
+                                <a class="btn waves-effect waves-light hoverable">Xem bảng xếp hạng</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <!--<div class="container profile-wrapper">-->
+    <!--<div class="row">-->
+    <!--<div class="col-xs-12 course-block">-->
+
+    <!--<section>-->
+    <!--<ul class="list-menu nav nav-tabs" role="tablist">-->
+    <!--<li role="presentation" class="active">-->
+    <!--<a href="#profile-page" aria-controls="profile-page" role="tab" data-toggle="tab"><img-->
+    <!--src="img/profile.png">-->
+
+    <!--<h3>Thông tin cá nhân</h3></a>-->
+    <!--</li>-->
+    <!--<li role="presentation">-->
+    <!--<a href="#hs-exam-page" aria-controls="hs-exam-page" role="tab" data-toggle="tab"><img-->
+    <!--src="img/history-exam.png">-->
+
+    <!--<h3>Lịch sử thi</h3></a>-->
+    <!--</li>-->
+    <!--<li role="presentation">-->
+    <!--<a href="#hs-payment-page" aria-controls="hs-payment-page" role="tab" data-toggle="tab"><img-->
+    <!--src="img/payment-logo.png">-->
+
+    <!--<h3>Lịch sử nạp</h3></a>-->
+    <!--</li>-->
+    <!--</ul>-->
+    <!--<div class="tab-content">-->
+    <!--<div class="tab-pane fade in active" role="tabpanel" id="profile-page">-->
+
+    <!--<div class="row">-->
+
+    <!--<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xs-offset-0 col-sm-offset-0 col-md-offset-2 col-lg-offset-2 toppad">-->
+
+
+    <!--<div class="panel panel-info">-->
+    <!--<div class="panel-heading">-->
+    <!--<h3 class="panel-title">Đặng Quang Khắc Huy</h3>-->
+    <!--</div>-->
+    <!--<div class="panel-body">-->
+    <!--<div class="row">-->
+    <!--<div class="col-md-3 col-lg-3 " align="center">-->
+    <!--<img alt="User Pic" src="http://techmaster.vn/img/users/2005.png" width="300" height="300"-->
+    <!--class="img-circle img-responsive">-->
+    <!--</div>-->
+
+    <!--<div class=" col-md-9 col-lg-9 ">-->
+    <!--<table class="table table-user-information">-->
+    <!--<tbody>-->
+    <!--<tr>-->
+    <!--<td>Họ và tên:</td>-->
+    <!--<td>Đặng Quang Khắc Huy</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>Ngày tham gia:</td>-->
+    <!--<td>06/23/2013</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>Ngày sinh:</td>-->
+    <!--<td>01/24/1988</td>-->
+    <!--</tr>-->
+
+    <!--<tr>-->
+    <!--<tr>-->
+    <!--<td>Giới tính:</td>-->
+    <!--<td>Nữ</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>Địa chỉ</td>-->
+    <!--<td>Tô Lich, Hoàng Cầu, Hà Nội</td>-->
+    <!--</tr>-->
+    <!--<tr>-->
+    <!--<td>Email</td>-->
+    <!--<td><a href="mailto:robin@techmaster.vn">robin@techmaster.vn</a>-->
+    <!--</td>-->
+    <!--</tr>-->
+    <!--<td>Số điện thoại</td>-->
+    <!--<td>123-456-789-0<br>-->
+    <!--</td>-->
+
+    <!--</tr>-->
+
+    <!--</tbody>-->
+    <!--</table>-->
+
+    <!--<a href="#" class="btn btn-primary">Chỉnh sửa thông tin cá nhân</a>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="panel-footer">-->
+    <!--<a data-original-title="Broadcast Message" data-toggle="tooltip"-->
+    <!--type="button" class="btn btn-sm btn-primary"><i-->
+    <!--class="glyphicon glyphicon-envelope"></i></a>-->
+    <!--<span class="pull-right">-->
+    <!--<a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button"-->
+    <!--class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>-->
+    <!--<a data-original-title="Remove this user" data-toggle="tooltip" type="button"-->
+    <!--class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>-->
+    <!--</span>-->
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--</div>-->
+
+    <!--</div>-->
+
+    <!--</div>-->
+    <!--<div class="tab-pane fade " role="tabpanel" id="hs-exam-page">2 nhé</div>-->
+    <!--<div class="tab-pane fade " role="tabpanel" id="hs-payment-page">3 nhé</div>-->
+    <!--</div>-->
+    <!--</section>-->
+
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
 </main>
 <footer>
     <div class="footer-title">
@@ -232,6 +387,9 @@
 </footer>
 
 <script>
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
     $('.list-menu a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
