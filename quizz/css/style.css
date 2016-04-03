@@ -6,7 +6,7 @@
 
 html, body {
     background-color: #f2f2f2;
-    font-size: 16px;
+    font-size: 14px;
     font-family: "Open Sans", sans-serif;
 }
 
@@ -1987,7 +1987,7 @@ ul.list-menu li img{
 }
 .certificate,.leaderboard{
     float: left;
-    width: 50px;
+    max-width: 50px;
     margin-right: 10px;
 }
 
@@ -2003,13 +2003,31 @@ ul.list-menu li img{
     float: left;
     width: 20%;
 }
-
+.profile-info-table{
+    margin-top: 20px;
+}
+.change-info{
+    background-color:#4285f4;
+    color: #fff;
+    border-radius: 0;
+    margin: 20px auto 0;
+    display: block;
+    width: 130px;
+}
+.change-info:hover{
+    color: #fff;
+}
 /* end profile page style 2*/
 
 
 /*end trang profile*/
 @media all and (min-width: 768px) {
-
+    html, body{
+        font-size: 16px;
+    }
+    .profile-info-table{
+        margin-top: 0;
+    }
     .leaderboard-left{
         padding-top: 80px;
         padding-bottom: 110px;
@@ -2021,6 +2039,11 @@ ul.list-menu li img{
     .leaderboard{
         width: 80%;
         margin: 0 auto;
+    }
+    .certificate,.leaderboard{
+
+        max-width: 80px;
+
     }
     .content-background.profile-page{
         background: #4285f4 ;
