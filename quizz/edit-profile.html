@@ -9,13 +9,16 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/lib/wave.css" rel="stylesheet">
     <link href="lib/animateCss/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
     <!--Jquery-->
     <script src="js/jquery-2.2.1.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="lib/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/script.js" type="text/javascript"></script>
+    <script src="js/lib/waves.js" type="text/javascript"></script>
 </head>
 <body>
 <nav id="header">
@@ -50,10 +53,23 @@
         </div>
     </div>
     <div class="header-profile">
+        <div class="user-profile-avt">
+            <div class="main-avt ">
+                <a class="animated fadeIn avt" href="#">
+                    <img class="img-circle img-responsive" src="img/profile.png">
+                </a>
 
+                    <span class="change-avatar" data-toggle="modal" data-target="#upload-Modal"><i
+                            class="fa fa-pencil"></i></span>
+
+            </div>
+        </div>
+        <div class="user-profile-name text-center">
+            <span>Robin Nude</span>
+        </div>
         <div class="user-profile-menu">
             <span class="icon-menu">
-                <a href="">
+                <a href="profile.html">
                     <div class="icon ">
                         <img class="img-responsive img-circle animated zoomIn" src="img/icon-menu-user.png"
                              data-toggle="tooltip" data-placement="bottom" title="Thông tin người dùng">
@@ -61,7 +77,7 @@
                 </a>
             </span>
             <span class="icon-menu ">
-                 <a href="">
+                 <a href="test-history.html">
                      <div class="icon">
                          <img class="img-responsive img-circle animated zoomIn" src="img/history-exam.png"
                               data-toggle="tooltip" data-placement="bottom" title="Lịch sử thi">
@@ -69,7 +85,7 @@
                  </a>
             </span>
             <span class="icon-menu ">
-                 <a href="">
+                 <a href="payment-history.html">
                      <div class="icon">
                          <img class="img-responsive img-circle animated zoomIn" src="img/payment-logo.png"
                               data-toggle="tooltip" data-placement="bottom" title="Lịch sử thanh toán">
@@ -82,24 +98,12 @@
         <div class="container profile-wrapper">
             <div class="row">
 
-
                 <div class="col-xs-12 course-block user-info-wrapper ">
                     <h2 class="user-info-title">Thông tin người dùng</h2>
 
                     <div class="row">
-                        <div class="col-xs-12 col-sm-3">
-                            <div class="user-profile-avt">
-                                <div class="main-avt">
-                                    <a class="animated fadeIn avt " href="">
-                                        <img class="img-circle img-responsive" src="img/profile.png">
-                                    </a>
-                                    <a class="" href="javascript:void() ">
-                                         <span class="change-avatar" data-toggle="modal" data-target="#upload-Modal"><i class="fa fa-pencil" style="color:black"></i></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xs-12 col-sm-9 table-responsive profile-info-table">
+
+                        <div class="col-xs-12 col-md-8 col-md-offset-2 table-responsive profile-info-table">
 
                             <div class="alert alert-info alert-dismissable">
                                 <a class="panel-close close" data-dismiss="alert">×</a>
@@ -114,7 +118,7 @@
                                         <input class="form-control" type="text" value="robin@techmaster.vn">
                                     </div>
                                     <div class="col-md-2 col-xs-4 nopad-left">
-                                        <label class="label-checkbox nopad" >
+                                        <label class="label-checkbox nopad">
                                             <input type="checkbox" class="checkbox-material" name="answer" value="0">Public</label>
                                     </div>
                                 </div>
@@ -122,7 +126,7 @@
                                     <label class="col-md-3 col-xs-12 control-label">Password:</label>
 
                                     <div class="col-md-7 col-xs-8">
-                                        <input class="form-control" type="password" value="11111122333">
+                                        <input onclick="$('#pass-Modal').modal('show');" class="form-control" type="password" value="11111122333">
                                     </div>
 
                                 </div>
@@ -133,7 +137,7 @@
                                         <input class="form-control" type="text" value="0933441166">
                                     </div>
                                     <div class="col-md-2 col-xs-4 nopad-left">
-                                        <label class="label-checkbox nopad" >
+                                        <label class="label-checkbox nopad">
                                             <input type="checkbox" class="checkbox-material" name="answer" value="0">Public</label>
                                     </div>
                                 </div>
@@ -157,7 +161,7 @@
                                         </div>
                                     </div>
                                     <div class="col-md-2 col-xs-4 nopad-left">
-                                        <label class="label-checkbox nopad" >
+                                        <label class="label-checkbox nopad">
                                             <input type="checkbox" class="checkbox-material" name="answer" value="0">Public</label>
                                     </div>
                                 </div>
@@ -168,7 +172,7 @@
                                         <input class="form-control" type="date" value="2016-11-01">
                                     </div>
                                     <div class="col-md-2 col-xs-4 nopad-left">
-                                        <label class="label-checkbox nopad" >
+                                        <label class="label-checkbox nopad">
                                             <input type="checkbox" class="checkbox-material" name="answer" value="0">Public</label>
                                     </div>
                                 </div>
@@ -179,7 +183,7 @@
                                         <input class="form-control" type="text" value="Lào">
                                     </div>
                                     <div class="col-md-2 col-xs-4 nopad-left">
-                                        <label class="label-checkbox nopad" >
+                                        <label class="label-checkbox nopad">
                                             <input type="checkbox" class="checkbox-material" name="answer" value="0">Public</label>
                                     </div>
                                 </div>
@@ -283,19 +287,84 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
+                <h4 class="modal-title">Tải lên ảnh đại diện</h4>
             </div>
             <div class="modal-body">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputFile">File input</label>
-                    <input type="file" id="exampleInputFile">
-                    <p class="help-block">Chọn ảnh đại diện nhé.</p>
+                <div class="alert alert-info alert-dismissable">
+                    <a class="panel-close close" data-dismiss="alert">×</a>
+                    <i class="fa fa-coffee"></i>
+                    Dùng cái <strong> này</strong> để xuất thông báo lỗi nhé
                 </div>
-            </form>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+
+                        <p class="help-block">Chọn ảnh đại diện nhé.</p>
+                    </div>
+
+                </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn-material upload-avt waves-effect waves-light">upload</button>
+                <button type="button" class="btn-material btn-cancel" data-dismiss="modal">
+                    Cancel
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+<div id="pass-Modal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Tải lên ảnh đại diện</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-danger alert-dismissable">
+                    <a class="panel-close close" data-dismiss="alert">×</a>
+                    <i class="fa fa-coffee"></i>
+                    Dùng cái <strong> này</strong> để xuất thông báo lỗi nhé
+                </div>
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Mật khẩu cũ:</label>
+
+                        <div class="col-md-7 col-xs-8">
+                            <input class="form-control" type="password" value="">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Mật khẩu mới:</label>
+
+                        <div class="col-md-7 col-xs-8">
+                            <input class="form-control" type="password" value="">
+                        </div>
+
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 col-xs-12 control-label">Nhập lại mật khẩu mới:</label>
+
+                        <div class="col-md-7 col-xs-8">
+                            <input class="form-control" type="password" value="">
+                        </div>
+
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn-material change-pass waves-effect waves-light">Thay đổi</button>
+                <button type="button" class="btn-material btn-cancel" data-dismiss="modal">
+                    Hủy
+                </button>
+
             </div>
         </div>
 
@@ -304,7 +373,8 @@
 <script>
     $(function () {
         $('[data-toggle="tooltip"]').tooltip()
-    })
+    });
+
     $('.list-menu a').click(function (e) {
         e.preventDefault()
         $(this).tab('show')
