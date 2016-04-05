@@ -48,7 +48,7 @@
     <div class="profile-title container">
         <div class="pull-left"><span>Bảng xếp hạng</span></div>
         <!--<div class="pull-right"><span style="font-size: small">Danh sách bài thi <i class="fa fa-sign-in"></i></span>-->
-    </div>
+    <!--</div>-->
     </div>
     <div class="main-profile">
         <div class="container profile-wrapper">
@@ -62,7 +62,7 @@
                     <div class="col-xs-6 col-sm-3 col-sm-offset-3">
 
                         <select class="form-control pull-right choose-ldb">
-                            <option value="Techmaster Quizz">Tất cả</option>
+                            <option value="Techmaster">Tất cả</option>
                             <option value="PHP">PHP</option>
                             <option value="HTML">HTML</option>
                             <option value="Node">Node</option>
@@ -71,13 +71,12 @@
 
                     </div>
                     <div class="col-xs-12">
-                        <table class="table">
+                        <table class="table ldb">
                             <thead>
                             <tr>
-                                <th>Số thứ tự</th>
-                                <th> Người dùng</th>
-                                <th>Điểm số</th>
-
+                                <th class="col-xs-2">Thứ hạng</th>
+                                <th class="col-xs-7">Người dùng</th>
+                                <th class="col-xs-3">Điểm số</th>
                             </tr>
                             </thead>
                             <tbody class="ldb-content">
@@ -160,10 +159,10 @@
         © 2016 Techmaster, Inc. All rights reserved.
     </div>
 </footer>
-<script type="text/javascript" src="leaderboard.js"></script>
+<script type="text/javascript" src="js/leaderboard.js"></script>
 <script>
-    $(function(){
-        ldb.load();
+    $(function () {
+        ldb.load(ldbList,$('.choose-ldb').value );
     })
 </script>
 <script>
@@ -175,10 +174,8 @@
         $(this).tab('show');
     });
     $('.choose-ldb').change(function () {
-       ldb.load2();
+        ldb.load(ldbList2,this.value);
     });
-
-
 
 
 </script>

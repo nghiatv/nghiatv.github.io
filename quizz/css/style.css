@@ -2000,6 +2000,29 @@ select.materialize:focus {
         margin-top: 20px;
         width: auto;
     }
+    .ldb tr, .ldb th{
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .ldb tr, .ldb td{
+        border-top: none!important;
+        border-bottom: solid 1px #f8f8f8;
+
+    }
+    .ldb td:first-child, .ldb td:last-child, .ldb th:first-child, .ldb th:last-child{
+        vertical-align: middle!important;
+        text-align: center;
+    }
+    .ldb img{
+        border: 1px solid #CCCCCC;
+        max-width: 72px;
+        margin-right: 20px;
+        display: inline-block;
+    }
+    .ldb td:first-child img{
+        margin-right: 0;
+        border: none;
+    }
 /*end css trang leaderboard*/
 @media all and (min-width: 768px) {
     html, body{
