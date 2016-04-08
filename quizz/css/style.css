@@ -536,7 +536,9 @@ footer {
     background-color: #eaedf1;
     overflow: hidden;
 }
-
+.footer-content.course-wrapper{
+    padding-top: 20px;
+}
 .footer-title {
     width: 100%;
     background-color: #009688;
@@ -729,7 +731,7 @@ footer .copyright {
 
 .course-wrapper {
     margin: 0 auto;
-    padding: 30px 0;
+    /*padding: 30px 0;*/
     /*width: 1000px;*/
 }
 
@@ -741,8 +743,8 @@ footer .copyright {
     width: 100%;
     float: left;
     background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 6px;
     box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
     /*margin-bottom: 20px;*/
 }
@@ -808,7 +810,7 @@ footer .copyright {
     float: left;
 }
 
-.course-block.course-intro, .course-block.course-summary {
+.course-block.course-intro, .course-block.course-summary, .course-block.course-detail {
     margin: 15px auto;
 }
 
@@ -2023,10 +2025,18 @@ select.materialize:focus {
         margin-right: 0;
         border: none;
     }
+    .ldb-name{
+        font-size: 1.8rem;
+        color: #000;
+        font-weight: 500;
+    }
 /*end css trang leaderboard*/
 @media all and (min-width: 768px) {
     html, body{
         font-size: 16px;
+    }
+    .course-block{
+        padding: 20px;
     }
     .profile-info-table .label-checkbox{
         opacity: 0;
