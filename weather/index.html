@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather nhé</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js"
+            integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+    <script src="assets/js/simple_weather/jquery.simpleWeather.min.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="weather-wrapper" id="ahihi">
+    <!--    <div class="weather-card madrid">-->
+    <!--        <div class="weather-icon sun"></div>-->
+    <!--        <h1>26º</h1>-->
+    <!--        <p>Madrid</p>-->
+    <!--    </div>-->
+    <!--    <div class="weather-card london">-->
+    <!--        <div class="weather-icon cloud"></div>-->
+    <!--        <h1>14º</h1>-->
+    <!--        <p>London</p>-->
+    <!--    </div>-->
+</div>
+
+
+<div class="search-content container">
+    <div class="card"></div>
+    <div class="card">
+        <div class="input-container">
+            <input type="text" id="search" name="search" required="required" value="">
+            <label for="search">
+                Nhập tên thành phố
+            </label>
+            <div class="bar"></div>
+            <div class="error"></div>
+        </div>
+        <div class="button-container">
+            <button id="send"><span>Go</span></button>
+        </div>
+        <p class="inspiration js-geolocation" style="display: none;">Vị trí hiện tại</p>
+    </div>
+</div>
+<p class="inspiration">ahihi: <a href="https://github.com/nghiatv" target="_blank">Nghĩa Thân nhé</a></p>
+
+<!-- Link to my website -->
+<script src="assets/js/pace.js" type="text/javascript"></script>
+<script>
+    /* Does your browser support geolocation? */
+    if ("geolocation" in navigator) {
+        $('.js-geolocation').show();
+    } else {
+        $('.js-geolocation').hide();
+    }
+
+    /* Where in the world are you? */
+    $('.js-geolocation').on('click', function () {
+        navigator.geolocation.getCurrentPosition(function (position) {
+            loadWeather(position.coords.latitude + ',' + position.coords.longitude); //load weather using your lat/lng coordinates
+        });
+    });
+    //Docs at http://simpleweatherjs.com
+    $(document).ready(function () {
+        $("#send").click(function () {
+            var ahihi = $("#search").val();
+            loadWeather(ahihi, "");
+        })
+    });
+
+
+    function loadWeather(location, woeid) {
+        $.simpleWeather({
+            location: location,
+            woeid: woeid,
+            unit: 'c',
+            success: function (weather) {
+                console.log(weather);
+                html = "<div class='weather-card'>" +
+                    "<div class='weather-icon '></div>" +
+                    "<h1>" + weather.temp + "ºC</h1>" +
+                    "<p>" + weather.city + "</p>" +
+                    "<p><img src='" + weather.image + "'</p>" +
+                    "<p>" + weather.low + "ºC - " + weather.high + "ºC</p>" +
+                    "</div>";
+
+
+                $("#ahihi").append(html);
+
+                $(".error").html("");
+            },
+            error: function (error) {
+                console.log(error);
+                $(".error").html(error);
+            }
+        });
+    }
+
+</script>
+</body>
+</html>
